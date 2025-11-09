@@ -1,0 +1,100 @@
+swiftride/
+├── swiftride/                  # Main project configuration
+│   ├── settings/               # Split settings (base, dev, prod, test)
+│   ├── urls.py                # Main URL configuration
+│   ├── wsgi.py                # WSGI configuration
+│   └── celery.py              # Celery configuration
+│
+├── accounts/                   # User authentication & profiles
+│   ├── models.py              # User, OTPVerification
+│   ├── views.py               # Auth endpoints
+│   ├── serializers.py         # User serializers
+│   ├── utils.py               # SMS service
+│   ├── admin.py               # Admin interface
+│   ├── urls.py                # Account URLs
+│   └── management/            # Management commands
+│       └── commands/
+│           └── cleanup_expired_otps.py
+│
+├── drivers/                    # Driver management
+│   ├── models.py              # Driver, DriverRating, Documents
+│   ├── views.py               # Driver endpoints
+│   ├── serializers.py         # Driver serializers
+│   ├── admin.py               # Driver admin
+│   └── urls.py                # Driver URLs
+│
+├── vehicles/                   # Vehicle asset management
+│   ├── models.py              # Vehicle, Documents, Inspections
+│   ├── views.py               # Vehicle endpoints
+│   ├── serializers.py         # Vehicle serializers
+│   ├── admin.py               # Vehicle admin
+│   └── urls.py                # Vehicle URLs
+│
+├── pricing/                    # Fare calculation & pricing
+│   ├── models.py              # City, VehicleType, Pricing, Surge
+│   ├── views.py               # Pricing endpoints
+│   ├── serializers.py         # Pricing serializers
+│   ├── utils.py               # Fare calculation logic
+│   ├── admin.py               # Pricing admin
+│   └── urls.py                # Pricing URLs
+│
+├── locations/                  # Location tracking
+│   ├── models.py              # SavedLocation, DriverLocation
+│   ├── views.py               # Location endpoints
+│   ├── serializers.py         # Location serializers
+│   ├── utils.py               # Location utilities
+│   ├── admin.py               # Location admin
+│   └── urls.py                # Location URLs
+│
+├── payments/                   # Payments & wallet
+│   ├── models.py              # Wallet, Transaction, PaymentCard
+│   ├── views.py               # Payment endpoints
+│   ├── serializers.py         # Payment serializers
+│   ├── utils.py               # Payment gateway integration
+│   ├── admin.py               # Payment admin
+│   └── urls.py                # Payment URLs
+│
+├── rides/                      # Ride booking & management
+│   ├── models.py              # Ride, RideRequest, MutualRating
+│   ├── views.py               # Ride endpoints
+│   ├── serializers.py         # Ride serializers
+│   ├── admin.py               # Ride admin
+│   └── urls.py                # Ride URLs
+│
+├── notifications/              # NEW - Notifications system
+│   ├── models.py              # Notification, PushToken
+│   ├── views.py               # Notification endpoints
+│   ├── serializers.py         # Notification serializers
+│   ├── tasks.py               # Celery tasks for async sending
+│   ├── utils.py               # FCM, SMS, Email helpers
+│   └── urls.py                # Notification URLs
+│
+├── support/                    # NEW - Customer support
+│   ├── models.py              # SupportTicket, FAQ, LiveChat
+│   ├── views.py               # Support endpoints
+│   ├── serializers.py         # Support serializers
+│   ├── admin.py               # Support admin
+│   └── urls.py                # Support URLs
+│
+├── referrals/                  # NEW - Referral system
+│   ├── models.py              # Referral, ReferralBonus
+│   ├── views.py               # Referral endpoints
+│   ├── serializers.py         # Referral serializers
+│   ├── admin.py               # Referral admin
+│   └── urls.py                # Referral URLs
+│
+├── analytics/                  # NEW - Analytics & reporting
+│   ├── models.py              # Analytics data models
+│   ├── views.py               # Dashboard endpoints
+│   ├── serializers.py         # Analytics serializers
+│   ├── reports.py             # Report generation
+│   └── urls.py                # Analytics URLs
+│
+├── common_utils.py             # Shared utilities
+├── manage.py                   # Django management
+├── requirements.txt            # Python dependencies
+├── .env.example                # Environment variables template
+├── Dockerfile                  # Docker configuration
+├── docker-compose.yml          # Docker Compose setup
+├── .gitignore                  # Git ignore rules
+└── README.md                   # This file

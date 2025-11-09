@@ -1,0 +1,172 @@
+
+# Create Dockerfile
+cat > /home/claude/config_package/Dockerfile << 'EOF'
+FROM python:3.10-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install system dependencies including GDAL for PostGIS
+RUN apt-get update && apt-get install -y \
+    binutils \
+    libproj-dev \
+    gdal-bin \
+    postgresql-client \
+    netcat-traditional \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set work directory
+WORKDIR /app
+
+# Install Python dependencies
+COPY requirements.txt /app/
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+# Copy project
+COPY . /app/
+
+# Create logs directory
+RUN mkdir -p /app/logs
+
+# Collect static files (will be overridden by volume in production)
+RUN python manage.py collectstatic --noinput || true
+
+# Expose port
+EXPOSE 8000
+
+# Run migrations and start server (overridden in docker-compose)
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+EOF
+
+# Create .env.example
+cat > /home/claude/config_package/.env.example << 'EOF'
+# ========================================
+# DJANGO SETTINGS
+# ========================================
+SECRET_KEY=your-secret-key-change-this-in-production
+DEBUG=False
+ALLOWED_HOSTS=localhost,127.0.0.1,your-domain.com
+
+# ========================================
+# DATABASE
+# ========================================
+DB_NAME=swiftride_db
+DB_USER=swiftride_user
+DB_PASSWORD=your_secure_password
+DB_HOST=localhost
+DB_PORT=5432
+
+# ========================================
+# REDIS
+# ========================================
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_URL=redis://localhost:6379/1
+
+# ========================================
+# CELERY
+# ========================================
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+
+# ========================================
+# CORS
+# ========================================
+CORS_ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8000
+
+# ========================================
+# FIREBASE (Push Notifications)
+# ========================================
+FCM_SERVER_KEY=your-firebase-server-key
+
+# ========================================
+# SMS PROVIDERS
+# ========================================
+SMS_PROVIDER=console
+
+# Africa's Talking
+AFRICASTALKING_USERNAME=sandbox
+AFRICASTALKING_API_KEY=your-africastalking-api-key
+
+# Twilio
+TWILIO_ACCOUNT_SID=your-twilio-account-sid
+TWILIO_AUTH_TOKEN=your-twilio-auth-token
+TWILIO_PHONE_NUMBER=+1234567890
+
+# Termii
+TERMII_API_KEY=your-termii-api-key
+TERMII_SENDER_ID=SwiftRide
+
+# ========================================
+# EMAIL
+# ========================================
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-app-password
+DEFAULT_FROM_EMAIL=SwiftRide <noreply@swiftride.com>
+
+# ========================================
+# PAYMENT GATEWAYS
+# ========================================
+# Paystack
+PAYSTACK_SECRET_KEY=sk_test_xxxxx
+PAYSTACK_PUBLIC_KEY=pk_test_xxxxx
+
+# Flutterwave
+FLUTTERWAVE_SECRET_KEY=FLWSECK_TEST-xxxxx
+FLUTTERWAVE_PUBLIC_KEY=FLWPUBK_TEST-xxxxx
+FLUTTERWAVE_ENCRYPTION_KEY=FLWSECK_TESTxxxxx
+
+# Stripe
+STRIPE_SECRET_KEY=sk_test_xxxxx
+STRIPE_PUBLIC_KEY=pk_test_xxxxx
+
+# ========================================
+# GOOGLE MAPS
+# ========================================
+GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+
+# ========================================
+# RIDE SETTINGS
+# ========================================
+BASE_FARE=500
+PRICE_PER_KM=150
+PRICE_PER_MINUTE=15
+MINIMUM_FARE=800
+CANCELLATION_FEE=200
+PLATFORM_FEE=15
+MAX_SEARCH_RADIUS=5
+DRIVER_TIMEOUT=30
+
+# ========================================
+# DRIVER SETTINGS
+# ========================================
+MIN_DRIVER_RATING=3.5
+MAX_REJECTION_RATE=30
+
+# ========================================
+# LOGGING
+# ========================================
+LOG_LEVEL=INFO
+EOF
+
+echo "✅ Files 7-8 created (Dockerfile, .env.example)"
+ls -la /home/claude/config_package/
+Output✅ Files 7-8 created (Dockerfile, .env.example)
+total 42
+drwxr-xr-x 2 root root  4096 Oct 30 22:03 .
+drwxr-xr-x 1 root root  4096 Oct 30 22:01 ..
+-rw-r--r-- 1 root root  2918 Oct 30 22:03 .env.example
+-rw-r--r-- 1 root root   748 Oct 30 22:01 BUILD_STATUS.txt
+-rw-r--r-- 1 root root   851 Oct 30 22:03 Dockerfile
+-rw-r--r-- 1 root root   797 Oct 30 22:03 asgi.py
+-rw-r--r-- 1 root root  6869 Oct 30 22:02 celery.py
+-rw-r--r-- 1 root root  4634 Oct 30 22:03 docker-compose.yml
+-rw-r--r-- 1 root root  2626 Oct 30 22:03 requirements.txt
+-rw-r--r-- 1 root root   239 Oct 30 22:03 routing.py
+-rw-r--r-- 1 root root 12409 Oct 30 22:02 settings.py

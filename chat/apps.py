@@ -1,0 +1,18 @@
+
+"""
+FILE LOCATION: chat/apps.py
+App configuration for chat app.
+"""
+from django.apps import AppConfig
+
+
+class ChatConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'chat'
+    verbose_name = 'Chat'
+    
+    def ready(self):
+        """Import signals when app is ready"""
+        import chat.signals  # Load chat signals
+
+

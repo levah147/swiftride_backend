@@ -1,0 +1,1997 @@
+INFO 2025-11-01 12:32:38,914 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:32:51,519 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 12:32:53,082 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:36:16,911 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-01 12:36:18,502 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:36:58,935 autoreload D:\code\copy - fix\backend\admin_dashboard\views.py changed, reloading.
+INFO 2025-11-01 12:37:01,048 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:42:23,253 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 12:42:25,827 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:43:08,256 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-01 12:43:09,955 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:43:17,472 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-01 12:43:18,787 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:43:35,007 autoreload D:\code\copy - fix\backend\swiftride\urls.py changed, reloading.
+INFO 2025-11-01 12:43:36,441 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:43:57,972 autoreload D:\code\copy - fix\backend\admin_dashboard\admin.py changed, reloading.
+INFO 2025-11-01 12:43:59,780 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:46:45,491 autoreload D:\code\copy - fix\backend\admin_dashboard\models.py changed, reloading.
+INFO 2025-11-01 12:46:48,081 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:48:14,331 autoreload D:\code\copy - fix\backend\admin_dashboard\models.py changed, reloading.
+INFO 2025-11-01 12:48:16,186 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:50:14,688 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 12:50:16,402 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 12:50:24,215 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 12:50:25,756 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:00:57,682 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 13:00:59,424 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:02:15,756 autoreload D:\code\copy - fix\backend\swiftride\urls.py changed, reloading.
+INFO 2025-11-01 13:02:17,551 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:02:58,348 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 13:02:59,986 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:03:31,352 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 13:03:32,818 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:09:33,753 autoreload D:\code\copy - fix\backend\swiftride\urls.py changed, reloading.
+INFO 2025-11-01 13:09:36,390 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:09:44,345 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 13:09:45,836 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:09:58,441 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-01 13:09:59,813 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:18:02,123 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:19:58,447 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 13:49:24,918 autoreload D:\code\copy - fix\backend\accounts\models.py changed, reloading.
+INFO 2025-11-01 13:49:27,035 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:01:13,545 autoreload D:\code\copy - fix\backend\accounts\apps.py changed, reloading.
+INFO 2025-11-01 14:01:15,210 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:04:16,829 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:05:02,260 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-01 14:05:50,124 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+WARNING 2025-11-01 14:06:55,517 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-01 14:06:55,520 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-01 14:06:55,531 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-01 14:06:55,534 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-01 14:06:55,539 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-01 14:06:56,643 log Not Found: /api/accounts/delete-account/
+WARNING 2025-11-01 14:06:56,656 log Not Found: /api/accounts/profile/
+WARNING 2025-11-01 14:06:56,668 log Not Found: /api/accounts/profile/
+WARNING 2025-11-01 14:06:56,676 log Not Found: /api/accounts/profile/update/
+INFO 2025-11-01 14:07:59,707 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:11:25,498 basehttp code 400, message Bad request version ('\x81{?Í\x9cÉ\x00')
+ERROR 2025-11-01 14:11:25,499 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:25,502 basehttp code 400, message Bad request version ('X\x82X!½ê')
+ERROR 2025-11-01 14:11:25,502 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:25,553 basehttp code 400, message Bad request version ('\x90\x9fÈìÙ\x8cÈ\x03»Ö7^u|\x08ý')
+ERROR 2025-11-01 14:11:25,569 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:25,570 basehttp code 400, message Bad request version ('ý\x15O\x15ñóy\x8e8\x9aª"í1ñn\x01\x86¹ïÅ¢ï\x92Ò\x89]')
+ERROR 2025-11-01 14:11:25,717 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:25,841 basehttp code 400, message Bad request version ('4\x06Ó\x02\x99/[\x00°9u~ú\x88\x00ö½ðµ±¤ñÉn\x95\x007\x0e©8ÙåH÷ñ}ÓüöMÖVbäÚHt\x91á\x86\x9aP[÷¯ä?Ò\x9cPÅÐª?ö\x88¨')
+ERROR 2025-11-01 14:11:25,851 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:25,851 basehttp code 400, message Bad request version ("\x84S\x9eU2\x89\x94\x04Ü&ý+%A@\xad\x16³\x07Îúo\x9b'\x9bÔîÅ\x98\x8aª8\x00")
+ERROR 2025-11-01 14:11:25,857 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,582 basehttp code 400, message Bad request version ('\x91\x82c\x88).A#L%\x18ëzè²\x8cDy¯g¯T\x12Ôt\x86')
+ERROR 2025-11-01 14:11:29,584 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,587 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ÃE\x8dMñ÷éI½Ù\xadôoû\x88r\x86´4ª')
+ERROR 2025-11-01 14:11:29,588 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,612 basehttp code 400, message Bad request version (':´\x93´¶URÀ>ôÜa]\x88\x05ÿÓG?Ø\x82§ÆÁ^¶\x93"\x9c\x88\x8bå\x87®g¯[ÉbÈ0±Ï,WZì»')
+ERROR 2025-11-01 14:11:29,613 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,613 basehttp code 400, message Bad request version ('t}>\x92\x03%£')
+ERROR 2025-11-01 14:11:29,674 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,686 basehttp code 400, message Bad request version ('×7Ãw\x88\x99\x8a\x93ëø´°¢ù\x92\x7f')
+ERROR 2025-11-01 14:11:29,706 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:29,724 basehttp code 400, message Bad request version ('\x8dÕ\x8f^%³ú\x89Ä\x95\x14\x14G\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00#\x00\x00\x003\x04ï\x04í')
+ERROR 2025-11-01 14:11:29,731 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:43,897 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x036pà&÷·ªý¼®\x18õkÝ.«]ÑÜNüIO\x802ê;\x9e\x1a\x17¸Z')
+ERROR 2025-11-01 14:11:43,897 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:11:43,899 basehttp code 400, message Bad request version ('q\x9ea79Ð\x1bcV¼')
+ERROR 2025-11-01 14:11:43,899 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:12:27,068 log Not Found: /
+WARNING 2025-11-01 14:12:27,069 basehttp "GET / HTTP/1.1" 404 4688
+WARNING 2025-11-01 14:12:27,193 log Not Found: /favicon.ico
+WARNING 2025-11-01 14:12:27,194 basehttp "GET /favicon.ico HTTP/1.1" 404 4739
+INFO 2025-11-01 14:12:45,638 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-11-01 14:12:45,834 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:12:46,272 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+INFO 2025-11-01 14:12:46,697 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-01 14:12:47,065 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-01 14:12:47,481 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-01 14:12:48,208 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-01 14:12:48,268 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-01 14:12:49,124 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-01 14:12:49,179 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-01 14:12:56,885 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-01 14:13:08,666 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:13:10,351 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:13:19,816 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 301 0
+INFO 2025-11-01 14:13:19,934 basehttp code 400, message Bad request version ('[\x028\x8eì¢éï9t\x00')
+ERROR 2025-11-01 14:13:19,935 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:20,127 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-11-01 14:13:20,129 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:20,135 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-01 14:13:20,136 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:20,250 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03e¿\\üX_T\x80º[ã\x13\x03¿')
+ERROR 2025-11-01 14:13:20,250 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:30,825 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:13:32,399 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:13:34,913 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:13:36,703 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:13:39,913 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-01 14:13:39,914 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:39,996 basehttp code 400, message Bad request version ('ÉY\x98Ù\\\x90æt*ü')
+ERROR 2025-11-01 14:13:39,997 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:40,215 basehttp code 400, message Bad request version ('å¤bhõQÈ2|bjHjg\x9e\x03\x93Î\x96"RÍH')
+ERROR 2025-11-01 14:13:40,216 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:40,297 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s**\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-11-01 14:13:40,298 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:41,540 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+ERROR 2025-11-01 14:13:41,542 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:41,642 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x034ñ\x18Mª')
+ERROR 2025-11-01 14:13:41,643 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:42,679 basehttp code 400, message Bad request version ('e*|\x10\x96\x9f$Y×°ð\x03Å¬6:\x9ejè\x9af1\x00')
+ERROR 2025-11-01 14:13:42,680 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:42,760 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03&Ãñx`Vc2.aÿë')
+ERROR 2025-11-01 14:13:42,761 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:47,671 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06')
+ERROR 2025-11-01 14:13:47,673 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:47,688 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-11-01 14:13:47,691 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:56,700 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 301 0
+INFO 2025-11-01 14:13:56,785 basehttp code 400, message Bad request version ('¡\x99¿º_\x12\x91ZcÈ\x1b±¢+\x81Ñrl')
+ERROR 2025-11-01 14:13:56,785 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:56,812 basehttp code 400, message Bad request version ('(¶ï[\x88\x9c\x137·')
+ERROR 2025-11-01 14:13:56,812 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:59,037 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00')
+ERROR 2025-11-01 14:13:59,037 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:13:59,051 basehttp code 400, message Bad request version ("ÜÎ~+\x00\x90ë\x86Á\x95\x83\x87\x10=ø{\x99jOÚc¯(©\x99æëM~²'§52_sÃ5\x13\x82®\x02\x92ô°M;ù>\x991TÑs\x15Ù")
+ERROR 2025-11-01 14:13:59,052 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:04,543 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:14:06,202 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:14:09,488 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-11-01 14:14:09,489 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:09,517 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x003\x04ï\x04í')
+ERROR 2025-11-01 14:14:09,518 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:10,404 basehttp code 400, message Bad request version ('S0\x16]:ÏIh')
+ERROR 2025-11-01 14:14:10,404 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:10,422 basehttp code 400, message Bad request version ('=4¿GW¼\x14Q^ed¥]k')
+ERROR 2025-11-01 14:14:10,423 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:11,632 basehttp code 400, message Bad request version ('Û¤\x9aA\x19$Ô«\x97h\x84Ck@ÀHÀÁÖ>24~Sõ\x849\x8b\x97Bº\x1b\x140qCòÊ\x18£t\x00\x8a\x11\x81c.\x94)jÅx\x98+Y"\x8f\x86\x04\x039VZ\x06dF{¶£\x19TÒ96ë\x00Dñg\x9b½Ñ_+T/Ò÷Ncó4B')
+ERROR 2025-11-01 14:14:11,633 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:11,633 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-01 14:14:11,634 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:11,736 basehttp code 400, message Bad request version ('¦J\x17')
+ERROR 2025-11-01 14:14:11,736 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:11,737 basehttp code 400, message Bad request version ('*\x00')
+ERROR 2025-11-01 14:14:11,738 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:12,965 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ºº\x00\x00\x00\x12\x00\x00\x00\x17\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-01 14:14:12,966 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:12,982 basehttp code 400, message Bad request version ('\x9cùMø\x17\x87lÔLf\x03|b\x12ÏÕJ¢\x8b`\x1aWÄ\x97\x16B2ñ\x05J7iz²s`©<oÃ9À©Å+\x8fj')
+ERROR 2025-11-01 14:14:12,983 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:15,949 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 301 0
+INFO 2025-11-01 14:14:16,057 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063JJ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-11-01 14:14:16,058 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:16,253 basehttp code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93zz\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-01 14:14:16,254 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:14:36,464 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:14:38,480 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:15:14,929 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:15:41,718 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:15:48,805 basehttp code 400, message Bad request version ('\x87Õ"Í\x86`')
+ERROR 2025-11-01 14:15:48,806 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:49,225 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-11-01 14:15:49,227 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:49,227 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x1a\x1a\x00\x00\x00\x12\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04ÀpÓs=yU4×')
+ERROR 2025-11-01 14:15:49,229 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:49,419 basehttp code 400, message Bad request version ("6f\x7fÅ\x8fÏÓ%L'\x88ª\x063@×î*\x99aT\x91dýl+\x12=")
+ERROR 2025-11-01 14:15:49,419 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:50,251 basehttp code 400, message Bad request version ('|\x8c\x06T\x90È`aBáv\x94e\x90')
+ERROR 2025-11-01 14:15:50,252 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:50,266 basehttp code 400, message Bad request version ('0ÌaÇq-|\x8eº:\x9dÊvH7\x9cÊEIJ.\x8e´âÅN\x99\x16\x18Õ·')
+ERROR 2025-11-01 14:15:50,266 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:52,701 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-01 14:15:52,702 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:15:52,716 basehttp code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-11-01 14:15:52,717 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:17,391 basehttp code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SZZ\x00\x00\x00')
+ERROR 2025-11-01 14:16:17,393 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:17,406 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-11-01 14:16:17,407 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:18,424 basehttp code 400, message Bad request version (':RçöÄ\x91X\x06b\x90h{\x8c\x9dÞ\x8b\x08¤ð\x12%DÆ¹')
+ERROR 2025-11-01 14:16:18,425 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:18,519 basehttp code 400, message Bad request version ('Z\x11rD')
+ERROR 2025-11-01 14:16:18,519 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:19,637 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀÃdC\x14¬Ç\x8c')
+ERROR 2025-11-01 14:16:19,638 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:19,740 basehttp code 400, message Bad request version ('ýÌ\x035¥cîeF\x06pÃÚPh\x1at´\x16ù\x9cÀarý\x83\x89ØuRU´\x12\x86òÄ\x8d\x18>BÛY¿¹\x91\x18\x93')
+ERROR 2025-11-01 14:16:19,741 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:23,535 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Szz\x00\x00\x00#\x00\x00\x003\x04ï\x04í')
+ERROR 2025-11-01 14:16:23,538 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:23,624 basehttp code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93JJ\x00\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04À&HI=\x13ÎÀC^\x9fã¢0\x11ÍSæ}îÅ')
+ERROR 2025-11-01 14:16:23,625 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:30,793 basehttp code 400, message Bad request version ('°,')
+ERROR 2025-11-01 14:16:30,794 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:30,806 basehttp code 400, message Bad request version ("§\x9f»\x82³©k¬rÌ¨Xë1Å\x812F\x14¹Û$ÿW¬\x90'")
+ERROR 2025-11-01 14:16:30,806 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:37,568 basehttp code 400, message Bad request version ('\x9aþ\x97Ö=ìâöL\x8erô÷³')
+ERROR 2025-11-01 14:16:37,570 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:37,675 basehttp code 400, message Bad request version ('H|\x80c')
+ERROR 2025-11-01 14:16:37,677 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:43,002 basehttp code 400, message Bad request version ('oõ¼òcöÇvÈ²Äk#\x9bËÌ\x18ó\x08Í\x00')
+ERROR 2025-11-01 14:16:43,003 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:43,486 basehttp code 400, message Bad request version ('Úÿ/ÿbyÕ@jú`~[4{/ÎLÏ\x11Ôª\x13[Í\x82\x12¦\x83Q±\x18+¸\x16Ï´2.\x115×GðvþJ\x17')
+ERROR 2025-11-01 14:16:43,486 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:43,487 basehttp code 400, message Bad request version ('\x7f\x0e\x98\x91A[e')
+ERROR 2025-11-01 14:16:43,487 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:16:43,597 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06')
+ERROR 2025-11-01 14:16:43,598 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:16:45,583 log Not Found: /
+WARNING 2025-11-01 14:16:45,584 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:16:47,400 log Not Found: /
+WARNING 2025-11-01 14:16:47,402 basehttp "GET / HTTP/1.1" 404 179
+INFO 2025-11-01 14:17:00,582 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:17:00,810 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Ø¢U\x1b[m¡Ë\x84µÕÛ}\x82\x02Õ')
+ERROR 2025-11-01 14:17:00,811 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:01,021 basehttp code 400, message Bad request version ('¿°Á\x06Â!©\x895\x90Ü')
+ERROR 2025-11-01 14:17:01,050 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:09,618 basehttp code 400, message Bad request version ('}ü\x01ÇBÜg&ÛÄ\x87è')
+ERROR 2025-11-01 14:17:09,619 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:09,648 basehttp code 400, message Bad request version ("'u\x8d\xadÎ¹1\x9a\x06J\x13TprÇ¹@hZ\x15:ï\x99á²\x91ÆS\\Ð%ÁÒ5\x19%«Ôx\x16\x0eP´¿~\x02\x03{%\x90,")
+ERROR 2025-11-01 14:17:09,648 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:11,137 basehttp code 400, message Bad request version ('ðCÆ\x8b¶I?¼\x18y\x9a\x88åt\x9aê«¡;As\x0f#i\x0e9FBÊ7îÁÈu¢Æú¸m´\x10)\x88\x17~\x94ÌO\x80*ÈãQ*ÝûÁø')
+ERROR 2025-11-01 14:17:11,137 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:11,165 basehttp code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06súú\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00')
+ERROR 2025-11-01 14:17:11,166 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:18,211 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÚÚ\x00\x00\x00')
+ERROR 2025-11-01 14:17:18,211 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:18,226 basehttp code 400, message Bad request version ('x¹È8ñq@\x84WûA¨3')
+ERROR 2025-11-01 14:17:18,228 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:19,346 basehttp code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063êê\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-11-01 14:17:19,346 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:19,448 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03Ëô\x7fIó®ÿÍ$wlí\x06M')
+ERROR 2025-11-01 14:17:19,452 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:20,983 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-11-01 14:17:20,984 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:17:21,233 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04ÀW;¥\x9c¹5Q\x95\x90"\x07\x83\x9eç°[\x17_\x16Ð\\Å\x18zFó')
+ERROR 2025-11-01 14:17:21,257 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:17:25,597 log Not Found: /
+WARNING 2025-11-01 14:17:25,599 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:17:27,212 log Not Found: /
+WARNING 2025-11-01 14:17:27,213 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:17:29,578 log Not Found: /
+WARNING 2025-11-01 14:17:29,579 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:17:30,818 log Not Found: /
+WARNING 2025-11-01 14:17:30,820 basehttp "GET / HTTP/1.1" 404 179
+INFO 2025-11-01 14:17:55,203 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:17:57,082 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:17:59,692 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:18:01,477 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-01 14:18:05,245 log Not Found: /
+WARNING 2025-11-01 14:18:05,246 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:18:06,552 log Not Found: /
+WARNING 2025-11-01 14:18:06,553 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:18:08,409 log Not Found: /
+WARNING 2025-11-01 14:18:08,410 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:18:12,596 log Not Found: /
+WARNING 2025-11-01 14:18:12,596 basehttp "GET / HTTP/1.1" 404 179
+INFO 2025-11-01 14:18:26,449 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:18:26,630 basehttp code 400, message Bad request version ('4x\x8a`¥£ÂÄ\x14×û!\x9b\x04¯')
+ERROR 2025-11-01 14:18:26,631 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:18:26,735 basehttp code 400, message Bad request version ('2,3§Ä')
+ERROR 2025-11-01 14:18:26,735 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:18:31,420 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03éj.\x19')
+ERROR 2025-11-01 14:18:31,421 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:18:31,442 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-11-01 14:18:31,442 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:18:39,213 basehttp code 400, message Bad request version ('þ)Ünó?AÃ_¢¼\x8e³')
+ERROR 2025-11-01 14:18:39,214 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:18:39,302 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00')
+ERROR 2025-11-01 14:18:39,302 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:19:18,293 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+WARNING 2025-11-01 14:19:18,416 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:19:18,417 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,528 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:19:18,529 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:19:18,530 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,531 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,551 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:18,559 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:19:18,559 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,560 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:19:18,561 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,562 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:18,572 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:19:18,574 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:20,884 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:20,886 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:20,899 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:20,901 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:21,081 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:21,083 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:21,609 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:21,611 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:19:27,799 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:19:29,482 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:19:42,940 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:19:43,399 basehttp "GET /admin/ HTTP/1.1" 200 118330
+WARNING 2025-11-01 14:19:43,616 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:19:43,616 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:19:43,617 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:19:43,623 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:43,624 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,625 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:19:43,625 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,629 log Not Found: /static/jazzmin/js/main.js
+WARNING 2025-11-01 14:19:43,629 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,630 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,630 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,631 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,745 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:19:43,747 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:19:43,748 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:43,748 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:44,014 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:44,015 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:44,045 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:44,048 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:44,257 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:44,261 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:19:46,076 basehttp "GET /admin/ HTTP/1.1" 200 118330
+WARNING 2025-11-01 14:19:46,176 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:19:46,177 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:19:46,178 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:46,179 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:19:46,180 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:19:46,181 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:19:46,200 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,209 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,256 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,258 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,306 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,307 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,343 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:19:46,344 log Not Found: /static/jazzmin/js/main.js
+WARNING 2025-11-01 14:19:46,346 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,346 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,476 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:46,478 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:46,993 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:46,994 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:19:48,040 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 45727
+WARNING 2025-11-01 14:19:48,133 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:19:48,142 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:19:48,146 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-11-01 14:19:48,147 log Not Found: /static/vendor/select2/css/select2.min.css
+WARNING 2025-11-01 14:19:48,151 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-11-01 14:19:48,160 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,160 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,161 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,162 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,162 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,240 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:19:48,244 log Not Found: /static/admin/js/actions.js
+WARNING 2025-11-01 14:19:48,246 log Not Found: /static/admin/js/core.js
+WARNING 2025-11-01 14:19:48,247 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,247 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,248 basehttp "GET /static/admin/js/core.js HTTP/1.1" 404 179
+INFO 2025-11-01 14:19:48,290 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:19:48,313 basehttp "GET /admin/ HTTP/1.1" 200 118330
+WARNING 2025-11-01 14:19:48,337 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-11-01 14:19:48,340 log Not Found: /static/admin/js/urlify.js
+WARNING 2025-11-01 14:19:48,341 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,341 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,426 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-11-01 14:19:48,428 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,527 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:19:48,530 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:19:48,532 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-11-01 14:19:48,540 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:48,542 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:19:48,544 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:19:48,546 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,546 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,548 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,548 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,549 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,550 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,728 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:48,731 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:19:48,735 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:19:48,741 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:19:48,746 log Not Found: /static/vendor/select2/js/select2.min.js
+WARNING 2025-11-01 14:19:48,749 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:48,758 log Not Found: /static/jazzmin/js/main.js
+WARNING 2025-11-01 14:19:48,759 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,759 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,761 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,761 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,762 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,762 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,763 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:48,846 log Not Found: /static/jazzmin/js/change_list.js
+WARNING 2025-11-01 14:19:48,848 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,035 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:19:49,044 log Not Found: /static/jazzmin/js/main.js
+WARNING 2025-11-01 14:19:49,046 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:19:49,049 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,050 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,051 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,238 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:49,239 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,343 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:49,344 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:19:49,354 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:19:49,355 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:11,456 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 90852
+WARNING 2025-11-01 14:20:11,575 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:20:11,576 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:20:11,577 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2025-11-01 14:20:11,578 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:20:11,579 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,579 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,580 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,581 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:11,590 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-11-01 14:20:11,667 log Not Found: /static/vendor/select2/css/select2.min.css
+WARNING 2025-11-01 14:20:11,673 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,689 log Not Found: /static/admin/js/core.js
+WARNING 2025-11-01 14:20:11,690 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2025-11-01 14:20:11,691 basehttp "GET /static/admin/js/core.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,691 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,775 log Not Found: /static/admin/js/SelectFilter2.js
+WARNING 2025-11-01 14:20:11,778 log Not Found: /static/admin/js/SelectBox.js
+WARNING 2025-11-01 14:20:11,781 log Not Found: /static/admin/js/actions.js
+WARNING 2025-11-01 14:20:11,786 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,785 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,784 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,875 log Not Found: /static/admin/js/urlify.js
+WARNING 2025-11-01 14:20:11,878 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2025-11-01 14:20:11,881 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2025-11-01 14:20:11,885 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,885 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,896 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2025-11-01 14:20:11,899 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:11,903 log Not Found: /static/admin/js/change_form.js
+WARNING 2025-11-01 14:20:11,905 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,907 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,909 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:11,910 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,192 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2025-11-01 14:20:12,194 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:20:12,197 log Not Found: /static/jazzmin/js/main.js
+WARNING 2025-11-01 14:20:12,200 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:20:12,204 log Not Found: /static/admin/img/icon-addlink.svg
+WARNING 2025-11-01 14:20:12,207 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:20:12,208 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,209 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,209 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,211 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,212 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,212 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,291 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:12,294 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,410 log Not Found: /static/vendor/select2/js/select2.min.js
+WARNING 2025-11-01 14:20:12,413 log Not Found: /static/jazzmin/js/change_form.js
+WARNING 2025-11-01 14:20:12,415 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,415 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:12,907 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:12,909 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:13,310 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:13,311 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:13,407 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:13,407 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:14,487 basehttp "POST /admin/logout/ HTTP/1.1" 200 2115
+WARNING 2025-11-01 14:20:14,638 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:20:14,643 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:14,646 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:20:14,648 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:20:14,653 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:20:14,656 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:20:14,657 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,658 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,659 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,660 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,660 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,661 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:14,853 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:20:14,859 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:15,155 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:15,157 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:15,762 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:15,763 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:16,479 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:20:16,590 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+WARNING 2025-11-01 14:20:16,687 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:20:16,690 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:20:16,692 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:20:16,694 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:16,700 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,697 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:20:16,698 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,699 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,699 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,696 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:20:16,706 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,706 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,808 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:20:16,809 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:16,910 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:16,911 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:17,331 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:17,334 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:17,728 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:17,730 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,145 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:18,146 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:18,235 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+WARNING 2025-11-01 14:20:18,318 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:20:18,320 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:20:18,321 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:18,321 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:20:18,322 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:20:18,322 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:20:18,323 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,323 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,324 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,325 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,325 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,325 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,341 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:20:18,343 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:18,540 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:18,542 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:19,058 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:19,059 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:20:42,611 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+WARNING 2025-11-01 14:20:42,705 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:20:42,707 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:20:42,707 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:20:42,708 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:42,708 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:20:42,709 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:20:42,710 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,710 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,711 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,711 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,711 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,712 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,818 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:20:42,819 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:42,846 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:42,846 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:20:43,442 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:20:43,444 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:21:15,353 basehttp code 400, message Bad request version ('QòwS?\x00ðD«Aq\x18Ñ\x9akïe/§ài+Î(\x8báË)`!Éi\x08ðôÙl<\x86I\x14½±>N½»4â\x8f\x04p#<¥¶Ë\x16\x16è2¹E\x04kÈpG³¡\x9d5Æ\x19\x1b¿\x9e\x9bº7\x1bU\x1bª\x19')
+ERROR 2025-11-01 14:21:15,353 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:15,355 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-01 14:21:15,355 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:15,409 basehttp code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-11-01 14:21:15,410 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:15,410 basehttp code 400, message Bad request version ('\x8d\x19\x8bõ\x00')
+ERROR 2025-11-01 14:21:15,412 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:15,412 basehttp code 400, message Bad request version ('Êakj\x0f;8\x0féò')
+ERROR 2025-11-01 14:21:15,425 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:15,457 basehttp code 400, message Bad request version ("\x9c\x8a÷v\x9eQb´\x068nu\x00{£Ê;»rªÕ\xad'M\x00")
+ERROR 2025-11-01 14:21:15,458 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:25,434 basehttp code 400, message Bad request version ('\x94,¶)2\x96\x83©©<ìp$ñ¸\x87Kô')
+ERROR 2025-11-01 14:21:25,434 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:25,435 basehttp code 400, message Bad request version ('1ªãB`\x84\x18\x8a\x9eÈq\x19Ù¾bTt/õÉ')
+ERROR 2025-11-01 14:21:25,436 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:42,830 basehttp code 400, message Bad request version ('S6tdL\x95¦1\x1aJ`½Ù\x00¶\xad<}!õFàD\x99×ñ·ñJSÆue=V')
+ERROR 2025-11-01 14:21:42,831 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:42,832 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03\x19Wy')
+ERROR 2025-11-01 14:21:42,834 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:43,083 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06ejj\x00\x00\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04Àsâºuæ\x86=ù¤)·\x06Ãüy*`Á\x9d')
+ERROR 2025-11-01 14:21:43,083 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:43,145 basehttp code 400, message Bad request version ('\x91÷V\x0e¸{µ-#')
+ERROR 2025-11-01 14:21:43,146 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:43,150 basehttp code 400, message Bad request version ('\x9cÿß[µ3\x14ÌT½°Ch)§»ú£¯\x96ck<«\x82\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-11-01 14:21:43,151 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:43,398 basehttp code 400, message Bad request version ('ÍY!2ÿ¼Uº\x03\x00\x17d&\x9fË-!La_s\x12\x90Ã')
+ERROR 2025-11-01 14:21:43,399 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:45,982 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03Fa|@j\x16\x04')
+ERROR 2025-11-01 14:21:45,984 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:45,989 basehttp code 400, message Bad request version ('localhost\x00\x12\x00\x00\x00')
+ERROR 2025-11-01 14:21:45,990 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:46,246 basehttp code 400, message Bad request version ('Ý]ê[¢')
+ERROR 2025-11-01 14:21:46,247 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:46,298 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+INFO 2025-11-01 14:21:46,299 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03\x87\x9fÛ4¦\x96ï\x12Ë²v\x9cTçÒ×LÀ)òw_V¹õ:û¿§ÂÐÝ')
+ERROR 2025-11-01 14:21:46,299 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-01 14:21:46,300 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:46,553 basehttp code 400, message Bad request version ('\x00ú\x00\x00\x01\x00\x01Ú\x00')
+ERROR 2025-11-01 14:21:46,554 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:53,514 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-01 14:21:53,515 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:53,780 basehttp code 400, message Bad request version ('localhost\x00')
+ERROR 2025-11-01 14:21:53,782 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:53,830 basehttp code 400, message Bad request version (';\x15wãúD\x17þ')
+ERROR 2025-11-01 14:21:53,831 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:21:54,093 basehttp code 400, message Bad request version ('Q')
+ERROR 2025-11-01 14:21:54,099 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:21:59,490 log Not Found: /
+WARNING 2025-11-01 14:21:59,492 basehttp "GET / HTTP/1.1" 404 179
+WARNING 2025-11-01 14:21:59,817 log Not Found: /favicon.ico
+WARNING 2025-11-01 14:21:59,818 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-11-01 14:22:05,631 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:22:05,643 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+WARNING 2025-11-01 14:22:05,690 log Not Found: /static/vendor/fontawesome-free/css/all.min.css
+WARNING 2025-11-01 14:22:05,690 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,695 log Not Found: /static/vendor/adminlte/css/adminlte.min.css
+WARNING 2025-11-01 14:22:05,705 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,707 log Not Found: /static/jazzmin/css/main.css
+WARNING 2025-11-01 14:22:05,708 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:22:05,709 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,710 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,715 log Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+WARNING 2025-11-01 14:22:05,716 log Not Found: /static/admin/js/vendor/jquery/jquery.js
+WARNING 2025-11-01 14:22:05,718 log Not Found: /static/vendor/adminlte/js/adminlte.min.js
+WARNING 2025-11-01 14:22:05,720 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,718 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:05,718 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 179
+WARNING 2025-11-01 14:22:08,963 log Not Found: /static/vendor/adminlte/img/AdminLTELogo.png
+WARNING 2025-11-01 14:22:08,964 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+INFO 2025-11-01 14:22:31,572 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:22:33,082 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:22:40,828 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:22:42,261 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:22:47,105 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 301 0
+INFO 2025-11-01 14:22:47,112 basehttp code 400, message Bad request version ('\x8d')
+ERROR 2025-11-01 14:22:47,113 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:22:47,119 basehttp code 400, message Bad request version ('Ã3\x97Ó\x01MÃ\x96Z\x18¬½k+\x00>\x1aFP\x81\x14Î%\x96\x84c°â\x15\x80<Ù\x05Ê\x87ª8#)\x88¥«´g\x81¯bRÒÁ\x9e?êgT©\x12i\x843ÇJÌrd\xad·P´\x98[PË')
+ERROR 2025-11-01 14:22:47,119 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:22:54,344 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x17\x00\x00\x00')
+ERROR 2025-11-01 14:22:54,345 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:22:54,349 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-01 14:22:54,350 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:07,863 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:23:09,589 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:23:11,649 basehttp code 400, message Bad request version ('¬')
+ERROR 2025-11-01 14:23:11,650 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:11,651 basehttp code 400, message Bad request version (']º')
+ERROR 2025-11-01 14:23:11,651 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:11,911 basehttp code 400, message Bad request syntax ("\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03'/Û|")
+ERROR 2025-11-01 14:23:11,912 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:11,913 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-11-01 14:23:11,913 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:16,455 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00\x00')
+ERROR 2025-11-01 14:23:16,456 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:16,458 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00')
+ERROR 2025-11-01 14:23:16,458 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:23:23,134 log Not Found: /
+WARNING 2025-11-01 14:23:23,135 basehttp "GET / HTTP/1.1" 404 4683
+INFO 2025-11-01 14:23:29,471 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:23:29,481 basehttp code 400, message Bad request version ('Á')
+ERROR 2025-11-01 14:23:29,482 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:23:29,483 basehttp code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ZZ\x00\x00\x00')
+ERROR 2025-11-01 14:23:29,483 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:23:35,148 log Not Found: /
+WARNING 2025-11-01 14:23:35,150 basehttp "GET / HTTP/1.1" 404 4683
+WARNING 2025-11-01 14:23:36,453 log Not Found: /
+WARNING 2025-11-01 14:23:36,454 basehttp "GET / HTTP/1.1" 404 4683
+WARNING 2025-11-01 14:23:37,056 log Not Found: /
+WARNING 2025-11-01 14:23:37,057 basehttp "GET / HTTP/1.1" 404 4683
+WARNING 2025-11-01 14:23:57,914 log Not Found: /api/auth/
+WARNING 2025-11-01 14:23:57,915 basehttp "GET /api/auth/ HTTP/1.1" 404 6488
+WARNING 2025-11-01 14:24:10,848 log Method Not Allowed: /api/auth/send-otp/
+WARNING 2025-11-01 14:24:10,849 basehttp "GET /api/auth/send-otp/ HTTP/1.1" 405 40
+WARNING 2025-11-01 14:24:22,608 log Not Found: /
+WARNING 2025-11-01 14:24:22,609 basehttp "GET / HTTP/1.1" 404 4683
+INFO 2025-11-01 14:24:28,665 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-11-01 14:24:28,683 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:24:28,696 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-11-01 14:24:28,697 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:28,698 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-11-01 14:24:28,698 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:43,448 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:24:45,029 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:24:47,331 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:24:48,914 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:24:50,516 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x00')
+INFO 2025-11-01 14:24:50,516 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x8a\x8a\x00\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x003\x04ï\x04í')
+ERROR 2025-11-01 14:24:50,516 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-01 14:24:50,517 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:50,518 basehttp code 400, message Bad request version ('\x97\x99«\x8d(pwãs')
+INFO 2025-11-01 14:24:50,519 basehttp code 400, message Bad request version ('\x151e+¦ò\x9cÞ\x9cK\x81')
+ERROR 2025-11-01 14:24:50,519 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-01 14:24:50,519 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:50,578 basehttp code 400, message Bad request version ('X"3õ;*Ø3%·fÜ')
+INFO 2025-11-01 14:24:50,578 basehttp code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-11-01 14:24:50,578 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-01 14:24:50,579 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:50,582 basehttp code 400, message Bad request version ('\x98\x16\x00')
+INFO 2025-11-01 14:24:50,582 basehttp code 400, message Bad request version ('ë\x80\x9b\x8c#p´o+ÇzP+\x8fÕÁ\x05\x82û¯')
+ERROR 2025-11-01 14:24:50,582 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-01 14:24:50,583 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:50,794 basehttp code 400, message Bad request version ('\x0f\x80qÁ\x91\x9d¯E¥ÎG\x8bV\x96\x03¶¦H,\x94ÃEJÃ#ü¥mt')
+ERROR 2025-11-01 14:24:50,795 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:50,796 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ÓìwÞämÆ\x04v\x92óVu\x1a\x97')
+ERROR 2025-11-01 14:24:50,796 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:52,196 basehttp code 400, message Bad request version ('\x00\x02\x01\x00DÍ\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-01 14:24:52,196 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:52,198 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93zz\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-01 14:24:52,198 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:52,738 basehttp code 400, message Bad request version ('Ö@Ú')
+ERROR 2025-11-01 14:24:52,741 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:24:52,744 basehttp code 400, message Bad request version ('ÁîL\x9d\x05`jt¤0¨iªBªÊæ(IÞFºeË¦sÁ')
+ERROR 2025-11-01 14:24:52,744 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-01 14:24:54,570 log Not Found: /
+WARNING 2025-11-01 14:24:54,571 basehttp "GET / HTTP/1.1" 404 4683
+WARNING 2025-11-01 14:24:55,207 log Not Found: /
+WARNING 2025-11-01 14:24:55,208 basehttp "GET / HTTP/1.1" 404 4683
+WARNING 2025-11-01 14:24:55,602 log Not Found: /
+WARNING 2025-11-01 14:24:55,603 basehttp "GET / HTTP/1.1" 404 4683
+INFO 2025-11-01 14:25:01,670 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:25:01,678 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-11-01 14:25:01,678 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:25:01,680 basehttp code 400, message Bad request version ('iÏj\x95Ci¡Ãn')
+ERROR 2025-11-01 14:25:01,680 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-01 14:25:14,718 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-01 14:25:16,233 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 14:26:40,085 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+INFO 2025-11-01 14:26:40,390 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-01 14:26:40,418 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-01 14:26:40,442 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-01 14:26:40,705 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-01 14:26:41,631 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-01 14:26:41,834 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-01 14:26:42,016 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-01 14:26:42,224 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-01 14:26:42,752 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-01 14:27:10,020 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:27:10,262 basehttp "GET /admin/ HTTP/1.1" 200 118330
+INFO 2025-11-01 14:27:10,457 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-01 14:27:10,537 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-01 14:27:29,444 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:27:29,470 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+INFO 2025-11-01 14:27:29,544 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-01 14:27:29,557 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-01 14:27:29,567 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-01 14:27:29,575 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-01 14:27:29,577 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-01 14:27:29,592 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-01 14:27:29,604 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-01 14:27:33,863 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-01 14:27:41,196 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:27:41,247 basehttp "GET /admin/ HTTP/1.1" 200 118330
+INFO 2025-11-01 14:27:41,307 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-01 14:27:41,338 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-01 14:28:40,749 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 46358
+INFO 2025-11-01 14:28:40,866 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-01 14:28:40,872 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-01 14:28:40,932 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-01 14:28:40,957 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-01 14:28:40,968 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-01 14:28:41,007 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-01 14:28:41,020 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-01 14:28:41,087 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-01 14:28:41,162 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-01 14:28:41,236 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-01 14:28:51,220 basehttp "GET /admin/admin_dashboard/adminactionlog/ HTTP/1.1" 200 47091
+INFO 2025-11-01 14:28:51,296 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:28:52,834 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 45719
+INFO 2025-11-01 14:28:52,892 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:28:54,138 basehttp "GET /admin/admin_dashboard/systemnotification/ HTTP/1.1" 200 46508
+INFO 2025-11-01 14:28:54,225 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:28:55,292 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 46966
+INFO 2025-11-01 14:28:55,355 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:29:02,929 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 46358
+INFO 2025-11-01 14:29:11,644 basehttp "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 43879
+INFO 2025-11-01 14:29:11,740 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:29:14,662 basehttp "GET /admin/token_blacklist/ HTTP/1.1" 200 43580
+INFO 2025-11-01 14:29:16,268 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 46358
+INFO 2025-11-01 14:29:18,372 basehttp "GET /admin/token_blacklist/outstandingtoken/1/change/ HTTP/1.1" 200 49126
+INFO 2025-11-01 14:29:18,444 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:29:18,489 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-01 14:29:18,497 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-01 14:29:18,526 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2025-11-01 14:29:31,313 basehttp "GET /admin/ HTTP/1.1" 200 118330
+INFO 2025-11-01 14:29:33,528 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 54956
+INFO 2025-11-01 14:29:33,578 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:29:33,618 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-01 14:29:33,621 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-01 14:29:42,079 basehttp "GET /admin/accounts/otpverification/4/change/ HTTP/1.1" 200 50260
+INFO 2025-11-01 14:29:42,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:29:42,177 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-11-01 14:29:42,187 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-11-01 14:29:48,368 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55494
+INFO 2025-11-01 14:29:48,425 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:30:02,513 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 90844
+INFO 2025-11-01 14:30:02,576 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:30:02,625 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-11-01 14:30:02,627 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-11-01 14:30:02,644 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-01 14:30:27,936 basehttp "GET /static/jazzmin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-11-01 14:30:32,375 basehttp "POST /admin/accounts/user/1/change/ HTTP/1.1" 302 0
+INFO 2025-11-01 14:30:32,447 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56101
+INFO 2025-11-01 14:30:32,514 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 14:30:49,660 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 46358
+INFO 2025-11-01 14:30:50,345 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-01 14:30:50,347 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-01 14:30:50,349 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-01 14:30:50,349 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-01 14:30:50,350 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-01 14:30:50,694 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-01 14:30:50,713 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-01 14:30:51,156 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-01 14:30:52,037 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-01 14:30:52,037 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-01 14:41:16,851 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 15:03:58,412 autoreload D:\code\copy - fix\backend\drivers\views.py changed, reloading.
+INFO 2025-11-01 15:04:01,096 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 15:04:16,029 autoreload D:\code\copy - fix\backend\drivers\views.py changed, reloading.
+INFO 2025-11-01 15:04:17,443 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 15:04:28,307 autoreload D:\code\copy - fix\backend\drivers\views.py changed, reloading.
+INFO 2025-11-01 15:04:29,865 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 15:05:51,048 autoreload D:\code\copy - fix\backend\drivers\apps.py changed, reloading.
+INFO 2025-11-01 15:05:52,477 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-01 15:08:46,968 log Bad Request: /api/drivers/admin/approve/2/
+WARNING 2025-11-01 15:08:47,930 log Forbidden: /api/drivers/admin/approve/1/
+WARNING 2025-11-01 15:08:47,966 log Bad Request: /api/drivers/apply/
+INFO 2025-11-01 15:26:00,744 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 15:26:12,905 basehttp "GET /admin/ HTTP/1.1" 200 120031
+INFO 2025-11-01 15:26:44,667 basehttp "GET /admin/drivers/driverrating/ HTTP/1.1" 200 46502
+INFO 2025-11-01 15:26:44,766 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 15:27:49,422 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 90906
+INFO 2025-11-01 15:27:49,510 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-01 15:27:53,397 basehttp "GET /admin/ HTTP/1.1" 200 120031
+INFO 2025-11-01 16:16:04,692 autoreload D:\code\copy - fix\backend\rides\views.py changed, reloading.
+INFO 2025-11-01 16:16:09,401 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:20:12,263 autoreload D:\code\copy - fix\backend\rides\apps.py changed, reloading.
+INFO 2025-11-01 16:20:13,919 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:34:54,466 autoreload D:\code\copy - fix\backend\rides\views.py changed, reloading.
+INFO 2025-11-01 16:34:58,938 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:37:38,644 autoreload D:\code\copy - fix\backend\rides\apps.py changed, reloading.
+INFO 2025-11-01 16:37:40,912 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-01 16:41:09,385 log Bad Request: /api/rides/
+ERROR 2025-11-01 16:41:09,422 log Internal Server Error: /api/rides/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "D:\code\copy - fix\backend\rides\serializers.py", line 37, in get_driver_name
+    return obj.driver_full_name
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\rides\models.py", line 145, in driver_full_name
+    return self.driver_name or "Not Assigned"
+           ^^^^^^^^^^^^^^^^
+AttributeError: 'Ride' object has no attribute 'driver_name'. Did you mean: 'driver_full_name'?
+INFO 2025-11-01 16:51:14,625 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:52:27,178 autoreload D:\code\copy - fix\backend\vehicles\apps.py changed, reloading.
+INFO 2025-11-01 16:52:29,000 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:53:12,631 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:53:14,715 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:53:16,300 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:53:17,798 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:53:50,979 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:53:52,705 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:53:56,853 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:53:58,642 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:54:11,741 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:54:13,136 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:54:28,299 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:54:30,035 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:55:02,021 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:55:04,149 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:55:10,307 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:55:11,706 autoreload Watching for file changes with StatReloader
+INFO 2025-11-01 16:55:28,028 autoreload D:\code\copy - fix\backend\vehicles\signals.py changed, reloading.
+INFO 2025-11-01 16:55:29,407 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-02 14:15:56,367 log Not Found: /api/vehicles/calculate-fare/
+WARNING 2025-11-02 14:15:56,386 log Not Found: /api/vehicles/calculate-fare/
+WARNING 2025-11-02 14:15:56,393 log Not Found: /api/vehicles/calculate-fare/
+WARNING 2025-11-02 14:15:56,401 log Not Found: /api/vehicles/detect-city/
+WARNING 2025-11-02 14:15:56,406 log Not Found: /api/vehicles/types/
+WARNING 2025-11-02 14:15:56,418 log Not Found: /api/vehicles/surge-info/
+WARNING 2025-11-02 14:15:56,424 log Not Found: /api/vehicles/cities/
+WARNING 2025-11-02 14:15:56,437 log Not Found: /api/vehicles/calculate-fare/
+WARNING 2025-11-02 15:44:15,218 connection No hostname was supplied. Reverting to default 'localhost'
+INFO 2025-11-02 18:49:15,174 autoreload Watching for file changes with StatReloader
+INFO 2025-11-02 18:49:21,164 basehttp "GET /admin/ HTTP/1.1" 200 120076
+INFO 2025-11-02 18:49:21,240 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:06:33,180 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:11:17,481 basehttp "GET /admin/ HTTP/1.1" 200 120077
+INFO 2025-11-03 20:11:22,428 basehttp "GET /admin/ HTTP/1.1" 200 120077
+INFO 2025-11-03 20:11:22,478 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:11:28,109 basehttp "GET /admin/ HTTP/1.1" 200 120077
+INFO 2025-11-03 20:12:12,437 basehttp "GET /admin/locations/driverlocation/ HTTP/1.1" 200 44097
+INFO 2025-11-03 20:12:12,532 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,559 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,576 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,580 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,589 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,594 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,605 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-11-03 20:12:12,620 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:12:14,738 basehttp "GET /admin/ HTTP/1.1" 200 120077
+INFO 2025-11-03 20:12:16,853 basehttp "GET /admin/locations/recentlocation/ HTTP/1.1" 200 44097
+INFO 2025-11-03 20:12:16,954 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:12:18,066 basehttp "GET /admin/ HTTP/1.1" 200 120077
+INFO 2025-11-03 20:13:33,694 autoreload D:\code\copy - fix\backend\locations\models.py changed, reloading.
+INFO 2025-11-03 20:13:36,180 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:14:06,668 basehttp "GET /admin/locations/driverlocation/ HTTP/1.1" 200 44103
+INFO 2025-11-03 20:14:06,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:14:09,851 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+ERROR 2025-11-03 20:14:15,847 log Internal Server Error: /admin/locations/savedlocation/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: locations_saved_location
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: locations_saved_location
+ERROR 2025-11-03 20:14:15,861 basehttp "GET /admin/locations/savedlocation/ HTTP/1.1" 500 210075
+WARNING 2025-11-03 20:14:16,185 log Not Found: /favicon.ico
+WARNING 2025-11-03 20:14:16,186 basehttp "GET /favicon.ico HTTP/1.1" 404 4734
+INFO 2025-11-03 20:14:22,136 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+INFO 2025-11-03 20:14:26,216 basehttp "GET /admin/locations/ridetracking/ HTTP/1.1" 200 45454
+INFO 2025-11-03 20:14:26,287 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:14:27,274 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+ERROR 2025-11-03 20:14:29,651 log Internal Server Error: /admin/locations/recentlocation/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: locations_recent_location
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\query.py", line 604, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 644, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\query.py", line 626, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: locations_recent_location
+ERROR 2025-11-03 20:14:29,664 basehttp "GET /admin/locations/recentlocation/ HTTP/1.1" 500 209867
+INFO 2025-11-03 20:14:31,029 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+INFO 2025-11-03 20:14:32,847 basehttp "GET /admin/locations/driverlocation/ HTTP/1.1" 200 44103
+INFO 2025-11-03 20:14:32,920 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:14:33,920 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+INFO 2025-11-03 20:22:08,081 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:22:09,892 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:16,332 basehttp "GET /admin/locations/savedlocation/ HTTP/1.1" 200 46508
+INFO 2025-11-03 20:22:16,430 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:22:17,474 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:18,781 basehttp "GET /admin/locations/ridetracking/ HTTP/1.1" 200 45454
+INFO 2025-11-03 20:22:18,855 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:22:20,630 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:21,234 basehttp "GET /admin/locations/ HTTP/1.1" 200 47696
+INFO 2025-11-03 20:22:24,517 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:29,187 basehttp "GET /admin/chat/conversation/ HTTP/1.1" 200 47053
+INFO 2025-11-03 20:22:29,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:22:30,515 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:33,676 basehttp "GET /admin/chat/messageattachment/ HTTP/1.1" 200 45523
+INFO 2025-11-03 20:22:33,780 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:22:34,645 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:22:36,067 basehttp "GET /admin/chat/message/ HTTP/1.1" 200 47629
+INFO 2025-11-03 20:22:36,133 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:22:37,063 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:28:40,129 basehttp "GET /admin/notifications/smslog/ HTTP/1.1" 200 46128
+INFO 2025-11-03 20:28:40,205 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:28:41,287 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:28:43,333 basehttp "GET /admin/notifications/pushtoken/ HTTP/1.1" 200 46049
+INFO 2025-11-03 20:28:43,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:28:44,321 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:28:46,191 basehttp "GET /admin/notifications/notification/ HTTP/1.1" 200 51893
+INFO 2025-11-03 20:28:46,263 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-03 20:28:47,109 basehttp "GET /admin/ HTTP/1.1" 200 120089
+INFO 2025-11-03 20:41:14,729 autoreload D:\code\copy - fix\backend\support\apps.py changed, reloading.
+INFO 2025-11-03 20:41:17,976 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:41:27,718 autoreload D:\code\copy - fix\backend\support\apps.py changed, reloading.
+INFO 2025-11-03 20:41:28,899 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:41:49,773 autoreload D:\code\copy - fix\backend\support\apps.py changed, reloading.
+INFO 2025-11-03 20:41:51,746 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:41:54,957 autoreload D:\code\copy - fix\backend\support\signals.py changed, reloading.
+INFO 2025-11-03 20:41:57,108 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 20:42:32,448 autoreload D:\code\copy - fix\backend\support\signals.py changed, reloading.
+INFO 2025-11-03 20:42:34,512 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 21:55:36,830 autoreload D:\code\copy - fix\backend\analytics\apps.py changed, reloading.
+INFO 2025-11-03 21:55:40,756 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 21:55:55,738 autoreload D:\code\copy - fix\backend\analytics\apps.py changed, reloading.
+INFO 2025-11-03 21:55:57,829 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 21:56:13,702 autoreload D:\code\copy - fix\backend\analytics\apps.py changed, reloading.
+INFO 2025-11-03 21:56:16,181 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 21:56:20,904 autoreload D:\code\copy - fix\backend\analytics\signals.py changed, reloading.
+INFO 2025-11-03 21:56:23,334 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:09:38,889 autoreload D:\code\copy - fix\backend\promotions\apps.py changed, reloading.
+INFO 2025-11-03 22:09:41,519 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:09:53,151 autoreload D:\code\copy - fix\backend\promotions\apps.py changed, reloading.
+INFO 2025-11-03 22:09:54,306 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:15:49,872 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-03 22:15:53,864 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:23:32,050 autoreload D:\code\copy - fix\backend\safety\apps.py changed, reloading.
+INFO 2025-11-03 22:23:35,655 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:23:38,164 autoreload D:\code\copy - fix\backend\safety\apps.py changed, reloading.
+INFO 2025-11-03 22:23:39,497 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:23:51,447 autoreload D:\code\copy - fix\backend\safety\apps.py changed, reloading.
+INFO 2025-11-03 22:23:53,028 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:24:14,049 autoreload D:\code\copy - fix\backend\safety\apps.py changed, reloading.
+INFO 2025-11-03 22:24:16,667 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:28:53,149 autoreload D:\code\copy - fix\backend\safety\apps.py changed, reloading.
+INFO 2025-11-03 22:28:57,693 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:30:59,572 autoreload D:\code\copy - fix\backend\safety\services.py changed, reloading.
+INFO 2025-11-03 22:31:01,770 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:31:07,301 autoreload D:\code\copy - fix\backend\safety\services.py changed, reloading.
+INFO 2025-11-03 22:31:10,381 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:32:03,825 autoreload D:\code\copy - fix\backend\safety\services.py changed, reloading.
+INFO 2025-11-03 22:32:05,577 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:33:04,888 autoreload D:\code\copy - fix\backend\admin_dashboard\views.py changed, reloading.
+INFO 2025-11-03 22:33:07,122 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:34:52,366 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:34:54,302 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:34:58,189 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:34:59,718 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:35:23,747 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:35:25,994 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:35:40,600 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:35:42,169 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:35:44,618 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:35:46,695 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:35:53,693 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:35:54,923 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:36:00,579 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:36:02,018 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:36:04,359 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:36:06,067 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:36:08,457 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:36:10,134 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:36:33,496 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:36:35,624 autoreload Watching for file changes with StatReloader
+INFO 2025-11-03 22:36:48,958 autoreload D:\code\copy - fix\backend\admin_dashboard\apps.py changed, reloading.
+INFO 2025-11-03 22:36:51,618 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:30:04,479 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:31:55,718 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:32:07,533 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:32:07,634 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,673 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55019
+INFO 2025-11-04 11:32:13,805 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:13,818 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,821 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,826 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,837 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,841 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,850 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,855 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,859 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:13,887 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:32:21,348 basehttp "GET /admin/accounts/ HTTP/1.1" 200 45457
+INFO 2025-11-04 11:32:23,071 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:23,118 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:28,352 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:28,564 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:32:28,622 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:32:28,623 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:32:28,641 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:28,642 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:32:28,692 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:32:28,723 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:32:28,819 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:32:28,851 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:32:28,853 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:32:28,864 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:32:28,889 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:32:28,893 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:32:28,909 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:28,938 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:32:29,038 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:32:29,053 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:32:29,105 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:32:29,135 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:32:29,154 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:32:29,173 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:32:29,187 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:32:29,254 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:32:29,452 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:30,498 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:32:30,534 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:32:30,560 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:32:30,567 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:32:30,572 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:32:30,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:32:30,584 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:32:30,597 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:32:30,609 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:32:30,615 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:32:30,617 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:32:30,621 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:32:30,623 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:32:30,624 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:32:30,635 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:32:30,638 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:32:30,756 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:32:30,767 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:32:30,771 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:32:30,774 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:32:30,779 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:32:30,789 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:32:30,812 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:32:30,852 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:32:31,067 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:39:23,169 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:40:33,027 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:40:33,164 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:07,399 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-04 11:42:07,574 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-04 11:42:07,603 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-04 11:42:07,606 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-04 11:42:07,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:07,691 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-04 11:42:07,744 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-04 11:42:07,810 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-04 11:42:07,861 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-04 11:42:07,864 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-04 11:42:07,865 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-04 11:42:07,866 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-04 11:42:07,908 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:42:07,928 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-04 11:42:07,932 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-04 11:42:07,942 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-04 11:42:08,041 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-04 11:42:08,056 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-04 11:42:08,094 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-04 11:42:08,178 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-04 11:42:08,229 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-04 11:42:08,280 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-04 11:42:08,372 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-04 11:42:08,374 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-04 11:42:08,566 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-04 11:42:11,977 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92009
+INFO 2025-11-04 11:42:12,036 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-04 11:42:12,042 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,062 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,072 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,105 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:12,124 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-11-04 11:42:16,503 basehttp "GET /admin/ HTTP/1.1" 200 120164
+INFO 2025-11-04 11:42:45,583 basehttp "GET /admin/ HTTP/1.1" 200 120164
+ERROR 2025-11-04 11:52:41,396 log Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+WARNING 2025-11-04 11:52:41,425 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 23248
+ERROR 2025-11-04 11:52:47,112 log Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.112.65:8000'. You may need to add '192.168.112.65' to ALLOWED_HOSTS.
+WARNING 2025-11-04 11:52:47,114 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 23248
+INFO 2025-11-04 11:53:18,388 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 11:53:27,370 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 11:53:40,834 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-04 11:53:57,533 connection No hostname was supplied. Reverting to default 'localhost'
+ERROR 2025-11-04 11:54:02,627 log Internal Server Error: /api/auth/verify-otp/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\accounts\views.py", line 155, in verify_otp
+    user.save(update_fields=['is_phone_verified'])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\accounts\models.py", line 115, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "D:\code\copy - fix\backend\accounts\signals.py", line 51, in user_phone_verified_handler
+    send_notification_all_channels.delay(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=instance.id,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        send_sms=False
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+ERROR 2025-11-04 11:54:02,646 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 500 29904
+INFO 2025-11-04 11:54:59,991 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55017
+INFO 2025-11-04 11:55:00,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-11-04 11:55:22,521 log Bad Request: /api/auth/verify-otp/
+WARNING 2025-11-04 11:55:22,522 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 34
+WARNING 2025-11-04 12:04:58,890 log Unauthorized: /api/auth/profile/
+WARNING 2025-11-04 12:04:58,893 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-11-04 12:05:51,229 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 12:05:56,087 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:06:42,332 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-04 12:07:00,726 connection No hostname was supplied. Reverting to default 'localhost'
+ERROR 2025-11-04 12:07:05,060 log Internal Server Error: /api/auth/verify-otp/
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 938, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\code\copy - fix\backend\accounts\views.py", line 155, in verify_otp
+    user.save(update_fields=['is_phone_verified'])
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\accounts\models.py", line 115, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "D:\code\copy - fix\backend\accounts\signals.py", line 51, in user_phone_verified_handler
+    send_notification_all_channels.delay(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=instance.id,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        send_sms=False
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\task.py", line 601, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\base.py", line 930, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\celery\app\amqp.py", line 523, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<8 lines>...
+        **properties
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 190, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout, confirm_timeout, retry, retry_policy
+    )
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 200, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 224, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\messaging.py", line 240, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 957, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+ERROR 2025-11-04 12:07:05,078 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 500 29611
+INFO 2025-11-04 12:08:01,195 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:03,169 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:08,536 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:10,381 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:15,679 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:17,500 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:25,884 autoreload D:\code\copy - fix\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-04 12:08:27,963 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:08:32,574 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:48,840 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 993
+INFO 2025-11-04 12:08:49,495 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:08:51,529 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:51,533 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:51,537 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:08:51,543 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:08:51,543 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:08:53,036 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:09:12,569 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-04 12:09:14,414 autoreload Watching for file changes with StatReloader
+INFO 2025-11-04 12:10:58,886 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55900
+INFO 2025-11-04 12:13:22,763 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:13:24,458 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:13:25,683 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:25,698 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:25,703 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:13:25,717 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:13:25,758 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:13:28,040 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:33:36,265 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:33:38,216 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:33:39,435 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,437 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,441 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:33:39,443 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:33:39,446 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:33:40,350 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-04 12:46:27,971 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:46:29,574 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:46:30,841 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:30,844 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:30,849 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-04 12:46:30,849 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-04 12:46:30,855 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-04 12:46:31,803 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-05 16:00:35,763 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-05 16:05:33,626 log Invalid HTTP_HOST header: '192.168.248.65:8000'. You may need to add '192.168.248.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\code\copy - fix\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.248.65:8000'. You may need to add '192.168.248.65' to ALLOWED_HOSTS.
+WARNING 2025-11-05 16:05:33,668 basehttp "GET /api/auth/profile/ HTTP/1.1" 400 23276
+INFO 2025-11-05 16:06:25,181 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-05 16:06:35,371 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 16:06:40,996 autoreload D:\code\copy - fix\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-05 16:06:42,938 autoreload Watching for file changes with StatReloader
+INFO 2025-11-05 16:07:00,957 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:10,595 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 993
+INFO 2025-11-05 16:07:10,880 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:07:11,481 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,484 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,487 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:07:11,488 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:07:11,492 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:07:13,822 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-05 16:11:16,492 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-05 16:11:17,494 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:17,629 basehttp code 400, message Bad request version ('ÅRá\x11Ä3X')
+ERROR 2025-11-05 16:11:17,915 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,755 basehttp code 400, message Bad request version ('ñÓ°\x04Ê¤')
+ERROR 2025-11-05 16:11:25,756 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,757 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03AZq\x91\x8dÒÞ¯Î³ód[®CÉ3\x8c&+\x1aÿ3')
+ERROR 2025-11-05 16:11:25,760 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:25,784 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00')
+INFO 2025-11-05 16:11:25,788 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-05 16:11:25,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-05 16:11:25,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:32,556 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063jj\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-05 16:11:32,556 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:32,560 basehttp code 400, message Bad request version ('_É\x9b\x9b\\M\x1b\x16\x8b\x95åd\x07')
+ERROR 2025-11-05 16:11:32,560 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,787 basehttp code 400, message Bad request version ('ój¡ë\x0e\x96\x07P:\x84A')
+ERROR 2025-11-05 16:11:43,789 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,790 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00')
+ERROR 2025-11-05 16:11:43,792 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,797 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-11-05 16:11:43,803 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:11:43,813 basehttp code 400, message Bad request version ('\x81/#K¯s%')
+ERROR 2025-11-05 16:11:43,926 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-05 16:12:12,392 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:15,067 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:14:16,917 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:18,220 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:14:18,232 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:14:19,509 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 16:14:20,877 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:20,878 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:14:21,097 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:21,098 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:14:21,367 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+WARNING 2025-11-05 16:14:26,688 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:26,688 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:14:27,519 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:14:27,520 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:15:19,152 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-05 16:15:30,167 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:30,168 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:33,961 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:33,962 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:52,517 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:52,517 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743348&longitude=7.4599225 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:15:56,019 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:15:56,020 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743345&longitude=7.4599352 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:23,568 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:23,569 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738091&longitude=7.4596808 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:24,402 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:24,403 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738096&longitude=7.4596782 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:25,285 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:25,286 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738096&longitude=7.4596782 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:26,216 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:26,217 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:27,076 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:27,077 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:27,853 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:27,854 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:28,665 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:28,668 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:29,319 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:29,322 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738101&longitude=7.459676 HTTP/1.1" 404 6135
+WARNING 2025-11-05 16:16:32,195 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:32,196 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738109&longitude=7.4596734 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:34,419 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:34,420 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738109&longitude=7.4596734 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:16:38,174 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:16:38,176 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738113&longitude=7.4596726 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:29:09,938 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:29:11,140 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:29:12,222 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 16:29:12,224 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 16:29:12,277 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:29:12,285 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 16:29:14,074 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 16:29:15,595 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:29:15,596 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:29:15,693 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:29:15,706 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:29:15,835 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+WARNING 2025-11-05 16:34:42,055 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:34:42,056 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9738368&longitude=7.4596226 HTTP/1.1" 404 6136
+WARNING 2025-11-05 16:35:57,972 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 16:35:57,973 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9736574&longitude=7.4594636 HTTP/1.1" 404 6136
+INFO 2025-11-05 16:37:01,897 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:17,532 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:14:19,115 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:21,351 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:14:21,362 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:14:21,362 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:14:21,367 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:14:22,228 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:14:24,249 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:14:24,250 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:14:24,397 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:14:24,397 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:14:24,527 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:01,981 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:15:03,819 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:15:05,361 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:05,369 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:15:05,423 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:15:05,464 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:15:06,355 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:15:07,963 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:15:07,963 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:15:08,085 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:15:08,086 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:15:08,210 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:23,836 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:18:25,785 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:18:26,972 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:26,980 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 17:18:26,988 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 17:18:26,988 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 17:18:28,059 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 17:18:30,152 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:18:30,152 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9735796&longitude=7.4597232 HTTP/1.1" 404 6136
+WARNING 2025-11-05 17:18:30,482 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 17:18:30,483 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9735796&longitude=7.4597232 HTTP/1.1" 404 6136
+INFO 2025-11-05 17:18:30,662 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:21:14,144 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:21:15,767 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:21:16,929 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:21:16,934 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:21:17,003 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:21:17,004 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:21:18,736 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 18:21:20,415 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:21:20,417 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 18:21:20,496 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:21:20,498 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 18:21:20,644 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:23:25,137 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:23:27,255 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:23:28,368 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:23:29,243 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:23:29,251 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:23:29,251 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:23:30,516 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 18:23:32,039 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:23:32,040 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+WARNING 2025-11-05 18:23:32,306 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:23:32,307 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743276&longitude=7.4602796 HTTP/1.1" 404 6136
+INFO 2025-11-05 18:23:32,530 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:26:16,662 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:26:18,315 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:26:19,698 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:26:19,706 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:26:19,712 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:26:21,323 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+INFO 2025-11-05 18:28:24,893 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:28:26,470 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:28:27,771 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 426
+INFO 2025-11-05 18:28:27,777 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:28:27,782 basehttp "GET /api/rides/ HTTP/1.1" 200 52
+INFO 2025-11-05 18:28:27,785 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-05 18:28:28,783 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-05 18:28:30,170 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:28:30,171 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+WARNING 2025-11-05 18:28:30,372 log Not Found: /api/vehicles/types/
+WARNING 2025-11-05 18:28:30,373 basehttp "GET /api/vehicles/types/?city=Abuja&latitude=8.9743344&longitude=7.4599415 HTTP/1.1" 404 6136
+INFO 2025-11-05 18:28:30,560 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-08 17:28:32,349 autoreload Watching for file changes with StatReloader
+INFO 2025-11-08 17:29:14,059 basehttp "GET /admin/ HTTP/1.1" 200 120153
+INFO 2025-11-08 17:29:14,138 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-11-08 17:37:09,134 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-11-08 17:37:25,459 autoreload Watching for file changes with StatReloader
+INFO 2025-11-08 17:40:27,654 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-11-08 17:40:30,242 autoreload Watching for file changes with StatReloader
+INFO 2025-11-08 17:44:14,618 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-11-08 17:44:16,799 autoreload Watching for file changes with StatReloader
+WARNING 2025-11-09 08:37:21,746 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-09 08:37:21,751 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-09 08:37:21,754 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:37:21,757 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:37:21,760 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:37:21,856 connection No hostname was supplied. Reverting to default 'localhost'
+INFO 2025-11-09 08:38:27,835 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-09 08:38:27,911 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,938 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,939 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,954 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,965 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,971 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,979 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:27,992 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,000 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,004 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,012 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,051 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 08:38:28,066 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,071 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,095 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,115 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,127 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,145 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,149 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,171 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:28,172 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2025-11-09 08:38:48,334 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-09 08:38:48,506 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-09 08:38:48,538 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-09 08:38:48,553 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-09 08:38:48,631 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 08:38:48,635 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-09 08:38:48,683 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-09 08:38:48,697 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-09 08:38:48,766 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-09 08:38:48,782 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-09 08:38:48,835 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-09 08:38:48,895 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-09 08:38:48,911 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-09 08:38:48,924 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-09 08:38:48,946 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-09 08:38:48,949 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-09 08:38:48,997 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-09 08:38:49,014 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-09 08:38:49,061 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-09 08:38:49,116 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-09 08:38:49,169 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-09 08:38:49,176 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-09 08:38:49,202 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-09 08:38:49,225 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-09 08:38:49,719 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+WARNING 2025-11-09 08:54:38,705 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-09 08:54:38,740 log Not Found: /api/accounts/send-otp/
+WARNING 2025-11-09 08:54:38,744 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:54:38,750 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:54:38,754 log Not Found: /api/accounts/verify-otp/
+WARNING 2025-11-09 08:54:38,827 connection No hostname was supplied. Reverting to default 'localhost'
+INFO 2025-11-09 09:03:46,800 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\signals.py changed, reloading.
+INFO 2025-11-09 09:03:54,684 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 09:04:01,446 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\utils.py changed, reloading.
+INFO 2025-11-09 09:04:16,843 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 09:06:30,064 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\manage.py changed, reloading.
+INFO 2025-11-09 09:06:33,589 autoreload Watching for file changes with StatReloader
