@@ -1,4 +1,3 @@
-
 """
 FILE LOCATION: rides/tests/test_rides.py
 
@@ -20,6 +19,8 @@ class RideModelTest(TestCase):
     """Test Ride model"""
     
     def setUp(self):
+        from pricing.models import City, VehicleType
+        
         # Create rider
         self.rider = User.objects.create_user(
             phone_number='08011111111',
@@ -39,9 +40,25 @@ class RideModelTest(TestCase):
         self.driver_user.is_driver = True
         self.driver_user.save()
         
+        # Create city and vehicle type
+        self.city = City.objects.create(
+            name='Lagos',
+            state='Lagos State',
+            latitude=Decimal('6.5244'),
+            longitude=Decimal('3.3792'),
+            radius_km=Decimal('50.00')  # Service radius in km
+        )
+        
+        self.vehicle_type = VehicleType.objects.create(
+            id='car',
+            name='Car',
+            description='Standard car',
+            max_passengers=4
+        )
+        
         self.driver = Driver.objects.create(
             user=self.driver_user,
-            vehicle_type='sedan',
+            vehicle_type='car',
             vehicle_color='Black',
             license_plate='ABC123',
             vehicle_year=2020,
@@ -55,6 +72,8 @@ class RideModelTest(TestCase):
         """Test creating a ride"""
         ride = Ride.objects.create(
             user=self.rider,
+            vehicle_type=self.vehicle_type,
+            city=self.city,
             pickup_location='Victoria Island',
             pickup_latitude=6.4281,
             pickup_longitude=3.4219,
@@ -74,6 +93,8 @@ class RideModelTest(TestCase):
         ride = Ride.objects.create(
             user=self.rider,
             driver=self.driver,
+            vehicle_type=self.vehicle_type,
+            city=self.city,
             pickup_location='Test',
             pickup_latitude=0.0,
             pickup_longitude=0.0,
@@ -85,13 +106,15 @@ class RideModelTest(TestCase):
         
         self.assertEqual(ride.driver_full_name, 'Jane Driver')
         self.assertEqual(ride.driver_phone_number, '+2348022222222')
-        self.assertIn('sedan', ride.vehicle_details.lower())
+        self.assertIn('car', ride.vehicle_details.lower())
 
 
 class RideAPITest(APITestCase):
     """Test Ride API endpoints"""
     
     def setUp(self):
+        from pricing.models import City, VehicleType
+        
         # Create rider
         self.rider = User.objects.create_user(
             phone_number='08011111111',
@@ -101,11 +124,60 @@ class RideAPITest(APITestCase):
         self.rider.is_phone_verified = True
         self.rider.save()
         
+        # Create city and vehicle type
+        self.city = City.objects.create(
+            name='Lagos',
+            state='Lagos State',
+            latitude=Decimal('6.5244'),
+            longitude=Decimal('3.3792'),
+            radius_km=Decimal('50.00')  # Service radius in km
+        )
+        
+        self.vehicle_type = VehicleType.objects.create(
+            id='car',
+            name='Car',
+            description='Standard car',
+            max_passengers=4
+        )
+        
         # Authenticate
         self.client.force_authenticate(user=self.rider)
     
     def test_create_ride(self):
         """Test creating a ride via API"""
+        from pricing.models import VehiclePricing
+        from django.core.cache import cache
+        from decimal import Decimal
+        import hashlib
+        
+        # Create vehicle pricing for the city
+        VehiclePricing.objects.create(
+            vehicle_type=self.vehicle_type,
+            city=self.city,
+            base_fare=Decimal('500.00'),
+            price_per_km=Decimal('100.00'),
+            price_per_minute=Decimal('10.00'),
+            minimum_fare=Decimal('800.00')
+        )
+        
+        # First calculate fare to get fare_hash
+        calc_url = '/api/pricing/calculate-fare/'
+        calc_data = {
+            'vehicle_type': 'car',
+            'pickup_latitude': 6.4281,
+            'pickup_longitude': 3.4219,
+            'destination_latitude': 6.4698,
+            'destination_longitude': 3.5852,
+            'city_name': 'Lagos'
+        }
+        calc_response = self.client.post(calc_url, calc_data, format='json')
+        
+        if calc_response.status_code != status.HTTP_200_OK:
+            self.fail(f"Failed to calculate fare: {calc_response.data}")
+        
+        fare_hash = calc_response.data['fare_hash']
+        
+        # Now create ride with fare_hash
         url = '/api/rides/'
         data = {
             'pickup_location': 'Victoria Island',
@@ -115,7 +187,7 @@ class RideAPITest(APITestCase):
             'destination_latitude': 6.4698,
             'destination_longitude': 3.5852,
             'ride_type': 'immediate',
-            'fare_amount': '1500.00'
+            'fare_hash': fare_hash
         }
         
         response = self.client.post(url, data, format='json')
@@ -129,6 +201,8 @@ class RideAPITest(APITestCase):
         # Create test rides
         Ride.objects.create(
             user=self.rider,
+            vehicle_type=self.vehicle_type,
+            city=self.city,
             pickup_location='Test 1',
             pickup_latitude=0.0,
             pickup_longitude=0.0,
@@ -163,9 +237,27 @@ class MutualRatingTest(TestCase):
             last_name='Driver'
         )
         
+        # Create city and vehicle type
+        from pricing.models import City, VehicleType
+        
+        self.city = City.objects.create(
+            name='Lagos',
+            state='Lagos State',
+            latitude=Decimal('6.5244'),
+            longitude=Decimal('3.3792'),
+            radius_km=Decimal('50.00')  # Service radius in km
+        )
+        
+        self.vehicle_type = VehicleType.objects.create(
+            id='car',
+            name='Car',
+            description='Standard car',
+            max_passengers=4
+        )
+        
         self.driver = Driver.objects.create(
             user=self.driver_user,
-            vehicle_type='sedan',
+            vehicle_type='car',
             vehicle_color='Black',
             license_plate='ABC123',
             vehicle_year=2020,
@@ -178,6 +270,8 @@ class MutualRatingTest(TestCase):
         self.ride = Ride.objects.create(
             user=self.rider,
             driver=self.driver,
+            vehicle_type=self.vehicle_type,
+            city=self.city,
             pickup_location='Test',
             pickup_latitude=0.0,
             pickup_longitude=0.0,
@@ -191,12 +285,21 @@ class MutualRatingTest(TestCase):
     
     def test_mutual_rating_creation(self):
         """Test creating mutual rating"""
-        rating = MutualRating.objects.create(
+        rating, created = MutualRating.objects.get_or_create(
             ride=self.ride,
-            rider_rating=5,
-            rider_comment='Great driver!',
-            rider_rated_at=timezone.now()
+            defaults={
+                'rider_rating': 5,
+                'rider_comment': 'Great driver!',
+                'rider_rated_at': timezone.now()
+            }
         )
+        
+        # If it already existed, update it
+        if not created:
+            rating.rider_rating = 5
+            rating.rider_comment = 'Great driver!'
+            rating.rider_rated_at = timezone.now()
+            rating.save()
         
         self.assertFalse(rating.is_complete)
         
@@ -207,8 +310,4 @@ class MutualRatingTest(TestCase):
         rating.save()
         
         self.assertTrue(rating.is_complete)
-
-
-
-
-
+        

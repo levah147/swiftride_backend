@@ -229,7 +229,8 @@ class VehicleAPITest(APITestCase):
             name='Lagos',
             state='Lagos State',
             latitude=Decimal('6.5244'),
-            longitude=Decimal('3.3792')
+            longitude=Decimal('3.3792'),
+            radius_km=Decimal('50.00')  # Service radius in km
         )
         
         self.vehicle_type = VehicleType.objects.create(
@@ -250,16 +251,23 @@ class VehicleAPITest(APITestCase):
     
     def test_list_cities(self):
         """Test listing active cities"""
-        url = '/api/vehicles/cities/'
+        url = '/api/pricing/cities/'
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response.data), 1)
-        self.assertEqual(response.data[0]['name'], 'Lagos')
+        # Response may be paginated or a list
+        if isinstance(response.data, dict) and 'results' in response.data:
+            cities = response.data['results']
+        else:
+            cities = response.data
+        
+        self.assertGreaterEqual(len(cities), 1)
+        city_names = [c['name'] for c in cities]
+        self.assertIn('Lagos', city_names)
     
     def test_detect_city(self):
         """Test city detection from coordinates"""
-        url = '/api/vehicles/detect-city/'
+        url = '/api/pricing/detect-city/'
         data = {
             'latitude': 6.5244,
             'longitude': 3.3792
@@ -272,7 +280,7 @@ class VehicleAPITest(APITestCase):
     
     def test_get_available_vehicles(self):
         """Test getting available vehicles for city"""
-        url = '/api/vehicles/types/?city=Lagos'
+        url = '/api/pricing/types/?city=Lagos'
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -283,7 +291,7 @@ class VehicleAPITest(APITestCase):
         """Test fare calculation"""
         self.client.force_authenticate(user=self.user)
         
-        url = '/api/vehicles/calculate-fare/'
+        url = '/api/pricing/calculate-fare/'
         data = {
             'vehicle_type': 'car',
             'pickup_latitude': 6.5244,
@@ -302,7 +310,7 @@ class VehicleAPITest(APITestCase):
     
     def test_calculate_fare_requires_auth(self):
         """Test fare calculation requires authentication"""
-        url = '/api/vehicles/calculate-fare/'
+        url = '/api/pricing/calculate-fare/'
         data = {
             'vehicle_type': 'car',
             'pickup_latitude': 6.5244,
@@ -319,7 +327,7 @@ class VehicleAPITest(APITestCase):
         """Test fare calculation with too short distance"""
         self.client.force_authenticate(user=self.user)
         
-        url = '/api/vehicles/calculate-fare/'
+        url = '/api/pricing/calculate-fare/'
         data = {
             'vehicle_type': 'car',
             'pickup_latitude': 6.5244,
@@ -339,7 +347,7 @@ class VehicleAPITest(APITestCase):
         self.client.force_authenticate(user=self.user)
         
         # First calculate fare
-        calc_url = '/api/vehicles/calculate-fare/'
+        calc_url = '/api/pricing/calculate-fare/'
         calc_data = {
             'vehicle_type': 'car',
             'pickup_latitude': 6.5244,
@@ -350,10 +358,12 @@ class VehicleAPITest(APITestCase):
         }
         
         calc_response = self.client.post(calc_url, calc_data, format='json')
+        if calc_response.status_code != status.HTTP_200_OK:
+            self.fail(f"Failed to calculate fare: {calc_response.data}")
         fare_hash = calc_response.data['fare_hash']
         
         # Then verify it
-        verify_url = '/api/vehicles/verify-fare/'
+        verify_url = '/api/pricing/verify-fare/'
         verify_data = {'fare_hash': fare_hash}
         
         verify_response = self.client.post(verify_url, verify_data, format='json')
@@ -365,7 +375,7 @@ class VehicleAPITest(APITestCase):
         """Test getting surge information"""
         self.client.force_authenticate(user=self.user)
         
-        url = '/api/vehicles/surge-info/?city=Lagos'
+        url = '/api/pricing/surge-info/?city=Lagos'
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)

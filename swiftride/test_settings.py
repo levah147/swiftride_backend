@@ -38,3 +38,29 @@ LOGGING = {
     },
 }
 
+# Disable rate limiting in tests
+REST_FRAMEWORK = {
+    **REST_FRAMEWORK,
+    'DEFAULT_THROTTLE_CLASSES': [],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': None,
+        'user': None,
+    },
+}
+
+# Override throttle classes for OTP views in tests
+# Patch the OTP throttle rate to be unlimited in tests
+# import sys
+# if 'test' in sys.argv:
+#     from rest_framework.throttling import BaseThrottle
+    
+#     class NoThrottle(BaseThrottle):
+#         def allow_request(self, request, view):
+#             return True
+    
+#     # Monkey patch the OTP throttle to be no-op in tests
+#     import accounts.views
+#     # Replace the throttle class used in the decorator
+#     original_throttle = accounts.views.OTPRequestThrottle
+#     accounts.views.OTPRequestThrottle = NoThrottle
+

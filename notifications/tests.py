@@ -91,21 +91,25 @@ class NotificationModelTest(TestCase):
     
     def test_get_unread_count(self):
         """Test getting unread notification count"""
+        # Get initial count (may have notifications from signals)
+        initial_count = Notification.get_unread_count(self.user)
+        
         # Create 3 notifications
+        notifications = []
         for i in range(3):
-            Notification.objects.create(
+            notifications.append(Notification.objects.create(
                 user=self.user,
                 notification_type='general',
                 title=f'Notification {i}',
                 body=f'Body {i}'
-            )
+            ))
         
         # Mark 1 as read
-        Notification.objects.first().mark_as_read()
+        notifications[0].mark_as_read()
         
-        # Should have 2 unread
+        # Should have initial_count + 2 unread (3 created - 1 read)
         unread_count = Notification.get_unread_count(self.user)
-        self.assertEqual(unread_count, 2)
+        self.assertEqual(unread_count, initial_count + 2)
 
 
 class NotificationPreferenceModelTest(TestCase):

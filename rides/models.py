@@ -44,7 +44,9 @@ class Ride(models.Model):
     vehicle_type = models.ForeignKey(
         'pricing.VehicleType',
         on_delete=models.PROTECT,
-        related_name='rides', default=1
+        related_name='rides',
+        null=True,
+        blank=True
     )
     city = models.ForeignKey(
         'pricing.City',
@@ -142,21 +144,21 @@ class Ride(models.Model):
         """Get driver's full name from Driver model or legacy field"""
         if self.driver:
             return self.driver.user.get_full_name()
-        return self.driver_name or "Not Assigned"
+        return "Not Assigned"
     
     @property
     def driver_phone_number(self):
         """Get driver's phone from Driver model or legacy field"""
         if self.driver:
             return self.driver.user.phone_number
-        return self.driver_phone or "N/A"
+        return "N/A"
     
     @property
     def vehicle_details(self):
         """Get vehicle info from Driver model or legacy field"""
         if self.driver:
             return f"{self.driver.vehicle_type.title()} - {self.driver.vehicle_color} - {self.driver.license_plate}"
-        return self.vehicle_info or "N/A"
+        return "N/A"
 
 
 class RideRequest(models.Model):

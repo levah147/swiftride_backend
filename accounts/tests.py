@@ -227,7 +227,7 @@ class UserProfileAPITest(APITestCase):
     
     def test_get_user_profile(self):
         """Test retrieving user profile."""
-        url = '/api/accounts/profile/'
+        url = '/api/auth/profile/'
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -237,14 +237,15 @@ class UserProfileAPITest(APITestCase):
     
     def test_update_user_profile(self):
         """Test updating user profile."""
-        url = '/api/accounts/profile/update/'
+        url = '/api/auth/profile/update/'
         data = {
             'first_name': 'Jane',
             'last_name': 'Smith',
             'email': 'jane@example.com'
         }
         
-        response = self.client.patch(url, data, format='json')
+        # Use multipart format since the view uses MultiPartParser
+        response = self.client.patch(url, data, format='multipart')
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['first_name'], 'Jane')
@@ -257,7 +258,7 @@ class UserProfileAPITest(APITestCase):
     
     def test_delete_account(self):
         """Test account deletion."""
-        url = '/api/accounts/delete-account/'
+        url = '/api/auth/delete-account/'
         response = self.client.delete(url)
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -270,7 +271,7 @@ class UserProfileAPITest(APITestCase):
         """Test that unauthenticated users cannot access profile."""
         self.client.force_authenticate(user=None)
         
-        url = '/api/accounts/profile/'
+        url = '/api/auth/profile/'
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)

@@ -42,10 +42,10 @@ class VehicleModelTest(TestCase):
         
         # Create vehicle type
         self.vehicle_type = VehicleType.objects.create(
+            id='car',
             name='Sedan',
             description='Standard sedan',
-            base_fare=500,
-            price_per_km=100
+            max_passengers=4
         )
     
     def test_vehicle_creation(self):
@@ -115,10 +115,10 @@ class VehicleAPITest(APITestCase):
         )
         
         self.vehicle_type = VehicleType.objects.create(
+            id='car',
             name='Sedan',
             description='Standard sedan',
-            base_fare=500,
-            price_per_km=100
+            max_passengers=4
         )
         
         self.client.force_authenticate(user=self.user)

@@ -230,6 +230,38 @@ def calculate_fare(request):
     avg_speed = avg_speeds.get(vehicle_type_id, 30)
     duration_minutes = max(int((distance_km / avg_speed) * 60), 1)
     
+    # Get or detect city
+    city = None
+    if data.get('city_name'):
+        try:
+            city = City.objects.get(name__iexact=data['city_name'], is_active=True)
+        except City.DoesNotExist:
+            return Response(
+                {'error': f'City "{data["city_name"]}" not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+    else:
+        # Detect city from coordinates - find the closest city
+        cities = City.objects.filter(is_active=True)
+        if not cities.exists():
+            return Response(
+                {'error': 'No active cities available'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        # Find city with coordinates within service area
+        city = None
+        for c in cities:
+            if c.is_within_service_area(pickup_lat, pickup_lon):
+                city = c
+                break
+        
+        if not city:
+            return Response(
+                {'error': 'Service not available in this area'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+    
     # Get vehicle type and pricing
     try:
         vehicle_type = VehicleType.objects.get(id=vehicle_type_id, is_active=True)
