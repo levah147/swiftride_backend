@@ -1,53 +1,92 @@
-INFO 2025-11-09 10:41:35,803 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\celery.py changed, reloading.
-INFO 2025-11-09 10:42:16,124 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 10:51:35,197 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:05:20,363 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
-INFO 2025-11-09 11:08:09,710 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\requests\api.py changed, reloading.
-INFO 2025-11-09 11:08:20,348 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:19:46,666 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 11:20:02,401 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:21:48,844 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 11:21:58,728 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:22:56,249 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 11:23:01,916 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:24:25,278 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 11:24:29,000 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:27:07,435 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\pricing\views.py changed, reloading.
-INFO 2025-11-09 11:27:14,063 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:28:16,437 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\pricing\views.py changed, reloading.
-INFO 2025-11-09 11:28:19,584 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:29:07,844 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\views.py changed, reloading.
-INFO 2025-11-09 11:29:11,144 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 11:29:29,473 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\pricing\views.py changed, reloading.
-INFO 2025-11-09 11:29:32,584 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 12:21:22,797 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 12:21:28,027 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 12:41:16,878 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
-INFO 2025-11-09 12:41:23,332 basehttp "GET /admin/ HTTP/1.1" 200 120153
-INFO 2025-11-09 12:41:30,697 basehttp "GET /admin/admin_dashboard/adminactionlog/ HTTP/1.1" 200 47175
-INFO 2025-11-09 12:41:30,795 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 12:41:33,270 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 45803
-INFO 2025-11-09 12:41:33,316 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 12:41:34,517 basehttp "GET /admin/admin_dashboard/systemnotification/ HTTP/1.1" 200 46592
-INFO 2025-11-09 12:41:34,586 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 12:41:36,129 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 47050
-INFO 2025-11-09 12:41:36,173 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 12:41:38,688 basehttp "GET /admin/analytics/driverearnings/ HTTP/1.1" 200 44868
-INFO 2025-11-09 12:41:38,737 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 12:41:40,960 basehttp "GET /admin/ HTTP/1.1" 200 120153
-INFO 2025-11-09 18:45:57,268 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\models.py changed, reloading.
-INFO 2025-11-09 18:46:02,343 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 18:49:00,679 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\signals.py changed, reloading.
-INFO 2025-11-09 18:49:04,857 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 18:49:22,035 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\signals.py changed, reloading.
-INFO 2025-11-09 18:49:25,713 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 18:51:00,612 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\signals.py changed, reloading.
-INFO 2025-11-09 18:51:03,615 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 18:57:18,587 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\signals.py changed, reloading.
-INFO 2025-11-09 18:57:21,790 autoreload Watching for file changes with StatReloader
-INFO 2025-11-09 18:59:39,095 basehttp "GET /admin/ HTTP/1.1" 200 120161
-INFO 2025-11-09 19:12:55,063 basehttp "GET /admin/ HTTP/1.1" 200 120161
-INFO 2025-11-09 19:12:58,483 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55015
-INFO 2025-11-09 19:12:58,649 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-11-09 19:13:03,311 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
-INFO 2025-11-09 19:13:03,399 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:34:07,856 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 22:34:13,518 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92009
+INFO 2025-11-09 22:34:13,597 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:34:13,787 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-09 22:34:13,796 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-11-09 22:34:13,799 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-09 22:34:13,799 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-11-09 22:34:13,854 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2025-11-09 22:34:13,877 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-09 22:34:32,060 basehttp "GET /media/profile_pictures/e9e74d4e2e0542ed87d42199dfee5641.jpg HTTP/1.1" 200 295383
+WARNING 2025-11-09 22:34:32,258 log Not Found: /favicon.ico
+WARNING 2025-11-09 22:34:32,258 basehttp "GET /favicon.ico HTTP/1.1" 404 4734
+INFO 2025-11-09 22:34:35,115 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92009
+INFO 2025-11-09 22:34:37,220 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55579
+INFO 2025-11-09 22:34:37,278 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:34:46,795 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 47050
+INFO 2025-11-09 22:34:46,846 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:35:09,195 basehttp "GET /admin/payments/withdrawal/ HTTP/1.1" 200 46140
+INFO 2025-11-09 22:35:09,255 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:35:12,214 basehttp "GET /admin/ HTTP/1.1" 200 120161
+INFO 2025-11-09 22:35:24,607 basehttp "GET /admin/chat/message/ HTTP/1.1" 200 47666
+INFO 2025-11-09 22:35:24,671 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-09 22:35:29,995 basehttp "GET /admin/ HTTP/1.1" 200 120161
+INFO 2025-11-09 22:43:04,170 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\apps.py changed, reloading.
+INFO 2025-11-09 22:43:14,501 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 22:43:52,885 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\signals.py changed, reloading.
+INFO 2025-11-09 22:43:55,976 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 22:44:09,947 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\signals.py changed, reloading.
+INFO 2025-11-09 22:44:14,155 autoreload Watching for file changes with StatReloader
+INFO 2025-11-09 22:46:24,954 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\signals.py changed, reloading.
+INFO 2025-11-09 22:46:28,045 autoreload Watching for file changes with StatReloader
+INFO 2025-11-10 08:13:54,252 basehttp "GET /admin/ HTTP/1.1" 200 120161
+INFO 2025-11-10 15:56:41,744 basehttp "GET /admin/ HTTP/1.1" 200 120162
+INFO 2025-11-10 16:01:36,289 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\notifications\apps.py changed, reloading.
+INFO 2025-11-10 16:01:42,766 autoreload Watching for file changes with StatReloader
+INFO 2025-11-10 16:02:31,983 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x88h$Ö½\x96z8+Ò\x93ÖSæèQ\x8aµ«')
+ERROR 2025-11-10 16:02:31,985 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-10 16:02:31,987 basehttp code 400, message Bad request version ('²nö\\Ë\x9dM9®>>\x8b«-À¶\x9b¤öh+£\x93â\x97öAîKòèý¯\x01øÑFâÂo£7=á\x86«øKMµì%Xv\x83³×Es\x9a\x97E¶bÅ\x04ö\x14')
+ERROR 2025-11-10 16:02:31,990 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-10 16:31:25,504 basehttp "GET /admin/ HTTP/1.1" 200 120162
+INFO 2025-11-10 16:31:26,084 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-10 16:31:26,814 basehttp "GET /admin/ HTTP/1.1" 200 120162
+INFO 2025-11-10 16:31:28,998 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56428
+INFO 2025-11-10 16:31:29,102 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-10 16:31:29,129 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-10 16:31:29,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:31:29,196 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-10 16:31:29,258 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-10 16:31:29,276 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-10 16:31:29,315 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-10 16:31:29,358 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-11-10 16:31:29,404 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-11-10 16:31:29,609 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-10 16:31:51,065 basehttp "POST /admin/logout/ HTTP/1.1" 200 2115
+INFO 2025-11-10 16:31:53,505 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-10 16:31:53,591 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+INFO 2025-11-10 16:32:09,280 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-10 16:32:09,358 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:32:53,105 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 50340
+INFO 2025-11-10 16:32:53,148 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:33:07,808 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56428
+INFO 2025-11-10 16:33:07,866 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:33:17,447 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55015
+INFO 2025-11-10 16:33:17,498 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:02,351 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 47050
+INFO 2025-11-10 16:36:02,430 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:04,613 basehttp "GET /admin/admin_dashboard/systemnotification/ HTTP/1.1" 200 46592
+INFO 2025-11-10 16:36:04,662 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:06,091 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 45803
+INFO 2025-11-10 16:36:06,163 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:07,215 basehttp "GET /admin/admin_dashboard/adminactionlog/ HTTP/1.1" 200 47175
+INFO 2025-11-10 16:36:07,280 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:25,006 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 48526
+INFO 2025-11-10 16:36:25,069 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:41,983 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:36:49,636 basehttp "GET /admin/promotions/promocode/ HTTP/1.1" 200 46162
+INFO 2025-11-10 16:36:49,697 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:51,069 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:36:53,507 basehttp "GET /admin/promotions/referral/ HTTP/1.1" 200 45692
+INFO 2025-11-10 16:36:53,559 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:36:54,603 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:37:07,653 basehttp "GET /admin/safety/safezone/ HTTP/1.1" 200 46030
+INFO 2025-11-10 16:37:07,711 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:37:08,627 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:37:10,368 basehttp "GET /admin/safety/tripshare/ HTTP/1.1" 200 45503
+INFO 2025-11-10 16:37:10,417 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 16:37:11,398 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 16:37:13,084 basehttp "GET /admin/safety/safetysettings/ HTTP/1.1" 200 53666
+INFO 2025-11-10 16:37:13,139 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-10 22:27:46,748 basehttp "GET /admin/safety/safetysettings/ HTTP/1.1" 200 53666
+INFO 2025-11-10 22:27:51,089 basehttp "GET /admin/ HTTP/1.1" 200 118456
+INFO 2025-11-10 22:27:51,178 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0

@@ -14,4 +14,7 @@ class NotificationsConfig(AppConfig):
     def ready(self):
         """Import signals when app is ready"""
         import notifications.signals
+        # CRITICAL: Setup cross-app signal handlers
+        # This connects notifications to all other apps (drivers, rides, payments, vehicles, etc.)
+        notifications.signals.setup_cross_app_signals()
 

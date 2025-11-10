@@ -124,7 +124,7 @@ class NotificationPreferenceModelTest(TestCase):
     
     def test_create_preference(self):
         """Test creating notification preferences"""
-        prefs = NotificationPreference.objects.create(
+        prefs, created = NotificationPreference.objects.get_or_create(
             user=self.user
         )
         
@@ -136,7 +136,7 @@ class NotificationPreferenceModelTest(TestCase):
     
     def test_update_preference(self):
         """Test updating preferences"""
-        prefs = NotificationPreference.objects.create(
+        prefs, created = NotificationPreference.objects.get_or_create(
             user=self.user
         )
         
