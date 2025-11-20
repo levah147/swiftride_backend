@@ -2,7 +2,7 @@ from rest_framework import status, generics
 from rest_framework.decorators import api_view, permission_classes, throttle_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
-from rest_framework.parsers import MultiPartParser, FormParser
+from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework.throttling import AnonRateThrottle
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.utils import timezone
@@ -237,7 +237,7 @@ def resend_otp(request):
     
     # Print OTP to terminal for testing
     print("\n" + "="*60)
-    print(f"🔄 OTP RESEND")
+    print(f"📄 OTP RESEND")
     print(f"Phone Number: {phone_number}")
     print(f"OTP Code: {otp_code}")
     print(f"Expires At: {otp_record.expires_at.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -259,10 +259,18 @@ class UserProfileView(generics.RetrieveAPIView):
 
 
 class UserProfileUpdateView(generics.UpdateAPIView):
-    """Update current user's profile including profile picture upload"""
+    """
+    Update current user's profile including profile picture upload
+    
+    ✅ FIXED: Added JSONParser to accept both JSON and multipart/form-data
+    This allows clients to send either format:
+    - Multipart for file uploads
+    - JSON for text-only updates
+    """
     serializer_class = UserProfileUpdateSerializer
     permission_classes = [IsAuthenticated]
-    parser_classes = (MultiPartParser, FormParser)
+    # ✅ Added JSONParser - now accepts application/json AND multipart
+    parser_classes = (JSONParser, MultiPartParser, FormParser)
     
     def get_object(self):
         return self.request.user

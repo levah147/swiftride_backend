@@ -38,6 +38,9 @@ urlpatterns = [
     
     # Admin Dashboard
     path('api/admin-dashboard/', include('admin_dashboard.urls')),  # 14. Admin API (⚠️ FIXED)
+    
+    # Audit Logging (Admin only)
+    path('api/audit/', include('audit_logging.urls')),  # 15. Audit logs & security events
 ]
 
 # Serve media files in development

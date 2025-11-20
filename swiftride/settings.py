@@ -6,6 +6,12 @@ FILE LOCATION: swiftride/settings.py
 import os
 from pathlib import Path
 from datetime import timedelta
+import sys
+if sys.platform == 'win32':
+    import io
+    # Force UTF-8 encoding for Windows console
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
 
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -16,7 +22,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '192.168.73.65,localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '192.168.141.65,localhost,127.0.0.1').split(',')
+# 2013372886 kuda
 
 # Application definition
 INSTALLED_APPS = [
@@ -56,6 +63,7 @@ INSTALLED_APPS = [
     'promotions',        # 12. Depends on: accounts, rides
     'safety',            # 13. Depends on: accounts, rides
     'admin_dashboard',   # 14. Depends on: all apps ⚠️ FIXED: was 'admin_dashboard_app'
+    'audit_logging',     # 15. Security & compliance - tracks all critical actions
 ]  
  
 MIDDLEWARE = [
@@ -67,6 +75,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Audit logging middleware (must be after authentication)
+    'audit_logging.middleware.AuditLoggingMiddleware',
+    'audit_logging.middleware.SecurityEventMiddleware',
 ]
 
 ROOT_URLCONF = 'swiftride.urls'

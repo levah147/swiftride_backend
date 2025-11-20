@@ -76,10 +76,11 @@ class DriverAdmin(admin.ModelAdmin):
     
     def rating_display(self, obj):
         stars = '★' * int(obj.rating)
+        rating_value = f"{float(obj.rating):.2f}"
         return format_html(
-            '<span style="color: #ffc107;">{}</span> <small>({:.2f})</small>',
+            '<span style="color: #ffc107;">{}</span> <small>({})</small>',
             stars,
-            obj.rating
+            rating_value
         )
     rating_display.short_description = 'Rating'
     rating_display.admin_order_field = 'rating'
