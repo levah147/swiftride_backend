@@ -901,16 +901,6 @@ def wallet_withdraw(request):
         }, status=status.HTTP_400_BAD_REQUEST)
 
 
-# TO BE CONTINUED IN PART 3...
-
-
-
-"""
-FILE LOCATION: payments/views.py - PART 3 (FINAL)
-
-CONTINUE FROM PART 2 - Add this code after wallet_withdraw function
-"""
-
 # ==================== PAYMENT CARDS ====================
 
 class PaymentCardListCreateView(generics.ListCreateAPIView):
