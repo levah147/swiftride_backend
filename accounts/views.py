@@ -85,28 +85,19 @@ def send_otp(request):
         expires_at=timezone.now() + timedelta(minutes=OTP_EXPIRATION_MINUTES)
     )
     
-    # Print OTP to terminal for testing (REMOVE IN PRODUCTION)
-    print("\n" + "="*60)
-    print(f"📱 OTP REQUEST")
-    print(f"Phone Number: {phone_number}")
-    print(f"OTP Code: {otp_code}")
-    print(f"Expires At: {otp_record.expires_at.strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*60 + "\n")
+    # Send OTP via SMS Service
+    success, message = SMSService.send_otp(phone_number, otp_code)
     
-    # TODO: In production, integrate with SMS service
-    # Example with Africa's Talking:
-    # import africastalking
-    # africastalking.initialize(username='your_username', api_key='your_api_key')
-    # sms = africastalking.SMS
-    # response = sms.send(
-    #     f"Your SwiftRide verification code is: {otp_code}. Valid for 10 minutes.",
-    #     [phone_number]
-    # )
-    
-    return Response({
-        'message': 'OTP sent successfully',
-        'expires_in': OTP_EXPIRATION_MINUTES * 60  # seconds
-    }, status=status.HTTP_200_OK)
+    if success:
+        return Response({
+            'message': 'OTP sent successfully',
+            'expires_in': OTP_EXPIRATION_MINUTES * 60
+        }, status=status.HTTP_200_OK)
+    else:
+        return Response({
+            'error': 'Failed to send OTP',
+            'details': message
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 @api_view(['POST'])
@@ -235,18 +226,19 @@ def resend_otp(request):
         expires_at=timezone.now() + timedelta(minutes=OTP_EXPIRATION_MINUTES)
     )
     
-    # Print OTP to terminal for testing
-    print("\n" + "="*60)
-    print(f"📄 OTP RESEND")
-    print(f"Phone Number: {phone_number}")
-    print(f"OTP Code: {otp_code}")
-    print(f"Expires At: {otp_record.expires_at.strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*60 + "\n")
+    # Send OTP via SMS Service
+    success, message = SMSService.send_otp(phone_number, otp_code)
     
-    return Response({
-        'message': 'OTP resent successfully',
-        'expires_in': OTP_EXPIRATION_MINUTES * 60
-    }, status=status.HTTP_200_OK)
+    if success:
+        return Response({
+            'message': 'OTP resent successfully',
+            'expires_in': OTP_EXPIRATION_MINUTES * 60
+        }, status=status.HTTP_200_OK)
+    else:
+        return Response({
+            'error': 'Failed to resend OTP',
+            'details': message
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 class UserProfileView(generics.RetrieveAPIView):
@@ -261,15 +253,9 @@ class UserProfileView(generics.RetrieveAPIView):
 class UserProfileUpdateView(generics.UpdateAPIView):
     """
     Update current user's profile including profile picture upload
-    
-    ✅ FIXED: Added JSONParser to accept both JSON and multipart/form-data
-    This allows clients to send either format:
-    - Multipart for file uploads
-    - JSON for text-only updates
     """
     serializer_class = UserProfileUpdateSerializer
     permission_classes = [IsAuthenticated]
-    # ✅ Added JSONParser - now accepts application/json AND multipart
     parser_classes = (JSONParser, MultiPartParser, FormParser)
     
     def get_object(self):

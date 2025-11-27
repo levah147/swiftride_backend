@@ -156,8 +156,9 @@ class Ride(models.Model):
     @property
     def vehicle_details(self):
         """Get vehicle info from Driver model or legacy field"""
-        if self.driver:
-            return f"{self.driver.vehicle_type.title()} - {self.driver.vehicle_color} - {self.driver.license_plate}"
+        if self.driver and self.driver.current_vehicle:
+            v = self.driver.current_vehicle
+            return f"{v.vehicle_type.name} - {v.color} - {v.license_plate}"
         return "N/A"
 
 

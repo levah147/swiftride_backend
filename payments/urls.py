@@ -51,6 +51,7 @@ urlpatterns = [
     
     # ==================== TRANSACTIONS ====================
     path('transactions/', views.TransactionListView.as_view(), name='transaction_list'),
+    path('transactions/<int:pk>/', views.TransactionDetailView.as_view(), name='transaction_detail'),
     
     # ==================== DEPOSITS (Paystack Integration) ====================
     path('deposit/initialize/', initialize_payment, name='initialize_payment'),

@@ -8,7 +8,7 @@ from accounts.models import User
 import os
 import uuid
 from django.utils import timezone
-from datetime import datetime
+from datetime import datetime, date
 
 
 def driver_document_path(instance, filename):
@@ -35,19 +35,6 @@ class Driver(models.Model):
         ('suspended', 'Suspended'),
     ]
     
-    VEHICLE_TYPE_CHOICES = [
-        ('sedan', 'Sedan'),
-        ('suv', 'SUV'),
-        ('hatchback', 'Hatchback'),
-        ('van', 'Van'),
-        ('truck', 'Truck'),
-    ]
-    
-    license_plate_regex = RegexValidator(
-        regex=r'^[A-Z0-9-]{3,15}$',
-        message="License plate must contain only uppercase letters, numbers, and hyphens (3-15 chars)"
-    )
-    
     user = models.OneToOneField(
         User, 
         on_delete=models.CASCADE, 
@@ -60,23 +47,14 @@ class Driver(models.Model):
         db_index=True
     )
     
-    # Vehicle Information
-    vehicle_type = models.CharField(
-        max_length=50,
-        choices=VEHICLE_TYPE_CHOICES
-    )
-    vehicle_color = models.CharField(max_length=50)
-    license_plate = models.CharField(
-        max_length=20,
-        unique=True,
-        validators=[license_plate_regex],
-        help_text="Vehicle license plate number (uppercase)"
-    )
-    vehicle_year = models.IntegerField(
-        validators=[
-            MinValueValidator(1990, message="Vehicle year cannot be before 1990"),
-            MaxValueValidator(datetime.now().year + 1, message="Invalid vehicle year")
-        ]
+    # Vehicle Info (Now linked to Vehicle model)
+    current_vehicle = models.ForeignKey(
+        'vehicles.Vehicle',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='current_driver',
+        help_text="The vehicle currently being driven"
     )
     
     # Driver Information
@@ -148,7 +126,6 @@ class Driver(models.Model):
         indexes = [
             models.Index(fields=['user', 'status']),
             models.Index(fields=['status', 'is_available']),
-            models.Index(fields=['license_plate']),
             models.Index(fields=['driver_license_number']),
         ]
         verbose_name = 'Driver'
@@ -159,14 +136,18 @@ class Driver(models.Model):
         super().clean()
         
         # Validate license expiry is in the future
-        if self.driver_license_expiry and self.driver_license_expiry <= timezone.now().date():
-            raise ValidationError({
-                'driver_license_expiry': 'Driver license has expired or expiry date is invalid'
-            })
-        
-        # Uppercase license plate
-        if self.license_plate:
-            self.license_plate = self.license_plate.upper().strip()
+        if self.driver_license_expiry:
+            expiry = self.driver_license_expiry
+            if isinstance(expiry, str):
+                try:
+                    expiry = datetime.strptime(expiry, '%Y-%m-%d').date()
+                except ValueError:
+                    pass # Let standard validation handle invalid format
+            
+            if isinstance(expiry, (datetime, date)) and expiry <= timezone.now().date():
+                raise ValidationError({
+                    'driver_license_expiry': 'Driver license has expired or expiry date is invalid'
+                })
     
     def save(self, *args, **kwargs):
         """Override save to run validation"""
@@ -195,7 +176,15 @@ class Driver(models.Model):
     @property
     def license_expired(self):
         """Check if driver's license has expired"""
-        return self.driver_license_expiry <= timezone.now().date()
+        if not self.driver_license_expiry:
+            return False
+        expiry = self.driver_license_expiry
+        if isinstance(expiry, str):
+            try:
+                expiry = datetime.strptime(expiry, '%Y-%m-%d').date()
+            except ValueError:
+                return True # Treat invalid date as expired/invalid
+        return expiry <= timezone.now().date()
     
     @property
     def can_accept_rides(self):
@@ -370,14 +359,8 @@ class DriverRating(models.Model):
         verbose_name_plural = 'Driver Ratings'
         indexes = [
             models.Index(fields=['driver', '-created_at']),
-            models.Index(fields=['rider', '-created_at']),
+            models.Index(fields=['rating']),
         ]
     
     def __str__(self):
-        return f"{self.driver.user.get_full_name()} - {self.rating}★"
-    
-    def save(self, *args, **kwargs):
-        """Update driver's average rating after saving"""
-        super().save(*args, **kwargs)
-        # Update driver rating asynchronously or synchronously
-        self.driver.update_rating()
+        return f"{self.rating} stars for {self.driver.user.get_full_name()}"

@@ -6,6 +6,8 @@ FILE LOCATION: swiftride/settings.py
 import os
 from pathlib import Path
 from datetime import timedelta
+from decouple import config
+
 import sys
 if sys.platform == 'win32':
     import io
@@ -22,13 +24,13 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '192.168.206.65,localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS','192.168.7.65,localhost,127.0.0.1').split(',')
 # 2013372886 kuda
 
 # Application definition
 INSTALLED_APPS = [
     # Django apps
-    'jazzmin',  # Admin interface
+    'jazzmin',  # TODO: Re-enable when dependency is installed  # Admin interface
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +47,7 @@ INSTALLED_APPS = [
     'channels',  # WebSocket support
     'django_filters', 
     'drf_yasg',  # API documentation
-    'sslserver',
+    # 'sslserver',  # TODO: Re-enable when dependency is installed
     'celery',
     
     # SwiftRide apps (in dependency order)
@@ -250,41 +252,6 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60  # 30 minutes
-
-# ========================================
-# CACHE
-# ========================================
-# Development: Local memory cache
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-    }
-}
-
-# Production: Redis cache (uncomment)
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': os.getenv('REDIS_URL', 'redis://localhost:6379/1'),
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
-    }
-}
-
-# ========================================
-# SESSION SETTINGS (⚠️ FIXED: Removed duplicate)
-# ========================================
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Use database sessions
-SESSION_COOKIE_AGE = 86400 * 30  # 30 days
-SESSION_COOKIE_HTTPONLY = True
-SESSION_COOKIE_SECURE = not DEBUG  # True in production
-
-# ========================================
-# FIREBASE CLOUD MESSAGING
-# ========================================
-FCM_SERVER_KEY = os.getenv('FCM_SERVER_KEY', '')
-
 # ========================================
 # SMS PROVIDERS
 # ========================================
@@ -295,9 +262,9 @@ AFRICASTALKING_USERNAME = os.getenv('AFRICASTALKING_USERNAME', 'sandbox')
 AFRICASTALKING_API_KEY = os.getenv('AFRICASTALKING_API_KEY', '')
 
 # Twilio
-TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID', '')
-TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN', '')
-TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER', '')
+TWILIO_ACCOUNT_SID = config('TWILIO_ACCOUNT_SID', '')
+TWILIO_AUTH_TOKEN = config('TWILIO_AUTH_TOKEN', '')
+TWILIO_PHONE_NUMBER = config('TWILIO_PHONE_NUMBER', '')
 
 # Termii
 TERMII_API_KEY = os.getenv('TERMII_API_KEY', '')
@@ -320,7 +287,6 @@ DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', 'SwiftRide <noreply@swiftri
 # ========================================
 # PAYMENT GATEWAYS
 # ========================================
-from decouple import config
 
 PAYSTACK_SECRET_KEY = config('PAYSTACK_SECRET_KEY', default='')
 PAYSTACK_PUBLIC_KEY = config('PAYSTACK_PUBLIC_KEY', default='')

@@ -11,18 +11,18 @@ class DriverAdmin(admin.ModelAdmin):
         'availability_badge', 'total_rides', 'rating_display', 'created_at'
     )
     list_filter = (
-        'status', 'background_check_passed', 'vehicle_type', 
+        'status', 'background_check_passed', 
         'is_online', 'is_available', 'created_at'
     )
     search_fields = (
         'user__phone_number', 'user__first_name', 'user__last_name', 
-        'license_plate', 'driver_license_number'
+        'driver_license_number'
     )
     readonly_fields = (
         'user', 'total_rides', 'completed_rides', 'cancelled_rides',
         'rating', 'total_ratings', 'total_earnings', 'approved_by', 
         'approved_date', 'last_location_update', 'created_at', 'updated_at',
-        'license_status', 'can_accept_rides_display'
+        'license_status', 'can_accept_rides_display', 'current_vehicle_link'
     )
     
     fieldsets = (
@@ -30,7 +30,7 @@ class DriverAdmin(admin.ModelAdmin):
             'fields': ('user',)
         }),
         ('Vehicle Information', {
-            'fields': ('vehicle_type', 'vehicle_color', 'license_plate', 'vehicle_year')
+            'fields': ('current_vehicle', 'current_vehicle_link')
         }),
         ('Driver License', {
             'fields': ('driver_license_number', 'driver_license_expiry', 'license_status')
@@ -71,8 +71,20 @@ class DriverAdmin(admin.ModelAdmin):
     phone_number.admin_order_field = 'user__phone_number'
     
     def vehicle_info(self, obj):
-        return f"{obj.get_vehicle_type_display()} - {obj.license_plate}"
+        if obj.current_vehicle:
+            return f"{obj.current_vehicle.vehicle_type.name} - {obj.current_vehicle.license_plate}"
+        return "No Vehicle"
     vehicle_info.short_description = 'Vehicle'
+    
+    def current_vehicle_link(self, obj):
+        if obj.current_vehicle:
+            return format_html(
+                '<a href="/admin/vehicles/vehicle/{}/change/">{}</a>',
+                obj.current_vehicle.id,
+                str(obj.current_vehicle)
+            )
+        return "No Vehicle Assigned"
+    current_vehicle_link.short_description = 'Current Vehicle Details'
     
     def rating_display(self, obj):
         stars = '★' * int(obj.rating)

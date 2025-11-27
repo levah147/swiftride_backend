@@ -105,14 +105,25 @@ class TransactionListView(generics.ListAPIView):
     
     def get_queryset(self):
         queryset = Transaction.objects.filter(
-            user=self.request.user
-        ).order_by('-created_at')
-        
-        # Filter by type
+        user=self.request.user
+    ).order_by('-created_at')
+    
+    # Filter by type (supports both specific types and credit/debit)
         transaction_type = self.request.query_params.get('type')
         if transaction_type:
-            queryset = queryset.filter(transaction_type=transaction_type)
-        
+        # Handle credit/debit filtering
+            if transaction_type == 'credit':
+                queryset = queryset.filter(
+                transaction_type__in=['deposit', 'ride_earning', 'refund', 'bonus']
+            )
+            elif transaction_type == 'debit':
+                queryset = queryset.filter(
+                transaction_type__in=['withdrawal', 'ride_payment', 'commission']
+            )
+            else:
+            # Specific transaction type
+                queryset = queryset.filter(transaction_type=transaction_type)
+    
         # Filter by status
         transaction_status = self.request.query_params.get('status')
         if transaction_status:
@@ -120,7 +131,21 @@ class TransactionListView(generics.ListAPIView):
         
         return queryset
 
-
+class TransactionDetailView(generics.RetrieveAPIView):
+    """
+    Get detailed information about a specific transaction
+    
+    GET /api/payments/transactions/<id>/
+    
+    Returns complete transaction details including metadata
+    """
+    serializer_class = TransactionSerializer
+    permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        return Transaction.objects.filter(user=self.request.user)
+    
+    
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_wallet_transactions(request):

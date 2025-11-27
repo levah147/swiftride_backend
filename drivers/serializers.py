@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Driver, DriverVerificationDocument, VehicleImage, DriverRating
 from accounts.models import User
+from vehicles.models import Vehicle
+from vehicles.serializers import VehicleSerializer, VehicleCreateSerializer
 import os
 
 
@@ -73,17 +75,19 @@ class DriverRatingSerializer(serializers.ModelSerializer):
 
 class DriverApplicationSerializer(serializers.ModelSerializer):
     """Serializer for driver application submission"""
+    vehicle_details = serializers.JSONField(write_only=True, help_text="Vehicle details (make, model, year, color, plate, type_id)")
     
     class Meta:
         model = Driver
         fields = [
-            'vehicle_type', 'vehicle_color', 'license_plate', 'vehicle_year',
-            'driver_license_number', 'driver_license_expiry'
+            'driver_license_number', 'driver_license_expiry', 'vehicle_details'
         ]
     
-    def validate_license_plate(self, value):
-        if Driver.objects.filter(license_plate=value).exists():
-            raise serializers.ValidationError('This license plate is already registered.')
+    def validate_vehicle_details(self, value):
+        required_fields = ['make', 'model', 'year', 'color', 'license_plate', 'vehicle_type']
+        for field in required_fields:
+            if field not in value:
+                raise serializers.ValidationError(f"Vehicle {field} is required.")
         return value
     
     def validate_driver_license_number(self, value):
@@ -103,13 +107,14 @@ class DriverProfileSerializer(serializers.ModelSerializer):
     verification_documents = DriverVerificationDocumentSerializer(many=True, read_only=True)
     vehicle_images = VehicleImageSerializer(many=True, read_only=True)
     status_display = serializers.CharField(source='get_status_display', read_only=True)
+    current_vehicle = VehicleSerializer(read_only=True)
     
     class Meta:
         model = Driver
         fields = [
             'id', 'user_id', 'phone_number', 'first_name', 'last_name',
             'profile_picture', 'status', 'status_display',
-            'vehicle_type', 'vehicle_color', 'license_plate', 'vehicle_year',
+            'current_vehicle',
             'driver_license_number', 'driver_license_expiry',
             'background_check_passed', 'total_rides', 'rating',
             'verification_documents', 'vehicle_images',
@@ -135,10 +140,11 @@ class DriverStatusSerializer(serializers.ModelSerializer):
     phone_number = serializers.CharField(source='user.phone_number', read_only=True)
     full_name = serializers.CharField(source='user.get_full_name', read_only=True)
     status_display = serializers.CharField(source='get_status_display', read_only=True)
+    current_vehicle = VehicleSerializer(read_only=True)
     
     class Meta:
         model = Driver
-        fields = ['id', 'phone_number', 'full_name', 'status', 'status_display', 'created_at']
+        fields = ['id', 'phone_number', 'full_name', 'status', 'status_display', 'current_vehicle', 'created_at']
         read_only_fields = fields
 
 
@@ -148,12 +154,13 @@ class AdminDriverApprovalSerializer(serializers.ModelSerializer):
     phone_number = serializers.CharField(source='user.phone_number', read_only=True)
     full_name = serializers.CharField(source='user.get_full_name', read_only=True)
     documents_verified_count = serializers.SerializerMethodField()
+    current_vehicle = VehicleSerializer(read_only=True)
     
     class Meta:
         model = Driver
         fields = [
             'id', 'phone_number', 'full_name', 'status',
-            'vehicle_type', 'vehicle_color', 'license_plate',
+            'current_vehicle',
             'driver_license_number', 'background_check_passed',
             'documents_verified_count', 'rejection_reason',
             'created_at'
