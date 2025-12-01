@@ -5427,3 +5427,1491 @@ INFO 2025-11-27 19:21:52,010 basehttp "GET /api/promotions/loyalty/my_points/ HT
 INFO 2025-11-27 19:22:15,814 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
 INFO 2025-11-27 19:22:51,653 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
 INFO 2025-11-27 20:24:46,226 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 20:42:52,721 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 20:42:56,001 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 20:42:56,325 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 20:50:23,676 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-11-27 20:50:40,068 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-27 20:50:56,737 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 791
+INFO 2025-11-27 20:50:57,373 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 20:50:57,554 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 20:50:57,557 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-27 20:50:57,565 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-27 20:50:57,569 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-27 20:50:59,339 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 20:50:59,340 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+WARNING 2025-11-27 20:50:59,398 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 20:50:59,399 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+INFO 2025-11-27 20:50:59,432 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-27 20:51:01,358 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:07:20,903 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-27 21:07:24,791 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 21:07:50,490 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-27 21:08:11,479 log Internal Server Error: /api/payments/wallet/balance/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2025-11-27 21:08:11,486 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 500 26929
+ERROR 2025-11-27 21:08:16,119 log Internal Server Error: /api/payments/wallet/balance/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2025-11-27 21:08:16,123 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 500 26929
+INFO 2025-11-27 21:09:46,129 basehttp "GET /admin/ HTTP/1.1" 200 131173
+INFO 2025-11-27 21:09:49,568 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 57607
+INFO 2025-11-27 21:09:49,657 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-11-27 21:11:43,354 log Internal Server Error: /api/payments/wallet/balance/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2025-11-27 21:11:43,358 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 500 26929
+INFO 2025-11-27 21:12:04,038 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 21:12:13,616 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-27 21:12:28,465 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 4975
+ERROR 2025-11-27 21:12:39,607 log Internal Server Error: /api/payments/wallet/balance/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2025-11-27 21:12:39,611 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 500 26929
+INFO 2025-11-27 21:12:51,959 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-27 21:12:55,863 log Internal Server Error: /api/payments/wallet/balance/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 498, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 397, in initialize_request
+    return Request(
+        request,
+    ...<3 lines>...
+        parser_context=parser_context
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 154, in __init__
+    assert isinstance(request, HttpRequest), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR 2025-11-27 21:12:55,867 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 500 26929
+INFO 2025-11-27 21:16:19,147 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-27 21:16:23,179 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 21:16:24,816 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:26:35,709 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 21:26:37,246 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 21:26:39,286 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:26:39,290 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 21:26:39,290 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-27 21:26:39,331 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-27 21:26:53,636 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 21:26:53,638 basehttp "GET /api/pricing/types/?city=Makurdi HTTP/1.1" 404 63
+INFO 2025-11-27 21:26:53,722 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:26:59,555 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:27:01,191 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 4975
+INFO 2025-11-27 21:32:14,229 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:33:00,885 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:33:16,700 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:33:27,768 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:33:27,768 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-27 21:33:27,775 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-27 21:33:33,791 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 21:33:33,928 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 21:33:34,590 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:33:45,353 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
+INFO 2025-11-27 21:34:02,670 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:34:03,860 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 5515
+INFO 2025-11-27 21:35:00,420 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 5515
+INFO 2025-11-27 21:39:53,284 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-27 21:39:57,106 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 21:40:26,676 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-11-27 21:40:44,963 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 21:40:50,207 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:41:04,548 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 790
+INFO 2025-11-27 21:41:05,286 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 21:41:05,529 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-27 21:41:05,529 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:41:05,534 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 21:41:05,536 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 21:41:10,981 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+WARNING 2025-11-27 21:41:13,237 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 21:41:13,238 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+WARNING 2025-11-27 21:41:13,315 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 21:41:13,315 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+INFO 2025-11-27 21:41:13,405 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-27 21:41:13,628 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 21:41:18,690 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 21:41:25,461 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-27 21:41:47,080 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-27 21:51:15,936 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 22:03:00,880 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 22:03:02,253 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 22:03:03,264 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 22:03:03,268 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-27 22:03:03,269 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-27 22:03:03,269 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-27 22:03:05,877 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 22:03:05,878 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+WARNING 2025-11-27 22:03:05,934 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 22:03:05,934 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+INFO 2025-11-27 22:03:06,085 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-27 22:04:05,532 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 22:04:07,516 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-27 22:04:35,936 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 22:04:37,169 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-27 22:04:47,751 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-27 22:05:04,301 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:06,951 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:08,041 basehttp "GET /api/payments/transactions/?type=credit&page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:08,737 basehttp "GET /api/payments/transactions/?type=debit&page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 22:05:16,278 basehttp "GET /api/payments/transactions/?type=debit&page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 22:05:20,351 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:21,584 basehttp "GET /api/payments/transactions/?type=debit&page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 22:05:24,110 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:25,177 basehttp "GET /api/payments/transactions/?type=credit&page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:25,921 basehttp "GET /api/payments/transactions/?type=debit&page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 22:05:28,804 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-27 22:05:30,110 basehttp "GET /api/payments/transactions/?type=debit&page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-27 22:07:23,065 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58286
+INFO 2025-11-27 22:07:26,350 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58286
+INFO 2025-11-27 22:07:26,521 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:09:34,265 basehttp "GET /admin/payments/wallet/14/change/ HTTP/1.1" 200 54442
+INFO 2025-11-27 22:09:34,364 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,366 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,370 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,376 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,377 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,384 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,384 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,392 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,392 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:34,396 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:09:44,165 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 302 0
+INFO 2025-11-27 22:09:44,520 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58870
+INFO 2025-11-27 22:09:44,567 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:09:44,573 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-11-27 22:09:48,148 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-27 22:09:48,318 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 22:09:49,362 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 22:09:55,441 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-27 22:10:38,966 basehttp "GET /admin/payments/wallet/14/change/ HTTP/1.1" 200 54443
+INFO 2025-11-27 22:10:39,009 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:10:50,817 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 302 0
+INFO 2025-11-27 22:10:50,858 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58879
+INFO 2025-11-27 22:10:50,902 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:10:53,200 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 49
+INFO 2025-11-27 22:10:55,334 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1659
+INFO 2025-11-27 22:12:26,588 basehttp "GET /admin/payments/wallet/14/change/ HTTP/1.1" 200 54451
+INFO 2025-11-27 22:12:26,627 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:12:42,011 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 302 0
+INFO 2025-11-27 22:12:42,055 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58891
+INFO 2025-11-27 22:12:42,094 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:12:45,471 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 56
+INFO 2025-11-27 22:12:50,781 basehttp "GET /admin/payments/wallet/14/change/ HTTP/1.1" 200 54457
+INFO 2025-11-27 22:12:50,826 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:12:56,358 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 200 54843
+INFO 2025-11-27 22:12:56,405 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:13:02,764 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 200 54842
+INFO 2025-11-27 22:13:02,803 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:13:07,797 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 200 54841
+INFO 2025-11-27 22:13:07,838 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:13:12,955 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 200 54840
+INFO 2025-11-27 22:13:12,995 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:13:18,025 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 302 0
+INFO 2025-11-27 22:13:18,063 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58891
+INFO 2025-11-27 22:13:18,102 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:13:25,660 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 56
+INFO 2025-11-27 22:14:48,029 basehttp "GET /admin/payments/wallet/14/change/ HTTP/1.1" 200 54457
+INFO 2025-11-27 22:14:48,075 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:14:56,901 basehttp "POST /admin/payments/wallet/14/change/ HTTP/1.1" 302 0
+INFO 2025-11-27 22:14:56,942 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58876
+INFO 2025-11-27 22:14:56,984 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:14:58,497 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 47
+INFO 2025-11-27 22:15:08,917 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1659
+INFO 2025-11-27 22:18:06,231 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-27 22:18:06,242 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-27 22:18:06,294 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-27 22:18:07,804 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-27 22:26:13,665 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-11-27 22:40:47,172 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-27 22:44:47,256 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58293
+INFO 2025-11-27 22:44:52,008 basehttp "GET /admin/ HTTP/1.1" 200 131141
+INFO 2025-11-27 22:44:56,624 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 64334
+INFO 2025-11-27 22:44:56,854 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-27 22:47:34,589 autoreload Watching for file changes with StatReloader
+INFO 2025-11-27 22:47:38,817 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-27 22:47:41,168 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-11-27 22:47:41,170 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 88
+WARNING 2025-11-27 22:47:47,522 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-11-27 22:47:47,528 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 88
+INFO 2025-11-27 22:48:03,762 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-27 23:02:20,361 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-11-27 23:02:29,323 log Bad Request: /api/auth/verify-otp/
+WARNING 2025-11-27 23:02:29,528 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 51
+INFO 2025-11-27 23:02:46,460 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 992
+INFO 2025-11-27 23:02:47,133 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 23:02:48,014 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 425
+INFO 2025-11-27 23:02:48,019 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-27 23:02:48,023 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-27 23:02:48,028 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-11-27 23:02:51,619 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 23:02:51,621 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+WARNING 2025-11-27 23:02:51,757 log Not Found: /api/pricing/types/
+WARNING 2025-11-27 23:02:51,759 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+INFO 2025-11-27 23:02:52,058 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-27 23:02:53,488 basehttp "GET /media/profile_pictures/2760e84741174aeab1b16ca68ada88d2.jpg HTTP/1.1" 200 37136
+INFO 2025-11-27 23:02:57,913 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-27 23:02:59,500 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1150
+INFO 2025-11-27 23:03:05,276 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 1150
+INFO 2025-11-27 23:03:06,877 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 1150
+INFO 2025-11-27 23:03:07,639 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1150
+INFO 2025-11-28 11:19:33,183 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\promotions\views.py changed, reloading.
+INFO 2025-11-28 11:19:46,511 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 11:55:33,282 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 11:59:53,970 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 64334
+INFO 2025-11-28 12:00:02,163 basehttp "GET /admin/ HTTP/1.1" 200 131197
+INFO 2025-11-28 12:00:02,246 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,318 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,362 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,418 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,429 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,585 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:02,933 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:18,175 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 64334
+INFO 2025-11-28 12:00:18,330 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:18,337 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:18,613 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:00:18,785 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:00:42,965 basehttp "GET /admin/ HTTP/1.1" 200 131197
+INFO 2025-11-28 12:04:30,562 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-28 12:04:40,605 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 12:04:55,664 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:05:15,285 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 795
+INFO 2025-11-28 12:05:15,982 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:05:17,849 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:05:17,856 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:05:17,858 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:05:17,858 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:05:20,736 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:05:20,737 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738214&longitude=7.4596508 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:05:20,844 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:05:20,845 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738214&longitude=7.4596508 HTTP/1.1" 404 61
+INFO 2025-11-28 12:05:21,115 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:05:23,034 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:05:33,402 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:05:33,404 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-28 12:05:33,406 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 12:05:36,297 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-28 12:05:42,043 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-28 12:06:01,551 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:06:03,335 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-28 12:13:10,394 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:13:11,949 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-11-28 12:13:26,938 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:13:41,563 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:51,063 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:52,214 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:53,530 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:54,390 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:55,118 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:13:56,009 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:18,432 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:20,441 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:21,524 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:22,441 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:23,559 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:14:24,292 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 587
+INFO 2025-11-28 12:16:15,383 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:17:16,450 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1123
+INFO 2025-11-28 12:17:27,881 basehttp "GET /admin/ HTTP/1.1" 200 131191
+INFO 2025-11-28 12:17:30,561 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 65168
+INFO 2025-11-28 12:17:30,667 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:17:33,943 basehttp "GET /admin/accounts/user/16/change/ HTTP/1.1" 200 93365
+INFO 2025-11-28 12:17:33,987 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:17:34,003 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-11-28 12:17:39,068 basehttp "GET /static/jazzmin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-11-28 12:17:47,058 basehttp "GET /admin/ HTTP/1.1" 200 131191
+INFO 2025-11-28 12:17:51,055 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 12:17:51,101 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:18:01,434 basehttp "GET /admin/payments/wallet/15/change/ HTTP/1.1" 200 54497
+INFO 2025-11-28 12:18:01,478 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:18:11,847 basehttp "GET /admin/ HTTP/1.1" 200 131191
+INFO 2025-11-28 12:18:16,050 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 75179
+INFO 2025-11-28 12:18:16,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:31:49,370 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:31:56,488 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:32:52,578 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 75893
+INFO 2025-11-28 12:32:52,692 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:32:52,884 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-28 12:32:52,898 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-28 12:32:52,908 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 12:32:52,944 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 12:32:53,007 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-28 12:32:53,011 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-28 12:32:53,024 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 12:32:53,045 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-28 12:32:53,073 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-28 12:32:53,091 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 12:32:53,093 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-28 12:32:53,118 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 12:32:53,209 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 12:32:53,211 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 12:32:53,274 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 12:32:53,316 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-28 12:32:53,320 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-28 12:32:53,321 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-28 12:32:53,407 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 12:32:53,411 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 12:32:54,083 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 12:32:58,509 basehttp "GET /admin/payments/ HTTP/1.1" 200 56303
+INFO 2025-11-28 12:33:00,310 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 12:33:00,355 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:35:20,048 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:35:22,001 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:35:23,050 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:35:23,062 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:35:23,062 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:35:23,067 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:35:25,382 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:35:25,383 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738926&longitude=7.4598526 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:35:25,518 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:35:25,520 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738926&longitude=7.4598526 HTTP/1.1" 404 61
+INFO 2025-11-28 12:35:26,041 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:36:19,425 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:36:21,325 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1659
+INFO 2025-11-28 12:36:30,214 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 1659
+INFO 2025-11-28 12:36:30,749 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 1659
+INFO 2025-11-28 12:36:38,283 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:38:26,448 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:38:28,261 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:38:29,378 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:38:29,518 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:38:29,522 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:38:29,528 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:38:31,461 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:38:31,462 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736635&longitude=7.4597439 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:38:31,641 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:38:31,642 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736635&longitude=7.4597439 HTTP/1.1" 404 61
+INFO 2025-11-28 12:38:32,012 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:38:34,141 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:38:35,343 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 2195
+INFO 2025-11-28 12:42:10,188 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
+INFO 2025-11-28 12:42:26,719 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:42:28,527 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:42:30,080 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:42:30,085 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:42:30,087 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:42:30,089 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:42:31,318 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:42:31,318 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736781&longitude=7.459746 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:42:31,483 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:42:31,484 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736781&longitude=7.459746 HTTP/1.1" 404 61
+INFO 2025-11-28 12:42:31,926 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:43:12,241 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:43:19,060 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:44:09,485 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:44:11,377 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:44:12,470 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:44:12,474 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:44:12,564 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:44:12,568 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:44:14,211 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:44:14,213 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736928&longitude=7.4597589 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:44:14,415 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:44:14,417 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736928&longitude=7.4597589 HTTP/1.1" 404 61
+INFO 2025-11-28 12:44:14,874 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:44:44,780 basehttp "GET /admin/payments/ HTTP/1.1" 200 56303
+INFO 2025-11-28 12:44:47,130 basehttp "GET /admin/payments/withdrawal/ HTTP/1.1" 200 47268
+INFO 2025-11-28 12:44:47,188 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:44:50,729 basehttp "GET /admin/payments/ HTTP/1.1" 200 56303
+INFO 2025-11-28 12:44:52,171 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 12:44:52,212 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:44:55,530 basehttp "GET /admin/payments/ HTTP/1.1" 200 56303
+INFO 2025-11-28 12:44:57,249 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 78035
+INFO 2025-11-28 12:44:57,299 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:45:14,390 basehttp "GET /admin/payments/ HTTP/1.1" 200 56303
+INFO 2025-11-28 12:45:20,876 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 12:45:20,921 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:45:23,665 basehttp "GET /admin/payments/wallet/15/change/ HTTP/1.1" 200 54497
+INFO 2025-11-28 12:45:23,705 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 12:46:14,092 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:46:15,689 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:46:16,724 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:46:16,825 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:46:16,837 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:46:16,837 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+WARNING 2025-11-28 12:46:18,484 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:46:18,485 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736765&longitude=7.4597029 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:46:18,994 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:46:18,995 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9736765&longitude=7.4597029 HTTP/1.1" 404 61
+INFO 2025-11-28 12:46:19,047 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:46:21,125 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:46:25,260 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 3270
+INFO 2025-11-28 12:46:26,582 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 3270
+INFO 2025-11-28 12:46:27,163 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 3270
+INFO 2025-11-28 12:46:28,039 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 3270
+INFO 2025-11-28 12:46:37,489 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:47:34,608 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:47:36,401 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:47:37,989 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:47:37,998 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:47:38,006 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:47:38,010 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-11-28 12:47:40,063 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:47:40,064 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738192&longitude=7.4596524 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:47:40,137 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:47:40,138 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738192&longitude=7.4596524 HTTP/1.1" 404 61
+INFO 2025-11-28 12:47:40,401 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:54:04,977 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:54:06,448 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:54:08,480 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:54:08,485 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:54:08,490 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:54:08,490 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-11-28 12:54:10,798 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:54:10,799 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.973821&longitude=7.4596516 HTTP/1.1" 404 61
+WARNING 2025-11-28 12:54:10,921 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:54:10,923 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.973821&longitude=7.4596516 HTTP/1.1" 404 61
+INFO 2025-11-28 12:54:11,266 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:54:23,529 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 12:54:30,446 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
+INFO 2025-11-28 12:55:01,125 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 4345
+INFO 2025-11-28 12:55:38,347 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 12:57:09,474 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:57:28,080 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:57:29,915 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 12:57:31,100 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:57:31,107 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 12:57:31,107 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 12:57:31,110 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 12:57:34,019 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:57:34,021 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738207&longitude=7.4596524 HTTP/1.1" 404 61
+INFO 2025-11-28 12:57:34,227 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+WARNING 2025-11-28 12:57:34,232 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 12:57:34,232 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738207&longitude=7.4596524 HTTP/1.1" 404 61
+INFO 2025-11-28 12:57:34,306 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 12:57:35,790 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 4881
+INFO 2025-11-28 13:11:03,796 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:11:07,280 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:11:09,996 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:11:10,000 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 13:11:10,006 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:11:10,006 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:11:16,250 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+WARNING 2025-11-28 13:11:17,751 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:11:17,751 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738216&longitude=7.45965 HTTP/1.1" 404 61
+WARNING 2025-11-28 13:11:17,969 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:11:17,970 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738216&longitude=7.45965 HTTP/1.1" 404 61
+INFO 2025-11-28 13:11:18,120 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:11:21,995 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 4881
+INFO 2025-11-28 13:12:26,994 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:12:36,185 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
+INFO 2025-11-28 13:13:25,815 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 5421
+INFO 2025-11-28 13:13:34,944 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:13:35,252 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:13:36,071 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:13:38,069 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 5421
+INFO 2025-11-28 13:14:05,158 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:14:07,104 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:14:08,912 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:14:08,928 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 13:14:08,931 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:14:08,935 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 13:14:12,121 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:14:12,121 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738216&longitude=7.45965 HTTP/1.1" 404 61
+WARNING 2025-11-28 13:14:12,236 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:14:12,237 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738216&longitude=7.45965 HTTP/1.1" 404 61
+INFO 2025-11-28 13:14:12,309 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:14:15,561 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:14:27,390 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 13:14:55,784 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:15:00,794 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 5944
+INFO 2025-11-28 13:15:10,701 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:15:18,601 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 13:16:01,131 basehttp "GET /admin/payments/wallet/15/change/ HTTP/1.1" 200 54497
+INFO 2025-11-28 13:16:04,849 basehttp "GET /admin/payments/ HTTP/1.1" 200 56295
+INFO 2025-11-28 13:16:06,859 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 82297
+INFO 2025-11-28 13:16:06,923 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:16:14,469 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 82297
+INFO 2025-11-28 13:16:14,548 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 13:16:14,557 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-28 13:16:14,564 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 13:16:14,565 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 13:16:14,570 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-28 13:16:14,579 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-28 13:16:14,582 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-28 13:16:14,588 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:16:14,592 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 13:16:14,621 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-28 13:16:14,622 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-28 13:16:14,623 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-28 13:16:14,639 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-28 13:16:14,655 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:16:14,656 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 13:16:14,716 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 13:16:14,717 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-28 13:16:14,730 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-28 13:16:14,732 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 13:16:14,733 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 13:16:14,740 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 13:16:15,138 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:16:19,526 basehttp "GET /admin/payments/transaction/43/change/ HTTP/1.1" 200 71118
+INFO 2025-11-28 13:16:19,591 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:16:43,573 basehttp "POST /admin/payments/transaction/43/change/ HTTP/1.1" 302 0
+INFO 2025-11-28 13:16:43,674 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 82904
+INFO 2025-11-28 13:16:43,744 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:17:13,532 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 82299
+INFO 2025-11-28 13:17:13,578 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 13:17:13,586 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-28 13:17:13,588 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 13:17:13,594 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-28 13:17:13,598 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-28 13:17:13,599 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-28 13:17:13,600 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-28 13:17:13,602 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 13:17:13,609 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-28 13:17:13,609 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-28 13:17:13,619 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 13:17:13,629 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:17:13,631 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:17:13,634 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-28 13:17:13,636 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 13:17:13,669 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 13:17:13,689 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 13:17:13,695 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-28 13:17:13,699 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-28 13:17:14,352 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 13:17:14,354 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 13:17:14,836 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:17:20,451 basehttp "GET /admin/payments/ HTTP/1.1" 200 56294
+INFO 2025-11-28 13:17:22,134 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 13:17:22,183 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:17:28,696 basehttp "GET /admin/payments/wallet/15/change/ HTTP/1.1" 200 54497
+INFO 2025-11-28 13:17:28,740 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:17:31,794 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 13:17:36,182 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:17:37,312 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 6507
+INFO 2025-11-28 13:17:45,598 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:17:54,282 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 185
+INFO 2025-11-28 13:18:09,048 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 13:18:09,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:18:11,265 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 13:18:11,303 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:18:14,624 basehttp "GET /admin/payments/ HTTP/1.1" 200 56293
+INFO 2025-11-28 13:18:16,278 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 83014
+INFO 2025-11-28 13:18:16,317 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:18:19,779 basehttp "GET /admin/payments/transaction/44/change/ HTTP/1.1" 200 71093
+INFO 2025-11-28 13:18:19,834 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:19:02,894 basehttp "POST /admin/payments/transaction/44/change/ HTTP/1.1" 302 0
+INFO 2025-11-28 13:19:02,966 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 83622
+INFO 2025-11-28 13:19:03,018 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:19:09,502 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 83016
+INFO 2025-11-28 13:19:09,539 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 13:19:09,553 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 13:19:09,560 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-28 13:19:09,576 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-28 13:19:09,576 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 13:19:09,576 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-28 13:19:09,581 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-28 13:19:09,581 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-28 13:19:09,594 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 13:19:09,598 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-28 13:19:09,600 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-28 13:19:09,607 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:19:09,607 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:19:09,620 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-28 13:19:09,628 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 13:19:09,693 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 13:19:09,694 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 13:19:09,700 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-28 13:19:09,701 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-28 13:19:09,887 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 13:19:09,890 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 13:19:10,258 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 13:19:15,921 basehttp "GET /admin/payments/ HTTP/1.1" 200 56284
+INFO 2025-11-28 13:19:17,603 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 58972
+INFO 2025-11-28 13:19:17,642 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:21:09,882 basehttp "GET /admin/ HTTP/1.1" 200 131179
+INFO 2025-11-28 13:21:11,754 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 65168
+INFO 2025-11-28 13:21:11,805 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 13:29:11,519 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 13:37:44,316 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\promotions\views.py changed, reloading.
+INFO 2025-11-28 13:37:50,720 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 13:53:40,648 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:53:41,795 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:53:42,892 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:53:42,901 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:53:42,902 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:53:42,913 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-11-28 13:53:46,579 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:53:46,580 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738207&longitude=7.4596524 HTTP/1.1" 404 61
+WARNING 2025-11-28 13:53:46,726 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:53:46,727 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9738207&longitude=7.4596524 HTTP/1.1" 404 61
+INFO 2025-11-28 13:53:47,144 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:54:24,370 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:54:24,370 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 13:54:24,379 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+INFO 2025-11-28 13:54:33,839 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 13:54:34,121 basehttp "GET /api/promotions/referrals/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:54:39,907 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 131
+ERROR 2025-11-28 13:54:45,312 log Internal Server Error: /api/promotions/loyalty/redeem/
+ERROR 2025-11-28 13:54:45,313 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 500 70
+WARNING 2025-11-28 13:54:54,622 log Bad Request: /api/promotions/loyalty/redeem/
+WARNING 2025-11-28 13:54:54,623 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 400 45
+INFO 2025-11-28 13:55:47,232 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:55:49,187 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 13:55:50,327 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:55:50,332 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
+INFO 2025-11-28 13:55:50,338 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 13:55:50,341 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-28 13:55:52,529 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:55:52,529 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9737598&longitude=7.4597481 HTTP/1.1" 404 61
+WARNING 2025-11-28 13:55:52,596 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 13:55:52,597 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9737598&longitude=7.4597481 HTTP/1.1" 404 61
+INFO 2025-11-28 13:55:52,749 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:55:56,004 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 13:55:56,010 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 13:55:56,012 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 129
+INFO 2025-11-28 13:56:05,266 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-28 13:56:20,038 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-11-28 13:56:41,088 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-28 13:56:42,115 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 8075
+INFO 2025-11-28 13:56:59,977 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 8075
+INFO 2025-11-28 13:57:01,098 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 8075
+INFO 2025-11-28 13:57:01,895 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 8075
+INFO 2025-11-28 16:31:25,854 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 16:32:30,327 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 16:40:40,024 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 16:41:23,606 basehttp "GET /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-11-28 16:41:23,777 basehttp "GET /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 200 3082
+INFO 2025-11-28 16:41:30,438 basehttp "POST /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-11-28 16:41:30,552 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55031
+INFO 2025-11-28 16:41:30,616 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 16:41:37,141 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 16:41:43,063 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 51464
+INFO 2025-11-28 16:41:43,102 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 16:41:49,801 basehttp "GET /admin/payments/ HTTP/1.1" 200 47104
+INFO 2025-11-28 16:41:52,845 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 49692
+INFO 2025-11-28 16:41:52,885 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 16:41:55,284 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55031
+INFO 2025-11-28 16:41:55,338 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 16:42:03,485 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 48794
+INFO 2025-11-28 16:42:03,535 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 16:42:08,123 basehttp "GET /admin/ HTTP/1.1" 200 121998
+WARNING 2025-11-28 18:09:10,015 log Unauthorized: /api/auth/profile/
+WARNING 2025-11-28 18:09:10,034 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 51
+WARNING 2025-11-28 18:09:10,454 log Unauthorized: /api/auth/logout/
+WARNING 2025-11-28 18:09:10,455 basehttp "POST /api/auth/logout/ HTTP/1.1" 401 51
+INFO 2025-11-28 18:09:46,713 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:04,451 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 789
+INFO 2025-11-28 18:10:05,183 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 18:10:06,118 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:06,120 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:06,124 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 222
+INFO 2025-11-28 18:10:06,127 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-28 18:10:11,532 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-11-28 18:10:13,940 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-28 18:10:13,945 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:13,945 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+WARNING 2025-11-28 18:10:21,312 log Not Found: /api/pricing/types/
+WARNING 2025-11-28 18:10:21,313 basehttp "GET /api/pricing/types/?city=Makurdi HTTP/1.1" 404 63
+INFO 2025-11-28 18:10:21,594 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:22,032 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-28 18:10:27,287 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:38,804 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 18:10:38,820 basehttp "GET /api/promotions/referrals/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:55,353 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-28 18:10:55,362 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-28 18:10:55,366 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-28 18:11:00,775 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+ERROR 2025-11-28 18:11:08,535 log Internal Server Error: /api/promotions/loyalty/redeem/
+ERROR 2025-11-28 18:11:08,539 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 500 70
+INFO 2025-11-28 18:11:22,738 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-28 18:11:25,572 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-28 18:11:26,625 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-28 18:11:40,082 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-28 18:11:41,073 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-28 18:11:41,798 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-28 18:11:42,432 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-28 22:09:57,932 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-28 22:10:05,752 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:10:08,304 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-28 22:10:11,081 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:10:13,203 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-28 22:10:15,571 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:11:07,250 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-28 22:11:11,089 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:11:14,699 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\views.py changed, reloading.
+INFO 2025-11-28 22:11:19,441 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:18:53,933 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 22:18:57,406 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 51466
+INFO 2025-11-28 22:18:57,495 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 22:48:47,002 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:48:51,332 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:49:37,753 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:49:40,347 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:50:01,683 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:50:03,547 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:50:07,156 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:50:10,414 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:50:25,809 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:50:28,328 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:50:39,120 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:50:42,299 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:51:31,421 basehttp "GET /admin/ HTTP/1.1" 200 121964
+INFO 2025-11-28 22:51:31,489 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,491 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,501 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,503 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,515 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,519 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,525 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,653 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:31,654 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:33,568 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 54966
+INFO 2025-11-28 22:51:33,609 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:33,654 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:33,660 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 22:51:33,664 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:40,372 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92164
+INFO 2025-11-28 22:51:40,429 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 22:51:40,435 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-11-28 22:51:48,638 basehttp "GET /static/jazzmin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-11-28 22:52:42,346 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:52:46,826 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:52:52,413 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:52:53,899 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:52:58,411 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:53:01,086 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:53:05,902 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92164
+INFO 2025-11-28 22:53:05,970 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 22:53:06,133 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 22:53:06,156 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-28 22:53:06,167 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-28 22:53:06,189 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 22:53:06,196 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-28 22:53:06,221 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 22:53:06,312 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-11-28 22:53:06,317 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-11-28 22:53:06,322 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-28 22:53:06,332 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-28 22:53:06,380 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-28 22:53:06,383 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-28 22:53:06,438 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 22:53:06,449 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 22:53:06,472 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-28 22:53:06,499 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-28 22:53:06,606 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 22:53:06,620 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-28 22:53:06,633 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 22:53:06,696 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 22:53:06,748 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2025-11-28 22:53:06,752 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-28 22:53:06,773 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-28 22:53:10,282 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 22:53:10,289 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 22:53:10,797 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 22:53:14,017 basehttp "GET /admin/accounts/ HTTP/1.1" 200 44849
+INFO 2025-11-28 22:53:17,395 basehttp "GET /admin/ HTTP/1.1" 200 121964
+INFO 2025-11-28 22:53:19,588 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 54966
+INFO 2025-11-28 22:53:19,634 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 22:57:16,328 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:57:18,969 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:57:33,269 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:57:35,886 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:58:13,507 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:58:16,576 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 22:58:26,513 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\models.py changed, reloading.
+INFO 2025-11-28 22:58:28,948 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:00:19,465 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:00:21,281 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 55031
+INFO 2025-11-28 23:00:21,396 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:00:22,067 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 23:00:26,866 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92215
+INFO 2025-11-28 23:00:26,926 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:19:12,092 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 92215
+INFO 2025-11-28 23:19:15,570 basehttp "GET /admin/accounts/ HTTP/1.1" 200 44883
+INFO 2025-11-28 23:19:26,122 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\admin.py changed, reloading.
+INFO 2025-11-28 23:19:30,806 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:34:35,818 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\admin.py changed, reloading.
+INFO 2025-11-28 23:34:38,424 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:34:43,741 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\admin.py changed, reloading.
+INFO 2025-11-28 23:34:46,083 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:34:49,310 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\admin.py changed, reloading.
+INFO 2025-11-28 23:34:51,728 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:35:04,217 basehttp "GET /admin/accounts/ HTTP/1.1" 200 44883
+ERROR 2025-11-28 23:35:10,135 basehttp "GET /admin/accounts/user/ HTTP/1.1" 500 450735
+WARNING 2025-11-28 23:35:10,602 log Not Found: /favicon.ico
+WARNING 2025-11-28 23:35:10,603 basehttp "GET /favicon.ico HTTP/1.1" 404 4887
+INFO 2025-11-28 23:35:46,465 basehttp "GET /admin/accounts/ HTTP/1.1" 200 44883
+INFO 2025-11-28 23:35:48,966 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 23:35:50,773 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 23:35:50,954 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 23:35:50,965 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 23:35:50,979 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 23:35:50,984 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 23:35:50,996 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 23:35:50,999 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 23:35:51,009 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 23:35:51,012 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 23:35:51,621 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 23:35:51,629 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 23:35:52,604 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 23:35:58,702 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 23:35:58,751 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-28 23:35:58,767 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-28 23:35:58,778 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-28 23:35:58,781 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-28 23:35:58,791 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-28 23:35:58,800 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-28 23:35:58,803 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-28 23:35:58,814 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-28 23:35:58,832 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-28 23:35:58,843 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-28 23:35:59,432 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+ERROR 2025-11-28 23:36:01,970 basehttp "GET /admin/accounts/user/ HTTP/1.1" 500 450726
+WARNING 2025-11-28 23:36:02,215 log Not Found: /favicon.ico
+WARNING 2025-11-28 23:36:02,216 basehttp "GET /favicon.ico HTTP/1.1" 404 4887
+INFO 2025-11-28 23:36:27,276 autoreload Watching for file changes with StatReloader
+ERROR 2025-11-28 23:36:31,177 basehttp "GET /admin/accounts/user/ HTTP/1.1" 500 450569
+INFO 2025-11-28 23:38:39,722 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\admin.py changed, reloading.
+INFO 2025-11-28 23:38:43,323 autoreload Watching for file changes with StatReloader
+INFO 2025-11-28 23:38:51,053 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56855
+INFO 2025-11-28 23:38:51,148 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:39:42,059 basehttp "GET /admin/accounts/user/?o=8.-10 HTTP/1.1" 200 57437
+INFO 2025-11-28 23:39:42,132 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:39:47,451 basehttp "GET /admin/accounts/user/1/change/?_changelist_filters=o%3D8.-10 HTTP/1.1" 200 95920
+INFO 2025-11-28 23:39:47,543 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:40:12,092 basehttp "GET /admin/accounts/ HTTP/1.1" 200 44883
+INFO 2025-11-28 23:40:15,378 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 53505
+INFO 2025-11-28 23:40:15,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:40:24,991 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 23:40:28,822 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 51466
+INFO 2025-11-28 23:40:28,880 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:40:40,185 basehttp "GET /admin/payments/wallet/1/change/ HTTP/1.1" 200 53828
+INFO 2025-11-28 23:40:40,241 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:40:45,522 basehttp "GET /admin/ HTTP/1.1" 200 121998
+INFO 2025-11-28 23:40:48,772 basehttp "GET /admin/payments/transaction/ HTTP/1.1" 200 55487
+INFO 2025-11-28 23:40:48,835 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:41:25,051 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56855
+INFO 2025-11-28 23:41:25,127 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:41:32,934 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 95830
+INFO 2025-11-28 23:41:32,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:41:39,317 basehttp "POST /admin/accounts/user/1/change/ HTTP/1.1" 302 0
+INFO 2025-11-28 23:41:39,386 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 57447
+INFO 2025-11-28 23:41:39,463 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-28 23:42:45,542 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 95882
+INFO 2025-11-28 23:42:45,597 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 00:53:31,905 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:53:41,136 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 00:53:43,128 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:53:46,054 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 00:53:48,818 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:53:51,167 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 00:53:54,928 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:53:57,278 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 00:54:13,157 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:54:15,590 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 00:54:18,820 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\payments\urls.py changed, reloading.
+INFO 2025-11-29 00:54:21,497 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 01:06:24,212 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-29 01:06:29,906 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 01:06:37,376 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:06:52,309 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 822
+INFO 2025-11-29 01:06:53,055 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-29 01:06:53,966 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:06:53,968 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-29 01:06:55,252 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 255
+INFO 2025-11-29 01:06:55,252 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-11-29 01:07:09,298 log Not Found: /api/pricing/types/
+WARNING 2025-11-29 01:07:09,298 basehttp "GET /api/pricing/types/?city=Makurdi HTTP/1.1" 404 63
+INFO 2025-11-29 01:07:09,808 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:07:37,519 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:07:37,520 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 01:07:37,521 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-11-29 01:07:44,956 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-11-29 01:07:59,686 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:08:10,749 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 01:08:10,812 basehttp "GET /api/promotions/referrals/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:08:15,336 basehttp "GET /api/promotions/referrals/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:08:15,338 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 01:08:20,728 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-11-29 01:09:01,207 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 01:09:04,770 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-29 01:09:06,750 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-29 01:09:07,624 basehttp "GET /api/payments/transactions/?transaction_type=debit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-29 01:09:08,556 basehttp "GET /api/payments/transactions/?transaction_type=credit&page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-29 01:09:25,357 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 01:09:25,357 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 01:09:25,362 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 01:09:32,737 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 01:09:34,556 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 536
+INFO 2025-11-29 01:09:40,709 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 01:09:51,864 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 183
+INFO 2025-11-29 01:10:20,256 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 01:10:24,364 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1072
+INFO 2025-11-29 01:12:11,378 basehttp "PATCH /api/auth/profile/update/ HTTP/1.1" 200 423
+INFO 2025-11-29 01:12:12,119 basehttp "GET /media/profile_pictures/4cc5147519c34dc8aaf82bcbd59b6d21.png HTTP/1.1" 200 15938
+INFO 2025-11-29 01:15:18,574 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-11-29 13:46:36,504 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 96238
+INFO 2025-11-29 13:46:50,757 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 96238
+INFO 2025-11-29 13:46:50,857 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-29 13:46:50,860 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-29 13:46:50,864 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-29 13:46:50,960 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-29 13:46:50,995 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-29 13:46:51,005 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:46:51,006 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-29 13:46:51,008 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-29 13:46:51,073 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-11-29 13:46:51,084 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-29 13:46:51,146 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-29 13:46:51,153 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-29 13:46:51,155 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-29 13:46:51,158 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-11-29 13:46:51,224 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-29 13:46:51,225 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 13:46:51,279 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-29 13:46:51,345 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-29 13:46:51,392 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-29 13:46:51,410 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-29 13:46:51,495 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-29 13:46:51,535 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2025-11-29 13:46:51,543 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-29 13:46:51,585 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-29 13:46:51,663 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-29 13:46:51,683 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-29 13:46:51,964 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 13:47:13,307 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 56865
+INFO 2025-11-29 13:47:13,372 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:13,384 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-11-29 13:47:34,309 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 48178
+INFO 2025-11-29 13:47:34,370 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:36,609 basehttp "GET /admin/admin_dashboard/adminactionlog/ HTTP/1.1" 200 48303
+INFO 2025-11-29 13:47:36,666 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:38,115 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 46931
+INFO 2025-11-29 13:47:38,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:39,346 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 46931
+INFO 2025-11-29 13:47:39,393 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:40,481 basehttp "GET /admin/admin_dashboard/systemnotification/ HTTP/1.1" 200 47720
+INFO 2025-11-29 13:47:40,546 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:43,209 basehttp "GET /admin/analytics/driverearnings/ HTTP/1.1" 200 45996
+INFO 2025-11-29 13:47:43,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:45,704 basehttp "GET /admin/analytics/popularlocation/ HTTP/1.1" 200 46631
+INFO 2025-11-29 13:47:45,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:47,427 basehttp "GET /admin/analytics/revenuereport/ HTTP/1.1" 200 46808
+INFO 2025-11-29 13:47:47,498 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:48,571 basehttp "GET /admin/analytics/rideanalytics/ HTTP/1.1" 200 45834
+INFO 2025-11-29 13:47:48,623 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:47:52,474 basehttp "GET /admin/audit_logging/auditlog/ HTTP/1.1" 200 79827
+INFO 2025-11-29 13:47:52,530 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:48:18,271 basehttp "GET /admin/audit_logging/securityevent/ HTTP/1.1" 200 56376
+INFO 2025-11-29 13:48:18,341 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:48:50,564 basehttp "GET /admin/promotions/promocode/ HTTP/1.1" 200 47290
+INFO 2025-11-29 13:48:50,625 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:48:53,516 basehttp "GET /admin/promotions/ HTTP/1.1" 200 47722
+INFO 2025-11-29 13:48:55,266 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 49649
+INFO 2025-11-29 13:48:55,348 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:01,950 basehttp "GET /admin/promotions/ HTTP/1.1" 200 47722
+INFO 2025-11-29 13:49:04,093 basehttp "GET /admin/promotions/referral/ HTTP/1.1" 200 46820
+INFO 2025-11-29 13:49:04,144 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:21,745 basehttp "GET /admin/notifications/notificationpreference/ HTTP/1.1" 200 52613
+INFO 2025-11-29 13:49:21,805 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:36,049 basehttp "GET /admin/notifications/ HTTP/1.1" 200 49254
+INFO 2025-11-29 13:49:38,377 basehttp "GET /admin/notifications/emaillog/ HTTP/1.1" 200 47171
+INFO 2025-11-29 13:49:38,423 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:40,199 basehttp "GET /admin/notifications/ HTTP/1.1" 200 49254
+INFO 2025-11-29 13:49:43,591 basehttp "GET /admin/notifications/notification/ HTTP/1.1" 200 53058
+INFO 2025-11-29 13:49:43,640 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:45,574 basehttp "GET /admin/notifications/ HTTP/1.1" 200 49254
+INFO 2025-11-29 13:49:47,295 basehttp "GET /admin/notifications/pushtoken/ HTTP/1.1" 200 47214
+INFO 2025-11-29 13:49:47,335 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:50,515 basehttp "GET /admin/notifications/ HTTP/1.1" 200 49254
+INFO 2025-11-29 13:49:52,174 basehttp "GET /admin/notifications/smslog/ HTTP/1.1" 200 47293
+INFO 2025-11-29 13:49:52,227 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:49:54,877 basehttp "GET /admin/notifications/ HTTP/1.1" 200 49254
+INFO 2025-11-29 13:49:57,377 basehttp "GET /admin/notifications/notificationpreference/ HTTP/1.1" 200 52613
+INFO 2025-11-29 13:49:57,423 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:50:02,845 basehttp "GET /admin/notifications/notificationpreference/1/change/ HTTP/1.1" 200 64814
+INFO 2025-11-29 13:50:02,892 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-11-29 13:50:02,899 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 13:50:02,911 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-11-29 13:50:14,411 basehttp "GET /admin/ HTTP/1.1" 200 123700
+INFO 2025-11-29 14:05:15,794 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\support\signals.py changed, reloading.
+INFO 2025-11-29 14:05:24,003 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 14:07:10,985 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\support\urls.py changed, reloading.
+INFO 2025-11-29 14:07:13,689 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 14:08:36,624 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\support\admin.py changed, reloading.
+INFO 2025-11-29 14:08:39,392 autoreload Watching for file changes with StatReloader
+INFO 2025-11-29 14:09:29,975 basehttp "GET /admin/ HTTP/1.1" 200 126564
+INFO 2025-11-29 14:09:30,181 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-29 14:09:30,189 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 14:09:30,206 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-29 14:09:30,324 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-29 14:09:30,326 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-29 14:09:30,336 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-29 14:09:30,440 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-29 14:09:30,442 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-29 14:09:30,454 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-29 14:09:30,475 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-29 14:09:30,823 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 14:09:48,893 basehttp "GET /admin/support/ticketmessage/ HTTP/1.1" 200 48090
+INFO 2025-11-29 14:09:48,983 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 14:09:50,854 basehttp "GET /admin/support/ HTTP/1.1" 200 50382
+INFO 2025-11-29 14:09:53,003 basehttp "GET /admin/support/ticketattachment/ HTTP/1.1" 200 47194
+INFO 2025-11-29 14:09:53,043 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 14:09:54,339 basehttp "GET /admin/support/ HTTP/1.1" 200 50382
+INFO 2025-11-29 14:09:56,400 basehttp "GET /admin/support/supportticket/ HTTP/1.1" 200 48875
+INFO 2025-11-29 14:09:56,443 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 14:09:57,910 basehttp "GET /admin/support/ HTTP/1.1" 200 50382
+INFO 2025-11-29 14:10:00,061 basehttp "GET /admin/support/supportcategory/ HTTP/1.1" 200 46669
+INFO 2025-11-29 14:10:00,102 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 14:10:01,581 basehttp "GET /admin/support/ HTTP/1.1" 200 50382
+INFO 2025-11-29 14:10:03,045 basehttp "GET /admin/support/faq/ HTTP/1.1" 200 46589
+INFO 2025-11-29 14:10:03,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 14:10:20,649 basehttp "GET /admin/ HTTP/1.1" 200 126564
+INFO 2025-11-29 15:45:20,188 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:45:29,952 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 990
+INFO 2025-11-29 15:45:30,665 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-29 15:45:31,533 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-29 15:45:31,553 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-29 15:45:31,569 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:45:31,574 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-11-29 15:45:35,871 log Not Found: /api/pricing/types/
+WARNING 2025-11-29 15:45:35,872 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+WARNING 2025-11-29 15:45:35,938 log Not Found: /api/pricing/types/
+WARNING 2025-11-29 15:45:35,938 basehttp "GET /api/pricing/types/?city=Abuja&latitude=8.9739917&longitude=7.4599415 HTTP/1.1" 404 61
+INFO 2025-11-29 15:45:36,014 basehttp "GET /api/locations/recent/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:45:50,603 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:45:50,604 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:45:50,621 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 15:45:52,573 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:46:00,974 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:07,627 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:07,628 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:46:09,526 basehttp "GET /api/support/faq/?search=e HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:09,781 basehttp "GET /api/support/faq/?search=ee HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:09,952 basehttp "GET /api/support/faq/?search=eer HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:11,086 basehttp "GET /api/support/faq/?search=ee HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:11,267 basehttp "GET /api/support/faq/?search=e HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:11,503 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:17,220 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:46:17,221 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 15:46:17,230 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-11-29 15:46:21,411 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-11-29 15:46:29,926 basehttp "GET /admin/ HTTP/1.1" 200 126563
+INFO 2025-11-29 15:46:39,331 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 50639
+INFO 2025-11-29 15:46:39,409 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:46:42,083 basehttp "GET /admin/promotions/loyalty/1/change/ HTTP/1.1" 200 51419
+INFO 2025-11-29 15:46:42,156 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:46:57,018 basehttp "POST /admin/promotions/loyalty/1/change/ HTTP/1.1" 302 0
+INFO 2025-11-29 15:46:57,055 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 51226
+INFO 2025-11-29 15:46:57,099 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:47:01,895 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:47:01,901 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 15:47:01,903 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-29 15:47:03,382 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+ERROR 2025-11-29 15:47:18,293 services Error redeeming points: UNIQUE constraint failed: payments_transaction.reference
+WARNING 2025-11-29 15:47:18,755 log Bad Request: /api/promotions/loyalty/redeem/
+WARNING 2025-11-29 15:47:18,755 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 400 51
+INFO 2025-11-29 15:47:29,713 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 15:47:29,717 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-29 15:47:29,718 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:47:32,234 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 15:47:36,251 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:47:36,253 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-11-29 15:47:36,256 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-11-29 15:47:38,604 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+ERROR 2025-11-29 15:47:42,605 services Error redeeming points: UNIQUE constraint failed: payments_transaction.reference
+WARNING 2025-11-29 15:47:42,625 log Bad Request: /api/promotions/loyalty/redeem/
+WARNING 2025-11-29 15:47:42,626 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 400 51
+INFO 2025-11-29 15:47:49,800 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 50641
+INFO 2025-11-29 15:47:49,856 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-11-29 15:47:49,874 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-11-29 15:47:49,885 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-11-29 15:47:49,912 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:47:49,916 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-29 15:47:49,922 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-29 15:47:49,941 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-11-29 15:47:49,956 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-29 15:47:50,021 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-29 15:47:50,049 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-29 15:47:50,053 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-29 15:47:50,062 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-29 15:47:50,066 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 15:47:50,081 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-11-29 15:47:50,086 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-11-29 15:47:50,102 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-11-29 15:47:50,168 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-11-29 15:47:50,220 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-11-29 15:47:50,272 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-29 15:47:50,320 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-11-29 15:47:50,341 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-11-29 15:47:50,585 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-11-29 15:47:56,357 basehttp "GET /admin/promotions/loyalty/1/change/ HTTP/1.1" 200 51421
+INFO 2025-11-29 15:47:56,413 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:48:02,526 basehttp "POST /admin/promotions/loyalty/1/change/ HTTP/1.1" 302 0
+INFO 2025-11-29 15:48:02,562 basehttp "GET /admin/promotions/loyalty/ HTTP/1.1" 200 51226
+INFO 2025-11-29 15:48:02,614 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:48:03,477 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+ERROR 2025-11-29 15:48:07,397 services Error redeeming points: UNIQUE constraint failed: payments_transaction.reference
+WARNING 2025-11-29 15:48:07,433 log Bad Request: /api/promotions/loyalty/redeem/
+WARNING 2025-11-29 15:48:07,434 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 400 51
+INFO 2025-11-29 15:48:10,748 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 42
+INFO 2025-11-29 15:48:11,757 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1072
+INFO 2025-11-29 15:48:24,762 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 183
+INFO 2025-11-29 15:48:48,469 basehttp "GET /admin/ HTTP/1.1" 200 129554
+INFO 2025-11-29 15:48:52,671 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 52447
+INFO 2025-11-29 15:48:52,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:48:54,996 basehttp "GET /admin/payments/wallet/1/change/ HTTP/1.1" 200 54809
+INFO 2025-11-29 15:48:55,046 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:49:01,601 basehttp "GET /admin/ HTTP/1.1" 200 129555
+INFO 2025-11-29 15:49:03,455 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 57855
+INFO 2025-11-29 15:49:03,499 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:49:07,868 basehttp "GET /admin/accounts/user/1/change/ HTTP/1.1" 200 97228
+INFO 2025-11-29 15:49:07,918 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:49:23,093 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1608
+INFO 2025-11-29 15:49:38,118 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:49:38,122 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 15:49:38,126 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:49:43,771 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:49:43,783 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 15:49:43,790 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-11-29 15:50:12,597 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 15:50:14,585 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:50:16,776 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:50:19,630 basehttp "GET /api/support/tickets/?page=1&status=open HTTP/1.1" 200 52
+INFO 2025-11-29 15:50:21,389 basehttp "GET /api/support/tickets/?page=1&status=in_progress HTTP/1.1" 200 52
+INFO 2025-11-29 15:50:22,005 basehttp "GET /api/support/tickets/?page=1&status=resolved HTTP/1.1" 200 52
+INFO 2025-11-29 15:50:59,159 basehttp "GET /admin/ HTTP/1.1" 200 129555
+INFO 2025-11-29 15:51:10,193 basehttp "GET /admin/support/faq/ HTTP/1.1" 200 46589
+INFO 2025-11-29 15:51:10,236 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:51:12,827 basehttp "GET /admin/support/ HTTP/1.1" 200 53373
+INFO 2025-11-29 15:52:10,351 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+INFO 2025-11-29 15:53:22,631 basehttp "GET /admin/support/faq/ HTTP/1.1" 200 46589
+INFO 2025-11-29 15:53:22,702 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:54:22,235 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 54320
+INFO 2025-11-29 15:54:22,310 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:54:30,734 basehttp "GET /admin/support/faq/ HTTP/1.1" 200 46589
+INFO 2025-11-29 15:54:30,806 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:54:32,469 basehttp "GET /admin/support/ HTTP/1.1" 200 53374
+INFO 2025-11-29 15:54:34,449 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 51492
+INFO 2025-11-29 15:54:34,513 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:54:43,047 basehttp "GET /admin/support/ HTTP/1.1" 200 53374
+INFO 2025-11-29 15:54:45,982 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 54320
+INFO 2025-11-29 15:54:46,048 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:54:54,553 basehttp "GET /admin/support/ HTTP/1.1" 200 53374
+INFO 2025-11-29 15:55:47,172 basehttp "GET /admin/support/ticketattachment/ HTTP/1.1" 200 47194
+INFO 2025-11-29 15:55:47,262 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 15:55:51,617 basehttp "GET /admin/support/ HTTP/1.1" 200 53374
+INFO 2025-11-29 16:03:56,516 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 51492
+INFO 2025-11-29 16:03:56,628 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:05:01,817 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:05:01,890 basehttp "GET /admin/support/supportcategory/ HTTP/1.1" 200 51453
+INFO 2025-11-29 16:05:01,981 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:05:32,791 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 51492
+INFO 2025-11-29 16:05:32,848 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:06:04,068 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:06:04,120 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52130
+INFO 2025-11-29 16:06:04,176 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:06:31,828 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:06:31,879 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52121
+INFO 2025-11-29 16:06:31,924 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:07:10,800 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:07:10,869 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52123
+INFO 2025-11-29 16:07:10,927 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:07:42,308 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:07:42,349 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52136
+INFO 2025-11-29 16:07:42,410 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:08:12,614 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:08:12,669 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52131
+INFO 2025-11-29 16:08:12,732 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:08:40,944 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:08:40,995 basehttp "GET /admin/support/supportcategory/add/ HTTP/1.1" 200 52130
+INFO 2025-11-29 16:08:41,051 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:09:02,039 basehttp "POST /admin/support/supportcategory/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:09:02,097 basehttp "GET /admin/support/supportcategory/ HTTP/1.1" 200 55524
+INFO 2025-11-29 16:09:02,148 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:09:33,126 basehttp "GET /admin/support/ HTTP/1.1" 200 55893
+INFO 2025-11-29 16:09:35,124 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 54717
+INFO 2025-11-29 16:09:35,170 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:12:27,536 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:12:27,598 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55333
+INFO 2025-11-29 16:12:27,670 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:13:53,495 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:13:53,595 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55337
+INFO 2025-11-29 16:13:53,676 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:14:45,298 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:14:45,358 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55336
+INFO 2025-11-29 16:14:45,401 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:15:08,078 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:15:08,145 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55353
+INFO 2025-11-29 16:15:08,198 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:15:36,726 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:15:36,775 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55334
+INFO 2025-11-29 16:15:36,833 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:15:58,935 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:15:58,994 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55325
+INFO 2025-11-29 16:15:59,063 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:16:22,890 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:16:22,990 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55340
+INFO 2025-11-29 16:16:23,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:16:41,003 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:16:41,061 basehttp "GET /admin/support/faq/add/ HTTP/1.1" 200 55338
+INFO 2025-11-29 16:16:41,116 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:17:09,184 basehttp "POST /admin/support/faq/add/ HTTP/1.1" 302 0
+INFO 2025-11-29 16:17:09,238 basehttp "GET /admin/support/faq/ HTTP/1.1" 200 59150
+INFO 2025-11-29 16:17:09,293 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:17:21,991 basehttp "GET /admin/support/ HTTP/1.1" 200 56101
+INFO 2025-11-29 16:17:25,760 basehttp "GET /admin/support/ticketattachment/ HTTP/1.1" 200 47194
+INFO 2025-11-29 16:17:25,806 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-29 16:17:27,783 basehttp "GET /admin/support/ HTTP/1.1" 200 56100
+INFO 2025-11-29 16:17:39,137 basehttp "GET /admin/ HTTP/1.1" 200 132283
+INFO 2025-11-29 16:37:05,516 basehttp "GET /api/support/faq/ HTTP/1.1" 200 6989
+INFO 2025-11-29 16:37:05,518 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 16:37:05,534 basehttp "GET /api/support/categories/ HTTP/1.1" 200 1602
+INFO 2025-11-29 16:37:12,377 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-11-29 16:37:16,291 basehttp "GET /api/support/categories/ HTTP/1.1" 200 1602
+INFO 2025-11-30 14:31:11,208 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-11-30 14:32:16,852 autoreload Watching for file changes with StatReloader
+INFO 2025-11-30 14:38:02,887 autoreload Watching for file changes with StatReloader
+INFO 2025-11-30 14:43:46,306 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:43:47,917 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:45:23,983 basehttp "GET /admin/ HTTP/1.1" 200 132357
+INFO 2025-11-30 14:48:33,047 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:48:34,907 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:52:17,690 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 14:52:22,962 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:52:24,706 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:53:44,377 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:53:46,179 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:55:19,421 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:55:21,387 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:58:13,963 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:58:15,587 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:58:52,467 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:58:54,359 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 14:59:02,830 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:59:02,831 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 14:59:07,706 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:59:12,111 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:59:16,529 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:59:21,549 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 14:59:23,364 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:00:14,550 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:00:16,316 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:07:25,022 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:07:26,903 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:08:49,141 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:08:51,064 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:08:53,508 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:08:53,508 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:08:53,518 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:09:38,381 basehttp "GET /media/profile_pictures/4cc5147519c34dc8aaf82bcbd59b6d21.png HTTP/1.1" 200 15938
+INFO 2025-11-30 15:10:00,730 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:10:02,622 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:10:03,937 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:10:03,945 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:10:03,952 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:10:32,102 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:10:33,923 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:10:35,212 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:10:35,217 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:10:35,217 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:12:28,746 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:12:30,532 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:12:31,922 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:12:31,925 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:12:31,928 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:18:22,734 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:18:24,614 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:18:26,047 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:18:26,050 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:18:26,061 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:19:57,248 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:19:58,909 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:20:00,240 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:20:00,281 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:20:00,282 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:22:03,353 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:22:08,509 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:22:10,490 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:22:11,881 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:22:11,903 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:22:11,910 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:22:11,913 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-11-30 15:22:15,426 log Not Found: /api/pricing/vehicle-types/
+WARNING 2025-11-30 15:22:15,427 basehttp "GET /api/pricing/vehicle-types/?city_name=Abuja HTTP/1.1" 404 6455
+WARNING 2025-11-30 15:22:15,574 log Not Found: /api/pricing/vehicle-types/
+WARNING 2025-11-30 15:22:15,575 basehttp "GET /api/pricing/vehicle-types/?city_name=Abuja HTTP/1.1" 404 6455
+INFO 2025-11-30 15:22:15,769 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-11-30 15:23:41,408 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:23:43,340 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:23:44,680 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 423
+INFO 2025-11-30 15:23:44,684 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-11-30 15:23:44,688 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-11-30 15:23:44,688 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-11-30 15:23:47,474 log Not Found: /api/pricing/vehicle-types/
+WARNING 2025-11-30 15:23:47,475 basehttp "GET /api/pricing/vehicle-types/?city_name=Abuja HTTP/1.1" 404 6455
+WARNING 2025-11-30 15:23:47,663 log Not Found: /api/pricing/vehicle-types/
+WARNING 2025-11-30 15:23:47,663 basehttp "GET /api/pricing/vehicle-types/?city_name=Abuja HTTP/1.1" 404 6455
+INFO 2025-11-30 15:23:47,851 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52

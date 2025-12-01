@@ -48,7 +48,9 @@ urlpatterns = [
     path('wallet/', views.WalletDetailView.as_view(), name='wallet_detail'),
     path('wallet/balance/', views.get_wallet_balance, name='wallet_balance'),  # Backwards-compatible alias
     path('wallet/transactions/', views.get_wallet_transactions, name='wallet_transactions'),  # Backwards-compatible alias
-    
+    path('withdrawals/request/', views.request_withdrawal_paystack),  # Full withdrawal
+    path('withdrawals/quick/', views.quick_withdrawal),  # Quick withdrawal
+      
     # ==================== TRANSACTIONS ====================
     path('transactions/', views.TransactionListView.as_view(), name='transaction_list'),
     path('transactions/<int:pk>/', views.TransactionDetailView.as_view(), name='transaction_detail'),

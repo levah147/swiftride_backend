@@ -1,6 +1,7 @@
-
 """
-FILE LOCATION: promotions/views.py
+FILE LOCATION: backend/promotions/views.py
+
+✅ UPDATED WITH REDEMPTION API
 """
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -12,6 +13,11 @@ from .serializers import (
     PromoCodeSerializer, PromoValidationSerializer,
     ReferralSerializer, LoyaltySerializer
 )
+from .services import redeem_loyalty_points
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 class PromoCodeViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = PromoCodeSerializer
@@ -58,6 +64,7 @@ class PromoCodeViewSet(viewsets.ReadOnlyModelViewSet):
             }
         })
 
+
 class ReferralViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = ReferralSerializer
     permission_classes = [IsAuthenticated]
@@ -79,6 +86,7 @@ class ReferralViewSet(viewsets.ReadOnlyModelViewSet):
             }
         })
 
+
 class LoyaltyViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
     
@@ -92,5 +100,108 @@ class LoyaltyViewSet(viewsets.ViewSet):
             'success': True,
             'data': serializer.data
         })
-
-
+    
+    @action(detail=False, methods=['post'])
+    def redeem(self, request):
+        """
+        Redeem loyalty points for wallet credit.
+        
+        POST /api/promotions/loyalty/redeem/
+        {
+            "points": 100
+        }
+        
+        Returns:
+        {
+            "success": true,
+            "data": {
+                "amount": 10.0,
+                "new_available_points": 900,
+                "new_total_points": 1000,
+                "new_wallet_balance": "5010.00",
+                "transaction_id": "TXN123"
+            }
+        }
+        """
+        try:
+            # Get points from request
+            points = request.data.get('points')
+            
+            if not points:
+                return Response({
+                    'success': False,
+                    'error': 'Points parameter is required'
+                }, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Validate points is integer
+            try:
+                points = int(points)
+            except (ValueError, TypeError):
+                return Response({
+                    'success': False,
+                    'error': 'Points must be a valid number'
+                }, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Validate positive points
+            if points <= 0:
+                return Response({
+                    'success': False,
+                    'error': 'Points must be greater than 0'
+                }, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Redeem points using service function
+            success, message, amount = redeem_loyalty_points(request.user, points)
+            
+            if not success:
+                logger.warning(f"❌ Redemption failed for {request.user.phone_number}: {message}")
+                return Response({
+                    'success': False,
+                    'error': message
+                }, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Get updated loyalty data
+            loyalty = Loyalty.objects.get(user=request.user)
+            
+            # Get updated wallet balance
+            from payments.models import Wallet, Transaction
+            wallet = Wallet.objects.get(user=request.user)
+            
+            # Get the transaction that was just created
+            transaction = Transaction.objects.filter(
+                user=request.user,
+                transaction_type='loyalty_redemption',
+                amount=amount
+            ).order_by('-created_at').first()
+            
+            logger.info(
+                f"✅ Redemption successful for {request.user.phone_number}: "
+                f"{points} points → ₦{amount}"
+            )
+            
+            return Response({
+                'success': True,
+                'message': message,
+                'data': {
+                    'amount': float(amount),
+                    'points_redeemed': points,
+                    'new_available_points': loyalty.available_points,
+                    'new_total_points': loyalty.total_points,
+                    'new_wallet_balance': str(wallet.balance),
+                    'transaction_id': transaction.transaction_id if transaction else None,
+                    'tier': loyalty.tier
+                }
+            }, status=status.HTTP_200_OK)
+            
+        except Loyalty.DoesNotExist:
+            logger.error(f"❌ Loyalty account not found for {request.user.phone_number}")
+            return Response({
+                'success': False,
+                'error': 'Loyalty account not found'
+            }, status=status.HTTP_404_NOT_FOUND)
+            
+        except Exception as e:
+            logger.error(f"❌ Error redeeming points: {str(e)}", exc_info=True)
+            return Response({
+                'success': False,
+                'error': 'Failed to redeem points. Please try again.'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

@@ -81,90 +81,112 @@ def ticket_created_handler(sender, instance, created, **kwargs):
             logger.error(f"Error notifying staff: {str(e)}")
 
 
+@receiver(pre_save, sender=SupportTicket)
+def capture_ticket_status_before_save(sender, instance, **kwargs):
+    """
+    Capture old status before saving.
+    Store it on the instance so post_save can access it.
+    """
+    if instance.pk:  # Only for updates
+        try:
+            old_ticket = SupportTicket.objects.get(pk=instance.pk)
+            instance._old_status = old_ticket.status
+            instance._old_assigned_to = old_ticket.assigned_to
+        except SupportTicket.DoesNotExist:
+            instance._old_status = None
+            instance._old_assigned_to = None
+    else:
+        instance._old_status = None
+        instance._old_assigned_to = None
+
+
 @receiver(post_save, sender=SupportTicket)
 def ticket_status_changed_handler(sender, instance, created, **kwargs):
     """
     Handle ticket status changes.
     Send notifications when status changes.
     """
-    if not created:  # Only for updates
-        try:
-            from notifications.tasks import send_notification_all_channels
-            
-            # Get old status from database
-            old_instance = SupportTicket.objects.get(pk=instance.pk)
-            
-            # Check if status changed
-            if old_instance.status != instance.status:
-                
-                # Status changed to 'resolved'
-                if instance.status == 'resolved':
-                    send_notification_all_channels.delay(
-                        user_id=instance.user.id,
-                        notification_type='support_ticket_resolved',
-                        title='Ticket Resolved ✅',
-                        body=f'Your ticket {instance.ticket_id} has been resolved!',
-                        send_push=True,
-                        send_email=True,
-                        data={
-                            'ticket_id': instance.ticket_id,
-                            'ticket_pk': instance.id
-                        }
-                    )
-                    
-                    logger.info(f"✅ Ticket {instance.ticket_id} marked as resolved")
-                
-                # Status changed to 'closed'
-                elif instance.status == 'closed':
-                    send_notification_all_channels.delay(
-                        user_id=instance.user.id,
-                        notification_type='support_ticket_closed',
-                        title='Ticket Closed',
-                        body=f'Your ticket {instance.ticket_id} has been closed.',
-                        send_push=True,
-                        data={
-                            'ticket_id': instance.ticket_id,
-                            'ticket_pk': instance.id
-                        }
-                    )
-                    
-                    logger.info(f"🔒 Ticket {instance.ticket_id} closed")
-                
-                # Assigned to staff
-                if instance.assigned_to and not old_instance.assigned_to:
-                    # Notify user about assignment
-                    send_notification_all_channels.delay(
-                        user_id=instance.user.id,
-                        notification_type='support_ticket_assigned',
-                        title='Ticket Assigned 👤',
-                        body=f'Your ticket has been assigned to our support team.',
-                        send_push=True,
-                        data={
-                            'ticket_id': instance.ticket_id,
-                            'ticket_pk': instance.id
-                        }
-                    )
-                    
-                    # Notify assigned staff
-                    send_notification_all_channels.delay(
-                        user_id=instance.assigned_to.id,
-                        notification_type='support_ticket_assigned_to_you',
-                        title='Ticket Assigned to You 🎫',
-                        body=f'Ticket {instance.ticket_id}: {instance.subject}',
-                        send_push=True,
-                        data={
-                            'ticket_id': instance.ticket_id,
-                            'ticket_pk': instance.id
-                        }
-                    )
-                    
-                    logger.info(f"👤 Ticket {instance.ticket_id} assigned to {instance.assigned_to.get_full_name()}")
+    if created:
+        return  # Skip for new tickets (handled by ticket_created_handler)
+    
+    try:
+        from notifications.tasks import send_notification_all_channels
         
-        except SupportTicket.DoesNotExist:
-            # This is a new ticket, not an update
-            pass
-        except Exception as e:
-            logger.error(f"Error in ticket status change handler: {str(e)}")
+        # Get old status from instance (set in pre_save signal)
+        old_status = getattr(instance, '_old_status', None)
+        old_assigned_to = getattr(instance, '_old_assigned_to', None)
+        
+        if old_status is None:
+            return  # Can't detect changes
+        
+        # Check if status changed
+        if old_status != instance.status:
+            
+            # Status changed to 'resolved'
+            if instance.status == 'resolved':
+                send_notification_all_channels.delay(
+                    user_id=instance.user.id,
+                    notification_type='support_ticket_resolved',
+                    title='Ticket Resolved ✅',
+                    body=f'Your ticket {instance.ticket_id} has been resolved!',
+                    send_push=True,
+                    send_email=True,
+                    data={
+                        'ticket_id': instance.ticket_id,
+                        'ticket_pk': instance.id
+                    }
+                )
+                
+                logger.info(f"✅ Ticket {instance.ticket_id} marked as resolved")
+            
+            # Status changed to 'closed'
+            elif instance.status == 'closed':
+                send_notification_all_channels.delay(
+                    user_id=instance.user.id,
+                    notification_type='support_ticket_closed',
+                    title='Ticket Closed',
+                    body=f'Your ticket {instance.ticket_id} has been closed.',
+                    send_push=True,
+                    data={
+                        'ticket_id': instance.ticket_id,
+                        'ticket_pk': instance.id
+                    }
+                )
+                
+                logger.info(f"🔒 Ticket {instance.ticket_id} closed")
+        
+        # Check if assignment changed
+        if instance.assigned_to and (old_assigned_to != instance.assigned_to):
+            # Notify user about assignment
+            send_notification_all_channels.delay(
+                user_id=instance.user.id,
+                notification_type='support_ticket_assigned',
+                title='Ticket Assigned 👤',
+                body=f'Your ticket has been assigned to our support team.',
+                send_push=True,
+                data={
+                    'ticket_id': instance.ticket_id,
+                    'ticket_pk': instance.id
+                }
+            )
+            
+            # Notify assigned staff
+            send_notification_all_channels.delay(
+                user_id=instance.assigned_to.id,
+                notification_type='support_ticket_assigned_to_you',
+                title='Ticket Assigned to You 🎫',
+                body=f'Ticket {instance.ticket_id}: {instance.subject}',
+                send_push=True,
+                data={
+                    'ticket_id': instance.ticket_id,
+                    'ticket_pk': instance.id
+                }
+            )
+            
+            logger.info(f"👤 Ticket {instance.ticket_id} assigned to {instance.assigned_to.get_full_name()}")
+    
+    except Exception as e:
+        logger.error(f"Error in ticket status change handler: {str(e)}")
 
 
 @receiver(post_save, sender=TicketMessage)

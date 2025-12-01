@@ -1416,7 +1416,8 @@ def quick_withdrawal(request):
         account_number = recent_withdrawal.account_number
         account_name = recent_withdrawal.account_name
         
-        debugPrint('🏦 Processing quick withdrawal: ₦$amount to $account_number')
+        # ✅ Correct
+        logger.info(f'🏦 Processing quick withdrawal: ₦{amount} to {account_number}')
         
         # Create withdrawal request using existing logic
         with db_transaction.atomic():
@@ -1451,7 +1452,7 @@ def quick_withdrawal(request):
             )
             
             log_transaction('withdrawal', amount, request.user.id, 'pending', reference)
-            debugPrint('✅ Withdrawal created: ₦$amount')
+            logger.info(f'✅ Withdrawal created: ₦{amount}')
         
         return Response({
             'message': 'Withdrawal request created successfully',

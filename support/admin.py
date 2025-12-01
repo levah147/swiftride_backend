@@ -28,6 +28,28 @@ class SupportTicketAdmin(admin.ModelAdmin):
     
     def has_add_permission(self, request):
         return False
+@admin.register(TicketMessage)
+class TicketMessageAdmin(admin.ModelAdmin):
+    list_display = ['ticket', 'sender', 'is_staff_reply', 'is_internal', 'created_at']
+    list_filter = ['is_staff_reply', 'is_internal', 'created_at']
+    search_fields = ['ticket__ticket_id', 'sender__phone_number', 'message']
+    readonly_fields = ['created_at', 'updated_at']
+    raw_id_fields = ['ticket', 'sender']
+    
+    def has_add_permission(self, request):
+        return False
+
+
+@admin.register(TicketAttachment)
+class TicketAttachmentAdmin(admin.ModelAdmin):
+    list_display = ['ticket', 'file_name', 'file_size_formatted', 'uploaded_by', 'uploaded_at']
+    list_filter = ['uploaded_at', 'file_type']
+    search_fields = ['ticket__ticket_id', 'file_name', 'uploaded_by__phone_number']
+    readonly_fields = ['file_size_formatted', 'uploaded_at']
+    raw_id_fields = ['ticket', 'message', 'uploaded_by']
+    
+    def has_add_permission(self, request):
+        return False
 
 @admin.register(FAQ)
 class FAQAdmin(admin.ModelAdmin):

@@ -1,3 +1,4 @@
+from decimal import Decimal
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.core.validators import RegexValidator
@@ -79,7 +80,7 @@ class User(AbstractUser):
         help_text="Phone number in international format"
     )
     is_phone_verified = models.BooleanField(default=False)
-    rating = models.DecimalField(max_digits=3, decimal_places=2, default=5.00)
+    rating = models.DecimalField(max_digits=3, decimal_places=2, default=0.00)
     total_rides = models.IntegerField(default=0)
     profile_picture = models.ImageField(
         upload_to=user_profile_picture_path,
@@ -101,6 +102,48 @@ class User(AbstractUser):
     
     # Assign the custom manager
     objects = UserManager()
+    
+    # ==================== USER PROPERTIES ====================
+    
+    @property
+    def wallet_balance(self):
+        """Get user's wallet balance"""
+        try:
+            return self.wallet.balance
+        except:
+            return Decimal('0.00')
+    
+    @property
+    def total_transactions(self):
+        """Get total transaction count"""
+        try:
+            from payments.models import Transaction
+            return Transaction.objects.filter(user=self).count()
+        except:
+            return 0
+
+    @property
+    def total_deposits(self):
+        """Get total deposits count"""
+        try:
+            from payments.models import Transaction
+            return Transaction.objects.filter(
+                user=self,
+                transaction_type='deposit',
+                status='completed'
+            ).count()
+        except:
+            return 0
+
+    @property
+    def formatted_wallet_balance(self):
+        """Get formatted wallet balance"""
+        try:
+            return self.wallet.formatted_balance
+        except:
+            return '₦0.00'
+    
+    # ==================== META CLASS ====================
     
     class Meta:
         db_table = 'accounts_user'
