@@ -27,7 +27,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOWED_HOSTS',
-    '192.168.111.65,https://swiftride-1wnu.onrender.com,localhost,127.0.0.1,.vercel.app'
+    '192.168.111.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
 ).split(',')
 
 # Application definition
