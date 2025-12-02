@@ -1,10 +1,12 @@
-
 """
 FILE LOCATION: promotions/services.py
 
 Service layer for promotions business logic.
 Promo codes, referrals, loyalty points management.
+
+✅ FIXED: All Transaction.objects.create() calls now include unique 'reference' field
 """
+import uuid
 from django.db import transaction
 from django.utils import timezone
 from decimal import Decimal
@@ -120,7 +122,7 @@ def apply_promo_to_ride(promo_code, ride):
             ride.fare_amount = ride.fare_amount - discount
             ride.save()
             
-            logger.info(f"🎁 Promo {promo_code.code} applied to ride #{ride.id}, discount: ₦{discount}")
+            logger.info(f"Promo {promo_code.code} applied to ride #{ride.id}, discount: ₦{discount}")
             
             return True, f"₦{discount} discount applied!"
             
@@ -182,7 +184,7 @@ def create_referral(referrer, referee_phone):
             status='pending'
         )
         
-        logger.info(f"🎉 Referral created: {referrer.phone_number} → {referee.phone_number}")
+        logger.info(f"Referral created: {referrer.phone_number} → {referee.phone_number}")
         
         # Send notifications
         try:
@@ -192,7 +194,7 @@ def create_referral(referrer, referee_phone):
             send_notification_all_channels.delay(
                 user_id=referrer.id,
                 notification_type='referral_created',
-                title='Friend Joined! 🎉',
+                title='Friend Joined!',
                 body=f'{referee.phone_number} joined using your referral code!',
                 send_push=True,
                 data={'referee': referee.phone_number}
@@ -202,7 +204,7 @@ def create_referral(referrer, referee_phone):
             send_notification_all_channels.delay(
                 user_id=referee.id,
                 notification_type='referral_received',
-                title='Referral Bonus 🎁',
+                title='Referral Bonus',
                 body=f'Complete {program.minimum_rides} ride(s) to get ₦{program.referee_reward} bonus!',
                 send_push=True,
                 data={'reward': str(program.referee_reward)}
@@ -241,11 +243,15 @@ def award_referral_rewards(referral):
             referrer_wallet.balance += program.referrer_reward
             referrer_wallet.save()
             
+            # Generate unique reference for referrer transaction
+            referrer_reference = f"REF-{referral.id}-{referral.referrer.id}-{int(timezone.now().timestamp())}"
+            
             Transaction.objects.create(
                 user=referral.referrer,
                 transaction_type='referral_reward',
                 amount=program.referrer_reward,
                 status='completed',
+                reference=referrer_reference,
                 description=f'Referral reward for {referral.referee.phone_number}'
             )
             
@@ -253,11 +259,15 @@ def award_referral_rewards(referral):
             referee_wallet.balance += program.referee_reward
             referee_wallet.save()
             
+            # Generate unique reference for referee transaction
+            referee_reference = f"REF-{referral.id}-{referral.referee.id}-{int(timezone.now().timestamp())}"
+            
             Transaction.objects.create(
                 user=referral.referee,
                 transaction_type='referral_reward',
                 amount=program.referee_reward,
                 status='completed',
+                reference=referee_reference,
                 description='Referral bonus for joining'
             )
             
@@ -266,7 +276,7 @@ def award_referral_rewards(referral):
             referral.save()
             
             logger.info(
-                f"💰 Referral rewards awarded: "
+                f"Referral rewards awarded: "
                 f"₦{program.referrer_reward} to {referral.referrer.phone_number}, "
                 f"₦{program.referee_reward} to {referral.referee.phone_number}"
             )
@@ -313,16 +323,20 @@ def redeem_loyalty_points(user, points):
             wallet.balance += amount
             wallet.save()
             
-            # Create transaction
+            # Generate unique reference for this transaction
+            reference = f"LPR-{user.id}-{int(timezone.now().timestamp())}-{str(uuid.uuid4())[:8]}"
+            
+            # Create transaction with unique reference
             Transaction.objects.create(
                 user=user,
                 transaction_type='loyalty_redemption',
                 amount=amount,
                 status='completed',
+                reference=reference,
                 description=f'Redeemed {points} loyalty points'
             )
             
-            logger.info(f"🎁 {user.phone_number} redeemed {points} points for ₦{amount}")
+            logger.info(f"Redemption successful for {user.phone_number}: {points} points redeemed for ₦{amount}")
             
             return True, f"₦{amount} added to your wallet!", amount
             
@@ -427,5 +441,4 @@ def get_active_promos_for_user(user):
     except Exception as e:
         logger.error(f"Error getting active promos: {str(e)}")
         return []
-
-
+    

@@ -381,13 +381,23 @@ def initialize_payment(request):
 
 # ==================== PAYSTACK PAYMENT VERIFICATION ====================
 
+
+
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def verify_payment(request):
     """
-    Verify Paystack payment
+    FIXED: Verify Paystack payment and IMMEDIATELY credit wallet
     
     GET /api/payments/deposit/verify/?reference=DEP-XXX
+    
+    CRITICAL FLOW:
+    1. Get transaction from DB
+    2. If already completed, return current state
+    3. Verify with Paystack
+    4. If successful, credit wallet IMMEDIATELY
+    5. Return updated balance
     
     Returns:
     {
@@ -401,6 +411,7 @@ def verify_payment(request):
     
     if not reference:
         return Response({
+            'success': False,
             'error': 'Reference is required'
         }, status=status.HTTP_400_BAD_REQUEST)
     
@@ -408,81 +419,304 @@ def verify_payment(request):
         # Get transaction
         transaction_obj = Transaction.objects.get(
             reference=reference,
-            user=request.user
+            user=request.user,
+            transaction_type='deposit'
         )
         
-        # If already completed
+        wallet = request.user.wallet
+        
+        # If already completed, return current state
         if transaction_obj.status == 'completed':
-            wallet = request.user.wallet
+            logger.info(f"Transaction already completed: {reference}")
             return Response({
                 'success': True,
-                'message': 'Already verified',
+                'message': 'Payment already verified',
                 'transaction': TransactionSerializer(transaction_obj).data,
-                'wallet': {'balance': str(wallet.balance)}
+                'wallet': {
+                    'balance': str(wallet.balance),
+                    'formatted': f"NGN {wallet.balance:,.2f}"
+                }
             }, status=status.HTTP_200_OK)
         
         # Verify with Paystack
+        logger.info(f"Verifying with Paystack: {reference}")
         client = PaystackClient()
         paystack_data = client.verify_transaction(reference)
         
-        # Check status
+        # Check if payment was successful on Paystack
         if paystack_data['status'] != 'success':
+            # Payment failed on Paystack side
             transaction_obj.status = 'failed'
             transaction_obj.save()
             
-            log_transaction('deposit_verify', transaction_obj.amount, 
+            log_transaction('deposit_verify_failed', transaction_obj.amount, 
                           request.user.id, 'failed', reference)
             
+            logger.warning(f"Payment verification failed: {reference}")
+            
             return Response({
-                'error': 'Payment failed',
-                'status': paystack_data['status']
+                'success': False,
+                'error': 'Payment verification failed',
+                'paystack_status': paystack_data['status']
             }, status=status.HTTP_400_BAD_REQUEST)
         
-        # Payment successful - credit wallet
+        # CRITICAL: Payment successful - credit wallet IMMEDIATELY
         with db_transaction.atomic():
-            wallet = request.user.wallet
+            # Convert amount from kobo to naira
             amount_paid = kobo_to_naira(paystack_data['amount'])
             
-            # Update transaction
-            transaction_obj.balance_after = wallet.balance + amount_paid
+            # Update wallet BEFORE updating transaction
+            balance_before = wallet.balance
+            wallet.add_funds(amount_paid)
+            balance_after = wallet.balance
+            
+            # Update transaction as completed
+            transaction_obj.balance_before = balance_before
+            transaction_obj.balance_after = balance_after
             transaction_obj.status = 'completed'
             transaction_obj.completed_at = timezone.now()
             transaction_obj.metadata.update({
                 'paystack_reference': paystack_data.get('reference'),
+                'paystack_status': paystack_data.get('status'),
                 'channel': paystack_data.get('channel'),
-                'paid_at': paystack_data.get('paid_at')
+                'paid_at': paystack_data.get('paid_at'),
+                'authorization': paystack_data.get('authorization', {}).get('authorization_code')
             })
             transaction_obj.save()
             
-            # Credit wallet
-            wallet.add_funds(amount_paid)
-            
-            log_transaction('deposit_verify', amount_paid, request.user.id, 
+            log_transaction('deposit_verified', amount_paid, request.user.id, 
                           'success', reference, channel=paystack_data.get('channel'))
             
-            logger.info(f"✅ Payment verified: {reference} - ₦{amount_paid}")
+            logger.info(f"Payment verified and credited: {reference} - NGN {amount_paid}")
         
+        # Return success with updated wallet
         return Response({
             'success': True,
-            'message': 'Payment verified successfully',
+            'message': 'Payment verified successfully! Wallet updated.',
             'transaction': TransactionSerializer(transaction_obj).data,
-            'wallet': {'balance': str(wallet.balance)}
+            'wallet': {
+                'balance': str(wallet.balance),
+                'formatted': f"NGN {wallet.balance:,.2f}"
+            }
         }, status=status.HTTP_200_OK)
     
     except Transaction.DoesNotExist:
+        logger.warning(f"Transaction not found: {reference}")
         return Response({
+            'success': False,
             'error': 'Transaction not found'
         }, status=status.HTTP_404_NOT_FOUND)
     
     except Exception as e:
-        logger.error(f"Verification error: {str(e)}")
+        logger.error(f"Verification error: {str(e)}", exc_info=True)
         log_payment_error('verification', request.user.id, Decimal('0'), str(e), 
                          reference=reference)
         return Response({
-            'error': str(e)
+            'success': False,
+            'error': f'Verification failed: {str(e)}'
         }, status=status.HTTP_400_BAD_REQUEST)
 
 
+# ==================== PAYSTACK WEBHOOK (Backup confirmation) ====================
+
+@csrf_exempt
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def paystack_webhook(request):
+    """
+    FIXED: Handle Paystack webhook as BACKUP/CONFIRMATION only
+    
+    Since verify_payment already credits the wallet immediately,
+    this webhook is backup in case verify_payment wasn't called.
+    
+    Prevents double-crediting by checking transaction status.
+    
+    POST /api/payments/webhooks/paystack/
+    
+    Events:
+    - charge.success: Deposit successful
+    - transfer.success: Withdrawal successful
+    - transfer.failed: Withdrawal failed
+    """
+    signature = request.META.get('HTTP_X_PAYSTACK_SIGNATURE', '')
+    
+    if not signature:
+        logger.warning("Webhook received without signature")
+        return HttpResponse('No signature', status=400)
+    
+    payload = request.body
+    
+    # Verify webhook signature
+    if not PaystackClient.verify_webhook_signature(payload, signature):
+        logger.warning("Invalid webhook signature")
+        return HttpResponse('Invalid signature', status=400)
+    
+    try:
+        event_data = json.loads(payload.decode('utf-8'))
+        event_type = event_data.get('event')
+        data = event_data.get('data', {})
+        
+        logger.info(f"Webhook event received: {event_type}")
+        
+        if event_type == 'charge.success':
+            handle_charge_success_webhook(data)
+        elif event_type == 'transfer.success':
+            handle_transfer_success_webhook(data)
+        elif event_type == 'transfer.failed':
+            handle_transfer_failed_webhook(data)
+        elif event_type == 'transfer.reversed':
+            handle_transfer_reversed_webhook(data)
+        else:
+            logger.info(f"Unhandled webhook event: {event_type}")
+        
+        # Always return 200 to acknowledge receipt
+        return HttpResponse('Webhook processed', status=200)
+    
+    except Exception as e:
+        logger.error(f"Webhook processing error: {str(e)}", exc_info=True)
+        # Return 200 anyway to prevent Paystack retry loop
+        return HttpResponse('Error processed', status=200)
+
+
+def handle_charge_success_webhook(data: dict):
+    """
+    FIXED: Handle charge.success webhook
+    
+    This is BACKUP only - verify_payment already credited wallet.
+    Only credit if transaction is still pending.
+    """
+    reference = data.get('reference')
+    amount_kobo = data.get('amount', 0)
+    amount = kobo_to_naira(amount_kobo)
+    
+    logger.info(f"Processing charge.success webhook: {reference}")
+    
+    try:
+        transaction_obj = Transaction.objects.get(
+            reference=reference,
+            transaction_type='deposit'
+        )
+        
+        # If already completed, skip (verify_payment already handled it)
+        if transaction_obj.status == 'completed':
+            logger.info(f"Transaction already completed (via verify_payment): {reference}")
+            return
+        
+        # If failed, don't credit
+        if transaction_obj.status == 'failed':
+            logger.info(f"Transaction failed, not crediting: {reference}")
+            return
+        
+        # ONLY credit if still pending
+        if transaction_obj.status == 'pending':
+            with db_transaction.atomic():
+                wallet = transaction_obj.user.wallet
+                balance_before = wallet.balance
+                wallet.add_funds(amount)
+                balance_after = wallet.balance
+                
+                transaction_obj.balance_before = balance_before
+                transaction_obj.balance_after = balance_after
+                transaction_obj.status = 'completed'
+                transaction_obj.completed_at = timezone.now()
+                transaction_obj.metadata.update({
+                    'webhook_received': True,
+                    'channel': data.get('channel'),
+                    'paid_at': data.get('paid_at')
+                })
+                transaction_obj.save()
+                
+                log_transaction('webhook_charge', amount, transaction_obj.user.id, 
+                              'success', reference)
+                
+                logger.info(f"Webhook credited wallet: {reference} - NGN {amount}")
+    
+    except Transaction.DoesNotExist:
+        logger.warning(f"Transaction not found in webhook: {reference}")
+
+
+def handle_transfer_success_webhook(data: dict):
+    """Handle successful withdrawal webhook"""
+    reference = data.get('reference')
+    
+    logger.info(f"Processing transfer.success webhook: {reference}")
+    
+    try:
+        transaction_obj = Transaction.objects.get(reference=reference)
+        withdrawal = transaction_obj.withdrawal_request
+        
+        if transaction_obj.status == 'completed':
+            logger.info(f"Withdrawal already completed: {reference}")
+            return
+        
+        with db_transaction.atomic():
+            transaction_obj.status = 'completed'
+            transaction_obj.completed_at = timezone.now()
+            transaction_obj.metadata.update({
+                'webhook_received': True,
+                'transfer_status': 'success'
+            })
+            transaction_obj.save()
+            
+            withdrawal.status = 'completed'
+            withdrawal.processed_at = timezone.now()
+            withdrawal.save()
+            
+            log_transaction('webhook_transfer', transaction_obj.amount, 
+                          transaction_obj.user.id, 'success', reference)
+            
+            logger.info(f"Withdrawal completed via webhook: {reference}")
+    
+    except Exception as e:
+        logger.warning(f"Error in transfer success webhook: {str(e)}")
+
+
+def handle_transfer_failed_webhook(data: dict):
+    """Handle failed withdrawal webhook - REFUND wallet"""
+    reference = data.get('reference')
+    
+    logger.info(f"Processing transfer.failed webhook: {reference}")
+    
+    try:
+        transaction_obj = Transaction.objects.get(reference=reference)
+        withdrawal = transaction_obj.withdrawal_request
+        
+        if transaction_obj.status in ['completed', 'failed']:
+            logger.info(f"Transfer already processed: {reference}")
+            return
+        
+        with db_transaction.atomic():
+            # Refund wallet
+            wallet = transaction_obj.user.wallet
+            wallet.add_funds(transaction_obj.amount)
+            
+            transaction_obj.status = 'failed'
+            transaction_obj.metadata.update({
+                'webhook_received': True,
+                'transfer_status': 'failed',
+                'failure_reason': data.get('message')
+            })
+            transaction_obj.save()
+            
+            withdrawal.status = 'rejected'
+            withdrawal.rejection_reason = f"Transfer failed: {data.get('message')}"
+            withdrawal.processed_at = timezone.now()
+            withdrawal.save()
+            
+            log_transaction('webhook_transfer_failed', transaction_obj.amount, 
+                          transaction_obj.user.id, 'refunded', reference)
+            
+            logger.info(f"Withdrawal failed and refunded: {reference}")
+    
+    except Exception as e:
+        logger.warning(f"Error in transfer failed webhook: {str(e)}")
+
+
+def handle_transfer_reversed_webhook(data: dict):
+    """Handle reversed withdrawal (same as failed)"""
+    handle_transfer_failed_webhook(data)
+    
+    
 # TO BE CONTINUED IN PART 2...
 
 """

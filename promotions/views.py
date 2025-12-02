@@ -1,7 +1,7 @@
 """
 FILE LOCATION: backend/promotions/views.py
 
-✅ UPDATED WITH REDEMPTION API
+UPDATED WITH REDEMPTION API - ALL FIXES APPLIED
 """
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -50,7 +50,7 @@ class PromoCodeViewSet(viewsets.ReadOnlyModelViewSet):
         if fare < promo.minimum_fare:
             return Response({
                 'success': False,
-                'error': f'Minimum fare is ₦{promo.minimum_fare}'
+                'error': f'Minimum fare is NGN {promo.minimum_fare}'
             }, status=status.HTTP_400_BAD_REQUEST)
         
         discount = promo.calculate_discount(fare)
@@ -153,7 +153,7 @@ class LoyaltyViewSet(viewsets.ViewSet):
             success, message, amount = redeem_loyalty_points(request.user, points)
             
             if not success:
-                logger.warning(f"❌ Redemption failed for {request.user.phone_number}: {message}")
+                logger.warning(f"Redemption failed for {request.user.phone_number}: {message}")
                 return Response({
                     'success': False,
                     'error': message
@@ -174,8 +174,8 @@ class LoyaltyViewSet(viewsets.ViewSet):
             ).order_by('-created_at').first()
             
             logger.info(
-                f"✅ Redemption successful for {request.user.phone_number}: "
-                f"{points} points → ₦{amount}"
+                f"Redemption successful for {request.user.phone_number}: "
+                f"{points} points redeemed for NGN {amount}"
             )
             
             return Response({
@@ -187,20 +187,21 @@ class LoyaltyViewSet(viewsets.ViewSet):
                     'new_available_points': loyalty.available_points,
                     'new_total_points': loyalty.total_points,
                     'new_wallet_balance': str(wallet.balance),
-                    'transaction_id': transaction.transaction_id if transaction else None,
+                    'transaction_id': transaction.id if transaction else None,
+                    'reference': transaction.reference if transaction else None,
                     'tier': loyalty.tier
                 }
             }, status=status.HTTP_200_OK)
             
         except Loyalty.DoesNotExist:
-            logger.error(f"❌ Loyalty account not found for {request.user.phone_number}")
+            logger.error(f"Loyalty account not found for {request.user.phone_number}")
             return Response({
                 'success': False,
                 'error': 'Loyalty account not found'
             }, status=status.HTTP_404_NOT_FOUND)
             
         except Exception as e:
-            logger.error(f"❌ Error redeeming points: {str(e)}", exc_info=True)
+            logger.error(f"Error redeeming points: {str(e)}", exc_info=True)
             return Response({
                 'success': False,
                 'error': 'Failed to redeem points. Please try again.'

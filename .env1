@@ -170,3 +170,36 @@ drwxr-xr-x 1 root root  4096 Oct 30 22:01 ..
 -rw-r--r-- 1 root root  2626 Oct 30 22:03 requirements.txt
 -rw-r--r-- 1 root root   239 Oct 30 22:03 routing.py
 -rw-r--r-- 1 root root 12409 Oct 30 22:02 settings.py
+
+
+
+
+
+
+
+import dj_database_url
+from decouple import config
+
+DATABASE_URL = config("DATABASE_URL", default=None)
+
+if DATABASE_URL:
+    # Use full DATABASE_URL (Supabase)
+    DATABASES = {
+        "default": dj_database_url.parse(
+            DATABASE_URL,
+            conn_max_age=600,
+            ssl_require=True,
+        )
+    }
+else:
+    # Use individual vars (local PostgreSQL)
+    DATABASES = {
+        'default': {
+            'ENGINE': config("DB_ENGINE", default="django.db.backends.postgresql"),
+            'NAME': config("DB_NAME"),
+            'USER': config("DB_USER"),
+            'PASSWORD': config("DB_PASSWORD"),
+            'HOST': config("DB_HOST", default="localhost"),
+            'PORT': config("DB_PORT", default="5432"),
+        }
+    }

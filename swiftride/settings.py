@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
@@ -47,7 +48,7 @@ INSTALLED_APPS = [
     'channels',  # WebSocket support
     'django_filters', 
     'drf_yasg',  # API documentation
-    # 'sslserver',  # TODO: Re-enable when dependency is installed
+    'sslserver',  # TODO: Re-enable when dependency is installed
     'celery',
     
     # SwiftRide apps (in dependency order)
@@ -70,6 +71,7 @@ INSTALLED_APPS = [
  
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     "whitenoise.middleware.WhiteNoiseMiddleware",
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -106,13 +108,40 @@ ASGI_APPLICATION = 'swiftride.asgi.application'
 # ========================================
 # DATABASE
 # ========================================
-# Development: SQLite
+
+# import dj_database_url
+# from decouple import config
+
+# DATABASES = {
+#     "default": dj_database_url.parse(
+#         config("DATABASE_URL"),
+#         conn_max_age=600,
+#         ssl_require=True,
+#     )
+# } 
+   
+
+
+# # from decouple import config
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':config("dbname"),
+        'USER' :config("user"),
+        'PASSWORD' :config("password"),
+        'HOST' :config("host"),
+        'PORT' :config("port"), 
     }
 }
+
+# Development: SQLite
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Production: PostgreSQL (uncomment and configure)
 # DATABASES = {
