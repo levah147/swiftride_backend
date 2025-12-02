@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'channels',  # WebSocket support
     'django_filters', 
     'drf_yasg',  # API documentation
-    'sslserver',  # TODO: Re-enable when dependency is installed
+    # 'sslserver',  # TODO: Re-enable when dependency is installed
     'celery',
     
     # SwiftRide apps (in dependency order)
