@@ -23,10 +23,12 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS','192.168.111.65,localhost,127.0.0.1').split(',')
-# 2013372886 kuda
+ALLOWED_HOSTS = os.getenv(
+    'ALLOWED_HOSTS',
+    '192.168.111.65,localhost,127.0.0.1,.vercel.app'
+).split(',')
 
 # Application definition
 INSTALLED_APPS = [
@@ -120,19 +122,30 @@ ASGI_APPLICATION = 'swiftride.asgi.application'
 #     )
 # } 
    
+import dj_database_url
 
 
 # # from decouple import config
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':config("dbname"),
+#         'USER' :config("user"),
+#         'PASSWORD' :config("password"),
+#         'HOST' :config("host"),
+#         'PORT' :config("port"), 
+#     }
+# }
+
+# Update DATABASE configuration
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':config("dbname"),
-        'USER' :config("user"),
-        'PASSWORD' :config("password"),
-        'HOST' :config("host"),
-        'PORT' :config("port"), 
-    }
+    'default': dj_database_url.config(
+        default=f"postgresql://{config('user')}:{config('password')}@{config('host')}:{config('port')}/{config('dbname')}",
+        conn_max_age=600,
+        conn_health_checks=True,
+        ssl_require=False  # Set to True if your DB requires SSL
+    )
 }
 
 # Development: SQLite
@@ -184,9 +197,10 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
+# Static files for Vercel
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-# STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files
 MEDIA_URL = '/media/'
@@ -195,6 +209,21 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+# Disable certain features when deploying on Vercel
+if os.getenv('VERCEL'):
+    # Disable Channels (WebSockets)
+    ASGI_APPLICATION = None
+    CHANNEL_LAYERS = {}
+    
+    # Disable Celery
+    CELERY_BROKER_URL = None
+    CELERY_RESULT_BACKEND = None
+    
+    
+    
+    
+    
 # ========================================
 # REST FRAMEWORK
 # ========================================

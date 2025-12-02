@@ -1,3 +1,126 @@
 INFO 2025-12-02 09:35:50,311 autoreload Watching for file changes with StatReloader
 INFO 2025-12-02 09:36:41,832 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
 INFO 2025-12-02 09:36:44,410 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:01:41,400 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:01:49,741 basehttp "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-12-02 10:01:49,754 basehttp code 400, message Bad request version ('Â>î6_#\x89É')
+ERROR 2025-12-02 10:01:49,755 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:01:49,757 basehttp code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93jj\x00\x00\x00\x12\x00\x00\x00#\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-12-02 10:01:49,759 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:09,492 basehttp "GET /admin/ HTTP/1.1" 301 0
+INFO 2025-12-02 10:02:09,533 basehttp code 400, message Bad request version ('\x81Ì')
+ERROR 2025-12-02 10:02:09,534 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:09,536 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sjj\x00\x00\x00')
+ERROR 2025-12-02 10:02:09,537 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:24,399 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:02:27,181 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:02:30,324 basehttp code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-12-02 10:02:30,324 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:30,326 basehttp code 400, message Bad request version ('t\x959\x06')
+ERROR 2025-12-02 10:02:30,326 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:30,575 basehttp code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-12-02 10:02:30,578 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:30,579 basehttp code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063**\x00\x00\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-12-02 10:02:30,580 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:30,580 basehttp code 400, message Bad request version ('E5\x82\x96V±{')
+ERROR 2025-12-02 10:02:30,580 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:30,582 basehttp code 400, message Bad request version ('Æ¼F')
+ERROR 2025-12-02 10:02:30,582 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:33,206 basehttp code 400, message Bad request version ('\x9d\x9b´|BKâ)\x9a')
+ERROR 2025-12-02 10:02:33,208 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:33,208 basehttp code 400, message Bad request version ('GPZ`\x1a\x02\x84[ÈKgé¾¯³l5\x00')
+ERROR 2025-12-02 10:02:33,208 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:33,209 basehttp code 400, message Bad request version ('>ñàÆ\x87\x9fä\x08DÞ@îN\x83[d\x06·Áù<Ù')
+ERROR 2025-12-02 10:02:33,210 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:33,211 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-12-02 10:02:33,211 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-12-02 10:02:40,956 log Not Found: /
+WARNING 2025-12-02 10:02:40,957 basehttp "GET / HTTP/1.1" 404 4836
+WARNING 2025-12-02 10:02:41,336 log Not Found: /favicon.ico
+WARNING 2025-12-02 10:02:41,337 basehttp "GET /favicon.ico HTTP/1.1" 404 4887
+INFO 2025-12-02 10:02:49,382 basehttp code 400, message Bad request syntax ("\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03N¢vÇé©\x9d'îþC@/")
+ERROR 2025-12-02 10:02:49,382 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:49,384 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ø\x92ë\x07ÈxìL±cÄ\x83y\x88q\x18\x92')
+ERROR 2025-12-02 10:02:49,384 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:54,470 basehttp code 400, message Bad request version ("Ð\x91²I\x8c_X°Nô±6<ì$\x19!\x88Óöª¤)\x12ï[º\x93z7F3mS\x9aeýr7uË¸\x04'\x7fåYGÂãÈ\x88àM#ó\x13r´²:f")
+ERROR 2025-12-02 10:02:54,470 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:54,472 basehttp code 400, message Bad request version ('dô\x8fIKÌn¼')
+ERROR 2025-12-02 10:02:54,473 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:57,271 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03l0\x1bqJflÀÅ2éÉÂ8-<\x11\x9f¦¤¾\x18')
+ERROR 2025-12-02 10:02:57,271 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:02:57,273 basehttp code 400, message Bad request version ('M\x8fÇ\x17µìßðTí>Â\x03{\x9daN´\x10µ')
+ERROR 2025-12-02 10:02:57,273 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:20,514 basehttp code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-12-02 10:03:20,515 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:20,516 basehttp code 400, message Bad request version ('9æ«E\x84æ¥\x8b')
+ERROR 2025-12-02 10:03:20,516 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:24,866 basehttp code 400, message Bad request version ('?\x17\x90ûà\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-12-02 10:03:24,868 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:24,869 basehttp code 400, message Bad request version ('ñÂÈZº¨Z_!Ê%"g')
+ERROR 2025-12-02 10:03:24,870 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:24,870 basehttp code 400, message Bad request version ('\x88âýßÉ\x15AÙ¥(P3,»øq\x94\x83Ú-\x982\x1aázÎÙ£q¤Ã\x8d\x00')
+ERROR 2025-12-02 10:03:24,871 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:03:24,873 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03®\x97Õ')
+ERROR 2025-12-02 10:03:24,874 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-12-02 10:03:28,015 log Not Found: /
+WARNING 2025-12-02 10:03:28,015 basehttp "GET / HTTP/1.1" 404 4836
+WARNING 2025-12-02 10:03:41,609 log Unauthorized: /api/auth/profile/
+WARNING 2025-12-02 10:03:41,610 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 58
+WARNING 2025-12-02 10:03:48,367 log Not Found: /api/
+WARNING 2025-12-02 10:03:48,368 basehttp "GET /api/ HTTP/1.1" 404 4866
+INFO 2025-12-02 10:04:17,134 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:04:19,994 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:04:23,263 basehttp "GET /api/ HTTP/1.1" 301 0
+INFO 2025-12-02 10:04:23,274 basehttp code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06szz\x00\x00\x00#\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-12-02 10:04:23,275 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:23,277 basehttp code 400, message Bad request version ('j')
+ERROR 2025-12-02 10:04:23,277 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:26,698 basehttp code 400, message Bad request version ('ñ\x9dDßvZ¡ð\x94oØ©¶ÍhûÊ\x9f4Á¿w\x04}C´\x96Sñ\x9d')
+ERROR 2025-12-02 10:04:26,700 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:26,700 basehttp code 400, message Bad request version ('F\x8f\x01\xadØÉ,%\x00')
+ERROR 2025-12-02 10:04:26,701 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:26,703 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03x\x99U')
+ERROR 2025-12-02 10:04:26,704 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:26,704 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-12-02 10:04:26,706 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:28,237 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00')
+ERROR 2025-12-02 10:04:28,237 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:28,238 basehttp code 400, message Bad request version ('°«z')
+ERROR 2025-12-02 10:04:28,240 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:28,240 basehttp code 400, message Bad request version ('ÖÙ\x9fÀ8eÌ<b\x00')
+ERROR 2025-12-02 10:04:28,242 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:28,250 basehttp code 400, message Bad request version ('#\x87R\x8c\x8b\x00')
+ERROR 2025-12-02 10:04:28,298 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:33,967 basehttp code 400, message Bad request version ('ÎPQ\xadÖ\x1aöpø\x80\x8c\\hh~¹*É\x12Áºd\x9b³ü]:Õ¤Ü#Á\x98ª\x97JÆÐ3yËÏ\x11f')
+ERROR 2025-12-02 10:04:33,968 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:33,968 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-12-02 10:04:33,969 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:33,970 basehttp code 400, message Bad request version ('i\x04IÃ\x9bÛEÍ\x18x')
+ERROR 2025-12-02 10:04:33,971 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:33,971 basehttp code 400, message Bad request version ('9')
+ERROR 2025-12-02 10:04:33,972 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:41,537 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-12-02 10:04:41,561 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00')
+ERROR 2025-12-02 10:04:41,561 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:41,563 basehttp code 400, message Bad request version ('7N\x02®|âÊ\x19àÙr´KD\x8d\x06¢ÕûH¢ßO\x8b¯»\x05¿|¾Ù&{\x05_\x9b\x81½Ñåe¾ÈO>D½Æî')
+ERROR 2025-12-02 10:04:41,564 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:55,756 basehttp code 400, message Bad request version ('\x9d\x7fÐRÛ9);u<\x84')
+ERROR 2025-12-02 10:04:55,758 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:04:55,765 basehttp code 400, message Bad request version ('ç\x94Åeeï£Í\x8b\x9fj0\x83')
+ERROR 2025-12-02 10:04:55,772 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-02 10:05:23,897 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:05:26,756 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:05:29,982 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:06:05,505 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:10:25,245 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:10:28,258 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:11:09,226 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:11:38,726 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:13:18,110 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:13:21,124 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:14:07,586 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:14:11,062 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:14:17,223 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:14:19,636 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 10:14:24,621 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-02 10:14:27,967 autoreload Watching for file changes with StatReloader
