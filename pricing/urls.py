@@ -9,7 +9,10 @@ urlpatterns = [
     path('detect-city/', views.detect_city, name='detect_city'),
     
     # Vehicles
-    path('types/', views.get_available_vehicles, name='vehicle_types'),
+    # path('types/', views.get_available_vehicles, name='vehicle_types'),
+    
+    # Vehicles - ✅ FIXED: Changed 'types/' to 'vehicle-types/'
+    path('vehicle-types/', views.get_available_vehicles, name='vehicle_types'),  # ✅ MATCH FRONTEND
     
     # Fare calculation
     path('calculate-fare/', views.calculate_fare, name='calculate_fare'),

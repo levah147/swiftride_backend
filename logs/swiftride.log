@@ -124,3 +124,15 @@ INFO 2025-12-02 10:14:17,223 autoreload C:\Users\Levah147\OneDrive\Desktop\code\
 INFO 2025-12-02 10:14:19,636 autoreload Watching for file changes with StatReloader
 INFO 2025-12-02 10:14:24,621 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
 INFO 2025-12-02 10:14:27,967 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 11:36:00,097 autoreload Watching for file changes with StatReloader
+INFO 2025-12-02 16:42:21,008 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 09:56:50,685 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\pricing\urls.py changed, reloading.
+INFO 2025-12-03 09:56:58,210 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 09:57:15,336 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-12-03 09:57:18,694 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 09:57:21,580 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-12-03 09:57:23,900 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 09:57:28,415 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-12-03 09:57:30,533 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 09:58:30,432 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
+INFO 2025-12-03 09:58:33,126 autoreload Watching for file changes with StatReloader

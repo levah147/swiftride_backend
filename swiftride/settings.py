@@ -210,17 +210,20 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Disable certain features when deploying on Vercel
-if os.getenv('VERCEL'):
-    # Disable Channels (WebSockets)
-    ASGI_APPLICATION = None
-    CHANNEL_LAYERS = {}
+# # Disable certain features when deploying on Vercel
+# if os.getenv('VERCEL'):
+#     # Disable Channels (WebSockets)
+#     ASGI_APPLICATION = None
+#     CHANNEL_LAYERS = {}
     
-    # Disable Celery
-    CELERY_BROKER_URL = None
-    CELERY_RESULT_BACKEND = None
+#     # Disable Celery
+#     CELERY_BROKER_URL = None
+#     CELERY_RESULT_BACKEND = None
     
-    
+# For Render deployment
+if os.getenv('RENDER'):
+    DEBUG = False
+    ALLOWED_HOSTS = ['.onrender.com']  # Allow all Render subdomains  
     
     
     

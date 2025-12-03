@@ -1,5 +1,5 @@
 #   views.py for rides app
-
+from django.db import models
 from django.forms import ValidationError
 from rest_framework import generics, status
 from rest_framework.decorators import api_view, permission_classes
@@ -57,7 +57,8 @@ class RideListCreateView(generics.ListCreateAPIView):
                 ride = serializer.save(
                     user=self.request.user,
                     status='pending',
-                    vehicle_type_id=fare_data.get('vehicle_type_id'),
+                    # vehicle_type_id=fare_data.get('vehicle_type_id'),
+                    vehicle_type = models.ForeignKey('pricing.VehicleType', ...),
                     city_id=fare_data.get('city_id'),
                     fare_hash=fare_hash,
                     base_fare=fare_data.get('base_fare', 0),
