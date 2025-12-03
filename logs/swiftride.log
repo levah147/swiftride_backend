@@ -136,3 +136,71 @@ INFO 2025-12-03 09:57:28,415 autoreload C:\Users\Levah147\OneDrive\Desktop\code\
 INFO 2025-12-03 09:57:30,533 autoreload Watching for file changes with StatReloader
 INFO 2025-12-03 09:58:30,432 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\rides\views.py changed, reloading.
 INFO 2025-12-03 09:58:33,126 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:15:11,263 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:17:08,039 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:17:11,408 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:18:27,353 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:18:29,681 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:18:46,678 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:20:10,798 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:20:44,721 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:33:36,315 basehttp "POST /apiauth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:35:14,963 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:39:56,761 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\urls.py changed, reloading.
+INFO 2025-12-03 10:40:00,722 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:40:04,236 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\urls.py changed, reloading.
+INFO 2025-12-03 10:40:06,278 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:41:14,865 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:44:23,899 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:44:27,367 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:44:29,511 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:44:31,802 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:45:38,090 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:46:23,955 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:47:19,397 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:48:09,942 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 301 0
+INFO 2025-12-03 10:51:39,950 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:51:52,501 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:51:58,205 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:52:00,474 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:52:09,411 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:52:11,677 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:52:15,033 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:52:17,223 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:52:45,327 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:53:01,064 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:53:04,187 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:53:17,322 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:53:19,724 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:53:44,011 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:53:45,729 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:53:52,368 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:53:53,624 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:53:57,009 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:53:58,414 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:54:06,017 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:54:07,254 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:54:23,199 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:54:25,777 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:54:37,043 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:54:39,679 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:55:12,821 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 10:55:14,951 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 10:56:49,459 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-03 10:57:17,518 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-03 10:57:19,694 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 10:57:22,870 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-03 10:57:23,104 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-03 10:57:23,122 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 10:57:23,131 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-03 10:57:24,515 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 10:57:24,516 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-03 10:57:24,666 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 10:57:24,667 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-03 10:57:26,266 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-03 10:57:51,366 basehttp "PATCH /api/auth/profile/update/ HTTP/1.1" 200 394
+INFO 2025-12-03 10:57:52,193 basehttp "GET /media/profile_pictures/f059de64a1a24d25920086af2a94952e.png HTTP/1.1" 200 150978
+INFO 2025-12-03 10:57:59,166 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-03 10:58:12,434 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
+INFO 2025-12-03 10:58:33,429 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 588
+INFO 2025-12-03 10:58:36,970 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 588

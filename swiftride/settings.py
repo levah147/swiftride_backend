@@ -8,12 +8,6 @@ from pathlib import Path
 from datetime import timedelta
 from decouple import config
 
-import sys
-if sys.platform == 'win32':
-    import io
-    # Force UTF-8 encoding for Windows console
-    sys.stdout.reconfigure(encoding='utf-8')
-    sys.stderr.reconfigure(encoding='utf-8')
 
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,12 +17,12 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-this-in-production'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOWED_HOSTS',
-    '192.168.111.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
-).split(',')
+    '192.168.229.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
+).split(',') 
 
 # Application definition
 INSTALLED_APPS = [
@@ -219,7 +213,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     # Disable Celery
 #     CELERY_BROKER_URL = None
 #     CELERY_RESULT_BACKEND = None
-    
+
+APPEND_SLASH = True
+
+# CORS settings (if using CORS)
+CORS_ALLOW_ALL_ORIGINS = True  # For development only!
+ 
 # For Render deployment
 if os.getenv('RENDER'):
     DEBUG = False
@@ -459,9 +458,12 @@ ADMIN_INDEX_TITLE = 'Welcome to SwiftRide Administration'
 # SECURITY SETTINGS (Production)
 # ========================================
 if not DEBUG:
-    SECURE_SSL_REDIRECT = True
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+    # Change this from True to False for development
+    SECURE_SSL_REDIRECT = False  # Set to True only in production
+
+    # Also set these to False for development
+    SESSION_COOKIE_SECURE = False
+    CSRF_COOKIE_SECURE = False
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = 'DENY'
