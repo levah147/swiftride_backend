@@ -25,6 +25,8 @@ from .serializers import (
 )
 
 
+# Replace your DriverApplicationView with this updated version 
+
 class DriverApplicationView(generics.CreateAPIView):
     """Apply to become a driver"""
     serializer_class = DriverApplicationSerializer
@@ -43,34 +45,30 @@ class DriverApplicationView(generics.CreateAPIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
         
+        # Validate request data
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         
-        # Create driver profile
+        # Create driver profile with vehicle
         try:
-            with transaction.atomic():
-                driver = Driver.objects.create(
-                    user=request.user,
-                    **serializer.validated_data
-                )
-                
-                return Response(
-                    {
-                        'message': 'Driver application submitted successfully',
-                        'driver': DriverProfileSerializer(
-                            driver, 
-                            context={'request': request}
-                        ).data
-                    },
-                    status=status.HTTP_201_CREATED
-                )
+            driver = serializer.save()
+            
+            return Response(
+                {
+                    'message': 'Driver application submitted successfully',
+                    'driver': DriverProfileSerializer(
+                        driver, 
+                        context={'request': request}
+                    ).data
+                },
+                status=status.HTTP_201_CREATED
+            )
         except Exception as e:
             return Response(
                 {'error': f'Failed to create driver profile: {str(e)}'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-
-
+            
 class DriverProfileView(generics.RetrieveUpdateAPIView):
     """Get/update current user's driver profile"""
     serializer_class = DriverProfileSerializer

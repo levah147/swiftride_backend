@@ -2,7 +2,8 @@ from rest_framework import serializers
 from .models import Driver, DriverVerificationDocument, VehicleImage, DriverRating
 from accounts.models import User
 from vehicles.models import Vehicle
-from vehicles.serializers import VehicleSerializer, VehicleCreateSerializer
+from pricing.models import VehicleType  # VehicleType is in pricing app
+from vehicles.serializers import VehicleSerializer
 import os
 
 
@@ -74,26 +75,130 @@ class DriverRatingSerializer(serializers.ModelSerializer):
 
 
 class DriverApplicationSerializer(serializers.ModelSerializer):
-    """Serializer for driver application submission"""
-    vehicle_details = serializers.JSONField(write_only=True, help_text="Vehicle details (make, model, year, color, plate, type_id)")
+    """Serializer for driver application submission - accepts flat vehicle fields"""
+    
+    # Vehicle fields at the top level (matching Flutter app)
+    vehicle_type = serializers.CharField(
+        max_length=50, 
+        write_only=True,
+        help_text="Vehicle type (e.g., sedan, suv, van)"
+    )
+    vehicle_color = serializers.CharField(
+        max_length=50, 
+        write_only=True,
+        help_text="Vehicle color"
+    )
+    license_plate = serializers.CharField(
+        max_length=20, 
+        write_only=True,
+        help_text="Vehicle license plate number"
+    )
+    vehicle_year = serializers.IntegerField(
+        required=False, 
+        allow_null=True,
+        write_only=True,
+        help_text="Vehicle year (optional)"
+    )
     
     class Meta:
         model = Driver
         fields = [
-            'driver_license_number', 'driver_license_expiry', 'vehicle_details'
+            'driver_license_number', 
+            'driver_license_expiry',
+            'vehicle_type',
+            'vehicle_color', 
+            'license_plate',
+            'vehicle_year'
         ]
     
-    def validate_vehicle_details(self, value):
-        required_fields = ['make', 'model', 'year', 'color', 'license_plate', 'vehicle_type']
-        for field in required_fields:
-            if field not in value:
-                raise serializers.ValidationError(f"Vehicle {field} is required.")
-        return value
-    
     def validate_driver_license_number(self, value):
+        """Check if license number is already registered"""
         if Driver.objects.filter(driver_license_number=value).exists():
             raise serializers.ValidationError('This driver license number is already registered.')
         return value
+    
+    def validate_license_plate(self, value):
+        """Check if license plate is already registered"""
+        if Vehicle.objects.filter(license_plate=value).exists():
+            raise serializers.ValidationError('This license plate is already registered.')
+        return value.upper().strip()
+    
+    def validate_vehicle_type(self, value):
+        """Validate and get VehicleType instance"""
+        value_lower = value.lower()
+        try:
+            vehicle_type = VehicleType.objects.get(name__iexact=value_lower)
+            return vehicle_type  # Return the instance
+        except VehicleType.DoesNotExist:
+            # List available vehicle types
+            available_types = list(VehicleType.objects.values_list('name', flat=True))
+            raise serializers.ValidationError(
+                f'Invalid vehicle type "{value}". Available types: {", ".join(available_types) if available_types else "None configured - please contact support"}'
+            )
+    
+    def create(self, validated_data):
+        """Create driver profile and associated vehicle"""
+        from django.db import transaction
+        from datetime import date, timedelta
+        
+        # Extract vehicle data
+        vehicle_type = validated_data.pop('vehicle_type')  # This is a VehicleType instance
+        vehicle_color = validated_data.pop('vehicle_color')
+        license_plate = validated_data.pop('license_plate')
+        vehicle_year = validated_data.pop('vehicle_year', 2020)
+        
+        user = self.context['request'].user
+        
+        try:
+            with transaction.atomic():
+                # Step 1: Create driver profile first (without vehicle)
+                driver = Driver.objects.create(
+                    user=user,
+                    driver_license_number=validated_data['driver_license_number'],
+                    driver_license_expiry=validated_data['driver_license_expiry'],
+                    current_vehicle=None,  # Will be set after vehicle creation
+                    status='pending',
+                    is_available=False,
+                    is_online=False
+                )
+                
+                # Step 2: Create vehicle with driver reference
+                # Set placeholder dates for registration and insurance
+                today = date.today()
+                vehicle = Vehicle.objects.create(
+                    driver=driver,  # Now we have a driver to reference
+                    vehicle_type=vehicle_type,
+                    make='To be updated',
+                    model='To be updated',
+                    year=vehicle_year if vehicle_year else 2020,
+                    color=vehicle_color,
+                    license_plate=license_plate,
+                    registration_number=f'REG-{license_plate}',  # Placeholder
+                    registration_expiry=today + timedelta(days=365),  # 1 year from now
+                    insurance_company='To be provided',
+                    insurance_policy_number=f'INS-{license_plate}',  # Placeholder
+                    insurance_expiry=today + timedelta(days=365),  # 1 year from now
+                    is_active=False,  # Will be activated after verification
+                    is_verified=False,
+                    is_primary=True
+                )
+                
+                # Step 3: Update driver with vehicle reference
+                driver.current_vehicle = vehicle
+                driver.save(update_fields=['current_vehicle'])
+                
+                return driver
+                
+        except VehicleType.DoesNotExist:
+            raise serializers.ValidationError({
+                'vehicle_type': 'Invalid vehicle type. Please contact support.'
+            })
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            raise serializers.ValidationError({
+                'error': f'Failed to create driver application: {str(e)}'
+            })
 
 
 class DriverProfileSerializer(serializers.ModelSerializer):

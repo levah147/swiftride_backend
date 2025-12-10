@@ -21,7 +21,7 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOWED_HOSTS',
-    '192.168.229.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
+    '192.168.149.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
 ).split(',') 
 
 # Application definition
@@ -133,22 +133,22 @@ import dj_database_url
 # }
 
 # Update DATABASE configuration
-DATABASES = {
-    'default': dj_database_url.config(
-        default=f"postgresql://{config('user')}:{config('password')}@{config('host')}:{config('port')}/{config('dbname')}",
-        conn_max_age=600,
-        conn_health_checks=True,
-        ssl_require=False  # Set to True if your DB requires SSL
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=f"postgresql://{config('user')}:{config('password')}@{config('host')}:{config('port')}/{config('dbname')}",
+#         conn_max_age=600,
+#         conn_health_checks=True,
+#         ssl_require=False  # Set to True if your DB requires SSL
+#     )
+# }
 
 # Development: SQLite
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Production: PostgreSQL (uncomment and configure)
 # DATABASES = {

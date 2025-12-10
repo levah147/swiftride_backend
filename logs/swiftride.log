@@ -204,3 +204,1705 @@ INFO 2025-12-03 10:57:59,166 basehttp "GET /api/payments/wallet/balance/ HTTP/1.
 INFO 2025-12-03 10:58:12,434 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
 INFO 2025-12-03 10:58:33,429 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 588
 INFO 2025-12-03 10:58:36,970 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 588
+INFO 2025-12-03 11:04:12,781 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 12:24:09,031 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:24:24,966 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 789
+INFO 2025-12-03 12:24:27,099 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:24:30,223 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 222
+INFO 2025-12-03 12:24:30,398 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:24:30,556 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-03 12:24:30,953 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-12-03 12:24:43,968 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 12:24:43,968 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6441
+INFO 2025-12-03 12:24:45,648 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-03 12:35:25,287 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:35:25,288 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-12-03 12:35:25,288 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-12-03 12:35:56,595 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 222
+INFO 2025-12-03 12:35:58,676 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:36:01,226 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 222
+INFO 2025-12-03 12:36:01,373 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:36:01,378 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:01,378 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:04,071 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-03 12:36:08,655 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-03 12:36:10,679 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 52
+WARNING 2025-12-03 12:36:15,313 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 12:36:15,313 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6441
+INFO 2025-12-03 12:36:16,819 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:22,406 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-12-03 12:36:22,406 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-12-03 12:36:22,406 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:28,389 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-12-03 12:36:35,461 views Redemption successful for +2348022005557: 100 points redeemed for NGN 10
+INFO 2025-12-03 12:36:35,684 basehttp "POST /api/promotions/loyalty/redeem/ HTTP/1.1" 200 253
+INFO 2025-12-03 12:36:37,258 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-12-03 12:36:50,395 basehttp "GET /api/support/faq/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:50,399 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-12-03 12:36:50,453 basehttp "GET /api/support/categories/ HTTP/1.1" 200 26
+WARNING 2025-12-03 12:37:54,816 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:37:54,817 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 12:38:22,431 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:38:22,433 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 12:38:35,655 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:38:35,657 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 12:39:01,534 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:39:01,535 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+INFO 2025-12-03 12:39:19,646 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 222
+INFO 2025-12-03 12:39:21,099 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:39:38,286 basehttp code 400, message Bad request version ('Ø×\x91\x00â4\x93\x8b°Ó')
+ERROR 2025-12-03 12:39:38,287 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:39:38,293 basehttp code 400, message Bad request version ('\x8fF\x99èè]Æ@RÕJfF\x196\x05MÇõÞ\x93G¯Jp\x83Ç\x94\x87¬Ú\x00')
+ERROR 2025-12-03 12:39:38,296 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:39:58,274 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-03 12:44:37,347 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:44:49,356 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 989
+INFO 2025-12-03 12:44:51,371 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:44:52,994 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+INFO 2025-12-03 12:44:53,460 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 12:44:53,629 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-03 12:44:53,817 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-03 12:44:54,034 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:44:54,035 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:45:06,757 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 12:45:06,758 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6441
+INFO 2025-12-03 12:45:08,355 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-03 12:45:16,791 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 12:45:21,397 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 12:45:31,377 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 12:45:34,004 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 12:45:49,560 basehttp code 400, message Bad request version ('Ù&*Ì\x9eÀ\x95ª#y©')
+ERROR 2025-12-03 12:45:49,561 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:45:49,563 basehttp code 400, message Bad request version ('\x989TÙC\x16\x01`©·u5ç#&Ëgq%\x06\x80>¨SÅ´\x96;§\x8fW¸')
+ERROR 2025-12-03 12:45:49,563 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:45:54,393 basehttp code 400, message Bad request version ('\x13èÕ<øèî(C\x00')
+ERROR 2025-12-03 12:45:54,393 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:45:54,395 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93êê\x00\x00\x00')
+ERROR 2025-12-03 12:45:54,395 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:06,154 basehttp code 400, message Bad request version ('T\xadã<\x80©è\x9c(ç\x92Ì\x9c9')
+ERROR 2025-12-03 12:46:06,155 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:06,157 basehttp code 400, message Bad request version ('\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-12-03 12:46:06,157 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:06,158 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-12-03 12:46:06,160 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:06,160 basehttp code 400, message Bad request version ('c\x8d¢K\x8b\'\x81vr\x89\x02¹\x9fièU>áz\x9a\x9a\x17\x8d÷f¸¡\x01{ë;\x9f\x96iÊ"iM')
+ERROR 2025-12-03 12:46:06,163 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:14,961 basehttp code 400, message Bad request version ("Ruæú¾`\x04Ï\x98ð½\x92Â\x17s\x90ÍÉ'«")
+ERROR 2025-12-03 12:46:14,962 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:14,963 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x8a\x8a\x00\x00\x00')
+ERROR 2025-12-03 12:46:14,964 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-03 12:46:41,368 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-03 12:46:43,590 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-03 12:47:25,380 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,383 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,450 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,452 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,527 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,528 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,593 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,593 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,703 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,703 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,781 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,781 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:25,847 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:25,848 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:26,067 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:26,069 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:47:26,115 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:47:26,115 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:27,071 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:27,072 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:27,129 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:27,130 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:28,292 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:28,293 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:28,355 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:28,355 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:28,434 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:28,435 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:28,517 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:28,518 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+INFO 2025-12-03 12:48:30,794 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+WARNING 2025-12-03 12:48:30,977 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:30,980 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+INFO 2025-12-03 12:48:32,246 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-12-03 12:48:45,273 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,274 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,375 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,377 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,427 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,428 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,487 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,488 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,552 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,554 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,723 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,736 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,806 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,806 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:45,868 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:45,870 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,169 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,172 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,236 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,236 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,322 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,323 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,393 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,393 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,661 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,664 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,741 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,742 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,795 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,800 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,869 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,870 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:46,941 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:46,941 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:47,016 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,017 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:47,319 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,320 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:47,390 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,391 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:47,563 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,568 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+INFO 2025-12-03 12:48:47,656 basehttp "PATCH /api/auth/profile/update/ HTTP/1.1" 200 422
+WARNING 2025-12-03 12:48:47,662 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,664 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+WARNING 2025-12-03 12:48:47,845 log Not Found: /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png
+WARNING 2025-12-03 12:48:47,849 basehttp "GET /media/profile_pictures/47c36dd9c8d44f26b501b18aa481ec7a.png HTTP/1.1" 404 5145
+INFO 2025-12-03 12:48:48,023 basehttp "GET /media/profile_pictures/d2b1ae679754439db71afa8c1dc4b7a3.png HTTP/1.1" 200 150978
+INFO 2025-12-03 12:48:54,825 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+INFO 2025-12-03 12:48:56,358 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-12-03 12:50:42,447 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:50:42,448 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 12:51:06,130 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 12:51:06,130 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+ERROR 2025-12-03 13:07:06,050 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 132, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+ERROR 2025-12-03 13:07:06,090 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 33277
+WARNING 2025-12-03 13:07:19,473 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:07:19,474 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 13:08:32,828 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:08:32,829 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+WARNING 2025-12-03 13:11:56,211 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:11:56,214 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 47
+INFO 2025-12-03 13:25:40,380 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:25:43,936 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:26:33,219 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:26:35,633 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:27:13,888 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py changed, reloading.
+INFO 2025-12-03 13:27:17,095 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:28:55,349 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py changed, reloading.
+INFO 2025-12-03 13:28:57,868 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:28:59,709 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py changed, reloading.
+INFO 2025-12-03 13:29:01,745 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:29:32,694 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py changed, reloading.
+INFO 2025-12-03 13:29:34,819 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:30:04,611 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py changed, reloading.
+INFO 2025-12-03 13:30:06,823 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-03 13:30:11,935 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 122, in validate_vehicle_type
+    if not VehicleType.objects.filter(name__iexact=value_lower).exists():
+           ^^^^^^^^^^^
+NameError: name 'VehicleType' is not defined. Did you mean: 'VehicleImage'?
+ERROR 2025-12-03 13:30:12,180 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27543
+ERROR 2025-12-03 13:30:18,458 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 122, in validate_vehicle_type
+    if not VehicleType.objects.filter(name__iexact=value_lower).exists():
+           ^^^^^^^^^^^
+NameError: name 'VehicleType' is not defined. Did you mean: 'VehicleImage'?
+ERROR 2025-12-03 13:30:18,639 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27543
+ERROR 2025-12-03 13:30:22,267 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 122, in validate_vehicle_type
+    if not VehicleType.objects.filter(name__iexact=value_lower).exists():
+           ^^^^^^^^^^^
+NameError: name 'VehicleType' is not defined. Did you mean: 'VehicleImage'?
+ERROR 2025-12-03 13:30:22,468 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27543
+ERROR 2025-12-03 13:30:52,745 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 122, in validate_vehicle_type
+    if not VehicleType.objects.filter(name__iexact=value_lower).exists():
+           ^^^^^^^^^^^
+NameError: name 'VehicleType' is not defined. Did you mean: 'VehicleImage'?
+ERROR 2025-12-03 13:30:52,970 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27543
+INFO 2025-12-03 13:31:11,090 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:31:13,323 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:31:28,409 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:31:30,463 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:31:32,469 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:31:34,897 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:31:43,509 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:31:45,710 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-03 13:31:57,038 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 122, in validate_vehicle_type
+    if not VehicleType.objects.filter(name__iexact=value_lower).exists():
+           ^^^^^^^^^^^
+NameError: name 'VehicleType' is not defined. Did you mean: 'VehicleImage'?
+ERROR 2025-12-03 13:31:57,271 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27543
+INFO 2025-12-03 13:32:39,239 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:32:42,104 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-03 13:32:49,646 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:32:49,647 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 82
+WARNING 2025-12-03 13:32:56,945 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:32:56,945 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 82
+INFO 2025-12-03 13:33:05,745 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:33:08,156 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:33:15,857 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:33:18,060 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:34:02,950 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:35:14,125 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:35:16,854 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-03 13:35:27,873 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:35:27,876 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 222
+WARNING 2025-12-03 13:35:37,773 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:35:37,774 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 222
+INFO 2025-12-03 13:35:50,160 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+INFO 2025-12-03 13:35:51,740 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-12-03 13:37:43,369 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:37:43,371 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 220
+WARNING 2025-12-03 13:38:02,268 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:38:02,269 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 220
+WARNING 2025-12-03 13:38:11,978 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-03 13:38:11,980 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 220
+INFO 2025-12-03 13:40:53,002 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:40:55,524 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:42:58,226 autoreload Watching for file changes with StatReloader
+INFO 2025-12-03 13:44:08,349 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-03 13:44:10,915 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-03 13:44:21,735 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 127, in validate_vehicle_type
+    from vehicles.models import VehicleType
+ImportError: cannot import name 'VehicleType' from 'vehicles.models' (C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\vehicles\models.py)
+ERROR 2025-12-03 13:44:21,931 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27740
+ERROR 2025-12-03 13:44:28,928 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\views.py", line 50, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\serializers.py", line 503, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py", line 127, in validate_vehicle_type
+    from vehicles.models import VehicleType
+ImportError: cannot import name 'VehicleType' from 'vehicles.models' (C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\vehicles\models.py)
+ERROR 2025-12-03 13:44:29,163 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 27740
+INFO 2025-12-03 13:51:13,258 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+INFO 2025-12-03 13:51:16,025 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-03 13:51:19,378 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 422
+INFO 2025-12-03 13:51:19,418 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-03 13:51:19,655 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-03 13:51:19,655 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-12-03 13:51:20,518 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 13:51:20,518 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-03 13:51:20,662 log Not Found: /api/pricing/types/
+WARNING 2025-12-03 13:51:20,668 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-03 13:51:23,049 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-03 13:53:11,896 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-12-03 13:53:11,896 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-12-03 13:53:11,896 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-12-04 16:29:14,867 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-04 16:29:37,303 log Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+WARNING 2025-12-04 16:29:37,305 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 25257
+INFO 2025-12-04 16:29:46,222 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\drivers\serializers.py changed, reloading.
+INFO 2025-12-04 16:29:49,345 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-04 16:30:07,637 log Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+WARNING 2025-12-04 16:30:07,641 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 25257
+ERROR 2025-12-04 16:30:24,128 log Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+WARNING 2025-12-04 16:30:24,131 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 25257
+ERROR 2025-12-04 16:30:30,707 log Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.73.65:8000'. You may need to add '192.168.73.65' to ALLOWED_HOSTS.
+WARNING 2025-12-04 16:30:30,709 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 25257
+INFO 2025-12-04 16:31:15,287 autoreload Watching for file changes with StatReloader
+INFO 2025-12-04 16:31:30,607 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-04 16:31:33,178 autoreload Watching for file changes with StatReloader
+INFO 2025-12-04 16:31:35,189 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-04 16:31:37,991 autoreload Watching for file changes with StatReloader
+INFO 2025-12-04 16:32:07,433 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-04 16:32:35,820 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-04 16:32:38,478 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-04 16:32:41,474 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-04 16:32:41,498 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-04 16:32:41,675 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-04 16:32:41,805 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-04 16:32:54,603 log Not Found: /api/pricing/types/
+WARNING 2025-12-04 16:32:54,604 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6440
+INFO 2025-12-04 16:32:56,297 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+ERROR 2025-12-04 16:33:59,942 log Internal Server Error: /api/drivers/apply/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 132, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+ERROR 2025-12-04 16:33:59,954 basehttp "POST /api/drivers/apply/ HTTP/1.1" 500 33272
+INFO 2025-12-04 16:34:13,177 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\\z³\\J\x83ÇÒ6zÂÛ\x9fòã9')
+ERROR 2025-12-04 16:34:13,178 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-04 16:34:13,182 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x003\x04ï\x04í')
+ERROR 2025-12-04 16:34:13,183 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-12-04 16:34:51,403 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-04 16:34:51,561 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
+INFO 2025-12-04 16:34:51,763 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-12-04 16:34:51,780 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-12-04 16:34:51,802 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-12-04 16:34:51,826 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-12-04 16:34:51,920 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-12-04 16:34:51,943 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-12-04 16:34:51,961 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-04 16:34:52,261 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-12-04 16:35:01,110 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3395
+INFO 2025-12-04 16:35:18,412 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3395
+INFO 2025-12-04 16:35:28,652 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-04 16:35:30,162 basehttp "GET /admin/ HTTP/1.1" 200 126586
+INFO 2025-12-04 16:35:30,289 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-12-04 16:35:30,290 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-12-04 16:35:39,349 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60144
+INFO 2025-12-04 16:35:39,406 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-12-04 16:35:39,433 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-04 16:35:39,471 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-04 16:35:39,535 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-04 16:35:39,612 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-04 16:35:39,663 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-04 16:35:39,663 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-04 16:35:39,710 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-12-04 16:35:39,751 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-04 16:35:39,770 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-12-04 16:35:40,092 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-04 16:36:14,726 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 49778
+INFO 2025-12-04 16:36:15,286 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-04 16:36:20,125 basehttp "GET /admin/drivers/ HTTP/1.1" 200 49870
+INFO 2025-12-04 16:36:27,179 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 49778
+INFO 2025-12-04 16:36:28,418 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-04 16:36:36,096 basehttp "GET /admin/drivers/driver/add/ HTTP/1.1" 200 74552
+INFO 2025-12-04 16:36:36,172 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-12-04 16:36:36,175 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-12-04 16:36:36,181 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-12-04 16:36:36,182 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-12-04 16:36:36,218 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 200 6052
+INFO 2025-12-04 16:36:36,222 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-12-04 16:36:36,227 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-04 16:36:36,235 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-12-04 16:36:36,239 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-12-04 16:36:37,276 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-04 16:37:06,373 basehttp "GET /admin/ HTTP/1.1" 200 126586
+ERROR 2025-12-04 16:38:01,375 log Internal Server Error: /admin/pricing/vehicletype/
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\auth\middleware.py", line 40, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ~~~~~~~~^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\auth\middleware.py", line 20, in get_user
+    request._cached_user = auth.get_user(request)
+                           ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 304, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 95, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        session_key=self.session_key, expire_date__gt=timezone.now()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not translate host name "aws-1-eu-central-2.pooler.supabase.com" to address: Name or service not known
+
+ERROR 2025-12-04 16:38:01,393 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 500 258661
+WARNING 2025-12-04 16:38:01,700 log Not Found: /favicon.ico
+WARNING 2025-12-04 16:38:01,700 basehttp "GET /favicon.ico HTTP/1.1" 404 4887
+INFO 2025-12-04 16:38:09,566 basehttp "GET /admin/ HTTP/1.1" 200 126586
+INFO 2025-12-04 16:38:24,669 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-04 16:38:33,118 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-04 16:38:33,121 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 110
+WARNING 2025-12-04 16:38:43,801 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-04 16:38:43,802 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 110
+WARNING 2025-12-04 16:38:55,986 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-04 16:38:55,988 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 110
+INFO 2025-12-05 13:44:49,765 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:44:58,483 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-05 13:45:06,960 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:45:19,369 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-05 13:45:21,791 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:45:23,970 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-05 13:45:26,296 autoreload Watching for file changes with StatReloader
+INFO 2025-12-05 13:45:35,835 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-05 13:45:51,017 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 793
+INFO 2025-12-05 13:45:51,855 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:45:54,191 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-05 13:45:54,195 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:45:54,197 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-05 13:45:54,206 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+WARNING 2025-12-05 13:46:09,556 log Not Found: /api/pricing/types/
+WARNING 2025-12-05 13:46:09,557 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6440
+INFO 2025-12-05 13:46:09,787 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-05 13:46:15,720 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 44
+INFO 2025-12-05 13:46:19,774 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-12-05 13:46:19,778 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 128
+INFO 2025-12-05 13:46:19,780 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-12-05 13:46:24,185 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 44
+INFO 2025-12-05 13:46:27,048 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 1611
+WARNING 2025-12-05 13:47:02,233 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-05 13:47:02,233 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-05 13:47:07,078 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-05 13:47:07,079 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-05 13:47:11,658 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-05 13:47:11,659 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-05 13:47:16,225 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-05 13:47:16,226 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-05 13:47:28,754 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-05 13:47:28,755 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+INFO 2025-12-05 13:47:56,529 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:47:56,687 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:57:53,132 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:57:53,904 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:57:56,063 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:57:56,064 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:57:56,104 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-05 13:57:56,105 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-05 13:58:11,240 log Not Found: /api/pricing/types/
+WARNING 2025-12-05 13:58:11,242 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6440
+INFO 2025-12-05 13:58:11,467 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-05 13:59:35,791 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:59:37,691 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:59:39,652 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-05 13:59:39,653 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-05 13:59:39,658 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-05 13:59:39,658 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-12-05 13:59:54,977 log Not Found: /api/pricing/types/
+WARNING 2025-12-05 13:59:54,978 basehttp "GET /api/pricing/types/?city_name=Makurdi HTTP/1.1" 404 6440
+INFO 2025-12-05 13:59:55,530 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 20:02:29,239 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 20:02:42,341 basehttp "GET /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:02:42,697 basehttp "GET /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 200 3082
+INFO 2025-12-06 20:02:43,060 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-12-06 20:02:43,069 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-12-06 20:02:43,115 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-12-06 20:02:43,252 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-12-06 20:02:43,318 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-06 20:02:43,342 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-12-06 20:02:43,349 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-12-06 20:02:46,866 basehttp "POST /admin/login/?next=/admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:02:47,374 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59003
+INFO 2025-12-06 20:02:47,449 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-12-06 20:02:47,475 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-06 20:02:47,497 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-06 20:02:47,517 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-06 20:02:47,596 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-12-06 20:02:47,663 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-06 20:02:47,668 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:02:47,701 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-06 20:02:47,714 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-06 20:02:47,761 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-06 20:02:47,800 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-12-06 20:02:47,831 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-12-06 20:02:47,897 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-12-06 20:02:47,903 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-12-06 20:03:13,243 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59003
+INFO 2025-12-06 20:03:13,412 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-12-06 20:03:13,418 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-12-06 20:03:13,462 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-06 20:03:13,466 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-06 20:03:13,483 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-12-06 20:03:13,501 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-06 20:03:13,532 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-12-06 20:03:13,541 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-06 20:03:13,552 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-06 20:03:13,560 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:03:13,560 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-06 20:03:13,566 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-06 20:03:13,585 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:03:13,593 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-06 20:03:13,642 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-12-06 20:03:13,670 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-12-06 20:03:13,670 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-12-06 20:03:13,700 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-12-06 20:03:13,718 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-12-06 20:03:13,760 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-12-06 20:03:13,762 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-12-06 20:03:13,777 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-12-06 20:03:13,781 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-12-06 20:03:14,224 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:03:20,301 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59003
+INFO 2025-12-06 20:03:20,354 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:03:23,527 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55370
+INFO 2025-12-06 20:03:23,627 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:04:26,612 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59003
+INFO 2025-12-06 20:04:26,663 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:07:55,137 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-12-06 20:08:31,329 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-12-06 20:08:31,329 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 88
+WARNING 2025-12-06 20:09:08,842 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-12-06 20:09:08,843 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 88
+INFO 2025-12-06 20:09:52,286 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 20:10:11,260 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59003
+INFO 2025-12-06 20:10:11,309 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:10:14,026 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 56243
+INFO 2025-12-06 20:10:14,269 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 20:10:40,251 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-12-06 20:10:40,257 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 88
+INFO 2025-12-06 20:10:44,974 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 56243
+INFO 2025-12-06 20:10:45,024 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 20:12:41,888 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-12-06 20:12:41,889 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 71
+INFO 2025-12-06 20:15:22,940 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 20:15:35,615 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 20:16:18,207 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+WARNING 2025-12-06 20:16:20,294 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 20:16:20,294 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 108
+INFO 2025-12-06 20:16:46,867 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 57123
+INFO 2025-12-06 20:16:46,924 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:18:34,381 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:18:34,431 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:18:40,135 basehttp "GET /admin/ HTTP/1.1" 200 130621
+INFO 2025-12-06 20:19:13,320 basehttp "GET /admin/safety/safetysettings/ HTTP/1.1" 200 57862
+INFO 2025-12-06 20:19:13,370 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:19:36,792 basehttp "GET /admin/safety/safetysettings/4/change/ HTTP/1.1" 200 58228
+INFO 2025-12-06 20:19:36,857 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:19:36,857 basehttp "GET /static/jazzmin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-12-06 20:19:41,811 basehttp "GET /admin/safety/safetysettings/ HTTP/1.1" 200 57862
+INFO 2025-12-06 20:19:45,142 basehttp "GET /admin/safety/ HTTP/1.1" 200 57216
+INFO 2025-12-06 20:19:47,224 basehttp "GET /admin/ HTTP/1.1" 200 130621
+INFO 2025-12-06 20:19:55,408 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 49778
+INFO 2025-12-06 20:19:55,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:20:02,160 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:20:02,211 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:22:57,577 basehttp "GET /admin/ HTTP/1.1" 200 130621
+INFO 2025-12-06 20:23:04,784 basehttp "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 46060
+INFO 2025-12-06 20:23:04,839 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:23:06,398 basehttp "GET /admin/token_blacklist/ HTTP/1.1" 200 51527
+INFO 2025-12-06 20:23:08,224 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 51092
+INFO 2025-12-06 20:23:16,001 basehttp "GET /admin/token_blacklist/outstandingtoken/7/change/ HTTP/1.1" 200 51307
+INFO 2025-12-06 20:23:16,045 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:24:21,106 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:24:21,157 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:24:26,365 basehttp "GET /admin/accounts/user/4/change/ HTTP/1.1" 200 96775
+INFO 2025-12-06 20:24:26,407 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:24:26,508 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-12-06 20:24:26,508 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-12-06 20:24:28,404 basehttp "GET /admin/accounts/user/4/delete/ HTTP/1.1" 200 46048
+INFO 2025-12-06 20:24:28,465 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 564
+INFO 2025-12-06 20:24:30,537 basehttp "POST /admin/accounts/user/4/delete/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:24:30,591 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 59533
+INFO 2025-12-06 20:24:30,635 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:24:38,274 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 57121
+INFO 2025-12-06 20:24:38,320 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:24:58,782 basehttp "POST /admin/accounts/otpverification/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:24:58,830 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 57691
+INFO 2025-12-06 20:24:58,871 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:25:16,066 basehttp "POST /admin/accounts/otpverification/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:25:16,106 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 54976
+INFO 2025-12-06 20:25:16,161 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:25:30,219 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 54487
+INFO 2025-12-06 20:25:30,269 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-12-06 20:25:30,280 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-12-06 20:25:30,282 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-06 20:25:30,285 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-12-06 20:25:30,289 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-06 20:25:30,291 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-06 20:25:30,299 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-06 20:25:30,303 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-06 20:25:30,306 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-06 20:25:30,308 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-12-06 20:25:30,315 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-06 20:25:30,329 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:25:30,334 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-12-06 20:25:30,338 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:25:30,339 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-06 20:25:30,420 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-12-06 20:25:30,429 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-12-06 20:25:30,431 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-12-06 20:25:30,449 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-12-06 20:25:30,461 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-12-06 20:25:30,464 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-12-06 20:25:30,475 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-12-06 20:25:30,751 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:25:40,011 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 20:26:59,024 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-06 20:27:45,192 basehttp "GET /admin/accounts/otpverification/ HTTP/1.1" 200 55370
+INFO 2025-12-06 20:27:45,239 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 20:29:01,219 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 20:29:01,220 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 108
+INFO 2025-12-06 20:30:12,706 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:30:12,751 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:33:13,323 basehttp "GET /admin/ HTTP/1.1" 200 130599
+INFO 2025-12-06 20:33:17,277 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 46054
+INFO 2025-12-06 20:33:17,327 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:33:19,333 basehttp "GET /admin/pricing/vehicletype/add/ HTTP/1.1" 200 55945
+INFO 2025-12-06 20:33:19,384 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:35:32,342 basehttp "POST /admin/pricing/vehicletype/add/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:35:32,387 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 51979
+INFO 2025-12-06 20:35:32,436 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:35:41,843 basehttp "GET /admin/pricing/ HTTP/1.1" 200 55345
+INFO 2025-12-06 20:35:47,320 basehttp "GET /admin/pricing/vehiclepricing/add/ HTTP/1.1" 200 59200
+INFO 2025-12-06 20:35:47,363 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:36:03,320 basehttp "GET /admin/pricing/city/add/?_to_field=id&_popup=1 HTTP/1.1" 200 19050
+INFO 2025-12-06 20:36:03,386 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-12-06 20:36:32,179 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 20:36:32,180 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 73
+INFO 2025-12-06 20:37:01,397 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:37:01,466 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:37:05,013 basehttp "GET /admin/ HTTP/1.1" 200 130930
+INFO 2025-12-06 20:37:13,433 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 49778
+INFO 2025-12-06 20:37:13,504 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:38:26,563 basehttp "GET /admin/ HTTP/1.1" 200 130931
+INFO 2025-12-06 20:38:30,683 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 51406
+INFO 2025-12-06 20:38:30,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:38:33,235 basehttp "GET /admin/pricing/vehicletype/add/ HTTP/1.1" 200 55945
+INFO 2025-12-06 20:38:33,279 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:39:02,030 basehttp "POST /admin/pricing/vehicletype/add/ HTTP/1.1" 200 56309
+INFO 2025-12-06 20:39:02,092 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:39:14,941 basehttp "POST /admin/pricing/vehicletype/add/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:39:14,993 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 52750
+INFO 2025-12-06 20:39:15,047 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:39:40,927 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1348
+INFO 2025-12-06 20:39:52,374 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 52179
+INFO 2025-12-06 20:39:52,420 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:39:55,994 basehttp "GET /admin/pricing/ HTTP/1.1" 200 55672
+INFO 2025-12-06 20:39:59,524 basehttp "GET /admin/pricing/vehiclepricing/ HTTP/1.1" 200 47685
+INFO 2025-12-06 20:39:59,574 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:40:01,406 basehttp "GET /admin/pricing/ HTTP/1.1" 200 55672
+INFO 2025-12-06 20:40:03,878 basehttp "GET /admin/ HTTP/1.1" 200 131258
+INFO 2025-12-06 20:40:22,258 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:40:22,310 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:40:29,570 basehttp "GET /admin/ HTTP/1.1" 200 131257
+INFO 2025-12-06 20:40:36,486 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56185
+INFO 2025-12-06 20:40:36,535 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:40:56,227 basehttp "GET /admin/drivers/driver/1/change/ HTTP/1.1" 200 75534
+INFO 2025-12-06 20:40:56,310 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:41:33,925 basehttp "POST /admin/drivers/driver/1/change/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:41:33,970 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56741
+INFO 2025-12-06 20:41:34,021 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:15,457 basehttp "GET /admin/ HTTP/1.1" 200 131917
+INFO 2025-12-06 20:42:18,700 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 52179
+INFO 2025-12-06 20:42:18,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:28,047 basehttp "POST /admin/pricing/vehicletype/ HTTP/1.1" 200 44088
+INFO 2025-12-06 20:42:39,265 basehttp "GET /admin/vehicles/vehicle/1/change/ HTTP/1.1" 200 71323
+INFO 2025-12-06 20:42:39,330 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:42,830 basehttp "GET /admin/vehicles/vehicle/1/delete/ HTTP/1.1" 200 45356
+INFO 2025-12-06 20:42:45,460 basehttp "POST /admin/vehicles/vehicle/1/delete/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:42:45,502 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 48969
+INFO 2025-12-06 20:42:45,557 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:48,000 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 56341
+INFO 2025-12-06 20:42:49,426 basehttp "GET /admin/ HTTP/1.1" 200 131908
+INFO 2025-12-06 20:42:54,267 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56163
+INFO 2025-12-06 20:42:54,330 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:56,696 basehttp "GET /admin/drivers/driver/1/change/ HTTP/1.1" 200 75376
+INFO 2025-12-06 20:42:56,749 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:42:58,414 basehttp "GET /admin/drivers/driver/1/delete/ HTTP/1.1" 200 45222
+INFO 2025-12-06 20:43:04,523 basehttp "POST /admin/drivers/driver/1/delete/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:43:04,560 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 50304
+INFO 2025-12-06 20:43:04,608 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:43:08,069 basehttp "GET /admin/drivers/ HTTP/1.1" 200 54476
+INFO 2025-12-06 20:43:09,247 basehttp "GET /admin/ HTTP/1.1" 200 131192
+INFO 2025-12-06 20:43:10,713 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:43:10,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:43:19,238 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60147
+INFO 2025-12-06 20:43:19,283 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 200 103009
+INFO 2025-12-06 20:43:19,302 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 200 16969
+INFO 2025-12-06 20:43:19,308 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 200 16264
+INFO 2025-12-06 20:43:19,313 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:43:19,316 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-06 20:43:19,320 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-12-06 20:43:19,323 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-12-06 20:43:19,333 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 200 1382975
+INFO 2025-12-06 20:43:19,335 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-12-06 20:43:19,344 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-12-06 20:43:19,353 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-06 20:43:19,362 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-06 20:43:19,371 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-12-06 20:43:19,386 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:43:19,394 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-12-06 20:43:19,504 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-12-06 20:43:19,512 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 62440
+INFO 2025-12-06 20:43:19,517 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 200 2391
+INFO 2025-12-06 20:43:19,520 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 200 44244
+INFO 2025-12-06 20:43:19,528 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 200 2252
+INFO 2025-12-06 20:43:19,529 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 200 73170
+INFO 2025-12-06 20:43:19,867 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25392
+INFO 2025-12-06 20:43:19,869 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 156400
+INFO 2025-12-06 20:43:20,280 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 200 2637
+INFO 2025-12-06 20:43:42,336 basehttp "GET /admin/accounts/user/5/change/ HTTP/1.1" 200 96783
+INFO 2025-12-06 20:43:42,399 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:43:50,393 basehttp "POST /admin/accounts/user/5/change/ HTTP/1.1" 302 0
+INFO 2025-12-06 20:43:50,467 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60722
+INFO 2025-12-06 20:43:50,554 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:45:50,906 basehttp "GET /admin/ HTTP/1.1" 200 131882
+INFO 2025-12-06 20:45:55,390 basehttp "GET /admin/pricing/city/ HTTP/1.1" 200 53383
+INFO 2025-12-06 20:45:55,434 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:46:01,931 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56296
+INFO 2025-12-06 20:46:03,842 basehttp "GET /admin/pricing/fuelpriceadjustment/ HTTP/1.1" 200 47542
+INFO 2025-12-06 20:46:03,892 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:46:05,419 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56296
+INFO 2025-12-06 20:46:07,210 basehttp "GET /admin/pricing/surgepricing/ HTTP/1.1" 200 48669
+INFO 2025-12-06 20:46:07,257 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:46:08,754 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56296
+INFO 2025-12-06 20:46:11,876 basehttp "GET /admin/pricing/vehiclepricing/ HTTP/1.1" 200 57152
+INFO 2025-12-06 20:46:11,946 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:46:30,773 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56296
+INFO 2025-12-06 20:46:32,936 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 53773
+INFO 2025-12-06 20:46:32,976 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:47:20,080 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1348
+INFO 2025-12-06 20:47:28,871 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56296
+INFO 2025-12-06 20:47:32,233 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 53773
+INFO 2025-12-06 20:47:32,275 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:47:35,722 basehttp "GET /admin/ HTTP/1.1" 200 131882
+INFO 2025-12-06 20:47:41,811 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56185
+INFO 2025-12-06 20:47:41,856 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:48:42,803 basehttp "GET /admin/drivers/driver/2/change/ HTTP/1.1" 200 75534
+INFO 2025-12-06 20:48:42,870 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 20:48:54,773 basehttp "GET /admin/drivers/ HTTP/1.1" 200 55166
+ERROR 2025-12-06 21:19:39,162 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:19:39,218 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+ERROR 2025-12-06 21:21:44,923 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:21:44,925 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+ERROR 2025-12-06 21:22:14,620 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:22:14,622 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+ERROR 2025-12-06 21:25:47,857 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:25:47,859 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+INFO 2025-12-06 21:27:34,489 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-06 21:27:38,561 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:27:38,564 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+ERROR 2025-12-06 21:29:45,950 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:29:45,953 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+INFO 2025-12-06 21:32:26,905 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-06 21:32:30,651 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:32:30,654 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+INFO 2025-12-06 21:36:45,481 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-06 21:36:51,101 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:36:51,103 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 400 24767
+ERROR 2025-12-06 21:37:23,448 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:37:23,450 basehttp "GET / HTTP/1.1" 400 84627
+ERROR 2025-12-06 21:37:23,905 log Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\.venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.149.65:8000'. You may need to add '192.168.149.65' to ALLOWED_HOSTS.
+WARNING 2025-12-06 21:37:23,908 basehttp "GET /favicon.ico HTTP/1.1" 400 84685
+INFO 2025-12-06 21:38:31,913 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\swiftride\settings.py changed, reloading.
+INFO 2025-12-06 21:38:34,491 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-06 21:38:39,244 log Not Found: /
+WARNING 2025-12-06 21:38:39,245 basehttp "GET / HTTP/1.1" 404 4841
+WARNING 2025-12-06 21:38:39,414 log Not Found: /favicon.ico
+WARNING 2025-12-06 21:38:39,414 basehttp "GET /favicon.ico HTTP/1.1" 404 4892
+INFO 2025-12-06 21:38:44,194 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:39:08,828 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-06 21:39:09,499 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:39:10,458 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-06 21:39:10,680 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:39:10,696 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:39:10,855 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-12-06 21:39:20,684 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:39:20,685 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-06 21:39:20,893 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:39:20,895 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-06 21:39:21,059 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 21:39:25,707 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-06 21:39:27,579 basehttp "GET /api/payments/transactions/?page=1&page_size=100 HTTP/1.1" 200 52
+INFO 2025-12-06 21:39:43,005 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-12-06 21:39:43,010 basehttp "GET /api/support/faq/ HTTP/1.1" 200 6989
+INFO 2025-12-06 21:39:43,018 basehttp "GET /api/support/categories/ HTTP/1.1" 200 1602
+WARNING 2025-12-06 21:42:06,615 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:42:06,615 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-06 21:42:15,392 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:42:15,393 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-06 21:42:36,048 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:42:36,048 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+WARNING 2025-12-06 21:42:49,068 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:42:49,068 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 132
+INFO 2025-12-06 21:43:39,947 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56185
+INFO 2025-12-06 21:43:40,129 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 21:43:45,045 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 21:44:02,748 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:44:12,721 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 793
+INFO 2025-12-06 21:44:13,333 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1029
+INFO 2025-12-06 21:44:13,661 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:44:13,683 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 1283
+INFO 2025-12-06 21:44:13,685 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1029
+INFO 2025-12-06 21:44:13,685 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1029
+INFO 2025-12-06 21:44:13,997 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 331
+INFO 2025-12-06 21:44:41,609 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:44:41,736 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1029
+INFO 2025-12-06 21:44:41,824 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 331
+INFO 2025-12-06 21:44:49,353 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 331
+INFO 2025-12-06 21:45:00,476 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 380
+INFO 2025-12-06 21:45:02,829 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 401
+INFO 2025-12-06 21:45:05,512 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 390
+INFO 2025-12-06 21:45:10,400 basehttp "POST /api/drivers/upload-vehicle-image/ HTTP/1.1" 201 356
+INFO 2025-12-06 21:45:14,599 basehttp "POST /api/drivers/upload-vehicle-image/ HTTP/1.1" 201 352
+INFO 2025-12-06 21:45:24,134 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:45:24,187 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1029
+INFO 2025-12-06 21:45:24,409 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 2246
+INFO 2025-12-06 21:45:25,654 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 2246
+INFO 2025-12-06 21:45:31,850 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-06 21:45:43,408 basehttp "GET /api/promotions/promos/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:45:43,408 basehttp "GET /api/promotions/loyalty/my_points/ HTTP/1.1" 200 130
+INFO 2025-12-06 21:45:43,409 basehttp "GET /api/promotions/referrals/my_code/ HTTP/1.1" 200 73
+INFO 2025-12-06 21:45:50,105 basehttp "GET /api/support/categories/ HTTP/1.1" 200 1602
+INFO 2025-12-06 21:45:50,111 basehttp "GET /api/support/tickets/?page=1 HTTP/1.1" 200 52
+INFO 2025-12-06 21:45:50,118 basehttp "GET /api/support/faq/ HTTP/1.1" 200 6989
+INFO 2025-12-06 21:46:05,666 basehttp "GET /admin/drivers/driver/2/change/ HTTP/1.1" 200 75534
+INFO 2025-12-06 21:46:05,728 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 21:46:15,535 basehttp "POST /admin/drivers/driver/2/change/ HTTP/1.1" 302 0
+INFO 2025-12-06 21:46:15,579 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 56741
+INFO 2025-12-06 21:46:15,630 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 21:46:17,487 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 21:46:17,636 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 21:46:17,766 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 21:46:44,508 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-06 21:46:59,895 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 21:53:06,812 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:53:19,302 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 793
+INFO 2025-12-06 21:53:20,209 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:53:21,395 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:53:21,405 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-06 21:53:21,412 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:53:21,416 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-12-06 21:53:25,413 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:53:25,413 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-06 21:53:25,647 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:53:25,656 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-06 21:53:26,023 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 21:53:35,049 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 44
+WARNING 2025-12-06 21:54:06,662 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:06,663 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:14,697 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:14,698 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:20,726 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:20,731 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:25,166 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:25,167 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:29,498 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:29,500 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:34,106 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:34,108 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:54:38,221 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:54:38,222 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 111
+WARNING 2025-12-06 21:55:11,607 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:55:11,608 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 109
+WARNING 2025-12-06 21:55:16,056 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:55:16,057 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 109
+WARNING 2025-12-06 21:55:20,473 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-06 21:55:20,473 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 109
+INFO 2025-12-06 21:56:07,684 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 21:56:35,360 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:56:45,689 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-06 21:56:46,323 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 21:56:46,600 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 21:56:46,633 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 21:56:46,646 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 21:56:46,864 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 21:57:02,195 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 40
+INFO 2025-12-06 21:57:30,188 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 21:57:58,749 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:58:17,776 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 793
+INFO 2025-12-06 21:58:18,524 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:58:18,833 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 21:58:18,834 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 21:58:18,839 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-06 21:58:18,840 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-06 21:58:20,432 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:58:20,433 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-06 21:58:20,579 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 21:58:20,580 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-06 21:58:20,713 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 22:32:40,157 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\serializers.py changed, reloading.
+INFO 2025-12-06 22:32:48,046 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:41:15,958 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\serializers.py changed, reloading.
+INFO 2025-12-06 22:41:26,839 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:43:41,746 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\serializers.py changed, reloading.
+INFO 2025-12-06 22:43:46,910 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:45:34,090 autoreload C:\Users\Levah147\OneDrive\Desktop\code\SwiftRide\backend\accounts\serializers.py changed, reloading.
+INFO 2025-12-06 22:45:36,846 autoreload Watching for file changes with StatReloader
+INFO 2025-12-06 22:45:38,722 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 22:45:52,701 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 22:46:01,635 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 793
+INFO 2025-12-06 22:46:02,358 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 22:46:03,096 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 22:46:03,096 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+INFO 2025-12-06 22:46:03,096 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 22:46:03,102 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+WARNING 2025-12-06 22:46:05,425 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 22:46:05,425 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-06 22:46:05,643 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 22:46:05,643 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-06 22:46:05,818 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 22:46:26,323 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 22:46:28,040 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 22:46:29,427 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
+INFO 2025-12-06 22:46:29,432 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
+INFO 2025-12-06 22:46:29,437 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 226
+INFO 2025-12-06 22:46:29,437 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
+WARNING 2025-12-06 22:46:31,807 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 22:46:31,808 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+WARNING 2025-12-06 22:46:32,037 log Not Found: /api/pricing/types/
+WARNING 2025-12-06 22:46:32,038 basehttp "GET /api/pricing/types/?city_name=Abuja HTTP/1.1" 404 6439
+INFO 2025-12-06 22:46:32,375 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
+INFO 2025-12-06 22:47:19,870 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1336
+INFO 2025-12-06 22:47:20,703 basehttp "GET /api/drivers/documents-status/ HTTP/1.1" 200 331
+INFO 2025-12-06 22:47:29,208 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 380
+INFO 2025-12-06 22:47:31,515 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 401
+INFO 2025-12-06 22:47:33,833 basehttp "POST /api/drivers/upload-document/ HTTP/1.1" 201 390
+INFO 2025-12-06 22:47:37,262 basehttp "POST /api/drivers/upload-vehicle-image/ HTTP/1.1" 201 356
+INFO 2025-12-06 22:47:40,604 basehttp "POST /api/drivers/upload-vehicle-image/ HTTP/1.1" 201 352
+INFO 2025-12-06 22:48:09,218 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57173
+INFO 2025-12-06 22:48:19,986 basehttp "GET /admin/drivers/driver/3/change/ HTTP/1.1" 200 75601
+INFO 2025-12-06 22:48:20,140 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:48:23,667 basehttp "GET /admin/ HTTP/1.1" 200 132268
+INFO 2025-12-06 22:48:30,580 basehttp "GET /admin/drivers/driver/add/ HTTP/1.1" 200 74699
+INFO 2025-12-06 22:48:30,627 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:48:59,578 basehttp "GET /admin/drivers/ HTTP/1.1" 200 55552
+INFO 2025-12-06 22:49:02,636 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57173
+INFO 2025-12-06 22:49:02,685 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:49:05,282 basehttp "GET /admin/drivers/driver/3/change/ HTTP/1.1" 200 75601
+INFO 2025-12-06 22:49:05,334 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:49:17,720 basehttp "POST /admin/drivers/driver/3/change/ HTTP/1.1" 302 0
+INFO 2025-12-06 22:49:17,766 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57729
+INFO 2025-12-06 22:49:17,817 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:49:28,969 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 22:49:29,096 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1011
+INFO 2025-12-06 22:49:29,150 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3144
+INFO 2025-12-06 22:49:38,975 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 22:49:39,104 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1011
+INFO 2025-12-06 22:49:39,147 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3144
+INFO 2025-12-06 22:49:47,908 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 22:49:58,303 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 22:50:07,001 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-06 22:50:07,764 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1011
+INFO 2025-12-06 22:50:08,054 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 22:50:08,061 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1011
+INFO 2025-12-06 22:50:08,067 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3144
+INFO 2025-12-06 22:50:08,142 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3144
+INFO 2025-12-06 22:51:04,045 basehttp "GET /admin/ HTTP/1.1" 200 132589
+INFO 2025-12-06 22:51:10,050 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 56118
+INFO 2025-12-06 22:51:10,098 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:51:14,927 basehttp "GET /admin/vehicles/vehicle/3/change/ HTTP/1.1" 200 71448
+INFO 2025-12-06 22:51:14,975 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:51:36,610 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 56118
+INFO 2025-12-06 22:51:36,671 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 22:51:44,568 basehttp "GET /admin/vehicles/vehicle/3/change/ HTTP/1.1" 200 71448
+INFO 2025-12-06 22:51:44,613 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:03:54,988 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 57029
+INFO 2025-12-06 23:03:57,243 basehttp "GET /admin/vehicles/vehiclemaintenance/ HTTP/1.1" 200 47270
+INFO 2025-12-06 23:03:57,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:03:59,209 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 57029
+INFO 2025-12-06 23:04:00,805 basehttp "GET /admin/vehicles/vehicledocument/ HTTP/1.1" 200 47887
+INFO 2025-12-06 23:04:00,843 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:04:03,260 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 57029
+INFO 2025-12-06 23:04:05,702 basehttp "GET /admin/vehicles/vehicleimage/ HTTP/1.1" 200 47536
+INFO 2025-12-06 23:04:05,748 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:04:07,198 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 57029
+INFO 2025-12-06 23:04:09,740 basehttp "GET /admin/vehicles/vehicleinspection/ HTTP/1.1" 200 46753
+INFO 2025-12-06 23:04:09,784 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:04:10,911 basehttp "GET /admin/vehicles/ HTTP/1.1" 200 57029
+INFO 2025-12-06 23:04:12,541 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 56118
+INFO 2025-12-06 23:04:12,589 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:04:22,554 basehttp "GET /admin/ HTTP/1.1" 200 132596
+INFO 2025-12-06 23:04:26,317 basehttp "GET /admin/pricing/vehicletype/ HTTP/1.1" 200 53773
+INFO 2025-12-06 23:04:26,356 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:04:57,675 basehttp "GET /admin/ HTTP/1.1" 200 132596
+INFO 2025-12-06 23:05:03,373 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57157
+INFO 2025-12-06 23:05:03,416 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-06 23:05:33,820 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-12-06 23:05:45,811 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-06 23:05:56,685 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 792
+INFO 2025-12-06 23:05:57,468 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 23:05:57,721 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 23:05:57,755 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 23:05:57,773 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 23:05:58,103 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 23:11:24,481 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 23:11:24,614 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 23:11:24,658 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 23:13:22,226 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 23:13:23,921 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 23:13:24,994 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 225
+INFO 2025-12-06 23:13:25,030 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-06 23:13:25,031 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1022
+INFO 2025-12-06 23:13:25,519 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3156
+INFO 2025-12-10 15:11:31,411 autoreload Watching for file changes with StatReloader
+INFO 2025-12-10 15:11:57,148 basehttp "GET /admin/ HTTP/1.1" 200 132589
+INFO 2025-12-10 15:11:57,204 basehttp "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,215 basehttp "GET /static/jazzmin/css/main.css HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,218 basehttp "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,224 basehttp "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,230 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,250 basehttp "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,250 basehttp "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,303 basehttp "GET /static/jazzmin/js/main.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,503 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+INFO 2025-12-10 15:11:57,505 basehttp "GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,630 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61290
+INFO 2025-12-10 15:12:03,665 basehttp "GET /static/vendor/select2/css/select2.min.css HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,697 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,698 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,699 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,715 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,716 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,723 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,724 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,730 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,755 basehttp "GET /static/vendor/select2/js/select2.min.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,770 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-10 15:12:03,774 basehttp "GET /static/jazzmin/js/change_list.js HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:03,804 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-12-10 15:12:31,403 basehttp "GET /admin/ HTTP/1.1" 200 132589
