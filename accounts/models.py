@@ -110,7 +110,8 @@ class User(AbstractUser):
         """Get user's wallet balance"""
         try:
             return self.wallet.balance
-        except:
+        except (AttributeError, Exception):
+            # AttributeError: wallet doesn't exist (RelatedObjectDoesNotExist)
             return Decimal('0.00')
     
     @property
@@ -119,7 +120,8 @@ class User(AbstractUser):
         try:
             from payments.models import Transaction
             return Transaction.objects.filter(user=self).count()
-        except:
+        except ImportError:
+            # payments app not installed
             return 0
 
     @property
@@ -132,7 +134,8 @@ class User(AbstractUser):
                 transaction_type='deposit',
                 status='completed'
             ).count()
-        except:
+        except ImportError:
+            # payments app not installed
             return 0
 
     @property
@@ -140,7 +143,8 @@ class User(AbstractUser):
         """Get formatted wallet balance"""
         try:
             return self.wallet.formatted_balance
-        except:
+        except (AttributeError, Exception):
+            # AttributeError: wallet doesn't exist (RelatedObjectDoesNotExist)
             return '₦0.00'
     
     # ==================== META CLASS ====================

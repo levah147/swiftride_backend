@@ -1,3 +1,4 @@
+import os
 from rest_framework import serializers
 from django.contrib.auth import authenticate
 from .models import User, OTPVerification
@@ -56,19 +57,36 @@ class UserProfileUpdateSerializer(serializers.ModelSerializer):
         ]
     
     def validate_profile_picture(self, value):
-        """Validate profile picture"""
+        """Validate profile picture using settings configuration"""
         if value:
-            # Check file size (max 5MB)
-            if value.size > 5 * 1024 * 1024:
-                raise serializers.ValidationError('Profile picture file size must not exceed 5MB.')
+            from django.conf import settings
             
-            # Check file type
-            valid_extensions = ['.jpg', '.jpeg', '.png', '.gif']
-            import os
+            # Get settings
+            pic_settings = getattr(settings, 'PROFILE_PICTURE_SETTINGS', {})
+            max_size_mb = pic_settings.get('MAX_FILE_SIZE_MB', 5)
+            allowed_formats = pic_settings.get('ALLOWED_FORMATS', [
+                'image/jpeg', 'image/png', 'image/jpg', 'image/webp','image/gif'
+            ])
+            
+            # Check file size
+            max_size_bytes = max_size_mb * 1024 * 1024
+            if value.size > max_size_bytes:
+                raise serializers.ValidationError(
+                    f'Profile picture file size must not exceed {max_size_mb}MB.'
+                )
+            
+            # Check file type (MIME type)
+            if value.content_type not in allowed_formats:
+                raise serializers.ValidationError(
+                    f'Invalid file format. Allowed formats: JPEG, PNG, WebP'
+                )
+            
+            # Check file extension as well
+            valid_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp']
             ext = os.path.splitext(value.name)[1].lower()
             if ext not in valid_extensions:
                 raise serializers.ValidationError(
-                    f'Invalid file format. Allowed formats: {", ".join(valid_extensions)}'
+                    f'Invalid file extension. Allowed: {", ".join(valid_extensions)}'
                 )
         
         return value

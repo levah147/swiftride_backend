@@ -69,6 +69,8 @@ class UserAdmin(BaseUserAdmin):
     search_fields = ['phone_number', 'first_name', 'last_name', 'email']
     ordering = ['-created_at']
     list_select_related = True  # ✅ Improves query performance
+    list_per_page = 25  # ✅ Pagination for better performance
+    date_hierarchy = 'created_at'  # ✅ Date drill-down
 
     fieldsets = (
         ('Personal Information', {
@@ -231,7 +233,7 @@ class UserAdmin(BaseUserAdmin):
 
     # ==================== CUSTOM ACTIONS ====================
     
-    actions = ['view_wallet_summary']
+    actions = ['view_wallet_summary', 'export_as_csv', 'mark_as_verified']
 
     def view_wallet_summary(self, request, queryset):
         """Admin action: Display wallet summary for selected users."""
@@ -248,6 +250,48 @@ class UserAdmin(BaseUserAdmin):
             f'Total Transactions: {total_transactions}'
         )
     view_wallet_summary.short_description = '📊 View wallet summary for selected users'
+    
+    def export_as_csv(self, request, queryset):
+        """Admin action: Export selected users to CSV."""
+        import csv
+        from django.http import HttpResponse
+        
+        # Create response
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="users_export.csv"'
+        
+        writer = csv.writer(response)
+        # Write header
+        writer.writerow([
+            'Phone Number', 'First Name', 'Last Name', 'Email',
+            'Is Driver', 'Is Verified', 'Rating', 'Total Rides',
+            'Wallet Balance', 'Total Transactions', 'Created At'
+        ])
+        
+        # Write data
+        for user in queryset:
+            writer.writerow([
+                user.phone_number,
+                user.first_name,
+                user.last_name,
+                user.email,
+                'Yes' if user.is_driver else 'No',
+                'Yes' if user.is_phone_verified else 'No',
+                user.rating,
+                user.total_rides,
+                user.wallet_balance,
+                user.total_transactions,
+                user.created_at.strftime('%Y-%m-%d %H:%M:%S')
+            ])
+        
+        return response
+    export_as_csv.short_description = '📥 Export selected users to CSV'
+    
+    def mark_as_verified(self, request, queryset):
+        """Admin action: Mark selected users as phone verified."""
+        updated = queryset.update(is_phone_verified=True)
+        self.message_user(request, f'{updated} user(s) marked as verified.')
+    mark_as_verified.short_description = '✅ Mark as phone verified'
 
 
 @admin.register(OTPVerification)

@@ -47,63 +47,126 @@ def calculate_distance(lat1, lon1, lat2, lon2):
     return round(distance, 2)
 
 
-def find_nearby_drivers(latitude, longitude, vehicle_type, radius_km=10):
+def find_nearby_drivers(
+    pickup_latitude,
+    pickup_longitude,
+    radius_km=10,
+    vehicle_type=None,
+    limit=10
+):
     """
-    Find nearby available drivers.
+    Find nearby available drivers using locations app.
     
     Args:
-        latitude: Pickup latitude
-        longitude: Pickup longitude
-        vehicle_type: Vehicle type needed
-        radius_km: Search radius in kilometers
+        pickup_latitude: Pickup location latitude
+        pickup_longitude: Pickup location longitude
+        radius_km: Search radius in kilometers (default: 10km)
+        vehicle_type: VehicleType object or ID to filter by (optional)
+        limit: Maximum number of drivers to return (default: 10)
     
     Returns:
-        QuerySet: Available drivers
+        list: List of driver dictionaries with distance info
+        
+    Example:
+        >>> drivers = find_nearby_drivers(7.7300, 8.5375, radius_km=5, vehicle_type='car')
+        >>> print(f"Found {len(drivers)} drivers")
+        >>> for driver in drivers:
+        >>>     print(f"{driver['driver'].user.phone_number} - {driver['distance_km']}km away")
     """
-    from drivers.models import Driver
-    from vehicles.models import Vehicle
+    from locations.services import get_nearby_drivers as get_nearby_drivers_location
     
     try:
-        # Get online, approved drivers with verified vehicles
-        drivers = Driver.objects.filter(
-            status='approved',
-            is_online=True,
-            is_available=True
-        ).select_related('user')
+        # ✅ Use locations app to find nearby drivers
+        nearby_drivers = get_nearby_drivers_location(
+            latitude=pickup_latitude,
+            longitude=pickup_longitude,
+            radius_km=radius_km,
+            vehicle_type=vehicle_type
+        )
         
-        # Filter by vehicle type
-        if vehicle_type:
-            drivers = drivers.filter(
-                vehicles__vehicle_type=vehicle_type,
-                vehicles__is_verified=True,
-                vehicles__is_active=True
-            )
+        # Limit results
+        nearby_drivers = nearby_drivers[:limit]
         
-        # Calculate distance for each driver
-        nearby_drivers = []
-        for driver in drivers:
-            # Get driver's primary vehicle location
-            # In production, this would come from locations app
-            # For now, use a placeholder or skip distance check
-            
-            # TODO: Integrate with locations app
-            # driver_location = get_driver_location(driver)
-            # if driver_location:
-            #     distance = calculate_distance(
-            #         latitude, longitude,
-            #         driver_location.latitude, driver_location.longitude
-            #     )
-            #     if distance <= radius_km:
-            #         nearby_drivers.append(driver)
-            
-            # For now, return all online drivers
-            nearby_drivers.append(driver)
+        logger.info(
+            f"Found {len(nearby_drivers)} drivers within {radius_km}km "
+            f"of ({pickup_latitude}, {pickup_longitude})"
+        )
         
-        return nearby_drivers[:10]  # Limit to 10 drivers
+        return nearby_drivers
         
     except Exception as e:
         logger.error(f"Error finding nearby drivers: {str(e)}")
         return []
+
+
+def notify_nearby_drivers(ride):
+    """
+    Notify nearby drivers about a new ride request.
+    
+    Args:
+        ride: Ride object
+    
+    Returns:
+        int: Number of drivers notified
+    """
+    try:
+        # Find nearby drivers
+        nearby_drivers = find_nearby_drivers(
+            pickup_latitude=ride.pickup_latitude,
+            pickup_longitude=ride.pickup_longitude,
+            radius_km=ride.city.minimum_driver_radius_km if ride.city else 10,
+            vehicle_type=ride.vehicle_type.id if ride.vehicle_type else None,
+            limit=20  # Notify up to 20 nearest drivers
+        )
+        
+        if not nearby_drivers:
+            logger.warning(f"No nearby drivers found for ride {ride.id}")
+            return 0
+        
+        # Create ride requests for each driver
+        from .models import RideRequest
+        notified_count = 0
+        
+        for driver_data in nearby_drivers:
+            driver = driver_data['driver']
+            distance_km = driver_data['distance_km']
+            
+            # Skip if driver already has an active ride
+            if driver.is_available:
+                # Create ride request
+                RideRequest.objects.create(
+                    ride=ride,
+                    driver=driver,
+                    distance_km=distance_km,
+                    status='pending'
+                )
+                
+                # ✅ Send push notification
+                try:
+                    from notifications.tasks import send_notification_all_channels
+                    send_notification_all_channels.delay(
+                        user_id=driver.user.id,
+                        notification_type='new_ride_request',
+                        title='New Ride Request! 🚗',
+                        body=f'{distance_km:.1f}km away - ₦{ride.total_fare}',
+                        send_push=True,
+                        data={
+                            'ride_id': str(ride.id),
+                            'distance_km': distance_km,
+                            'fare': str(ride.total_fare),
+                            'pickup_address': ride.pickup_address
+                        }
+                    )
+                    notified_count += 1
+                except Exception as e:
+                    logger.error(f"Failed to send notification to driver {driver.id}: {str(e)}")
+        
+        logger.info(f"Notified {notified_count} drivers for ride {ride.id}")
+        return notified_count
+        
+    except Exception as e:
+        logger.error(f"Error notifying drivers: {str(e)}")
+        return 0
 
 
 def create_ride_request(ride):
@@ -116,37 +179,8 @@ def create_ride_request(ride):
     Returns:
         int: Number of drivers notified
     """
-    from .models import RideRequest
-    
-    try:
-        # Find nearby drivers
-        nearby_drivers = find_nearby_drivers(
-            latitude=ride.pickup_latitude,
-            longitude=ride.pickup_longitude,
-            vehicle_type=ride.vehicle_type,
-            radius_km=10
-        )
-        
-        if not nearby_drivers:
-            logger.warning(f"No drivers found for ride {ride.id}")
-            return 0
-        
-        # Create ride requests
-        count = 0
-        for driver in nearby_drivers:
-            RideRequest.objects.create(
-                ride=ride,
-                driver=driver,
-                status='pending'
-            )
-            count += 1
-        
-        logger.info(f"Created {count} ride requests for ride {ride.id}")
-        return count
-        
-    except Exception as e:
-        logger.error(f"Error creating ride requests: {str(e)}")
-        return 0
+    # ✅ Use the new notify_nearby_drivers function
+    return notify_nearby_drivers(ride)
 
 
 def assign_driver_to_ride(ride, driver):
@@ -188,6 +222,42 @@ def assign_driver_to_ride(ride, driver):
         return False
 
 
+def calculate_driver_eta(driver, destination_lat, destination_lng):
+    """
+    Calculate estimated time for driver to reach destination.
+    
+    Args:
+        driver: Driver object
+        destination_lat: Destination latitude
+        destination_lng: Destination longitude
+    
+    Returns:
+        dict: {'distance_km': float, 'eta_minutes': int}
+    """
+    from locations.services import calculate_eta
+    
+    try:
+        # Get driver's current location
+        if not hasattr(driver, 'current_location'):
+            return {'distance_km': 0, 'eta_minutes': 5}
+        
+        driver_location = driver.current_location
+        
+        # Calculate ETA using locations app
+        eta_data = calculate_eta(
+            driver_location=driver_location,
+            destination_lat=destination_lat,
+            destination_lng=destination_lng,
+            average_speed_kmh=30  # City traffic speed
+        )
+        
+        return eta_data
+        
+    except Exception as e:
+        logger.error(f"Error calculating ETA: {str(e)}")
+        return {'distance_km': 0, 'eta_minutes': 5}
+
+
 def calculate_ride_eta(ride):
     """
     Calculate estimated time of arrival.
@@ -202,20 +272,14 @@ def calculate_ride_eta(ride):
         return None
     
     try:
-        # Get driver location (placeholder)
-        # In production, get from locations app
-        # driver_location = get_driver_location(ride.driver)
+        # ✅ Use the new calculate_driver_eta function
+        eta_data = calculate_driver_eta(
+            driver=ride.driver,
+            destination_lat=ride.pickup_latitude,
+            destination_lng=ride.pickup_longitude
+        )
         
-        # Calculate distance
-        # distance = calculate_distance(...)
-        
-        # Estimate time (average speed 30 km/h in city)
-        # eta_minutes = (distance / 30) * 60
-        
-        # Placeholder
-        eta_minutes = 10
-        
-        return eta_minutes
+        return eta_data.get('eta_minutes', 10)
         
     except Exception as e:
         logger.error(f"Error calculating ETA: {str(e)}")
@@ -447,4 +511,4 @@ def get_rider_active_ride(user):
         ).first()
     except Exception as e:
         logger.error(f"Error getting active ride: {str(e)}")
-        return None
+        return None 

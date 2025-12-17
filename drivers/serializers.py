@@ -5,7 +5,7 @@ from vehicles.models import Vehicle
 from pricing.models import VehicleType  # VehicleType is in pricing app
 from vehicles.serializers import VehicleSerializer
 import os
-
+ 
 
 class DriverVerificationDocumentSerializer(serializers.ModelSerializer):
     document_url = serializers.SerializerMethodField()

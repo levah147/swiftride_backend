@@ -1,4 +1,3 @@
-
 """
 FILE LOCATION: locations/services.py
 
@@ -70,13 +69,18 @@ def update_driver_location(driver, latitude, longitude, bearing=None, speed_kmh=
             defaults={
                 'latitude': Decimal(str(latitude)),
                 'longitude': Decimal(str(longitude)),
-                'bearing': Decimal(str(bearing)) if bearing else None,
-                'speed_kmh': Decimal(str(speed_kmh)) if speed_kmh else None,
-                'accuracy_meters': Decimal(str(accuracy_meters)) if accuracy_meters else None
+                # ✅ FIX #4: Use 'is not None' to handle 0 values correctly
+                'bearing': Decimal(str(bearing)) if bearing is not None else None,
+                'speed_kmh': Decimal(str(speed_kmh)) if speed_kmh is not None else None,
+                'accuracy_meters': Decimal(str(accuracy_meters)) if accuracy_meters is not None else None
             }
         )
         
-        logger.info(f"📍 Updated location for driver {driver.id}")
+        # Update driver's last_location_update timestamp
+        driver.last_location_update = timezone.now()
+        driver.save(update_fields=['last_location_update'])
+        
+        logger.info(f"Location updated for driver {driver.id}")
         
         return location
         
@@ -93,7 +97,7 @@ def get_nearby_drivers(latitude, longitude, radius_km=10, vehicle_type=None):
         latitude: Search center latitude
         longitude: Search center longitude
         radius_km: Search radius in kilometers
-        vehicle_type: Vehicle type ID (optional)
+        vehicle_type: Vehicle type slug or ID (optional) - e.g., 'car', 'bike', 'keke', 'suv'
     
     Returns:
         list: List of nearby drivers with distances
@@ -110,14 +114,17 @@ def get_nearby_drivers(latitude, longitude, radius_km=10, vehicle_type=None):
             driver__is_online=True,
             driver__is_available=True,
             last_updated__gte=cutoff_time
-        ).select_related('driver__user')
+        ).select_related('driver__user', 'driver__current_vehicle', 'driver__current_vehicle__vehicle_type')
         
-        # Filter by vehicle type if specified
+        # ✅ FIX #1: Filter by vehicle type using slug (supports both slug and name)
         if vehicle_type:
+            # Try to filter by slug first (recommended), fallback to name
             driver_locations = driver_locations.filter(
-                driver__vehicles__vehicle_type=vehicle_type,
-                driver__vehicles__is_verified=True,
-                driver__vehicles__is_active=True
+                Q(driver__current_vehicle__vehicle_type__slug=vehicle_type) |
+                Q(driver__current_vehicle__vehicle_type__name__iexact=vehicle_type),
+                driver__current_vehicle__is_verified=True,
+                driver__current_vehicle__is_active=True,
+                driver__current_vehicle__is_roadworthy=True,
             )
         
         # Calculate distances
@@ -129,15 +136,28 @@ def get_nearby_drivers(latitude, longitude, radius_km=10, vehicle_type=None):
             )
             
             if distance <= radius_km:
+                # ✅ FIX #2: Safe access to current_vehicle (guard against None)
+                vehicle = driver_loc.driver.current_vehicle
+                
                 nearby_drivers.append({
                     'driver': driver_loc.driver,
                     'driver_location': driver_loc,
                     'distance_km': distance,
                     'latitude': float(driver_loc.latitude),
-                    'longitude': float(driver_loc.longitude)
+                    'longitude': float(driver_loc.longitude),
+                    # Additional useful data
+                    'driver_id': driver_loc.driver.id,
+                    'driver_name': driver_loc.driver.user.get_full_name() or driver_loc.driver.user.phone_number,
+                    'driver_phone': driver_loc.driver.user.phone_number,
+                    'driver_rating': float(driver_loc.driver.rating) if driver_loc.driver.rating else 0.0,
+                    # Safe vehicle access
+                    'vehicle_type': vehicle.vehicle_type.name if vehicle and hasattr(vehicle, 'vehicle_type') and vehicle.vehicle_type else None,
+                    'vehicle_model': f"{vehicle.make} {vehicle.model}" if vehicle else None,
+                    'vehicle_color': vehicle.color if vehicle else None,
+                    'license_plate': vehicle.license_plate if vehicle else None,
                 })
         
-        # Sort by distance
+        # Sort by distance (closest first)
         nearby_drivers.sort(key=lambda x: x['distance_km'])
         
         logger.info(f"Found {len(nearby_drivers)} drivers within {radius_km}km")
@@ -209,12 +229,13 @@ def track_ride_location(ride, latitude, longitude, speed_kmh=None, bearing=None,
             ride=ride,
             latitude=Decimal(str(latitude)),
             longitude=Decimal(str(longitude)),
-            speed_kmh=Decimal(str(speed_kmh)) if speed_kmh else None,
-            bearing=Decimal(str(bearing)) if bearing else None,
-            accuracy_meters=Decimal(str(accuracy_meters)) if accuracy_meters else None
+            # ✅ FIX #4: Use 'is not None' to handle 0 values correctly
+            speed_kmh=Decimal(str(speed_kmh)) if speed_kmh is not None else None,
+            bearing=Decimal(str(bearing)) if bearing is not None else None,
+            accuracy_meters=Decimal(str(accuracy_meters)) if accuracy_meters is not None else None
         )
         
-        logger.debug(f"📍 Tracking point recorded for ride #{ride.id}")
+        logger.debug(f"Tracking point recorded for ride #{ride.id}")
         
         return tracking_point
         
@@ -234,11 +255,13 @@ def calculate_route_distance(tracking_points):
         float: Total distance in kilometers
     """
     try:
-        if tracking_points.count() < 2:
+        # ✅ FIX #5: Fetch data once, check length in memory
+        points = list(tracking_points.order_by('timestamp'))
+        
+        if len(points) < 2:
             return 0.0
         
         total_distance = 0.0
-        points = list(tracking_points.order_by('timestamp'))
         
         for i in range(len(points) - 1):
             distance = calculate_distance(
@@ -343,7 +366,7 @@ def save_favorite_location(user, location_type, address, latitude, longitude):
             }
         )
         
-        logger.info(f"💾 Saved {location_type} location for user {user.id}")
+        logger.info(f"Saved {location_type} location for user {user.id}")
         
         return location
         
@@ -380,9 +403,9 @@ def add_recent_location(user, address, latitude, longitude):
         if not created:
             # Increment search count
             location.search_count += 1
-            location.save()
+            location.save(update_fields=['search_count'])
         
-        logger.info(f"📝 Recent location updated for user {user.id}")
+        logger.info(f"Recent location updated for user {user.id}")
         
         return location
         
@@ -411,7 +434,7 @@ def cleanup_old_tracking_points(days=30):
             timestamp__lt=cutoff_date
         ).delete()[0]
         
-        logger.info(f"🗑️ Deleted {deleted_count} old tracking points")
+        logger.info(f"Deleted {deleted_count} old tracking points")
         
         return deleted_count
         
@@ -457,6 +480,3 @@ def get_driver_location_history(driver, hours=24):
     except Exception as e:
         logger.error(f"Error getting location history: {str(e)}")
         return []
-
-
-

@@ -11,6 +11,9 @@ from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.db import transaction
 from datetime import datetime
+import logging
+
+logger = logging.getLogger(__name__)
 
 from .models import Driver, DriverVerificationDocument, VehicleImage, DriverRating
 from accounts.models import User
@@ -23,6 +26,11 @@ from .serializers import (
     VehicleImageSerializer,
     DriverRatingSerializer
 )
+from .throttles import (
+    DriverApplicationThrottle,
+    DriverStatusChangeThrottle,
+    DocumentUploadThrottle
+)
 
 
 # Replace your DriverApplicationView with this updated version 
@@ -31,6 +39,7 @@ class DriverApplicationView(generics.CreateAPIView):
     """Apply to become a driver"""
     serializer_class = DriverApplicationSerializer
     permission_classes = [IsAuthenticated]
+    throttle_classes = [DriverApplicationThrottle]  # Limit: 1 application/day
     
     def create(self, request, *args, **kwargs):
         # Check if user already has a driver application
@@ -140,6 +149,7 @@ class UploadVerificationDocumentView(generics.CreateAPIView):
     serializer_class = DriverVerificationDocumentSerializer
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
+    throttle_classes = [DocumentUploadThrottle]  # Limit: 10 uploads/hour
     
     def create(self, request, *args, **kwargs):
         try:
@@ -213,6 +223,7 @@ class UploadVehicleImageView(generics.CreateAPIView):
     serializer_class = VehicleImageSerializer
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
+    throttle_classes = [DocumentUploadThrottle]  # Limit: 10 uploads/hour
     
     def create(self, request, *args, **kwargs):
         try:
@@ -359,6 +370,12 @@ def get_driver_documents_status(request):
 @permission_classes([IsAuthenticated])
 def toggle_driver_availability(request):
     """Toggle driver online/offline status"""
+    # Apply throttling manually
+    throttle = DriverStatusChangeThrottle()
+    if not throttle.allow_request(request, None):
+        from rest_framework.exceptions import Throttled
+        raise Throttled(wait=throttle.wait())  # Throttle: 20 changes/hour
+    
     try:
         driver = request.user.driver_profile
         
@@ -485,6 +502,13 @@ class AdminApproveDriverView(generics.UpdateAPIView):
                 # Update user's is_driver flag
                 driver.user.is_driver = True
                 driver.user.save(update_fields=['is_driver'])
+                
+                # Audit logging
+                logger.info(
+                    f"AUDIT: Driver approved | Admin: {request.user.phone_number} | "
+                    f"Driver: {driver.user.phone_number} (ID: {driver.id}) | "
+                    f"License: {driver.driver_license_number}"
+                )
             
             return Response(
                 {
@@ -532,6 +556,13 @@ class AdminRejectDriverView(generics.UpdateAPIView):
                 driver.approved_by = request.user
                 driver.approved_date = timezone.now()
                 driver.save()
+                
+                # Audit logging
+                logger.warning(
+                    f"AUDIT: Driver rejected | Admin: {request.user.phone_number} | "
+                    f"Driver: {driver.user.phone_number} (ID: {driver.id}) | "
+                    f"Reason: {rejection_reason[:100]}"
+                )
             
             return Response(
                 {
@@ -565,6 +596,13 @@ class AdminVerifyDocumentView(generics.UpdateAPIView):
                 doc.verified_date = timezone.now()
                 doc.notes = request.data.get('notes', '')
                 doc.save()
+                
+                # Audit logging
+                logger.info(
+                    f"AUDIT: Document verified | Admin: {request.user.phone_number} | "
+                    f"Driver: {doc.driver.user.phone_number} (ID: {doc.driver.id}) | "
+                    f"Document Type: {doc.get_document_type_display()}"
+                )
             
             return Response(
                 {
@@ -596,6 +634,14 @@ def admin_run_background_check(request, pk):
         driver.background_check_date = timezone.now()
         driver.background_check_notes = notes
         driver.save()
+        
+        # Audit logging
+        logger.info(
+            f"AUDIT: Background check {"passed" if passed else "failed"} | "
+            f"Admin: {request.user.phone_number} | "
+            f"Driver: {driver.user.phone_number} (ID: {driver.id}) | "
+            f"Notes: {notes[:100] if notes else "None"}"
+        )
         
         return Response({
             'message': f'Background check marked as {"passed" if passed else "failed"}',

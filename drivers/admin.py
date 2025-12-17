@@ -24,6 +24,8 @@ class DriverAdmin(admin.ModelAdmin):
         'approved_date', 'last_location_update', 'created_at', 'updated_at',
         'license_status', 'can_accept_rides_display', 'current_vehicle_link'
     )
+    list_per_page = 25  # Pagination
+    date_hierarchy = 'created_at'  # Date drill-down
     
     fieldsets = (
         ('User Information', {
@@ -58,7 +60,7 @@ class DriverAdmin(admin.ModelAdmin):
         }),
     )
     
-    actions = ['approve_drivers', 'reject_drivers', 'suspend_drivers', 'reactivate_drivers']
+    actions = ['approve_drivers', 'reject_drivers', 'suspend_drivers', 'reactivate_drivers', 'export_as_csv']
     
     def get_full_name(self, obj):
         return obj.user.get_full_name()
@@ -197,6 +199,51 @@ class DriverAdmin(admin.ModelAdmin):
         
         self.message_user(request, f'{updated} driver(s) reactivated.')
     reactivate_drivers.short_description = 'Reactivate suspended drivers'
+    
+    def export_as_csv(self, request, queryset):
+        """Export selected drivers to CSV"""
+        import csv
+        from django.http import HttpResponse
+        
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="drivers_export.csv"'
+        
+        writer = csv.writer(response)
+        # Write header
+        writer.writerow([
+            'Phone Number', 'First Name', 'Last Name', 'Email',
+            'License Number', 'License Expiry', 'Status',
+            'Vehicle Type', 'License Plate', 'Background Check',
+            'Rating', 'Total Rides', 'Completed', 'Cancelled',
+            'Total Earnings', 'Is Online', 'Is Available',
+            'Created At'
+        ])
+        
+        # Write data
+        for driver in queryset.select_related('user', 'current_vehicle__vehicle_type'):
+            writer.writerow([
+                driver.user.phone_number,
+                driver.user.first_name,
+                driver.user.last_name,
+                driver.user.email or '',
+                driver.driver_license_number,
+                driver.driver_license_expiry,
+                driver.get_status_display(),
+                driver.current_vehicle.vehicle_type.name if driver.current_vehicle else '',
+                driver.current_vehicle.license_plate if driver.current_vehicle else '',
+                'Yes' if driver.background_check_passed else 'No',
+                float(driver.rating),
+                driver.total_rides,
+                driver.completed_rides,
+                driver.cancelled_rides,
+                float(driver.total_earnings),
+                'Yes' if driver.is_online else 'No',
+                'Yes' if driver.is_available else 'No',
+                driver.created_at.strftime('%Y-%m-%d %H:%M:%S')
+            ])
+        
+        return response
+    export_as_csv.short_description = '📥 Export selected drivers to CSV'
 
 
 @admin.register(DriverVerificationDocument)

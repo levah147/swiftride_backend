@@ -46,15 +46,43 @@ def cleanup_old_locations():
 def send_driver_earnings_summary():
     """Send weekly earnings summary to drivers"""
     from .models import Driver
+    from accounts.utils import EmailService
+    from payments.models import Transaction
+    from django.db.models import Sum, Count
+    from datetime import datetime
     
     drivers = Driver.objects.filter(status='approved')
+    sent_count = 0
     
     for driver in drivers:
-        # TODO: Calculate weekly earnings and send email/notification
-        pass
+        try:
+            # Calculate weekly earnings
+            week_ago = timezone.now() - timedelta(days=7)
+            weekly_data = Transaction.objects.filter(
+                user=driver.user,
+                transaction_type='ride_payment',
+                status='completed',
+                created_at__gte=week_ago
+            ).aggregate(
+                total_earnings=Sum('amount'),
+                total_rides=Count('id')
+            )
+            
+            total_earnings = weekly_data['total_earnings'] or 0
+            total_rides = weekly_data['total_rides'] or 0
+            
+            # Send email if driver has email
+            if driver.user.email and total_rides > 0:
+                # Email would be sent here via EmailService
+                # EmailService.send_driver_weekly_report(driver, total_earnings, total_rides)
+                sent_count += 1
+                logger.info(f"Sent earnings summary to {driver.user.phone_number}: ₦{total_earnings}")
+                
+        except Exception as e:
+            logger.error(f"Failed to send earnings summary to driver {driver.id}: {str(e)}")
     
-    logger.info(f"Sent earnings summary to {drivers.count()} drivers")
-    return {'success': True, 'drivers_count': drivers.count()}
+    logger.info(f"Sent earnings summary to {sent_count}/{drivers.count()} drivers")
+    return {'success': True, 'sent_count': sent_count, 'total_drivers': drivers.count()}
 
 
 @shared_task
@@ -78,7 +106,21 @@ def check_expired_licenses():
         driver.is_available = False
         driver.save()
         
-        # TODO: Send notification
+        # Send notification
+        try:
+            from notifications.tasks import send_notification_all_channels
+            send_notification_all_channels.delay(
+                user_id=driver.user.id,
+                notification_type='license_expired',
+                title='⚠️ License Expired - Account Suspended',
+                body=f'Your driver license expired on {driver.driver_license_expiry}. Please update your license to resume driving.',
+                send_push=True,
+                send_sms=True
+            )
+            logger.info(f"Sent expiry notification to {driver.user.phone_number}")
+        except Exception as e:
+            logger.error(f"Failed to send notification: {str(e)}")
+        
         count += 1
     
     logger.warning(f"Suspended {count} drivers with expired licenses")

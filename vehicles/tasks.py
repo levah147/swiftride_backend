@@ -25,7 +25,20 @@ def check_vehicle_expirations():
     
     for vehicle in expired_reg:
         logger.warning(f"Vehicle {vehicle.license_plate} registration expired")
-        # TODO: Notify driver
+        
+        # Notify driver
+        try:
+            from notifications.tasks import send_notification_all_channels
+            send_notification_all_channels.delay(
+                user_id=vehicle.driver.user.id,
+                notification_type='vehicle_registration_expired',
+                title='⚠️ Vehicle Registration Expired',
+                body=f'Your vehicle ({vehicle.license_plate}) registration has expired. Please renew it to continue driving.',
+                send_push=True
+            )
+            logger.info(f"Sent registration expiry notification for {vehicle.license_plate}")
+        except Exception as e:
+            logger.error(f"Failed to send registration expiry notification: {str(e)}")
     
     # Check insurance expiry
     expired_insurance = Vehicle.objects.filter(
@@ -35,7 +48,22 @@ def check_vehicle_expirations():
     
     for vehicle in expired_insurance:
         logger.warning(f"Vehicle {vehicle.license_plate} insurance expired")
-        # TODO: Notify driver & deactivate vehicle
+        
+        # Notify driver & deactivate vehicle
+        try:
+            from notifications.tasks import send_notification_all_channels
+            send_notification_all_channels.delay(
+                user_id=vehicle.driver.user.id,
+                notification_type='vehicle_insurance_expired',
+                title='🚨 Vehicle Insurance Expired - Vehicle Deactivated',
+                body=f'Your vehicle ({vehicle.license_plate}) insurance has expired and has been deactivated. You cannot accept rides until insurance is renewed.',
+                send_push=True,
+                send_sms=True
+            )
+            logger.info(f"Sent insurance expiry notification for {vehicle.license_plate}")
+        except Exception as e:
+            logger.error(f"Failed to send insurance expiry notification: {str(e)}")
+        
         vehicle.is_active = False
         vehicle.save()
     

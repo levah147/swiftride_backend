@@ -21,7 +21,7 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOWED_HOSTS',
-    '192.168.149.65,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
+    '.ngrok-free.app,192.168.222.65,enhancive-unriven-jamir.ngrok-free.dev,swiftride-1wnu.onrender.com,localhost,127.0.0.1,.onrender.com'
 ).split(',') 
 
 # Application definition
@@ -223,7 +223,12 @@ CORS_ALLOW_ALL_ORIGINS = True  # For development only!
 if os.getenv('RENDER'):
     DEBUG = False
     ALLOWED_HOSTS = ['.onrender.com']  # Allow all Render subdomains  
-    
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://enhancive-unriven-jamir.ngrok-free.dev",
+    "https://*.ngrok-free.dev"
+]
+
     
     
 # ========================================
@@ -390,6 +395,45 @@ DRIVER_SETTINGS = {
     'MIN_RATING': float(os.getenv('MIN_DRIVER_RATING', 3.5)),
     'MAX_REJECTION_RATE': float(os.getenv('MAX_REJECTION_RATE', 30)),  # 30%
     'BACKGROUND_CHECK_REQUIRED': True,
+}
+
+# ========================================
+# OTP & SECURITY SETTINGS
+# ========================================
+OTP_SETTINGS = {
+    # OTP Configuration
+    'EXPIRATION_MINUTES': int(os.getenv('OTP_EXPIRATION_MINUTES', 10)),  # 10 minutes
+    'MAX_ATTEMPTS': int(os.getenv('OTP_MAX_ATTEMPTS', 5)),  # Max verification attempts
+    'CODE_LENGTH': int(os.getenv('OTP_CODE_LENGTH', 6)),  # 6-digit code
+    'COOLDOWN_SECONDS': int(os.getenv('OTP_COOLDOWN_SECONDS', 60)),  # 60 seconds between requests
+    
+    # Rate Limiting (per user)
+    'MAX_REQUESTS_PER_HOUR': int(os.getenv('OTP_MAX_REQUESTS_PER_HOUR', 5)),  # 5 OTP/hour per user
+    'MAX_REQUESTS_PER_DAY': int(os.getenv('OTP_MAX_REQUESTS_PER_DAY', 20)),  # 20 OTP/day per user
+    
+    # IP-based Throttling
+    'MAX_REQUESTS_PER_IP_HOUR': int(os.getenv('OTP_MAX_REQUESTS_PER_IP_HOUR', 10)),  # 10 OTP/hour per IP
+    'MAX_REQUESTS_PER_IP_DAY': int(os.getenv('OTP_MAX_REQUESTS_PER_IP_DAY', 50)),  # 50 OTP/day per IP
+    
+    # SMS Retry Configuration
+    'SMS_MAX_RETRIES': int(os.getenv('SMS_MAX_RETRIES', 3)),  # Max retry attempts
+    'SMS_RETRY_DELAY_SECONDS': int(os.getenv('SMS_RETRY_DELAY_SECONDS', 5)),  # Initial retry delay
+    'SMS_RETRY_EXPONENTIAL_BACKOFF': True,  # Use exponential backoff
+}
+
+# Profile Picture Settings
+PROFILE_PICTURE_SETTINGS = {
+    'MAX_FILE_SIZE_MB': int(os.getenv('PROFILE_PIC_MAX_SIZE_MB', 5)),  # 5MB max
+    'ALLOWED_FORMATS': ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'],
+    'MIN_RESOLUTION': (128, 128),  # Minimum 128x128
+    'MAX_RESOLUTION': (4096, 4096),  # Maximum 4096x4096
+}
+
+# Account Security
+ACCOUNT_SECURITY = {
+    'DELETE_CONFIRMATION_REQUIRED': True,  # Require "DELETE" confirmation
+    'DELETE_PASSWORD_REQUIRED': True,  # Require password for deletion
+    'LOGOUT_BLACKLIST_TOKEN': True,  # Blacklist tokens on logout
 }
 
 # ========================================

@@ -32,6 +32,13 @@ class SavedLocation(models.Model):
         max_length=10,
         choices=LOCATION_TYPE_CHOICES
     )
+    # ✅ ADD THIS FIELD (after location_type)
+    label = models.CharField(
+        max_length=100,
+        blank=True,
+        null=True,
+        help_text="Custom label (e.g., 'Gym', 'Mom's House', 'Favorite Restaurant')"
+    )
     address = models.CharField(max_length=255)
     latitude = models.DecimalField(
         max_digits=10,
@@ -71,6 +78,7 @@ class SavedLocation(models.Model):
         ]
     
     def __str__(self):
+        display_name = self.label or self.get_location_type_display()
         return f"{self.user.phone_number} - {self.location_type}: {self.address}"
 
 

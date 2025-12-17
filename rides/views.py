@@ -21,15 +21,16 @@ from .serializers import (
     MutualRatingSerializer, RateRideSerializer, RideTrackingSerializer
 )
 
-
-# ==================== Rider Endpoints ====================
-
-
+# ✅ WebSocket imports for real-time updates
+from channels.layers import get_channel_layer
+from asgiref.sync import async_to_sync
 
 # ADD at top:
 from pricing.models import VehicleType, City
 from django.core.cache import cache
 
+
+# ==================== Rider Endpoints ====================
 
 class RideListCreateView(generics.ListCreateAPIView):
     """List and create rides (Riders)"""
@@ -141,6 +142,19 @@ def cancel_ride(request, ride_id):
     ride.cancellation_reason = request.data.get('reason', 'Cancelled by rider')
     ride.cancelled_at = timezone.now()
     ride.save()
+    
+    # ✅ ADD: Broadcast cancellation to driver (if assigned)
+    if ride.driver:
+        channel_layer = get_channel_layer()
+        async_to_sync(channel_layer.group_send)(
+            f'ride_{ride.id}',
+            {
+                'type': 'ride_status_update',
+                'status': 'cancelled',
+                'message': 'Ride has been cancelled by rider',
+                'reason': ride.cancellation_reason
+            }
+        )
     
     # Cancel ride request if exists
     RideRequest.objects.filter(ride=ride, status='available').update(status='cancelled')
@@ -298,11 +312,27 @@ def accept_ride(request, request_id):
     vehicle = driver.primary_vehicle
     if vehicle and vehicle.is_roadworthy:
         ride.vehicle = vehicle
-    ride.save()
-    
     ride.status = 'accepted'
     ride.accepted_at = timezone.now()
     ride.save()
+    
+    # ✅ ADD: Broadcast to rider via WebSocket
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        f'ride_{ride.id}',
+        {
+            'type': 'driver_matched_update',
+            'driver_id': str(driver.id),
+            'driver_name': driver.user.get_full_name() or driver.user.phone_number,
+            'driver_phone': driver.user.phone_number,
+            'driver_rating': float(driver.rating) if driver.rating else 0.0,
+            'vehicle_type': vehicle.vehicle_type.name if vehicle and hasattr(vehicle, 'vehicle_type') else 'Unknown',
+            'vehicle_model': f"{vehicle.make} {vehicle.model}" if vehicle else 'Unknown',
+            'vehicle_color': vehicle.color if vehicle else 'Unknown',
+            'license_plate': vehicle.license_plate if vehicle else 'Unknown',
+            'eta_minutes': 5,  # Calculate actual ETA using locations app
+        }
+    )
     
     # Update ride request
     ride_request.status = 'accepted'
@@ -398,6 +428,18 @@ def start_ride(request, ride_id):
     ride.started_at = timezone.now()
     ride.save()
     
+    # ✅ ADD: Broadcast to rider via WebSocket
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        f'ride_{ride.id}',
+        {
+            'type': 'ride_status_update',
+            'status': 'in_progress',
+            'message': 'Your ride has started. Enjoy your trip!',
+            'started_at': ride.started_at.isoformat()
+        }
+    )
+    
     return Response({
         'success': True,
         'message': 'Ride started',
@@ -421,6 +463,14 @@ def complete_ride(request, ride_id):
             status=status.HTTP_400_BAD_REQUEST
         )
     
+    # Get final location from request (optional)
+    end_latitude = request.data.get('end_latitude')
+    end_longitude = request.data.get('end_longitude')
+    
+    if end_latitude and end_longitude:
+        ride.destination_latitude = end_latitude
+        ride.destination_longitude = end_longitude
+    
     ride.status = 'completed'
     ride.completed_at = timezone.now()
     ride.save()
@@ -430,6 +480,19 @@ def complete_ride(request, ride_id):
         duration = (ride.completed_at - ride.started_at).total_seconds() / 60
         ride.duration_minutes = int(duration)
         ride.save()
+    
+    # ✅ ADD: Broadcast to rider via WebSocket
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        f'ride_{ride.id}',
+        {
+            'type': 'ride_status_update',
+            'status': 'completed',
+            'message': 'Ride completed. Thank you for riding with us!',
+            'completed_at': ride.completed_at.isoformat(),
+            'total_fare': float(ride.fare_amount) if ride.fare_amount else 0.0,
+        }
+    )
     
     return Response({
         'success': True,
@@ -459,6 +522,18 @@ def driver_cancel_ride(request, ride_id):
     ride.cancellation_reason = request.data.get('reason', 'Cancelled by driver')
     ride.cancelled_at = timezone.now()
     ride.save()
+    
+    # ✅ ADD: Broadcast cancellation to rider via WebSocket
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        f'ride_{ride.id}',
+        {
+            'type': 'ride_status_update',
+            'status': 'cancelled',
+            'message': 'Ride has been cancelled by driver',
+            'reason': ride.cancellation_reason
+        }
+    )
     
     return Response({
         'success': True,

@@ -59,27 +59,5 @@ def inspection_completed_handler(sender, instance, created, **kwargs):
 
 
 
-# """
-# FILE LOCATION: vehicles/signals.py
-# Signal handlers for vehicles app.
-# """
-# from django.db.models.signals import post_save
-# from django.dispatch import receiver
-# from .models import Vehicle, VehicleInspection
-
-
-# @receiver(post_save, sender=Vehicle)
-# def vehicle_created_handler(sender, instance, created, **kwargs):
-#     """Handle new vehicle registration"""
-#     if created:
-#         print(f"🚗 New vehicle registered: {instance.license_plate}")
-#         # TODO: Notify admin for verification
-
-
-# @receiver(post_save, sender=VehicleInspection)
-# def inspection_completed_handler(sender, instance, created, **kwargs):
-#     """Handle vehicle inspection completion"""
-#     if created:
-#         print(f"✅ Inspection completed for {instance.vehicle.license_plate}: {instance.inspection_status}")
 
 

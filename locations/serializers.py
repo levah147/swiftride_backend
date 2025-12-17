@@ -18,6 +18,7 @@ class SavedLocationSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'user_phone',
+            'label',
             'location_type',
             'location_type_display',
             'address',

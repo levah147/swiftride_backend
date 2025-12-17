@@ -205,8 +205,22 @@ def calculate_fare(request):
     dest_lat = float(data['destination_latitude'])
     dest_lon = float(data['destination_longitude'])
     
-    # Calculate distance using Haversine
-    # TODO: Integrate with Google Maps Distance Matrix API for accurate road distance
+    # Calculate distance using Haversine (straight-line)
+    # NOTE: For production accuracy, integrate Google Maps Distance Matrix API
+    # Implementation guide:
+    # 1. Add GOOGLE_MAPS_API_KEY to settings
+    # 2. Use googlemaps library: pip install googlemaps
+    # 3. Example code:
+    #    import googlemaps
+    #    gmaps = googlemaps.Client(key=settings.GOOGLE_MAPS_API_KEY)
+    #    result = gmaps.distance_matrix(
+    #        origins=(pickup_lat, pickup_lon),
+    #        destinations=(dest_lat, dest_lon),
+    #        mode='driving'
+    #    )
+    #    distance_km = result['rows'][0]['elements'][0]['distance']['value'] / 1000
+    # 4. Fallback to haversine if API fails or quota exceeded
+    # 5. Cache results to minimize API costs
     distance_km = calculate_distance(pickup_lat, pickup_lon, dest_lat, dest_lon)
     
     # Validate distance (must be at least 0.1 km)

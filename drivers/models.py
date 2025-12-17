@@ -99,7 +99,7 @@ class Driver(models.Model):
     rating = models.DecimalField(
         max_digits=3, 
         decimal_places=2, 
-        default=5.00,
+        default=0.00,  # Changed from 5.00 - new drivers start with no rating
         validators=[
             MinValueValidator(0.0),
             MaxValueValidator(5.0)
@@ -364,3 +364,114 @@ class DriverRating(models.Model):
     
     def __str__(self):
         return f"{self.rating} stars for {self.driver.user.get_full_name()}"
+
+
+class DriverBackgroundCheck(models.Model):
+    """Store detailed background check results for drivers"""
+    
+    STATUS_CHOICES = [
+        ('pending', 'Pending'),
+        ('in_progress', 'In Progress'),
+        ('approved', 'Approved'),
+        ('rejected', 'Rejected'),
+        ('expired', 'Expired'),
+    ]
+    
+    driver = models.ForeignKey(
+        Driver,
+        on_delete=models.CASCADE,
+        related_name='background_checks'
+    )
+    check_date = models.DateTimeField(auto_now_add=True)
+    expiry_date = models.DateField(
+        null=True,
+        blank=True,
+        help_text="Background check expiry date (usually 1 year)"
+    )
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default='pending'
+    )
+    
+    # Check provider info
+    provider = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True,
+        help_text="Background check provider name"
+    )
+    provider_reference = models.CharField(
+        max_length=200,
+        null=True,
+        blank=True,
+        help_text="Provider's reference ID"
+    )
+    
+    # Check details
+    criminal_record_check = models.BooleanField(
+        default=False,
+        help_text="Criminal record background check passed"
+    )
+    driving_record_check = models.BooleanField(
+        default=False,
+        help_text="Driving record check passed"
+    )
+    identity_verification = models.BooleanField(
+        default=False,
+        help_text="Identity verification passed"
+    )
+    
+    # Results
+    report_url = models.URLField(
+        null=True,
+        blank=True,
+        help_text="URL to full background check report"
+    )
+    notes = models.TextField(
+        null=True,
+        blank=True,
+        help_text="Admin notes about background check"
+    )
+    
+    # Approval tracking
+    reviewed_by = models.ForeignKey(
+        User,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='reviewed_background_checks'
+    )
+    reviewed_date = models.DateTimeField(null=True, blank=True)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = 'drivers_background_check'
+        ordering = ['-created_at']
+        verbose_name = 'Background Check'
+        verbose_name_plural = 'Background Checks'
+        indexes = [
+            models.Index(fields=['driver', 'status']),
+            models.Index(fields=['status', '-created_at']),
+        ]
+    
+    def __str__(self):
+        return f"{self.driver.user.get_full_name()} - {self.get_status_display()} ({self.check_date.date()})"
+    
+    @property
+    def is_expired(self):
+        """Check if background check has expired"""
+        if not self.expiry_date:
+            return False
+        return self.expiry_date <= timezone.now().date()
+    
+    @property
+    def all_checks_passed(self):
+        """Check if all required checks have passed"""
+        return (
+            self.criminal_record_check and
+            self.driving_record_check and
+            self.identity_verification
+        )

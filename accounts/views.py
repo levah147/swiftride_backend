@@ -20,11 +20,16 @@ from .serializers import (
     LoginSerializer
 )
 from .utils import SMSService
-
+from django.conf import settings
 
 class OTPRequestThrottle(AnonRateThrottle):
-    """Custom throttle for OTP requests - 5 requests per hour"""
-    rate = '5/hour'
+    """Custom throttle for OTP requests - configurable via settings"""
+    def __init__(self):
+        # super().__init__()
+        # Get rate from settings
+        max_requests = settings.OTP_SETTINGS.get('MAX_REQUESTS_PER_HOUR', 5)
+        self.rate = f'{max_requests}/hour'
+        super().__init__()  # Now parent will parse the rate
     
     def allow_request(self, request, view):
         # Allow all requests in test environment
@@ -34,15 +39,33 @@ class OTPRequestThrottle(AnonRateThrottle):
         return super().allow_request(request, view)
 
 
-# Maximum OTP verification attempts before blocking
-MAX_OTP_ATTEMPTS = 5
-# OTP expiration time in minutes
-OTP_EXPIRATION_MINUTES = 10
+class IPThrottle(AnonRateThrottle):
+    """IP-based throttle for OTP requests - prevents abuse from single IP"""
+    def __init__(self):
+        # super().__init__()
+        # Get rate from settings
+        max_requests = settings.OTP_SETTINGS.get('MAX_REQUESTS_PER_IP_HOUR', 10)
+        self.rate = f'{max_requests}/hour'
+        super().__init__()  # Now parent will parse the rate
+    
+    def get_cache_key(self, request, view):
+        # Throttle based on IP address
+        ident = self.get_ident(request)
+        return self.cache_format % {
+            'scope': 'ip_throttle',
+            'ident': ident
+        }
+
+
+# Get OTP settings from Django settings
+MAX_OTP_ATTEMPTS = settings.OTP_SETTINGS.get('MAX_ATTEMPTS', 5)
+OTP_EXPIRATION_MINUTES = settings.OTP_SETTINGS.get('EXPIRATION_MINUTES', 10)
+OTP_COOLDOWN_SECONDS = settings.OTP_SETTINGS.get('COOLDOWN_SECONDS', 60)
 
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
-@throttle_classes([OTPRequestThrottle])
+@throttle_classes([OTPRequestThrottle, IPThrottle])  # Added IP throttling
 def send_otp(request):
     """Send OTP to phone number for verification"""
     phone_number = request.data.get('phone_number')
@@ -304,14 +327,44 @@ def delete_account(request):
     """
     Delete user account permanently.
     WARNING: This action cannot be undone.
+    Requires password confirmation for security.
     """
     user = request.user
     phone_number = user.phone_number
     
+    # Require password confirmation for security
+    password = request.data.get('password')
+    confirmation = request.data.get('confirmation')
+    
+    # Check if user wants to proceed (must send confirmation="DELETE")
+    if confirmation != "DELETE":
+        return Response({
+            'error': 'Please confirm account deletion by sending confirmation="DELETE"'
+        }, status=status.HTTP_400_BAD_REQUEST)
+    
+    # Verify password if user has one set
+    if user.has_usable_password():
+        if not password:
+            return Response({
+                'error': 'Password is required to delete your account'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        if not user.check_password(password):
+            return Response({
+                'error': 'Incorrect password'
+            }, status=status.HTTP_401_UNAUTHORIZED)
+    
+    # Log account deletion for audit trail
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.warning(
+        f"🗑️ ACCOUNT DELETION: User {phone_number} (ID: {user.id}) deleted their account"
+    )
+    
     # Delete associated OTP records
     OTPVerification.objects.filter(phone_number=phone_number).delete()
     
-    # Delete user
+    # Delete user (this will cascade to related objects)
     user.delete()
     
     return Response({
