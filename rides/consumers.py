@@ -172,12 +172,16 @@ class RideConsumer(AsyncWebsocketConsumer):
         """Send driver match notification to WebSocket"""
         await self.send(text_data=json.dumps({
             'type': 'driver_matched',
-            'driver_id': event['driver_id'],
-            'driver_name': event['driver_name'],
-            'vehicle_model': event['vehicle_model'],
-            'license_plate': event['license_plate'],
-            'rating': event['rating'],
-            'eta': event['eta'],
+            'driver_id': event.get('driver_id', ''),
+            'driver_name': event.get('driver_name', ''),
+            'driver_phone': event.get('driver_phone', ''),  # ✅ Frontend expects this
+            'driver_rating': event.get('driver_rating', 0.0),  # ✅ Use driver_rating from event
+            'vehicle_type': event.get('vehicle_type', 'Unknown'),  # ✅ Frontend expects this
+            'vehicle_model': event.get('vehicle_model', 'Unknown'),
+            'vehicle_color': event.get('vehicle_color', 'Unknown'),  # ✅ Frontend expects this
+            'license_plate': event.get('license_plate', 'Unknown'),
+            'rating': event.get('driver_rating', 0.0),  # Keep for backward compatibility
+            'eta': event.get('eta', event.get('eta_minutes', 5)),  # ✅ Use eta or eta_minutes
             'driver_latitude': event.get('driver_latitude'),
             'driver_longitude': event.get('driver_longitude'),
         }))

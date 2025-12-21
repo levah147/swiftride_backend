@@ -147,3 +147,71 @@ def upload_vehicle_image(request, vehicle_id):
         VehicleImageSerializer(img, context={'request': request}).data,
         status=201
     )
+    
+
+"""
+ADD THIS TO vehicles/views.py (at the end)
+
+Endpoint to check vehicle roadworthiness and expiry warnings.
+"""
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def check_vehicle_status(request, vehicle_id):
+    """
+    Check vehicle roadworthiness status and get warnings.
+    
+    Returns:
+    - is_roadworthy: bool
+    - issues: list of problems preventing rides
+    - warnings: list of upcoming expirations
+    - health_score: 0-100
+    - documents_complete: bool
+    - images_complete: bool
+    """
+    try:
+        driver = request.user.driver_profile
+        vehicle = Vehicle.objects.get(id=vehicle_id, driver=driver)
+    except Vehicle.DoesNotExist:
+        return Response({'error': 'Vehicle not found'}, status=404)
+    
+    from .utils import (
+        validate_vehicle_roadworthiness,
+        calculate_vehicle_health_score,
+        get_vehicle_expiry_warnings,
+        check_vehicle_documents_complete,
+        check_vehicle_images_complete
+    )
+    
+    # Check roadworthiness
+    is_roadworthy, issues = validate_vehicle_roadworthiness(vehicle)
+    
+    # Get expiry warnings
+    warnings = get_vehicle_expiry_warnings(vehicle)
+    
+    # Calculate health score
+    health_score = calculate_vehicle_health_score(vehicle)
+    
+    # Check document/image completeness
+    docs_complete, missing_docs = check_vehicle_documents_complete(vehicle)
+    images_complete, missing_images = check_vehicle_images_complete(vehicle)
+    
+    return Response({
+        'vehicle': VehicleSerializer(vehicle, context={'request': request}).data,
+        'is_roadworthy': is_roadworthy,
+        'issues': issues,
+        'warnings': warnings,
+        'health_score': health_score,
+        'documents': {
+            'complete': docs_complete,
+            'missing': missing_docs,
+            'uploaded': list(vehicle.documents.values_list('document_type', flat=True))
+        },
+        'images': {
+            'complete': images_complete,
+            'missing': missing_images,
+            'uploaded': list(vehicle.images.values_list('image_type', flat=True))
+        },
+        'can_accept_rides': is_roadworthy
+    })
+

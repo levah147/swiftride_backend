@@ -11,6 +11,9 @@ urlpatterns = [
     path('past/', views.past_rides, name='past-rides'),
     path('<int:ride_id>/cancel/', views.cancel_ride, name='cancel-ride'),
     path('<int:ride_id>/rate/', views.rate_ride, name='rate-ride'),
+    path('<int:ride_id>/rating/', views.get_ride_rating, name='get-ride-rating'),  # ✅ GET rating
+    path('<int:ride_id>/driver-location/', views.get_driver_location, name='get-driver-location'),  # ✅ GET driver location
+    path('<int:ride_id>/receipt/', views.get_ride_receipt, name='get-ride-receipt'),  # ✅ GET receipt
     
     # Driver Endpoints
     path('available/', views.available_rides, name='available-rides'),

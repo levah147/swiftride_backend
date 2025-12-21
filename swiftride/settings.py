@@ -386,6 +386,12 @@ RIDE_SETTINGS = {
     'PLATFORM_FEE_PERCENTAGE': float(os.getenv('PLATFORM_FEE', 15)),  # 15%
     'MAX_SEARCH_RADIUS_KM': float(os.getenv('MAX_SEARCH_RADIUS', 5)),  # 5km
     'DRIVER_TIMEOUT_SECONDS': int(os.getenv('DRIVER_TIMEOUT', 30)),  # 30s
+    # ✅ NEW: Configurable ride lifecycle settings
+    'RIDE_REQUEST_EXPIRY_MINUTES': int(os.getenv('RIDE_REQUEST_EXPIRY_MINUTES', 5)),  # Ride request expiry
+    'DEFAULT_ETA_MINUTES': int(os.getenv('DEFAULT_ETA_MINUTES', 5)),  # Default ETA fallback
+    'DRIVER_SEARCH_RADIUS_KM': float(os.getenv('DRIVER_SEARCH_RADIUS_KM', 10.0)),  # Default search radius
+    'DRIVER_LOCATION_STALE_MINUTES': int(os.getenv('DRIVER_LOCATION_STALE_MINUTES', 5)),  # Location freshness cutoff
+    'DEFAULT_CITY_NAME': os.getenv('DEFAULT_CITY_NAME', 'Makurdi'),  # Default city fallback (backend only)
 }
 
 # ========================================

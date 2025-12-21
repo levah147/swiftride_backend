@@ -423,7 +423,113 @@ def toggle_driver_availability(request):
             status=status.HTTP_404_NOT_FOUND
         )
 
+"""
+ADD THIS TO drivers/views.py (after toggle_driver_availability)
 
+Endpoint for drivers to update their location in real-time.
+"""
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_driver_location(request):
+    """
+    Update driver's current location.
+    Called every 10-30 seconds by driver app while online.
+    """
+    try:
+        driver = request.user.driver_profile
+        
+        if not driver.is_online:
+            return Response(
+                {'error': 'You must be online to update location'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        latitude = request.data.get('latitude')
+        longitude = request.data.get('longitude')
+        
+        if latitude is None or longitude is None:
+            return Response(
+                {'error': 'latitude and longitude are required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Validate coordinates
+        try:
+            lat = float(latitude)
+            lng = float(longitude)
+            if not (-90 <= lat <= 90) or not (-180 <= lng <= 180):
+                raise ValueError('Invalid coordinate range')
+        except ValueError as e:
+            return Response(
+                {'error': f'Invalid coordinates: {str(e)}'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Update location using the model's method
+        location = driver.update_location(
+            latitude=latitude,
+            longitude=longitude,
+            heading=request.data.get('heading'),
+            speed=request.data.get('speed'),
+            accuracy=request.data.get('accuracy')
+        )
+        
+        return Response({
+            'message': 'Location updated successfully',
+            'location': {
+                'latitude': float(location.latitude),
+                'longitude': float(location.longitude),
+                'bearing': float(location.bearing) if location.bearing else None,  # ✅ Correct
+                'speed_kmh': float(location.speed_kmh) if location.speed_kmh else None,  # ✅ Correct
+                'last_updated': location.last_updated.isoformat()  # ✅ Correct
+            }
+        }, status=status.HTTP_200_OK)
+        
+    except Driver.DoesNotExist:
+        return Response(
+            {'error': 'You do not have a driver profile'},
+            status=status.HTTP_404_NOT_FOUND
+        )
+    except Exception as e:
+        logger.error(f"Error updating driver location: {str(e)}")
+        return Response(
+            {'error': f'Failed to update location: {str(e)}'},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_driver_location(request):
+    """Get current driver's own location"""
+    try:
+        driver = request.user.driver_profile
+        
+        if not hasattr(driver, 'current_location'):
+            return Response(
+                {'error': 'No location data available'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        location = driver.current_location  # ✅ Fixed
+        
+        return Response({
+            'latitude': float(location.latitude),
+            'longitude': float(location.longitude),
+            'bearing': float(location.bearing) if location.bearing else None,  # ✅ Fixed
+            'speed_kmh': float(location.speed_kmh) if location.speed_kmh else None,  # ✅ Fixed
+            'accuracy_meters': float(location.accuracy_meters) if location.accuracy_meters else None,  # ✅ Fixed
+            'last_updated': location.last_updated.isoformat(),  # ✅ Fixed
+            'is_stale': location.is_stale
+        }, status=status.HTTP_200_OK)
+        
+    except Driver.DoesNotExist:
+        return Response(
+            {'error': 'You do not have a driver profile'},
+            status=status.HTTP_404_NOT_FOUND
+        )
 # ==================== ADMIN VIEWS ====================
 
 class AdminDriverListView(generics.ListAPIView):

@@ -1,38 +1,60 @@
 """
 FILE LOCATION: rides/signals.py
-Signal handlers for rides app - WITH CHAT & NOTIFICATIONS INTEGRATED!
+Signal handlers for rides app - FIXED VERSION v3
+Removes duplicate ride status updates (handled by views)
 """
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from .models import Ride, RideRequest, DriverRideResponse, MutualRating
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 @receiver(post_save, sender=Ride)
 def ride_created_handler(sender, instance, created, **kwargs):
     """
-    Handle ride creation - send to nearby drivers.
+    Handle ride creation - notify nearby drivers via RideRequest.
+    Only runs on creation (created=True)
     """
     if created and instance.status == 'pending':
-        print(f"🚕 New ride created: #{instance.id}")
+        logger.info(f"🚕 New ride created: #{instance.id}")
         
-        # Create RideRequest for nearby drivers
+        # Get the RideRequest for this ride (created in perform_create)
+        try:
+            ride_request = RideRequest.objects.filter(ride=instance, status='available').first()
+            if not ride_request:
+                logger.warning(f"No RideRequest found for ride {instance.id}")
+                return
+        except Exception as e:
+            logger.error(f"Error getting RideRequest: {str(e)}")
+            return
+        
+        # Find nearby drivers using locations app
         from .services import find_nearby_drivers
         
         try:
-            nearby_drivers = find_nearby_drivers(
-                latitude=instance.pickup_latitude,
-                longitude=instance.pickup_longitude,
-                vehicle_type=instance.vehicle_type,
-                radius_km=10
+            # Get vehicle_type_id if vehicle_type is set
+            vehicle_type_id = None
+            if instance.vehicle_type:
+                vehicle_type_id = instance.vehicle_type.id
+            
+            nearby_drivers_data = find_nearby_drivers(
+                pickup_latitude=float(instance.pickup_latitude),
+                pickup_longitude=float(instance.pickup_longitude),
+                vehicle_type=vehicle_type_id,
+                radius_km=instance.city.minimum_driver_radius_km if instance.city else 10,
+                limit=20  # Notify up to 20 nearest drivers
             )
             
-            for driver in nearby_drivers:
-                RideRequest.objects.create(
-                    ride=instance,
-                    driver=driver
-                )
+            notified_count = 0
+            for driver_data in nearby_drivers_data:
+                driver = driver_data['driver']  # Extract driver from dict
                 
-                # Send notification to each driver
+                # Add driver to notified_drivers ManyToMany
+                ride_request.notified_drivers.add(driver)
+                
+                # Send notification to driver
                 try:
                     from notifications.tasks import send_notification_all_channels
                     send_notification_all_channels.delay(
@@ -44,58 +66,80 @@ def ride_created_handler(sender, instance, created, **kwargs):
                         send_sms=False,
                         data={
                             'ride_id': instance.id,
-                            'fare': str(instance.fare_amount)
+                            'ride_request_id': ride_request.id,
+                            'fare': str(instance.fare_amount),
+                            'distance_km': driver_data.get('distance_km', 0)
                         }
                     )
+                    notified_count += 1
                 except ImportError:
-                    pass
-                
-            print(f"📢 Notified {len(nearby_drivers)} drivers")
+                    logger.warning("Notifications app not available")
+                except Exception as e:
+                    logger.error(f"Error sending notification to driver {driver.id}: {str(e)}")
+            
+            logger.info(f"📢 Notified {notified_count} drivers for ride #{instance.id}")
             
         except Exception as e:
-            print(f"❌ Error finding nearby drivers: {str(e)}")
+            logger.error(f"❌ Error finding nearby drivers: {str(e)}")
 
 
 @receiver(post_save, sender=DriverRideResponse)
 def driver_response_handler(sender, instance, created, **kwargs):
     """
     Handle driver accepting/declining ride.
-    Auto-assign driver when accepted.
-    ALSO CREATES CHAT CONVERSATION! 💬
+    
+    ✅ IMPORTANT: The accept_ride view already updates the Ride model,
+    so this signal ONLY handles cleanup tasks like canceling other requests.
+    
+    DO NOT update the ride status here - it's already done in the view!
     """
-    if created:
-        ride = instance.ride_request.ride
+    if not created:
+        return  # Only handle new responses
+    
+    ride = instance.ride_request.ride
+    
+    if instance.response == 'accepted':
+        logger.info(f"✅ Driver {instance.driver.user.phone_number} accepted ride #{ride.id}")
         
-        if instance.response == 'accepted':
-            # Auto-assign driver to ride
-            ride.driver = instance.driver
-            ride.status = 'accepted'
-            ride.save()
-            
-            print(f"✅ Driver {instance.driver.user.phone_number} accepted ride #{ride.id}")
-            
-            # Cancel other pending requests
-            RideRequest.objects.filter(
-                ride=ride
-            ).exclude(
-                driver=instance.driver
-            ).update(status='cancelled')
-            
-            # Notification handled by notifications app signals
-            # Chat conversation created by chat app signals! 💬
+        # ✅ Cancel OTHER pending requests for THIS RIDE
+        # The ride status and driver assignment is already handled by the accept_ride view
+        other_requests = RideRequest.objects.filter(
+            ride=ride,
+            status='available'
+        ).exclude(
+            id=instance.ride_request.id  # Keep the accepted request
+        )
         
-        elif instance.response == 'declined':
-            print(f"❌ Driver {instance.driver.user.phone_number} declined ride #{ride.id}")
+        cancelled_count = other_requests.update(status='cancelled')
+        if cancelled_count > 0:
+            logger.info(f"✅ Cancelled {cancelled_count} other ride requests for ride #{ride.id}")
+        
+        # Mark the accepted request as accepted (if not already done)
+        if instance.ride_request.status != 'accepted':
+            instance.ride_request.status = 'accepted'
+            instance.ride_request.save(update_fields=['status'])
+        
+        # Notification handled by notifications app signals
+        # Chat conversation created by chat app signals! 💬
+    
+    elif instance.response == 'declined':
+        logger.info(f"❌ Driver {instance.driver.user.phone_number} declined ride #{ride.id}")
 
 
 @receiver(post_save, sender=Ride)
-def ride_status_changed_handler(sender, instance, **kwargs):
+def ride_status_changed_handler(sender, instance, created, **kwargs):
     """
     Handle ride status changes.
+    Only runs when status is 'completed' (to avoid conflicts)
     Notifications handled by notifications app signals.
     """
+    # Skip if this is a new ride (handled by ride_created_handler)
+    if created:
+        return
+    
+    # Only handle completed rides here
     if instance.status == 'completed':
-        print(f"✅ Ride #{instance.id} completed")
+        logger.info(f"✅ Ride #{instance.id} completed")
         
         # Create mutual rating placeholder
         MutualRating.objects.get_or_create(
@@ -104,18 +148,26 @@ def ride_status_changed_handler(sender, instance, **kwargs):
         
         # Update driver/vehicle stats
         if instance.driver:
-            instance.driver.total_rides += 1
-            # Convert Decimal to float for total_earnings
             from decimal import Decimal
-            if isinstance(instance.fare_amount, Decimal):
-                instance.driver.total_earnings += float(instance.fare_amount)
-            else:
-                instance.driver.total_earnings += instance.fare_amount
-            instance.driver.save(update_fields=['total_rides', 'total_earnings'])
+            
+            # Increment total rides (safely handle None)
+            instance.driver.total_rides = (instance.driver.total_rides or 0) + 1
+            
+            # Add to total earnings (convert Decimal to float if needed)
+            current_earnings = float(instance.driver.total_earnings or 0)
+            fare_amount = float(instance.fare_amount) if isinstance(instance.fare_amount, Decimal) else (instance.fare_amount or 0)
+            instance.driver.total_earnings = current_earnings + fare_amount
+            
+            # Make driver available again
+            instance.driver.is_available = True
+            
+            instance.driver.save(update_fields=['total_rides', 'total_earnings', 'is_available'])
+            logger.info(f"✅ Updated driver #{instance.driver.id} stats: {instance.driver.total_rides} rides, ₦{instance.driver.total_earnings} earned")
         
         if instance.vehicle:
-            instance.vehicle.total_rides += 1
+            instance.vehicle.total_rides = (instance.vehicle.total_rides or 0) + 1
             instance.vehicle.save(update_fields=['total_rides'])
+            logger.info(f"✅ Updated vehicle #{instance.vehicle.id} stats: {instance.vehicle.total_rides} rides")
 
 
 @receiver(post_save, sender=MutualRating)
@@ -128,12 +180,12 @@ def rating_submitted_handler(sender, instance, **kwargs):
         if instance.ride.driver:
             try:
                 from drivers.models import Driver
-                driver_profile = Driver.objects.get(user=instance.ride.driver.user)
+                driver_profile = Driver.objects.get(id=instance.ride.driver.id)
                 driver_profile.update_rating()
-                print(f"⭐ Updated driver rating for {instance.ride.driver.user.phone_number}")
-            except:
-                pass
+                logger.info(f"⭐ Updated driver rating for {instance.ride.driver.user.phone_number}")
+            except Exception as e:
+                logger.error(f"Error updating driver rating: {str(e)}")
     
     if instance.driver_rating and instance.driver_rating > 0:
         # Update rider rating
-        print(f"⭐ Rider {instance.ride.user.phone_number} received rating: {instance.driver_rating}")
+        logger.info(f"⭐ Rider {instance.ride.user.phone_number} received rating: {instance.driver_rating}")

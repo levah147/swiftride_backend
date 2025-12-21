@@ -27,13 +27,13 @@ def user_created_handler(sender, instance, created, **kwargs):
     5. Safety settings are created by safety app signals
     """
     if created:
-        logger.info(f"✅ New user registered: {instance.phone_number}")
+        logger.info(f" New user registered: {instance.phone_number}")
         
         # Create wallet automatically
         try:
             from payments.models import Wallet
             Wallet.objects.get_or_create(user=instance)
-            logger.info(f"💰 Wallet created for {instance.phone_number}")
+            logger.info(f" Wallet created for {instance.phone_number}")
         except Exception as e:
             logger.error(f"Error creating wallet for {instance.phone_number}: {str(e)}")
         
@@ -41,7 +41,7 @@ def user_created_handler(sender, instance, created, **kwargs):
         try:
             from notifications.models import NotificationPreference
             NotificationPreference.objects.get_or_create(user=instance)
-            logger.info(f"🔔 Notification preferences created for {instance.phone_number}")
+            logger.info(f" Notification preferences created for {instance.phone_number}")
         except Exception as e:
             logger.error(f"Error creating notification preferences for {instance.phone_number}: {str(e)}")
         
@@ -57,7 +57,7 @@ def user_becomes_driver(sender, instance, **kwargs):
         # Check if this is a new driver registration
         if not hasattr(instance, '_driver_status_changed'):
             instance._driver_status_changed = True
-            logger.info(f"✅ User {instance.phone_number} is now a driver")
+            logger.info(f" User {instance.phone_number} is now a driver")
             
             # Driver notifications are handled by drivers/signals.py and notifications/signals.py
 

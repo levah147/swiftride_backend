@@ -106,8 +106,10 @@ def get_nearby_drivers(latitude, longitude, radius_km=10, vehicle_type=None):
     from datetime import timedelta
     
     try:
-        # Get drivers with recent location updates (last 5 minutes)
-        cutoff_time = timezone.now() - timedelta(minutes=5)
+        # Get drivers with recent location updates
+        from django.conf import settings
+        stale_minutes = settings.RIDE_SETTINGS.get('DRIVER_LOCATION_STALE_MINUTES', 5)
+        cutoff_time = timezone.now() - timedelta(minutes=stale_minutes)
         
         driver_locations = DriverLocation.objects.filter(
             driver__status='approved',
@@ -116,15 +118,17 @@ def get_nearby_drivers(latitude, longitude, radius_km=10, vehicle_type=None):
             last_updated__gte=cutoff_time
         ).select_related('driver__user', 'driver__current_vehicle', 'driver__current_vehicle__vehicle_type')
         
-        # ✅ FIX #1: Filter by vehicle type using slug (supports both slug and name)
+        # ✅ Filter by vehicle type (supports ID or name)
         if vehicle_type:
-            # Try to filter by slug first (recommended), fallback to name
+            # Filter by ID (primary key) or name
+            # Note: VehicleType.id is a CharField primary key (e.g., 'car', 'bike')
             driver_locations = driver_locations.filter(
-                Q(driver__current_vehicle__vehicle_type__slug=vehicle_type) |
+                Q(driver__current_vehicle__vehicle_type__id=vehicle_type) |
                 Q(driver__current_vehicle__vehicle_type__name__iexact=vehicle_type),
                 driver__current_vehicle__is_verified=True,
                 driver__current_vehicle__is_active=True,
-                driver__current_vehicle__is_roadworthy=True,
+            ).filter(
+                driver__current_vehicle__isnull=False  # Ensure vehicle exists
             )
         
         # Calculate distances

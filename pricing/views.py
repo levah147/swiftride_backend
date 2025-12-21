@@ -354,6 +354,8 @@ def calculate_fare(request):
     response_data = {
         'vehicle_type': vehicle_type.name,
         'vehicle_type_id': vehicle_type_id,
+        'city_id': city.id if city else None,  # ✅ ADD: Store city_id for ride creation
+        'city_name': city.name if city else None,  # ✅ ADD: Store city_name for convenience
         'distance_km': round(distance_km, 2),
         'estimated_duration_minutes': duration_minutes,
         'base_fare': float(base_fare),
@@ -505,24 +507,4 @@ def get_surge_info(request):
             'multiplier': float(active_rule.multiplier)
         } if active_rule else None
     })
-    city = None
-    if data.get('city_name'):
-        try:
-            city = City.objects.get(name__iexact=data['city_name'], is_active=True)
-            
-            # Validate pickup is within service area
-            if not city.is_within_service_area(pickup_lat, pickup_lon):
-                return Response(
-                    {
-                        'error': 'Pickup location is outside service area',
-                        'city': city.name
-                    },
-                    status=status.HTTP_400_BAD_REQUEST
-                )
-        except City.DoesNotExist:
-            return Response(
-                {'error': f'City "{data["city_name"]}" not found'},
-                status=status.HTTP_404_NOT_FOUND
-            )
     
-    # Get

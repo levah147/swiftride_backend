@@ -207,11 +207,13 @@ class DriverLocation(models.Model):
     
     @property
     def is_stale(self):
-        """Check if location is older than 5 minutes"""
+        """Check if location is stale based on settings"""
         from django.utils import timezone
         from datetime import timedelta
+        from django.conf import settings
         
-        cutoff = timezone.now() - timedelta(minutes=5)
+        stale_minutes = settings.RIDE_SETTINGS.get('DRIVER_LOCATION_STALE_MINUTES', 5)
+        cutoff = timezone.now() - timedelta(minutes=stale_minutes)
         return self.last_updated < cutoff
 
 
@@ -258,7 +260,7 @@ class RideTracking(models.Model):
         null=True,
         blank=True,
         help_text="Direction of travel in degrees"
-    )
+    ) 
     
     # Accuracy
     accuracy_meters = models.DecimalField(

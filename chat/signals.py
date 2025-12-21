@@ -41,7 +41,7 @@ def create_conversation_for_ride(sender, instance, created, **kwargs):
             )
             
             if created:
-                logger.info(f"💬 Conversation created for Ride #{instance.id}")
+                logger.info(f" Conversation created for Ride #{instance.id}")
                 
                 # Create welcome system message
                 Message.objects.create(
@@ -107,7 +107,7 @@ def message_sent_handler(sender, instance, created, **kwargs):
                 }
             )
             
-            logger.info(f"📨 Notification sent for message #{instance.id}")
+            logger.info(f" Notification sent for message #{instance.id}")
             
         except ImportError:
             logger.warning("Notifications app not available")
@@ -148,7 +148,7 @@ def archive_conversation_on_ride_complete(sender, instance, **kwargs):
                     is_read=True
                 )
             
-            logger.info(f"📝 System message added to conversation for Ride #{instance.id}")
+            logger.info(f" System message added to conversation for Ride #{instance.id}")
             
         except Conversation.DoesNotExist:
             # No conversation exists, that's fine

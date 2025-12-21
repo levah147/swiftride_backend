@@ -10,9 +10,11 @@ from drivers.models import Driver
 
 
 class RideSerializer(serializers.ModelSerializer):
+    """Serializer for ride with structured driver information"""
     driver_name = serializers.SerializerMethodField()
     driver_phone = serializers.SerializerMethodField()
     vehicle_info = serializers.SerializerMethodField()
+    driver = serializers.SerializerMethodField()  # ✅ Return structured driver object
     status_display = serializers.CharField(source='get_status_display', read_only=True)
     
     class Meta:
@@ -33,7 +35,27 @@ class RideSerializer(serializers.ModelSerializer):
             'completed_at', 'cancelled_at', 'created_at', 'updated_at'
         ]
     
+    def get_driver(self, obj):
+        """Return structured driver object for frontend"""
+        if not obj.driver:
+            return None
+        
+        driver = obj.driver
+        vehicle = driver.current_vehicle
+        
+        return {
+            'id': str(driver.id),
+            'name': driver.user.get_full_name() or driver.user.phone_number,
+            'phone_number': driver.user.phone_number,
+            'rating': float(driver.rating) if driver.rating else 0.0,
+            'vehicle_model': f"{vehicle.make} {vehicle.model}" if vehicle else 'Unknown',
+            'vehicle_color': vehicle.color if vehicle else 'Unknown',
+            'license_plate': vehicle.license_plate if vehicle else 'Unknown',
+            'vehicle_type': vehicle.vehicle_type.name if vehicle and vehicle.vehicle_type else 'Unknown',
+        }
+    
     def get_driver_name(self, obj):
+        """Legacy field for backward compatibility"""
         return obj.driver_full_name
     
     def get_driver_phone(self, obj):
@@ -44,7 +66,9 @@ class RideSerializer(serializers.ModelSerializer):
 
 
 class RideCreateSerializer(serializers.ModelSerializer):
-    fare_hash = serializers.CharField(required=True) 
+    """Serializer for creating a new ride with fare verification"""
+    fare_hash = serializers.CharField(required=True, write_only=True)
+    
     class Meta:
         model = Ride
         fields = [
@@ -53,6 +77,7 @@ class RideCreateSerializer(serializers.ModelSerializer):
             'ride_type', 'scheduled_time', 'fare_amount',
             'fare_hash',
         ]
+        read_only_fields = ['fare_amount']  # Set from fare_hash validation
     
     def validate(self, data):
         # If scheduled ride, must have scheduled_time
@@ -70,6 +95,16 @@ class RideCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'destination_latitude': 'Invalid latitude'})
         if not (-180 <= data['destination_longitude'] <= 180):
             raise serializers.ValidationError({'destination_longitude': 'Invalid longitude'})
+        
+        # Validate fare_hash exists in cache
+        fare_hash = data.get('fare_hash')
+        if fare_hash:
+            from django.core.cache import cache
+            fare_data = cache.get(f'fare_{fare_hash}')
+            if not fare_data:
+                raise serializers.ValidationError({
+                    'fare_hash': 'Invalid or expired fare hash. Please recalculate fare.'
+                })
         
         return data
 

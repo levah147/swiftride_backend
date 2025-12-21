@@ -9,4 +9,8 @@ urlpatterns = [
     path('<int:vehicle_id>/set-primary/', views.set_primary_vehicle, name='set_primary'),
     path('<int:vehicle_id>/upload-document/', views.upload_vehicle_document, name='upload_document'),
     path('<int:vehicle_id>/upload-image/', views.upload_vehicle_image, name='upload_image'),
+    
+    
+    # ADD THIS URL TO vehicles/urls.py:
+    path('<int:vehicle_id>/status/', views.check_vehicle_status, name='vehicle_status'),
 ]

@@ -209,7 +209,8 @@ class Driver(models.Model):
         """Mark driver as online"""
         if self.can_accept_rides:
             self.is_online = True
-            self.save(update_fields=['is_online', 'updated_at'])
+            self.is_available = True  # ✅ ADDED: Also set available when going online
+            self.save(update_fields=['is_online', 'is_available', 'updated_at'])
             return True
         return False
     
@@ -218,6 +219,36 @@ class Driver(models.Model):
         self.is_online = False
         self.is_available = False
         self.save(update_fields=['is_online', 'is_available', 'updated_at'])
+    
+    def update_location(self, latitude, longitude, bearing=None, heading=None, speed=None,speed_kmh=None,  accuracy_meters=None,accuracy=None):
+        """
+        Update driver's current location.
+        Creates or updates DriverLocation record.
+        """
+        
+         # Use heading if provided, otherwise use bearing
+        bearing_value = heading if heading is not None else bearing
+        speed_value = speed_kmh if speed_kmh is not None else speed
+        accuracy_value = accuracy if accuracy is not None else accuracy_meters
+    
+        # Update or create location
+        from locations.models import DriverLocation 
+        location, created = DriverLocation.objects.update_or_create(
+            driver=self,
+            defaults={
+                'latitude': latitude,
+                'longitude': longitude,
+                'bearing': bearing_value,
+                'speed_kmh': speed_value,
+                'accuracy_meters': accuracy_value,
+            }
+        )
+        
+        # Update last_location_update timestamp on Driver
+        self.last_location_update = timezone.now()
+        self.save(update_fields=['last_location_update'])
+        
+        return location
 
 
 class DriverVerificationDocument(models.Model):
@@ -364,8 +395,6 @@ class DriverRating(models.Model):
     
     def __str__(self):
         return f"{self.rating} stars for {self.driver.user.get_full_name()}"
-
-
 class DriverBackgroundCheck(models.Model):
     """Store detailed background check results for drivers"""
     

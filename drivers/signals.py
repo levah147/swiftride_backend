@@ -13,8 +13,8 @@ def driver_application_handler(sender, instance, created, **kwargs):
     Handle driver application events.
     Send notifications for status changes.
     """
-    if created:
-        print(f"🚗 New driver application: {instance.user.phone_number}")
+    if created: 
+        print(f" New driver application: {instance.user.phone_number}")
         
         # Send notification to driver
         try:
@@ -35,16 +35,17 @@ def driver_application_handler(sender, instance, created, **kwargs):
     if instance.status == 'approved':
         instance.user.is_driver = True
         instance.user.save(update_fields=['is_driver'])
-        print(f"✅ Driver approved: {instance.user.phone_number}")
+        print(f" Driver approved: {instance.user.phone_number}")
 
 
 @receiver(post_save, sender=Driver)
 def driver_online_status_handler(sender, instance, **kwargs):
     """Handle driver going online/offline"""
     if instance.is_online:
-        print(f"🟢 Driver {instance.user.phone_number} is now ONLINE")
+        print(f" Driver {instance.user.phone_number} is now ONLINE")
     else:
-        print(f"🔴 Driver {instance.user.phone_number} is now OFFLINE")
+        print(f" Driver {instance.user.phone_number} is now OFFLINE")
         
 
 
+ 

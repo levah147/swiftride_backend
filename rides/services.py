@@ -102,6 +102,7 @@ def find_nearby_drivers(
 def notify_nearby_drivers(ride):
     """
     Notify nearby drivers about a new ride request.
+    Adds drivers to the RideRequest's notified_drivers ManyToManyField.
     
     Args:
         ride: Ride object
@@ -110,56 +111,65 @@ def notify_nearby_drivers(ride):
         int: Number of drivers notified
     """
     try:
-        # Find nearby drivers
-        nearby_drivers = find_nearby_drivers(
-            pickup_latitude=ride.pickup_latitude,
-            pickup_longitude=ride.pickup_longitude,
-            radius_km=ride.city.minimum_driver_radius_km if ride.city else 10,
-            vehicle_type=ride.vehicle_type.id if ride.vehicle_type else None,
+        # Get the RideRequest for this ride (should already exist)
+        from .models import RideRequest
+        ride_request = RideRequest.objects.filter(ride=ride, status='available').first()
+        
+        if not ride_request:
+            logger.warning(f"No RideRequest found for ride {ride.id}")
+            return 0
+        
+        # Find nearby drivers using locations app
+        vehicle_type_id = ride.vehicle_type.id if ride.vehicle_type else None
+        radius_km = float(ride.city.minimum_driver_radius_km) if ride.city else 10.0
+        
+        nearby_drivers_data = find_nearby_drivers(
+            pickup_latitude=float(ride.pickup_latitude),
+            pickup_longitude=float(ride.pickup_longitude),
+            radius_km=radius_km,
+            vehicle_type=vehicle_type_id,
             limit=20  # Notify up to 20 nearest drivers
         )
         
-        if not nearby_drivers:
+        if not nearby_drivers_data:
             logger.warning(f"No nearby drivers found for ride {ride.id}")
             return 0
         
-        # Create ride requests for each driver
-        from .models import RideRequest
         notified_count = 0
         
-        for driver_data in nearby_drivers:
+        for driver_data in nearby_drivers_data:
             driver = driver_data['driver']
-            distance_km = driver_data['distance_km']
+            distance_km = driver_data.get('distance_km', 0)
             
-            # Skip if driver already has an active ride
-            if driver.is_available:
-                # Create ride request
-                RideRequest.objects.create(
-                    ride=ride,
-                    driver=driver,
-                    distance_km=distance_km,
-                    status='pending'
+            # Skip if driver already has an active ride or is not available
+            if not driver.is_available or not driver.is_online:
+                continue
+            
+            # Add driver to notified_drivers ManyToMany
+            ride_request.notified_drivers.add(driver)
+            
+            # ✅ Send push notification
+            try:
+                from notifications.tasks import send_notification_all_channels
+                send_notification_all_channels.delay(
+                    user_id=driver.user.id,
+                    notification_type='new_ride_request',
+                    title='New Ride Request! 🚗',
+                    body=f'{distance_km:.1f}km away - ₦{ride.fare_amount}',
+                    send_push=True,
+                    data={
+                        'ride_id': str(ride.id),
+                        'ride_request_id': ride_request.id,
+                        'distance_km': distance_km,
+                        'fare': str(ride.fare_amount),
+                        'pickup_address': ride.pickup_location
+                    }
                 )
-                
-                # ✅ Send push notification
-                try:
-                    from notifications.tasks import send_notification_all_channels
-                    send_notification_all_channels.delay(
-                        user_id=driver.user.id,
-                        notification_type='new_ride_request',
-                        title='New Ride Request! 🚗',
-                        body=f'{distance_km:.1f}km away - ₦{ride.total_fare}',
-                        send_push=True,
-                        data={
-                            'ride_id': str(ride.id),
-                            'distance_km': distance_km,
-                            'fare': str(ride.total_fare),
-                            'pickup_address': ride.pickup_address
-                        }
-                    )
-                    notified_count += 1
-                except Exception as e:
-                    logger.error(f"Failed to send notification to driver {driver.id}: {str(e)}")
+                notified_count += 1
+            except ImportError:
+                logger.warning("Notifications app not available")
+            except Exception as e:
+                logger.error(f"Failed to send notification to driver {driver.id}: {str(e)}")
         
         logger.info(f"Notified {notified_count} drivers for ride {ride.id}")
         return notified_count
@@ -239,7 +249,9 @@ def calculate_driver_eta(driver, destination_lat, destination_lng):
     try:
         # Get driver's current location
         if not hasattr(driver, 'current_location'):
-            return {'distance_km': 0, 'eta_minutes': 5}
+            from django.conf import settings
+            default_eta = settings.RIDE_SETTINGS.get('DEFAULT_ETA_MINUTES', 5)
+            return {'distance_km': 0, 'eta_minutes': default_eta}
         
         driver_location = driver.current_location
         

@@ -43,7 +43,7 @@ def create_loyalty_account_handler(sender, instance, created, **kwargs):
             )
             
             if created:
-                logger.info(f"🎁 Loyalty account created for {instance.phone_number} with 100 welcome points")
+                logger.info(f" Loyalty account created for {instance.phone_number} with 100 welcome points")
                 
                 # Send welcome notification
                 try:
@@ -95,7 +95,7 @@ def ride_completed_loyalty_handler(sender, instance, **kwargs):
                 
                 loyalty.save()
                 
-                logger.info(f"🎁 {points} loyalty points awarded to {instance.user.phone_number}")
+                logger.info(f" {points} loyalty points awarded to {instance.user.phone_number}")
                 
                 # Send notification
                 try:
@@ -183,7 +183,7 @@ def promo_wallet_credit_handler(sender, instance, **kwargs):
                 }
             )
             
-            logger.info(f"💰 Referral reward of ₦{instance.amount} credited to {instance.user.phone_number}")
+            logger.info(f" Referral reward of ₦{instance.amount} credited to {instance.user.phone_number}")
             
         except Exception as e:
             logger.error(f"Error notifying referral reward: {str(e)}")

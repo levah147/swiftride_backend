@@ -5,7 +5,7 @@ from vehicles.models import Vehicle
 from pricing.models import VehicleType  # VehicleType is in pricing app
 from vehicles.serializers import VehicleSerializer
 import os
- 
+from locations.models import DriverLocation 
 
 class DriverVerificationDocumentSerializer(serializers.ModelSerializer):
     document_url = serializers.SerializerMethodField()
@@ -283,3 +283,12 @@ class AdminDriverApprovalSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'rejection_reason': 'Rejection reason is required when rejecting an application.'})
         
         return data
+    
+class DriverLocationSerializer(serializers.ModelSerializer):
+    driver_name = serializers.CharField(source='driver.user.get_full_name', read_only=True)
+    
+    class Meta:
+        model = DriverLocation
+        fields = ['id', 'driver', 'driver_name', 'latitude', 'longitude', 
+                  'bearing', 'speed_kmh', 'accuracy_meters', 'last_updated', 'is_stale']  # ✅ Correct field names
+        read_only_fields = ['id', 'last_updated']

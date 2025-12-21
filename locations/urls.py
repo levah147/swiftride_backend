@@ -22,10 +22,15 @@ urlpatterns = [
     path('detect-city/', views.detect_city_from_coordinates, name='detect-city'),
     
     # Driver location tracking
-    path('driver/update/', views.update_driver_location_api, name='update-driver-location'),
+    # path('driver/update/', views.update_driver_location_api, name='update-driver-location'),
     path('driver/nearby/', views.get_nearby_drivers_api, name='get-nearby-drivers'),
     
     # Ride tracking
     path('ride/track/', views.track_ride_location_api, name='track-ride-location'),
     path('ride/<int:ride_id>/route/', views.get_ride_route_api, name='get-ride-route'),
+    
+    path('reverse-geocode/', views.reverse_geocode, name='reverse-geocode'),
+    
 ]
+
+
