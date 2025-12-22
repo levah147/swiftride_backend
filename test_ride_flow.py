@@ -37,8 +37,8 @@ init(autoreset=True)
 BASE_URL = "http://localhost:8000"
 
 # Test credentials
-RIDER_PHONE = "+2348100000001"
-DRIVER_PHONE = "+2348022005554"
+RIDER_PHONE = "+2348100000002"
+DRIVER_PHONE = "+2348022005552"
 
 # Abuja coordinates (real locations)
 LOKOGOMA_COORDS = {
@@ -392,7 +392,8 @@ def book_ride(rider_token, fare_data):
             "destination_latitude": GUDU_COORDS["latitude"],
             "destination_longitude": GUDU_COORDS["longitude"],
             "ride_type": "immediate",
-            "fare_hash": fare_data['fare_hash']
+            "fare_hash": fare_data['fare_hash'],
+            "payment_method": "cash"  # ✅ ADD THIS
         }
     )
     
@@ -529,6 +530,13 @@ def start_ride(driver_token, ride_id):
     )
     
     if not response or response.status_code != 200:
+        if response:
+            try:
+                error_data = response.json()
+                print_error(f"Failed to start ride:")
+                print_json(error_data)  # ✅ Print full error details
+            except:
+                print_error(f"Failed to start ride: {response.text}")
         return False
     
     print_success("Ride started successfully!")

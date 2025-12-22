@@ -38,7 +38,7 @@ def ride_completed_analytics_handler(sender, instance, **kwargs):
             if instance.driver:
                 update_driver_earnings(instance.driver, instance.created_at.date())
             
-            logger.info(f"📊 Analytics updated for completed ride #{instance.id}")
+            logger.info(f"[ANALYTICS] Analytics updated for completed ride #{instance.id}")
             
         except Exception as e:
             logger.error(f"Error updating analytics: {str(e)}")

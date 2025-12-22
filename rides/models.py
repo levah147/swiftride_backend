@@ -15,6 +15,7 @@ class Ride(models.Model):
         ('pending', 'Pending'),           # Waiting for driver
         ('accepted', 'Accepted'),         # Driver accepted
         ('arriving', 'Driver Arriving'),  # Driver on the way to pickup
+        ('driver_arrived', 'Driver Arrived'),  # Driver at pickup location
         ('in_progress', 'In Progress'),   # Ride started
         ('completed', 'Completed'),       # Ride finished
         ('cancelled', 'Cancelled'),       # Cancelled by rider or driver
@@ -29,6 +30,19 @@ class Ride(models.Model):
         ('rider', 'Rider'),
         ('driver', 'Driver'),
         ('system', 'System'),
+    ]
+    
+     # ✅ ADD THESE NEW CHOICES AND FIELDS:
+    PAYMENT_METHOD_CHOICES = [
+        ('cash', 'Cash'),
+        ('wallet', 'Wallet'),
+        ('card', 'Card'),
+    ]
+    
+    PAYMENT_STATUS_CHOICES = [
+        ('pending', 'Pending'),
+        ('paid', 'Paid'),
+        ('failed', 'Failed'),
     ]
     
     
@@ -54,6 +68,18 @@ class Ride(models.Model):
         related_name='rides',
         null=True,  # Nullable for backward compatibility
         blank=True
+    )
+    payment_method = models.CharField(
+        max_length=20,
+        choices=PAYMENT_METHOD_CHOICES,
+        default='cash',
+        help_text="Payment method for this ride"
+    )
+    
+    payment_status = models.CharField(
+        max_length=20,
+        choices=PAYMENT_STATUS_CHOICES,
+        default='pending',
     )
     
     # Fare breakdown (from pricing calculation)

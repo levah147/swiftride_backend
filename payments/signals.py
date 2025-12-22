@@ -20,57 +20,75 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+
 @receiver(post_save, sender='rides.Ride')
 def process_ride_payment(sender, instance, created, **kwargs):
     """
-    FIXED: AUTO-PROCESS PAYMENT when ride is completed!
-    
-    Also updates ride.payment_status to 'paid' after successful payment.
-    Notifications are sent by Transaction signals in notifications app.
-    
-    Flow:
-    1. Ride status changes to 'completed'
-    2. Check if already paid
-    3. Process payment (rider → platform → driver)
-    4. Update ride.payment_status = 'paid'
-    5. Notifications sent automatically
+    AUTO-PROCESS PAYMENT when ride is completed!
+    Handles both CASH and WALLET payments.
     """
-    if instance.status == 'completed' and not created:
-        # Check if already paid
+    # Only process when ride is completed
+    if instance.status != 'completed':
+        return
+    
+    # Skip if already processed
+    if instance.payment_status == 'paid':
+        return
+    
+    logger.info(f"💳 Processing payment for Ride #{instance.id} - Method: {instance.payment_method}")
+    
+    # ✅ CASH PAYMENT - Just mark as paid (driver collected)
+    if instance.payment_method == 'cash':
+        try:
+            instance.payment_status = 'paid'
+            instance.save(update_fields=['payment_status'])
+            logger.info(f"[PAID] Cash payment recorded for ride #{instance.id}")
+            return
+        except Exception as e:
+            logger.error(f"❌ Failed to record cash payment for ride #{instance.id}: {str(e)}")
+            return
+    
+    # ✅ WALLET PAYMENT - Deduct from wallet
+    if instance.payment_method == 'wallet':
         from payments.models import Transaction
+        
+        # Check if already paid
         existing = Transaction.objects.filter(
             ride=instance,
             transaction_type='ride_payment',
             status='completed'
         ).exists()
         
-        if not existing:
-            logger.info(f"💳 Processing payment for Ride #{instance.id}")
+        if existing:
+            logger.info(f"⏭️ Payment already processed for Ride #{instance.id}")
+            return
+        
+        # Import here to avoid circular imports
+        from payments.services import process_ride_payment_service
+        
+        try:
+            # Process wallet payment
+            rider_txn, driver_txn = process_ride_payment_service(instance)
             
-            # Import here to avoid circular imports
-            from payments.services import process_ride_payment_service
+            # Update ride payment status
+            instance.payment_status = 'paid'
+            instance.save(update_fields=['payment_status'])
             
-            try:
-                # Process payment
-                rider_txn, driver_txn = process_ride_payment_service(instance)
-                
-                # ✅ FIXED: Update ride payment status
-                instance.payment_status = 'paid'
-                instance.save(update_fields=['payment_status'])
-                
-                logger.info(f"✅ Payment processed for Ride #{instance.id}")
-                logger.info(f"   Rider paid: ₦{rider_txn.amount}")
-                logger.info(f"   Driver earned: ₦{driver_txn.amount}")
-                logger.info(f"   Commission: ₦{driver_txn.commission_amount}")
-                
-                # Notifications are now sent by Transaction signals in notifications app!
-                
-            except Exception as e:
-                logger.error(f"❌ Payment failed for Ride #{instance.id}: {str(e)}", exc_info=True)
-                
-                # Update ride payment status to failed
-                instance.payment_status = 'failed'
-                instance.save(update_fields=['payment_status'])
+            logger.info(f"✅ Wallet payment processed for Ride #{instance.id}")
+            logger.info(f"   Rider paid: ₦{rider_txn.amount}")
+            logger.info(f"   Driver earned: ₦{driver_txn.amount}")
+            logger.info(f"   Commission: ₦{driver_txn.commission_amount}")
+            
+        except ValueError as e:
+            # Insufficient balance
+            instance.payment_status = 'failed'
+            instance.save(update_fields=['payment_status'])
+            logger.error(f"❌ Wallet payment failed for Ride #{instance.id}: {str(e)}")
+            
+        except Exception as e:
+            instance.payment_status = 'failed'
+            instance.save(update_fields=['payment_status'])
+            logger.error(f"❌ Payment processing error for Ride #{instance.id}: {str(e)}", exc_info=True)
 
 
 @receiver(post_save, sender='payments.Transaction')

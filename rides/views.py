@@ -705,8 +705,8 @@ def start_ride(request, ride_id):
     # Log current status for debugging
     logger.info(f"Attempting to start ride {ride_id}. Current status: {ride.status}")
     
-    # Check if ride can be started - accept BOTH 'accepted' and 'arriving' statuses
-    valid_statuses = ['accepted', 'arriving']
+    # Check if ride can be started - accept 'accepted', 'arriving', and 'driver_arrived' statuses
+    valid_statuses = ['accepted', 'arriving', 'driver_arrived']
     if ride.status not in valid_statuses:
         return Response(
             {
@@ -777,6 +777,9 @@ def start_ride(request, ride_id):
 @permission_classes([IsAuthenticated])
 def complete_ride(request, ride_id):
     """Driver completes the ride (arrived at destination)"""
+    import logging
+    logger = logging.getLogger(__name__)
+    
     try:
         driver = request.user.driver_profile
         ride = Ride.objects.get(id=ride_id, driver=driver)
@@ -799,32 +802,49 @@ def complete_ride(request, ride_id):
     
     ride.status = 'completed'
     ride.completed_at = timezone.now()
-    ride.save()
     
-    # Calculate duration
+    # Calculate duration BEFORE saving
     if ride.started_at:
         duration = (ride.completed_at - ride.started_at).total_seconds() / 60
         ride.duration_minutes = int(duration)
-        ride.save()
     
-    # ✅ ADD: Broadcast to rider via WebSocket
-    channel_layer = get_channel_layer()
-    async_to_sync(channel_layer.group_send)(
-        f'ride_{ride.id}',
-        {
-            'type': 'ride_status_update',
-            'status': 'completed',
-            'message': 'Ride completed. Thank you for riding with us!',
-            'completed_at': ride.completed_at.isoformat(),
-            'total_fare': float(ride.fare_amount) if ride.fare_amount else 0.0,
-        }
+    # Save once with all changes
+    ride.save()
+    
+    # Payment method message
+    payment_message = (
+        "Cash payment to be collected by driver" 
+        if ride.payment_method == 'cash' 
+        else "Payment processed from wallet"
     )
+    
+    # ✅ FIXED: Broadcast to rider via WebSocket with error handling
+    try:
+        channel_layer = get_channel_layer()
+        async_to_sync(channel_layer.group_send)(
+            f'ride_{ride.id}',
+            {
+                'type': 'ride_status_update',
+                'status': 'completed',
+                'message': 'Ride completed. Thank you for riding with us!',
+                'completed_at': ride.completed_at.isoformat(),
+                'total_fare': float(ride.fare_amount) if ride.fare_amount else 0.0,
+                'payment_method': ride.payment_method,
+            }
+        )
+    except Exception as e:
+        # WebSocket not available or failed - this is non-critical
+        logger.warning(f"WebSocket broadcast failed (non-critical): {str(e)}")
     
     return Response({
         'success': True,
         'message': 'Ride completed',
+        'payment_method': ride.payment_method,
+        'payment_status': ride.payment_status,
+        'payment_message': payment_message,
         'ride': RideSerializer(ride).data
     })
+
 
 
 @api_view(['POST'])

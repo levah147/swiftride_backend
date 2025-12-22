@@ -1,368 +1,848 @@
-INFO 2025-12-21 10:44:53,575 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
-INFO 2025-12-21 10:44:53,653 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:44:53,777 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
-INFO 2025-12-21 10:44:53,799 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
-INFO 2025-12-21 10:45:05,977 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 49932
-INFO 2025-12-21 10:45:06,111 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 564
-INFO 2025-12-21 10:45:10,372 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 10:45:10,430 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
-INFO 2025-12-21 10:45:10,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:45:26,026 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 57046
-INFO 2025-12-21 10:45:26,143 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:45:33,271 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 10:45:33,352 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 10:45:44,005 signals  New user registered: +2348100000001
-INFO 2025-12-21 10:45:44,007 signals  Wallet created for +2348100000001
-INFO 2025-12-21 10:45:44,010 signals  Notification preferences created for +2348100000001
-INFO 2025-12-21 10:45:50,864 signals  Loyalty account created for +2348100000001 with 100 welcome points
-INFO 2025-12-21 10:45:51,382 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
-INFO 2025-12-21 10:45:53,458 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 10:45:53,540 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 10:46:09,349 signals  New user registered: +2348022005554
-INFO 2025-12-21 10:46:09,351 signals  Wallet created for +2348022005554
-INFO 2025-12-21 10:46:09,353 signals  Notification preferences created for +2348022005554
-INFO 2025-12-21 10:46:11,416 signals  Loyalty account created for +2348022005554 with 100 welcome points
-INFO 2025-12-21 10:46:11,494 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-INFO 2025-12-21 10:46:15,826 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
-INFO 2025-12-21 10:46:28,857 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
-INFO 2025-12-21 10:46:28,903 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:46:31,145 basehttp "GET /admin/vehicles/vehicle/21/change/ HTTP/1.1" 200 72478
-INFO 2025-12-21 10:46:31,195 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:47:15,592 basehttp "POST /admin/vehicles/vehicle/21/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 10:47:15,641 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58732
-INFO 2025-12-21 10:47:15,702 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-WARNING 2025-12-21 10:49:26,705 log Forbidden: /api/drivers/toggle-availability/
-WARNING 2025-12-21 10:49:26,706 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 403 46
-INFO 2025-12-21 10:50:16,154 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59008
-INFO 2025-12-21 10:50:16,206 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:50:18,119 basehttp "GET /admin/drivers/driver/21/change/ HTTP/1.1" 200 76588
-INFO 2025-12-21 10:50:18,416 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:50:38,528 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 10:50:38,698 basehttp "POST /admin/drivers/driver/21/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 10:50:38,762 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59572
-INFO 2025-12-21 10:50:38,814 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:50:46,757 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 10:50:46,772 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 10:50:56,155 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-INFO 2025-12-21 10:50:58,217 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 10:50:58,244 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 10:51:13,051 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 10:51:13,083 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-WARNING 2025-12-21 10:51:15,159 log Bad Request: /api/drivers/apply/
-WARNING 2025-12-21 10:51:15,161 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 122
-INFO 2025-12-21 10:51:42,416 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
-INFO 2025-12-21 10:51:42,472 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:51:51,784 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 48395
-INFO 2025-12-21 10:51:57,654 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 10:51:57,709 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
-INFO 2025-12-21 10:51:57,761 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:53:53,795 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
-INFO 2025-12-21 10:53:53,842 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:56:46,025 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 10:56:46,041 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 10:57:35,864 signals  New user registered: +2348100000001
-INFO 2025-12-21 10:57:35,866 signals  Wallet created for +2348100000001
-INFO 2025-12-21 10:57:35,868 signals  Notification preferences created for +2348100000001
-INFO 2025-12-21 10:57:37,930 signals  Loyalty account created for +2348100000001 with 100 welcome points
-INFO 2025-12-21 10:57:38,011 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
-WARNING 2025-12-21 10:57:40,160 log Too Many Requests: /api/auth/send-otp/
-WARNING 2025-12-21 10:57:40,161 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 71
-INFO 2025-12-21 10:58:13,680 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 62006
-INFO 2025-12-21 10:58:13,726 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:58:17,209 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 62006
-INFO 2025-12-21 10:58:17,245 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:58:30,216 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 62006
-INFO 2025-12-21 10:58:30,266 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:58:51,072 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 47347
-INFO 2025-12-21 10:58:53,114 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 10:58:53,176 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61341
-INFO 2025-12-21 10:58:53,227 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:58:59,473 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57793
-INFO 2025-12-21 10:58:59,515 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-WARNING 2025-12-21 10:59:34,784 log Too Many Requests: /api/auth/send-otp/
-WARNING 2025-12-21 10:59:34,785 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 71
-INFO 2025-12-21 10:59:49,886 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
-INFO 2025-12-21 10:59:49,942 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 10:59:52,262 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
-INFO 2025-12-21 10:59:52,303 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:00:09,759 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:00:20,819 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:00:20,844 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:00:37,112 signals  New user registered: +2348100000001
-INFO 2025-12-21 11:00:37,114 signals  Wallet created for +2348100000001
-INFO 2025-12-21 11:00:37,118 signals  Notification preferences created for +2348100000001
-INFO 2025-12-21 11:00:43,439 signals  Loyalty account created for +2348100000001 with 100 welcome points
-INFO 2025-12-21 11:00:43,874 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
-INFO 2025-12-21 11:00:45,940 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:00:45,983 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:00:55,826 signals  New user registered: +2348022005554
-INFO 2025-12-21 11:00:55,829 signals  Wallet created for +2348022005554
-INFO 2025-12-21 11:00:55,833 signals  Notification preferences created for +2348022005554
-INFO 2025-12-21 11:00:58,457 signals  Loyalty account created for +2348022005554 with 100 welcome points
-INFO 2025-12-21 11:00:58,550 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-INFO 2025-12-21 11:01:03,528 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
-INFO 2025-12-21 11:01:23,692 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59008
-INFO 2025-12-21 11:01:23,839 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:01:26,069 basehttp "GET /admin/drivers/driver/22/change/ HTTP/1.1" 200 76618
-INFO 2025-12-21 11:01:26,129 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:01:44,537 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:01:46,968 basehttp "POST /admin/drivers/driver/22/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:01:47,028 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59572
-INFO 2025-12-21 11:01:47,094 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:01:52,922 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
-INFO 2025-12-21 11:01:52,973 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:01:55,231 basehttp "GET /admin/vehicles/vehicle/22/change/ HTTP/1.1" 200 72470
-INFO 2025-12-21 11:01:55,274 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:02:42,353 basehttp "POST /admin/vehicles/vehicle/22/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:02:42,416 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58732
-INFO 2025-12-21 11:02:42,477 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:02:48,818 signals  User +2348022005554 is now a driver
-ERROR 2025-12-21 11:02:48,888 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
-INFO 2025-12-21 11:02:51,031 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
-INFO 2025-12-21 11:02:53,242 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:02:55,355 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:02:57,498 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
-WARNING 2025-12-21 11:02:59,781 signals No RideRequest found for ride 10
-INFO 2025-12-21 11:02:59,865 basehttp "POST /api/rides/ HTTP/1.1" 201 694
-INFO 2025-12-21 11:03:05,189 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
-INFO 2025-12-21 11:03:09,402 signals  Conversation created for Ride #10
-INFO 2025-12-21 11:03:09,432 signals  User +2348022005554 is now a driver
-WARNING 2025-12-21 11:03:09,492 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
-INFO 2025-12-21 11:03:09,523 basehttp "POST /api/rides/requests/10/accept/ HTTP/1.1" 200 988
-INFO 2025-12-21 11:03:11,603 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:03:13,717 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:03:17,788 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:03:19,896 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:03:26,039 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:03:26,110 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
-INFO 2025-12-21 11:03:30,172 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:03:32,286 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
-WARNING 2025-12-21 11:03:36,364 log Bad Request: /api/rides/10/start/
-WARNING 2025-12-21 11:03:36,365 basehttp "POST /api/rides/10/start/ HTTP/1.1" 400 208
-WARNING 2025-12-21 11:05:05,693 log Not Found: /
-WARNING 2025-12-21 11:05:05,693 basehttp "GET / HTTP/1.1" 404 5382
-WARNING 2025-12-21 11:05:06,381 log Not Found: /favicon.ico
-WARNING 2025-12-21 11:05:06,382 basehttp "GET /favicon.ico HTTP/1.1" 404 5433
-INFO 2025-12-21 11:05:18,137 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63162
-INFO 2025-12-21 11:05:18,231 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:07:21,923 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 49938
-INFO 2025-12-21 11:07:31,147 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:07:31,224 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
-INFO 2025-12-21 11:07:31,283 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:10:50,385 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:23:12,474 autoreload E:\Levah\swiftride\backend\rides\views.py changed, reloading.
-INFO 2025-12-21 11:23:19,509 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:26:51,641 autoreload E:\Levah\swiftride\backend\rides\views.py changed, reloading.
-INFO 2025-12-21 11:26:56,771 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:27:31,029 autoreload E:\Levah\swiftride\backend\rides\views.py changed, reloading.
-INFO 2025-12-21 11:27:34,414 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:30:06,487 autoreload E:\Levah\swiftride\backend\rides\views.py changed, reloading.
-INFO 2025-12-21 11:30:11,093 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:31:04,577 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:31:12,761 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
-INFO 2025-12-21 11:31:12,865 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:31:23,914 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:31:24,102 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:31:37,032 signals  New user registered: +2348100000001
-INFO 2025-12-21 11:31:37,034 signals  Wallet created for +2348100000001
-INFO 2025-12-21 11:31:37,104 signals  Notification preferences created for +2348100000001
-INFO 2025-12-21 11:31:44,118 signals  Loyalty account created for +2348100000001 with 100 welcome points
-INFO 2025-12-21 11:31:45,017 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
-INFO 2025-12-21 11:31:47,097 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:31:47,112 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:31:57,600 signals  New user registered: +2348022005554
-INFO 2025-12-21 11:31:57,602 signals  Wallet created for +2348022005554
-INFO 2025-12-21 11:31:57,604 signals  Notification preferences created for +2348022005554
-INFO 2025-12-21 11:31:59,721 signals  Loyalty account created for +2348022005554 with 100 welcome points
-INFO 2025-12-21 11:31:59,823 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-INFO 2025-12-21 11:32:04,400 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
-INFO 2025-12-21 11:32:13,121 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59008
-INFO 2025-12-21 11:32:13,185 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:32:15,100 basehttp "GET /admin/drivers/driver/23/change/ HTTP/1.1" 200 76618
-INFO 2025-12-21 11:32:15,166 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:32:32,212 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:32:34,495 basehttp "POST /admin/drivers/driver/23/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:32:34,553 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59572
-INFO 2025-12-21 11:32:34,614 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:32:43,983 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
-INFO 2025-12-21 11:32:44,046 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:32:46,075 basehttp "GET /admin/vehicles/vehicle/23/change/ HTTP/1.1" 200 72470
-INFO 2025-12-21 11:32:46,130 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:32:46,149 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,150 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,151 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,155 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,183 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,184 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,447 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
-INFO 2025-12-21 11:32:46,546 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
-INFO 2025-12-21 11:33:22,081 basehttp "POST /admin/vehicles/vehicle/23/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:33:22,144 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58732
-INFO 2025-12-21 11:33:22,204 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:33:28,206 signals  User +2348022005554 is now a driver
-ERROR 2025-12-21 11:33:28,271 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
-INFO 2025-12-21 11:33:30,441 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
-INFO 2025-12-21 11:33:32,593 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:33:34,733 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:33:36,883 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
-WARNING 2025-12-21 11:33:39,138 signals No RideRequest found for ride 11
-INFO 2025-12-21 11:33:39,196 basehttp "POST /api/rides/ HTTP/1.1" 201 694
-INFO 2025-12-21 11:33:44,311 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
-INFO 2025-12-21 11:33:46,378 views Accepting ride 11. Current status: pending
-INFO 2025-12-21 11:33:48,553 signals  Conversation created for Ride #11
-INFO 2025-12-21 11:33:48,561 views Ride 11 status updated to: accepted
-INFO 2025-12-21 11:33:48,876 signals  User +2348022005554 is now a driver
-WARNING 2025-12-21 11:33:48,946 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
-INFO 2025-12-21 11:33:48,948 views After refresh, ride 11 status: accepted
-INFO 2025-12-21 11:33:48,973 basehttp "POST /api/rides/requests/11/accept/ HTTP/1.1" 200 988
-INFO 2025-12-21 11:33:51,077 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:33:53,191 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:33:57,262 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:33:59,350 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-INFO 2025-12-21 11:34:05,465 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:34:05,537 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
-INFO 2025-12-21 11:34:09,619 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:34:11,723 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
-INFO 2025-12-21 11:34:15,770 views Attempting to start ride 11. Current status: driver_arrived
-WARNING 2025-12-21 11:34:15,797 log Bad Request: /api/rides/11/start/
-WARNING 2025-12-21 11:34:15,798 basehttp "POST /api/rides/11/start/ HTTP/1.1" 400 234
-INFO 2025-12-21 11:37:34,493 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58141
-INFO 2025-12-21 11:37:34,582 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:37:38,036 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
-INFO 2025-12-21 11:37:38,183 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:37:46,339 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 49938
-INFO 2025-12-21 11:37:51,658 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:37:51,764 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
-INFO 2025-12-21 11:37:51,844 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:38:10,550 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
-INFO 2025-12-21 11:38:10,668 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:43:13,476 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:43:21,724 basehttp "GET /admin/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:43:21,929 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3068
-INFO 2025-12-21 11:43:33,147 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:43:33,357 basehttp "GET /admin/ HTTP/1.1" 200 137567
-INFO 2025-12-21 11:43:52,043 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 68918
-INFO 2025-12-21 11:43:52,174 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:44:29,743 autoreload Watching for file changes with StatReloader
-INFO 2025-12-21 11:44:55,223 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:44:55,233 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:45:04,429 signals  User +2348022005555 is now a driver
-INFO 2025-12-21 11:45:04,494 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 1002
-INFO 2025-12-21 11:45:05,892 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1021
-INFO 2025-12-21 11:45:07,196 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 1021
-INFO 2025-12-21 11:45:07,220 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 435
-INFO 2025-12-21 11:45:07,237 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3445
-INFO 2025-12-21 11:45:08,126 basehttp "GET /api/drivers/profile/ HTTP/1.1" 200 3445
-INFO 2025-12-21 11:45:17,078 signals  User +2348022005555 is now a driver
-ERROR 2025-12-21 11:45:17,081 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
-INFO 2025-12-21 11:45:23,561 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
-INFO 2025-12-21 11:45:36,116 signals  User +2348022005555 is now a driver
-INFO 2025-12-21 11:45:38,425 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 72
-INFO 2025-12-21 11:45:42,836 basehttp "GET /api/rides/available/?latitude=8.9735658&longitude=7.4585162&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:45:43,483 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:45:44,499 signals  User +2348022005555 is now a driver
-ERROR 2025-12-21 11:45:44,502 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
-INFO 2025-12-21 11:45:46,576 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
-INFO 2025-12-21 11:45:47,444 basehttp "GET /api/rides/available/?latitude=8.9736672&longitude=7.4593905&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:45:48,093 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:45:59,466 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 44
-INFO 2025-12-21 11:46:00,449 basehttp "GET /api/rides/available/?latitude=8.9736695&longitude=7.4594102&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:01,248 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:18,945 basehttp "GET /api/rides/available/?latitude=8.973754&longitude=7.459583&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:19,791 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:29,956 basehttp "GET /api/rides/available/?latitude=8.9736944&longitude=7.4596132&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:30,699 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:45,391 basehttp "GET /api/rides/available/?latitude=8.9736933&longitude=7.4596133&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:46:46,071 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:00,565 basehttp "GET /api/rides/available/?latitude=8.9736938&longitude=7.459613&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:01,401 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-WARNING 2025-12-21 11:47:01,624 log Bad Request: /api/payments/withdrawals/request/
-WARNING 2025-12-21 11:47:01,625 basehttp "POST /api/payments/withdrawals/request/ HTTP/1.1" 400 37
-INFO 2025-12-21 11:47:15,522 basehttp "GET /api/rides/available/?latitude=8.9736938&longitude=7.459613&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:16,258 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:19,927 basehttp "POST /api/payments/deposit/initialize/ HTTP/1.1" 200 184
-INFO 2025-12-21 11:47:30,577 basehttp "GET /api/rides/available/?latitude=8.9736704&longitude=7.459418&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:31,308 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:45,385 basehttp "GET /api/rides/available/?latitude=8.9736704&longitude=7.459418&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:46,173 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:47:58,054 basehttp "GET /api/payments/wallet/balance/ HTTP/1.1" 200 44
-INFO 2025-12-21 11:48:00,443 basehttp "GET /api/rides/available/?latitude=8.9736704&longitude=7.459418&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:48:01,200 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:48:15,451 basehttp "GET /api/rides/available/?latitude=8.97367&longitude=7.4594188&max_distance=15.0 HTTP/1.1" 200 2
-INFO 2025-12-21 11:48:16,110 basehttp "GET /api/rides/active/ HTTP/1.1" 200 2
-INFO 2025-12-21 11:48:19,570 signals  User +2348022005555 is now a driver
-INFO 2025-12-21 11:48:21,695 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 72
-INFO 2025-12-21 11:48:30,155 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 31
-INFO 2025-12-21 11:48:45,448 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:48:45,457 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:48:55,952 signals  New user registered: +2348055632444
-INFO 2025-12-21 11:48:55,954 signals  Wallet created for +2348055632444
-INFO 2025-12-21 11:48:55,957 signals  Notification preferences created for +2348055632444
-INFO 2025-12-21 11:48:58,035 signals  Loyalty account created for +2348055632444 with 100 welcome points
-INFO 2025-12-21 11:48:58,291 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 795
-INFO 2025-12-21 11:49:00,165 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
-INFO 2025-12-21 11:49:02,722 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:49:02,735 basehttp "GET /api/rides/?page=1&page_size=20 HTTP/1.1" 200 52
-INFO 2025-12-21 11:49:02,750 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 227
-INFO 2025-12-21 11:49:02,763 basehttp "GET /api/drivers/status/ HTTP/1.1" 200 76
-WARNING 2025-12-21 11:49:04,014 log Not Found: /api/pricing/vehicle-types/
-WARNING 2025-12-21 11:49:04,016 basehttp "GET /api/pricing/vehicle-types/?city=Abuja HTTP/1.1" 404 61
-INFO 2025-12-21 11:49:05,390 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
-INFO 2025-12-21 11:49:40,952 basehttp "GET /api/locations/saved/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:49:41,712 basehttp "GET /api/locations/recent/?limit=10 HTTP/1.1" 200 52
-INFO 2025-12-21 11:50:59,555 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 70069
-INFO 2025-12-21 11:50:59,636 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:51:04,184 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 70069
-INFO 2025-12-21 11:51:04,248 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:51:26,692 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 48593
-INFO 2025-12-21 11:51:29,839 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:51:29,928 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 68242
-INFO 2025-12-21 11:51:30,000 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:52:02,491 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 52460
-INFO 2025-12-21 11:52:07,864 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:52:07,930 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 62495
-INFO 2025-12-21 11:52:07,985 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:52:30,865 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:52:30,877 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:52:41,285 signals  New user registered: +2348100000001
-INFO 2025-12-21 11:52:41,287 signals  Wallet created for +2348100000001
-INFO 2025-12-21 11:52:41,289 signals  Notification preferences created for +2348100000001
-INFO 2025-12-21 11:52:43,365 signals  Loyalty account created for +2348100000001 with 100 welcome points
-INFO 2025-12-21 11:52:43,473 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
-INFO 2025-12-21 11:52:45,553 utils SMS sent successfully on attempt 1
-INFO 2025-12-21 11:52:45,564 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
-INFO 2025-12-21 11:52:55,153 signals  New user registered: +2348022005554
-INFO 2025-12-21 11:52:55,155 signals  Wallet created for +2348022005554
-INFO 2025-12-21 11:52:55,156 signals  Notification preferences created for +2348022005554
-INFO 2025-12-21 11:52:57,217 signals  Loyalty account created for +2348022005554 with 100 welcome points
-INFO 2025-12-21 11:52:57,307 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
-INFO 2025-12-21 11:53:01,932 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1362
-INFO 2025-12-21 11:53:09,611 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59006
-INFO 2025-12-21 11:53:09,675 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:53:12,096 basehttp "GET /admin/drivers/driver/6/change/ HTTP/1.1" 200 76614
-INFO 2025-12-21 11:53:12,158 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:53:28,630 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:53:30,894 basehttp "POST /admin/drivers/driver/6/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:53:30,979 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59569
-INFO 2025-12-21 11:53:31,060 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:53:32,024 basehttp "GET /admin/ HTTP/1.1" 200 133801
-INFO 2025-12-21 11:53:36,845 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
-INFO 2025-12-21 11:53:36,898 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:53:42,973 basehttp "GET /admin/vehicles/vehicle/6/change/ HTTP/1.1" 200 72467
-INFO 2025-12-21 11:53:43,043 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:54:10,952 basehttp "POST /admin/vehicles/vehicle/6/change/ HTTP/1.1" 302 0
-INFO 2025-12-21 11:54:11,030 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58731
-INFO 2025-12-21 11:54:11,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:54:23,896 signals  User +2348022005554 is now a driver
-ERROR 2025-12-21 11:54:23,898 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
-INFO 2025-12-21 11:54:26,007 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
-INFO 2025-12-21 11:54:28,088 signals  User +2348022005554 is now a driver
-INFO 2025-12-21 11:54:30,227 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
-WARNING 2025-12-21 11:54:32,280 log Not Found: /api/pricing/calculate-fare/
-WARNING 2025-12-21 11:54:32,280 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 404 36
-INFO 2025-12-21 11:55:23,883 basehttp "GET /admin/ HTTP/1.1" 200 134615
-INFO 2025-12-21 11:55:32,333 basehttp "GET /admin/pricing/fuelpriceadjustment/ HTTP/1.1" 200 48766
-INFO 2025-12-21 11:55:32,397 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
-INFO 2025-12-21 11:55:34,750 basehttp "GET /admin/pricing/ HTTP/1.1" 200 56768
-INFO 2025-12-21 11:55:39,194 basehttp "GET /admin/pricing/vehiclepricing/ HTTP/1.1" 200 58904
-INFO 2025-12-21 11:55:39,241 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+3
+INFO 2025-12-21 15:19:32,474 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:21:14,914 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 15:21:28,038 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 15:21:28,058 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 15:21:34,835 signals  New user registered: +2348100000001
+INFO 2025-12-21 15:21:34,837 signals  Wallet created for +2348100000001
+INFO 2025-12-21 15:21:34,840 signals  Notification preferences created for +2348100000001
+INFO 2025-12-21 15:21:41,158 signals  Loyalty account created for +2348100000001 with 100 welcome points
+INFO 2025-12-21 15:21:41,331 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-21 15:21:43,771 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 15:21:43,790 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 15:21:51,969 signals  New user registered: +2348022005554
+INFO 2025-12-21 15:21:51,970 signals  Wallet created for +2348022005554
+INFO 2025-12-21 15:21:51,972 signals  Notification preferences created for +2348022005554
+INFO 2025-12-21 15:21:54,025 signals  Loyalty account created for +2348022005554 with 100 welcome points
+INFO 2025-12-21 15:21:54,121 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-21 15:21:58,491 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
+INFO 2025-12-21 15:22:09,506 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58172
+INFO 2025-12-21 15:22:09,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:22:12,002 basehttp "GET /admin/vehicles/vehicle/26/change/ HTTP/1.1" 200 72476
+INFO 2025-12-21 15:22:12,064 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:22:29,987 basehttp "POST /admin/vehicles/vehicle/26/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 15:22:30,045 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58776
+INFO 2025-12-21 15:22:30,126 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:22:33,604 basehttp "GET /admin/ HTTP/1.1" 200 134683
+INFO 2025-12-21 15:22:36,985 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59007
+INFO 2025-12-21 15:22:37,044 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:22:39,313 basehttp "GET /admin/drivers/driver/26/change/ HTTP/1.1" 200 76616
+INFO 2025-12-21 15:22:39,392 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:22:54,772 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:22:57,294 basehttp "POST /admin/drivers/driver/26/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 15:22:57,359 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59571
+INFO 2025-12-21 15:22:57,418 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:23:02,580 basehttp "GET /admin/audit_logging/auditlog/ HTTP/1.1" 200 155961
+INFO 2025-12-21 15:23:02,661 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:23:34,955 signals  User +2348022005554 is now a driver
+ERROR 2025-12-21 15:23:34,959 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
+INFO 2025-12-21 15:23:37,148 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
+INFO 2025-12-21 15:23:39,310 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:23:41,560 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 15:23:43,665 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
+WARNING 2025-12-21 15:23:45,923 signals No RideRequest found for ride 14
+INFO 2025-12-21 15:23:46,000 basehttp "POST /api/rides/ HTTP/1.1" 201 694
+INFO 2025-12-21 15:23:46,239 basehttp "GET /admin/audit_logging/auditlog/?p=7 HTTP/1.1" 200 122891
+INFO 2025-12-21 15:23:46,335 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 15:23:51,089 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
+INFO 2025-12-21 15:23:53,153 views Accepting ride 14. Current status: pending
+INFO 2025-12-21 15:23:55,320 signals  Conversation created for Ride #14
+INFO 2025-12-21 15:23:55,326 views Ride 14 status updated to: accepted
+INFO 2025-12-21 15:23:55,347 signals  User +2348022005554 is now a driver
+WARNING 2025-12-21 15:23:55,443 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 15:23:55,447 views After refresh, ride 14 status: accepted
+INFO 2025-12-21 15:23:55,475 basehttp "POST /api/rides/requests/14/accept/ HTTP/1.1" 200 1003
+INFO 2025-12-21 15:23:57,583 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:23:59,691 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 15:24:03,760 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:05,887 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 15:24:12,047 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:12,096 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 15:24:16,187 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:18,412 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
+INFO 2025-12-21 15:24:22,459 views Attempting to start ride 14. Current status: driver_arrived
+INFO 2025-12-21 15:24:24,660 views Ride 14 started successfully
+WARNING 2025-12-21 15:24:24,663 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 15:24:24,688 basehttp "POST /api/rides/14/start/ HTTP/1.1" 200 1030
+INFO 2025-12-21 15:24:26,776 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:28,898 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 15:24:32,988 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:35,099 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 15:24:39,188 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:41,298 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 15:24:45,390 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 15:24:47,517 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 171
+INFO 2025-12-21 15:24:51,838 signals  User +2348022005554 is now a driver
+ERROR 2025-12-21 15:24:56,730 log Internal Server Error: /api/rides/14/complete/
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\payments\signals.py", line 55, in process_ride_payment
+    rider_txn, driver_txn = process_ride_payment_service(instance)
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\payments\services.py", line 40, in process_ride_payment_service
+    rider_wallet.deduct_funds(total_fare)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\payments\models.py", line 96, in deduct_funds
+    raise ValueError("Insufficient balance")
+ValueError: Insufficient balance
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "E:\Levah\swiftride\backend\rides\views.py", line 802, in complete_ride
+    ride.save()
+    ~~~~~~~~~^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\base.py", line 1023, in save_base
+    post_save.send(
+    ~~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<4 lines>...
+        using=using,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "E:\Levah\swiftride\backend\payments\signals.py", line 73, in process_ride_payment
+    instance.save(update_fields=['payment_status'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\base.py", line 880, in save
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: The following fields do not exist in this model, are m2m fields, primary keys, or are non-concrete fields: payment_status
+ERROR 2025-12-21 15:24:56,839 basehttp "POST /api/rides/14/complete/ HTTP/1.1" 500 157147
+INFO 2025-12-21 17:58:50,632 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 17:59:00,578 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63166
+INFO 2025-12-21 17:59:00,696 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-12-21 17:59:11,204 log Internal Server Error: /admin/accounts/user/
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: rides_ride.payment_method
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2057, in changelist_view
+    response = self.response_action(
+        request, queryset=cl.get_queryset(request)
+    )
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1686, in response_action
+    response = func(self, request, queryset)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2199, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 138, in get_deleted_objects
+    collector.collect(objs)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 205, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\deletion.py", line 343, in collect
+    if getattr(on_delete, "lazy_sub_objs", False) or sub_objs:
+                                                     ^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\query.py", line 398, in __bool__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: rides_ride.payment_method
+ERROR 2025-12-21 17:59:11,427 basehttp "POST /admin/accounts/user/ HTTP/1.1" 500 250121
+WARNING 2025-12-21 17:59:11,873 log Not Found: /favicon.ico
+WARNING 2025-12-21 17:59:11,875 basehttp "GET /favicon.ico HTTP/1.1" 404 5409
+INFO 2025-12-21 17:59:27,913 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63166
+INFO 2025-12-21 17:59:27,995 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 17:59:33,555 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 17:59:33,575 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 17:59:36,194 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 50933
+INFO 2025-12-21 17:59:48,343 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-21 17:59:48,409 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
+INFO 2025-12-21 17:59:48,474 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:02:41,742 signals  New user registered: +2348100000001
+INFO 2025-12-21 18:02:41,744 signals  Wallet created for +2348100000001
+INFO 2025-12-21 18:02:41,748 signals  Notification preferences created for +2348100000001
+INFO 2025-12-21 18:02:45,648 basehttp "GET /admin/ HTTP/1.1" 200 134669
+INFO 2025-12-21 18:02:49,122 signals  Loyalty account created for +2348100000001 with 100 welcome points
+INFO 2025-12-21 18:02:49,603 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-21 18:02:51,740 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 18:02:51,764 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 18:02:54,002 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57793
+INFO 2025-12-21 18:02:54,071 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:03,571 signals  New user registered: +2348022005554
+INFO 2025-12-21 18:03:03,572 signals  Wallet created for +2348022005554
+INFO 2025-12-21 18:03:03,574 signals  Notification preferences created for +2348022005554
+INFO 2025-12-21 18:03:05,650 signals  Loyalty account created for +2348022005554 with 100 welcome points
+INFO 2025-12-21 18:03:05,822 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-21 18:03:07,134 basehttp "GET /admin/drivers/ HTTP/1.1" 200 55691
+INFO 2025-12-21 18:03:10,001 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57793
+INFO 2025-12-21 18:03:10,143 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:10,438 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
+INFO 2025-12-21 18:03:15,157 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59007
+INFO 2025-12-21 18:03:15,216 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:16,741 basehttp "GET /admin/drivers/driver/27/change/ HTTP/1.1" 200 76616
+INFO 2025-12-21 18:03:16,804 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:30,974 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:03:33,420 basehttp "POST /admin/drivers/driver/27/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 18:03:33,484 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59571
+INFO 2025-12-21 18:03:33,553 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:37,863 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58172
+INFO 2025-12-21 18:03:37,914 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:39,908 basehttp "GET /admin/vehicles/vehicle/27/change/ HTTP/1.1" 200 72468
+INFO 2025-12-21 18:03:39,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:03:56,611 basehttp "POST /admin/vehicles/vehicle/27/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 18:03:56,667 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58776
+INFO 2025-12-21 18:03:56,727 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 18:04:03,139 signals  User +2348022005554 is now a driver
+ERROR 2025-12-21 18:04:03,142 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
+INFO 2025-12-21 18:04:05,296 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
+INFO 2025-12-21 18:04:07,380 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:09,500 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 18:04:11,581 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
+WARNING 2025-12-21 18:04:13,730 signals No RideRequest found for ride 15
+INFO 2025-12-21 18:04:13,767 basehttp "POST /api/rides/ HTTP/1.1" 201 694
+INFO 2025-12-21 18:04:18,818 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
+INFO 2025-12-21 18:04:20,885 views Accepting ride 15. Current status: pending
+INFO 2025-12-21 18:04:22,962 signals  Conversation created for Ride #15
+INFO 2025-12-21 18:04:22,972 views Ride 15 status updated to: accepted
+INFO 2025-12-21 18:04:23,012 signals  User +2348022005554 is now a driver
+WARNING 2025-12-21 18:04:23,326 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 18:04:23,338 views After refresh, ride 15 status: accepted
+INFO 2025-12-21 18:04:23,435 basehttp "POST /api/rides/requests/15/accept/ HTTP/1.1" 200 1003
+INFO 2025-12-21 18:04:25,512 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:27,654 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 18:04:31,734 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:33,850 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 18:04:40,083 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:40,146 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 18:04:44,230 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:46,334 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
+INFO 2025-12-21 18:04:50,391 views Attempting to start ride 15. Current status: driver_arrived
+INFO 2025-12-21 18:04:52,627 views Ride 15 started successfully
+WARNING 2025-12-21 18:04:52,629 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 18:04:52,655 basehttp "POST /api/rides/15/start/ HTTP/1.1" 200 1030
+INFO 2025-12-21 18:04:54,749 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:04:56,857 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 18:05:00,954 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:05:03,054 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 18:05:07,111 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:05:09,284 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 18:05:13,365 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:05:15,475 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 171
+INFO 2025-12-21 18:05:19,614 signals  User +2348022005554 is now a driver
+INFO 2025-12-21 18:05:22,018 signals  System message added to conversation for Ride #15
+ERROR 2025-12-21 18:05:22,020 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 18:05:22,022 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 18:05:22,110 signals  8 loyalty points awarded to +2348100000001
+INFO 2025-12-21 18:05:22,180 signals  System message added to conversation for Ride #15
+ERROR 2025-12-21 18:05:22,183 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 18:05:22,185 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 18:05:22,227 signals  8 loyalty points awarded to +2348100000001
+ERROR 2025-12-21 18:05:24,424 log Internal Server Error: /api/rides/15/complete/
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 71, in _make_backend
+    backend_class = import_string(backend_module)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'channels_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "E:\Levah\swiftride\backend\rides\views.py", line 818, in complete_ride
+    channel_layer = get_channel_layer()
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 411, in get_channel_layer
+    return channel_layers[alias]
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 83, in __getitem__
+    self.backends[key] = self.make_backend(key)
+                         ~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 45, in make_backend
+    return self._make_backend(name, config)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 73, in _make_backend
+    raise InvalidChannelLayerError(
+    ...<2 lines>...
+    )
+channels.exceptions.InvalidChannelLayerError: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+ERROR 2025-12-21 18:05:24,446 basehttp "POST /api/rides/15/complete/ HTTP/1.1" 500 159956
+INFO 2025-12-21 22:17:36,819 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 22:18:07,782 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:18:07,851 basehttp "GET /admin/login/?next=/admin/drivers/driver/ HTTP/1.1" 200 3083
+INFO 2025-12-21 22:18:12,042 basehttp "POST /admin/login/?next=/admin/drivers/driver/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:18:12,421 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 58994
+INFO 2025-12-21 22:18:12,529 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:19:09,734 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:19:09,971 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:19:34,826 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-21 22:19:36,951 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:19:36,986 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:19:44,942 signals  New user registered: +2348022005553
+INFO 2025-12-21 22:19:45,008 signals  Wallet created for +2348022005553
+INFO 2025-12-21 22:19:45,012 signals  Notification preferences created for +2348022005553
+INFO 2025-12-21 22:19:52,255 signals  Loyalty account created for +2348022005553 with 100 welcome points
+INFO 2025-12-21 22:19:52,607 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+WARNING 2025-12-21 22:19:54,742 log Bad Request: /api/drivers/apply/
+WARNING 2025-12-21 22:19:54,742 basehttp "POST /api/drivers/apply/ HTTP/1.1" 400 146
+INFO 2025-12-21 22:20:02,686 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 58994
+INFO 2025-12-21 22:20:02,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:20:33,554 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:20:33,572 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:20:41,447 signals  New user registered: +2348100000002
+INFO 2025-12-21 22:20:41,451 signals  Wallet created for +2348100000002
+INFO 2025-12-21 22:20:41,455 signals  Notification preferences created for +2348100000002
+INFO 2025-12-21 22:20:43,524 signals  Loyalty account created for +2348100000002 with 100 welcome points
+INFO 2025-12-21 22:20:43,665 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-21 22:20:45,725 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:20:45,745 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+WARNING 2025-12-21 22:20:52,676 log Bad Request: /api/auth/verify-otp/
+WARNING 2025-12-21 22:20:52,677 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 60
+INFO 2025-12-21 22:21:02,539 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 65489
+INFO 2025-12-21 22:21:02,616 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:21:22,237 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 52567
+INFO 2025-12-21 22:21:32,753 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:21:32,810 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
+INFO 2025-12-21 22:21:32,875 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:21:49,799 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:21:49,816 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:23:09,241 signals  New user registered: +2348100000002
+INFO 2025-12-21 22:23:09,243 signals  Wallet created for +2348100000002
+INFO 2025-12-21 22:23:09,245 signals  Notification preferences created for +2348100000002
+INFO 2025-12-21 22:23:11,337 signals  Loyalty account created for +2348100000002 with 100 welcome points
+INFO 2025-12-21 22:23:11,421 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+WARNING 2025-12-21 22:23:13,648 log Too Many Requests: /api/auth/send-otp/
+WARNING 2025-12-21 22:23:13,649 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 429 71
+INFO 2025-12-21 22:23:30,642 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 62006
+INFO 2025-12-21 22:23:30,702 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:23:37,133 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 47347
+INFO 2025-12-21 22:23:38,886 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:23:38,942 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61341
+INFO 2025-12-21 22:23:39,006 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:24:09,720 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 22:24:16,764 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:24:16,807 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:24:25,119 signals  New user registered: +2348100000002
+INFO 2025-12-21 22:24:25,121 signals  Wallet created for +2348100000002
+INFO 2025-12-21 22:24:25,122 signals  Notification preferences created for +2348100000002
+INFO 2025-12-21 22:24:31,444 signals  Loyalty account created for +2348100000002 with 100 welcome points
+INFO 2025-12-21 22:24:31,584 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-21 22:24:33,650 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 22:24:33,667 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 22:24:42,731 signals  New user registered: +2348022005552
+INFO 2025-12-21 22:24:42,791 signals  Wallet created for +2348022005552
+INFO 2025-12-21 22:24:42,797 signals  Notification preferences created for +2348022005552
+INFO 2025-12-21 22:24:44,932 signals  Loyalty account created for +2348022005552 with 100 welcome points
+INFO 2025-12-21 22:24:45,035 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-21 22:24:49,429 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
+INFO 2025-12-21 22:24:53,035 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
+INFO 2025-12-21 22:24:53,103 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:25:02,681 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
+INFO 2025-12-21 22:25:02,733 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:25:08,210 basehttp "GET /admin/analytics/rideanalytics/ HTTP/1.1" 200 47812
+INFO 2025-12-21 22:25:08,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:00,893 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
+INFO 2025-12-21 22:26:00,951 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:03,362 basehttp "GET /admin/vehicles/vehicle/28/change/ HTTP/1.1" 200 72478
+INFO 2025-12-21 22:26:03,443 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:20,469 basehttp "POST /admin/vehicles/vehicle/28/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:26:20,517 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58777
+INFO 2025-12-21 22:26:20,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:26,613 basehttp "GET /admin/ HTTP/1.1" 200 133887
+INFO 2025-12-21 22:26:30,614 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59008
+INFO 2025-12-21 22:26:30,664 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:33,144 basehttp "GET /admin/drivers/driver/28/change/ HTTP/1.1" 200 76618
+INFO 2025-12-21 22:26:33,218 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:47,931 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:26:48,137 basehttp "POST /admin/drivers/driver/28/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 22:26:48,199 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59572
+INFO 2025-12-21 22:26:48,262 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:26:54,685 signals  User +2348022005552 is now a driver
+ERROR 2025-12-21 22:26:54,688 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
+INFO 2025-12-21 22:26:56,829 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
+INFO 2025-12-21 22:26:58,888 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:01,024 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 22:27:03,116 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
+WARNING 2025-12-21 22:27:05,275 signals No RideRequest found for ride 16
+INFO 2025-12-21 22:27:05,322 basehttp "POST /api/rides/ HTTP/1.1" 201 694
+INFO 2025-12-21 22:27:10,390 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
+INFO 2025-12-21 22:27:12,495 views Accepting ride 16. Current status: pending
+INFO 2025-12-21 22:27:14,585 signals  Conversation created for Ride #16
+INFO 2025-12-21 22:27:14,599 views Ride 16 status updated to: accepted
+INFO 2025-12-21 22:27:14,905 signals  User +2348022005552 is now a driver
+WARNING 2025-12-21 22:27:15,064 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 22:27:15,068 views After refresh, ride 16 status: accepted
+INFO 2025-12-21 22:27:15,111 basehttp "POST /api/rides/requests/16/accept/ HTTP/1.1" 200 1003
+INFO 2025-12-21 22:27:17,401 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:20,568 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 22:27:24,638 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:26,834 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 22:27:32,976 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:33,041 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 22:27:37,155 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:39,509 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
+INFO 2025-12-21 22:27:43,568 views Attempting to start ride 16. Current status: driver_arrived
+INFO 2025-12-21 22:27:45,771 views Ride 16 started successfully
+WARNING 2025-12-21 22:27:45,773 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 22:27:45,806 basehttp "POST /api/rides/16/start/ HTTP/1.1" 200 1030
+INFO 2025-12-21 22:27:47,899 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:50,023 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 22:27:53,988 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
+INFO 2025-12-21 22:27:54,066 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:27:54,206 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:27:56,574 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 22:27:57,490 basehttp "GET /admin/accounts/user/72/change/ HTTP/1.1" 200 98479
+INFO 2025-12-21 22:27:57,557 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:27:57,613 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-12-21 22:27:57,613 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-12-21 22:28:00,655 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:28:02,754 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 22:28:06,837 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:28:08,983 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 171
+INFO 2025-12-21 22:28:09,531 basehttp "GET /admin/ HTTP/1.1" 200 134643
+INFO 2025-12-21 22:28:10,230 basehttp "GET /admin/ HTTP/1.1" 200 134643
+INFO 2025-12-21 22:28:12,335 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 55488
+INFO 2025-12-21 22:28:12,395 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 22:28:13,235 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 22:28:15,968 signals  System message added to conversation for Ride #16
+ERROR 2025-12-21 22:28:15,978 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 22:28:15,987 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 22:28:16,050 signals  8 loyalty points awarded to +2348100000002
+INFO 2025-12-21 22:28:16,155 signals  System message added to conversation for Ride #16
+ERROR 2025-12-21 22:28:16,160 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 22:28:16,163 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 22:28:16,205 signals  8 loyalty points awarded to +2348100000002
+ERROR 2025-12-21 22:28:16,349 log Internal Server Error: /api/rides/16/complete/
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 71, in _make_backend
+    backend_class = import_string(backend_module)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'channels_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "E:\Levah\swiftride\backend\rides\views.py", line 818, in complete_ride
+    channel_layer = get_channel_layer()
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 411, in get_channel_layer
+    return channel_layers[alias]
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 83, in __getitem__
+    self.backends[key] = self.make_backend(key)
+                         ~~~~~~~~~~~~~~~~~^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 45, in make_backend
+    return self._make_backend(name, config)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "E:\Levah\swiftride\backend\.venv\Lib\site-packages\channels\layers.py", line 73, in _make_backend
+    raise InvalidChannelLayerError(
+    ...<2 lines>...
+    )
+channels.exceptions.InvalidChannelLayerError: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+ERROR 2025-12-21 22:28:16,386 basehttp "POST /api/rides/16/complete/ HTTP/1.1" 500 159956
+INFO 2025-12-21 22:28:17,401 basehttp "GET /admin/payments/wallet/72/change/ HTTP/1.1" 200 55975
+INFO 2025-12-21 22:28:17,520 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:07:42,245 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 23:08:50,842 autoreload C:\Users\Levah147\OneDrive\Desktop\backend\rides\views.py changed, reloading.
+INFO 2025-12-21 23:08:56,174 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 23:10:20,741 autoreload C:\Users\Levah147\OneDrive\Desktop\backend\payments\signals.py changed, reloading.
+INFO 2025-12-21 23:10:24,954 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 23:10:56,451 autoreload C:\Users\Levah147\OneDrive\Desktop\backend\analytics\signals.py changed, reloading.
+INFO 2025-12-21 23:10:59,974 autoreload Watching for file changes with StatReloader
+INFO 2025-12-21 23:11:21,188 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 23:11:21,207 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 23:11:27,023 basehttp "GET /admin/payments/wallet/72/change/ HTTP/1.1" 200 55975
+INFO 2025-12-21 23:11:30,811 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63168
+INFO 2025-12-21 23:11:30,878 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:11:40,290 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 51235
+INFO 2025-12-21 23:11:43,755 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-21 23:11:43,823 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 61342
+INFO 2025-12-21 23:11:43,885 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:11:58,327 signals  New user registered: +2348100000002
+INFO 2025-12-21 23:11:58,333 signals  Wallet created for +2348100000002
+INFO 2025-12-21 23:11:58,337 signals  Notification preferences created for +2348100000002
+INFO 2025-12-21 23:12:04,963 signals  Loyalty account created for +2348100000002 with 100 welcome points
+INFO 2025-12-21 23:12:05,300 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-21 23:12:07,400 utils SMS sent successfully on attempt 1
+INFO 2025-12-21 23:12:07,419 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-21 23:12:17,505 signals  New user registered: +2348022005552
+INFO 2025-12-21 23:12:17,507 signals  Wallet created for +2348022005552
+INFO 2025-12-21 23:12:17,509 signals  Notification preferences created for +2348022005552
+INFO 2025-12-21 23:12:19,580 signals  Loyalty account created for +2348022005552 with 100 welcome points
+INFO 2025-12-21 23:12:20,143 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-21 23:12:24,507 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
+INFO 2025-12-21 23:12:36,265 basehttp "GET /admin/ HTTP/1.1" 200 134648
+INFO 2025-12-21 23:12:42,170 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59008
+INFO 2025-12-21 23:12:42,225 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:12:44,223 basehttp "GET /admin/drivers/driver/29/change/ HTTP/1.1" 200 76618
+INFO 2025-12-21 23:12:44,297 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:01,027 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:13:03,278 basehttp "POST /admin/drivers/driver/29/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 23:13:03,365 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59572
+INFO 2025-12-21 23:13:03,422 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:08,191 basehttp "GET /admin/ HTTP/1.1" 200 135403
+INFO 2025-12-21 23:13:12,170 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58173
+INFO 2025-12-21 23:13:12,242 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:15,391 basehttp "GET /admin/vehicles/vehicle/29/change/ HTTP/1.1" 200 72470
+INFO 2025-12-21 23:13:15,444 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:31,504 basehttp "POST /admin/vehicles/vehicle/29/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 23:13:31,563 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58777
+INFO 2025-12-21 23:13:31,638 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:42,810 basehttp "GET /admin/ HTTP/1.1" 200 136210
+INFO 2025-12-21 23:13:45,217 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 55488
+INFO 2025-12-21 23:13:45,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:13:50,109 basehttp "GET /admin/payments/wallet/74/change/ HTTP/1.1" 200 55975
+INFO 2025-12-21 23:13:50,168 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:14:01,603 basehttp "POST /admin/payments/wallet/74/change/ HTTP/1.1" 302 0
+INFO 2025-12-21 23:14:01,654 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 56077
+INFO 2025-12-21 23:14:01,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:14:12,595 signals  User +2348022005552 is now a driver
+ERROR 2025-12-21 23:14:12,598 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
+INFO 2025-12-21 23:14:14,683 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
+INFO 2025-12-21 23:14:16,747 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:14:18,928 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 23:14:21,000 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
+WARNING 2025-12-21 23:14:23,197 signals No RideRequest found for ride 17
+INFO 2025-12-21 23:14:23,233 basehttp "POST /api/rides/ HTTP/1.1" 201 694
+INFO 2025-12-21 23:14:28,290 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
+INFO 2025-12-21 23:14:30,338 views Accepting ride 17. Current status: pending
+INFO 2025-12-21 23:14:32,413 signals  Conversation created for Ride #17
+INFO 2025-12-21 23:14:32,420 views Ride 17 status updated to: accepted
+INFO 2025-12-21 23:14:32,513 signals  User +2348022005552 is now a driver
+WARNING 2025-12-21 23:14:32,636 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 23:14:32,647 views After refresh, ride 17 status: accepted
+INFO 2025-12-21 23:14:32,678 basehttp "POST /api/rides/requests/17/accept/ HTTP/1.1" 200 1003
+INFO 2025-12-21 23:14:34,794 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:14:36,906 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 23:14:40,992 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:14:43,112 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-21 23:14:49,311 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:14:49,360 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 23:14:53,455 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:14:55,609 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
+INFO 2025-12-21 23:14:59,655 views Attempting to start ride 17. Current status: driver_arrived
+INFO 2025-12-21 23:15:01,816 views Ride 17 started successfully
+WARNING 2025-12-21 23:15:01,819 views WebSocket broadcast error: Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 23:15:01,846 basehttp "POST /api/rides/17/start/ HTTP/1.1" 200 1030
+INFO 2025-12-21 23:15:03,939 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:06,105 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 23:15:10,203 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:12,312 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 23:15:16,403 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:18,533 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-21 23:15:22,622 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:24,726 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 171
+INFO 2025-12-21 23:15:28,878 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:31,541 signals  System message added to conversation for Ride #17
+ERROR 2025-12-21 23:15:31,545 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 23:15:31,549 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 23:15:31,552 signals [ANALYTICS] Analytics updated for completed ride #17
+INFO 2025-12-21 23:15:31,564 signals  8 loyalty points awarded to +2348100000002
+INFO 2025-12-21 23:15:31,579 signals [PAID] Cash payment recorded for ride #17
+INFO 2025-12-21 23:15:31,616 signals  System message added to conversation for Ride #17
+ERROR 2025-12-21 23:15:31,643 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-21 23:15:31,653 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-21 23:15:33,690 signals [ANALYTICS] Analytics updated for completed ride #17
+INFO 2025-12-21 23:15:33,706 signals  8 loyalty points awarded to +2348100000002
+WARNING 2025-12-21 23:15:33,721 views WebSocket broadcast failed (non-critical): Cannot import BACKEND 'channels_redis.core.RedisChannelLayer' specified for default
+INFO 2025-12-21 23:15:33,738 basehttp "POST /api/rides/17/complete/ HTTP/1.1" 200 1144
+INFO 2025-12-21 23:15:35,906 signals  User +2348022005552 is now a driver
+INFO 2025-12-21 23:15:38,090 basehttp "POST /api/rides/17/rate/ HTTP/1.1" 200 359
+INFO 2025-12-21 23:15:40,203 basehttp "POST /api/rides/17/rate-rider/ HTTP/1.1" 200 395
+INFO 2025-12-21 23:15:52,179 basehttp "GET /admin/payments/wallet/ HTTP/1.1" 200 55494
+INFO 2025-12-21 23:15:52,231 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-21 23:16:01,891 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63172
+INFO 2025-12-21 23:16:01,951 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:23:42,596 autoreload Watching for file changes with StatReloader
+INFO 2025-12-22 14:24:37,580 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 302 0
+INFO 2025-12-22 14:24:37,608 basehttp "GET /admin/login/?next=/admin/vehicles/vehicle/ HTTP/1.1" 200 3085
+INFO 2025-12-22 14:24:41,917 basehttp "POST /admin/login/?next=/admin/vehicles/vehicle/ HTTP/1.1" 302 0
+INFO 2025-12-22 14:24:42,089 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58171
+INFO 2025-12-22 14:24:42,228 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:24:50,218 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 63172
+INFO 2025-12-22 14:24:50,292 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:25:03,973 basehttp "POST /admin/accounts/user/ HTTP/1.1" 200 51238
+INFO 2025-12-22 14:25:06,839 basehttp - Broken pipe from ('127.0.0.1', 62011)
+INFO 2025-12-22 14:25:06,876 basehttp "POST /admin/accounts/user/ HTTP/1.1" 302 0
+INFO 2025-12-22 14:25:06,994 basehttp "GET /admin/accounts/user/ HTTP/1.1" 200 60845
+INFO 2025-12-22 14:25:07,058 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:25:10,649 basehttp "GET /admin/ HTTP/1.1" 200 135379
+INFO 2025-12-22 14:25:15,443 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57793
+INFO 2025-12-22 14:25:15,505 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:25:26,150 utils SMS sent successfully on attempt 1
+INFO 2025-12-22 14:25:26,159 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-22 14:25:43,280 signals  New user registered: +2348100000002
+INFO 2025-12-22 14:25:43,282 signals  Wallet created for +2348100000002
+INFO 2025-12-22 14:25:43,284 signals  Notification preferences created for +2348100000002
+INFO 2025-12-22 14:25:49,778 signals  Loyalty account created for +2348100000002 with 100 welcome points
+INFO 2025-12-22 14:25:50,435 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 800
+INFO 2025-12-22 14:25:52,521 utils SMS sent successfully on attempt 1
+INFO 2025-12-22 14:25:52,531 basehttp "POST /api/auth/send-otp/ HTTP/1.1" 200 52
+INFO 2025-12-22 14:26:02,703 signals  New user registered: +2348022005552
+INFO 2025-12-22 14:26:02,705 signals  Wallet created for +2348022005552
+INFO 2025-12-22 14:26:02,706 signals  Notification preferences created for +2348022005552
+INFO 2025-12-22 14:26:04,787 signals  Loyalty account created for +2348022005552 with 100 welcome points
+INFO 2025-12-22 14:26:04,893 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 801
+INFO 2025-12-22 14:26:06,763 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 57793
+INFO 2025-12-22 14:26:06,819 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:26:09,247 basehttp "POST /api/drivers/apply/ HTTP/1.1" 201 1365
+INFO 2025-12-22 14:26:12,875 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59007
+INFO 2025-12-22 14:26:12,940 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:26:14,864 basehttp "GET /admin/drivers/driver/30/change/ HTTP/1.1" 200 76616
+INFO 2025-12-22 14:26:14,921 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:26:36,147 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:26:39,137 basehttp "POST /admin/drivers/driver/30/change/ HTTP/1.1" 302 0
+INFO 2025-12-22 14:26:39,203 basehttp "GET /admin/drivers/driver/ HTTP/1.1" 200 59571
+INFO 2025-12-22 14:26:39,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:26:42,557 basehttp "GET /admin/ HTTP/1.1" 200 136123
+INFO 2025-12-22 14:26:45,564 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58172
+INFO 2025-12-22 14:26:45,608 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:26:55,402 basehttp "GET /admin/vehicles/vehicle/30/change/ HTTP/1.1" 200 72468
+INFO 2025-12-22 14:26:55,456 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:27:19,671 basehttp "POST /admin/vehicles/vehicle/30/change/ HTTP/1.1" 302 0
+INFO 2025-12-22 14:27:19,752 basehttp "GET /admin/vehicles/vehicle/ HTTP/1.1" 200 58776
+INFO 2025-12-22 14:27:19,841 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:27:24,371 signals  User +2348022005552 is now a driver
+ERROR 2025-12-22 14:27:24,376 signals Error creating driver location: NOT NULL constraint failed: locations_driver_location.latitude
+INFO 2025-12-22 14:27:26,459 basehttp "POST /api/drivers/toggle-availability/ HTTP/1.1" 200 93
+INFO 2025-12-22 14:27:28,527 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:27:30,652 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-22 14:27:32,747 basehttp "POST /api/pricing/calculate-fare/ HTTP/1.1" 200 759
+WARNING 2025-12-22 14:27:34,859 signals No RideRequest found for ride 18
+INFO 2025-12-22 14:27:34,883 basehttp "POST /api/rides/ HTTP/1.1" 201 694
+INFO 2025-12-22 14:27:39,959 basehttp "GET /api/rides/available/?latitude=9.018&longitude=7.449&max_distance=10 HTTP/1.1" 200 410
+INFO 2025-12-22 14:27:42,022 views Accepting ride 18. Current status: pending
+INFO 2025-12-22 14:27:44,088 signals  Conversation created for Ride #18
+INFO 2025-12-22 14:27:44,092 views Ride 18 status updated to: accepted
+INFO 2025-12-22 14:27:44,150 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:27:46,282 views After refresh, ride 18 status: accepted
+INFO 2025-12-22 14:27:46,305 basehttp "POST /api/rides/requests/18/accept/ HTTP/1.1" 200 1003
+INFO 2025-12-22 14:27:48,383 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:27:50,511 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-22 14:27:54,569 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:27:56,695 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 174
+INFO 2025-12-22 14:28:02,860 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:02,913 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-22 14:28:06,998 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:09,130 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 176
+INFO 2025-12-22 14:28:13,186 views Attempting to start ride 18. Current status: driver_arrived
+INFO 2025-12-22 14:28:15,346 views Ride 18 started successfully
+INFO 2025-12-22 14:28:17,425 basehttp "POST /api/rides/18/start/ HTTP/1.1" 200 1030
+INFO 2025-12-22 14:28:19,502 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:21,649 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-22 14:28:25,712 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:27,839 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-22 14:28:31,899 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:33,999 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 175
+INFO 2025-12-22 14:28:38,071 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:40,208 basehttp "POST /api/drivers/update-location/ HTTP/1.1" 200 171
+INFO 2025-12-22 14:28:44,358 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:46,818 signals  System message added to conversation for Ride #18
+ERROR 2025-12-22 14:28:46,823 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-22 14:28:46,827 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-22 14:28:46,828 signals [ANALYTICS] Analytics updated for completed ride #18
+INFO 2025-12-22 14:28:46,844 signals  8 loyalty points awarded to +2348100000002
+INFO 2025-12-22 14:28:46,853 signals [PAID] Cash payment recorded for ride #18
+INFO 2025-12-22 14:28:46,880 signals  System message added to conversation for Ride #18
+ERROR 2025-12-22 14:28:46,884 services Error updating ride analytics: Unsupported lookup 'phone_number__isnull' for CharField or join on the field not permitted.
+ERROR 2025-12-22 14:28:46,886 services Error updating driver earnings: Cannot resolve keyword 'distance' into field. Choices are: accepted_at, base_fare, cancellation_fee_charged, cancellation_reason, cancelled_at, cancelled_by, city, city_id, completed_at, conversation, created_at, destination_latitude, destination_location, destination_longitude, distance_fare, distance_km, driver, driver_id, driver_rating, duration_minutes, fare_amount, fare_hash, feedback, fuel_adjustment, id, incident_reports, mutual_rating, notifications, payment_method, payment_status, pickup_latitude, pickup_location, pickup_longitude, promousage, rating, requests, ride_type, safety_checks, scheduled_time, sos_alerts, started_at, status, support_tickets, surge_multiplier, time_fare, tracking_points, transactions, trip_share, updated_at, user, user_id, userreport, vehicle, vehicle_id, vehicle_type, vehicle_type_id
+INFO 2025-12-22 14:28:46,886 signals [ANALYTICS] Analytics updated for completed ride #18
+INFO 2025-12-22 14:28:46,897 signals  8 loyalty points awarded to +2348100000002
+INFO 2025-12-22 14:28:48,993 basehttp "POST /api/rides/18/complete/ HTTP/1.1" 200 1144
+INFO 2025-12-22 14:28:51,153 signals  User +2348022005552 is now a driver
+INFO 2025-12-22 14:28:53,666 basehttp "POST /api/rides/18/rate/ HTTP/1.1" 200 359
+INFO 2025-12-22 14:28:55,861 basehttp "POST /api/rides/18/rate-rider/ HTTP/1.1" 200 395
+INFO 2025-12-22 14:29:02,402 basehttp "GET /admin/ HTTP/1.1" 200 136162
+INFO 2025-12-22 14:29:07,781 basehttp "GET /admin/admin_dashboard/userreport/ HTTP/1.1" 200 50156
+INFO 2025-12-22 14:29:07,834 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:09,512 basehttp "GET /admin/admin_dashboard/systemnotification/ HTTP/1.1" 200 49698
+INFO 2025-12-22 14:29:09,566 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:11,157 basehttp "GET /admin/admin_dashboard/platformsettings/ HTTP/1.1" 200 48909
+INFO 2025-12-22 14:29:11,211 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:12,385 basehttp "GET /admin/admin_dashboard/adminactionlog/ HTTP/1.1" 200 50281
+INFO 2025-12-22 14:29:12,439 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:16,261 basehttp "GET /admin/analytics/driverearnings/ HTTP/1.1" 200 48598
+INFO 2025-12-22 14:29:16,333 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:19,068 basehttp "GET /admin/analytics/popularlocation/ HTTP/1.1" 200 48609
+INFO 2025-12-22 14:29:19,128 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:20,787 basehttp "GET /admin/analytics/revenuereport/ HTTP/1.1" 200 53402
+INFO 2025-12-22 14:29:20,842 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:33,721 basehttp "GET /admin/analytics/revenuereport/1/change/ HTTP/1.1" 200 62597
+INFO 2025-12-22 14:29:33,772 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:41,412 basehttp "GET /admin/analytics/rideanalytics/ HTTP/1.1" 200 47812
+INFO 2025-12-22 14:29:41,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:45,865 basehttp "GET /admin/analytics/useractivity/ HTTP/1.1" 200 53734
+INFO 2025-12-22 14:29:45,918 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:29:57,144 basehttp "GET /admin/audit_logging/auditlog/ HTTP/1.1" 200 156675
+INFO 2025-12-22 14:29:57,199 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:30:21,840 basehttp "GET /admin/audit_logging/securityevent/ HTTP/1.1" 200 70526
+INFO 2025-12-22 14:30:21,896 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:30:37,258 basehttp "GET /admin/chat/conversation/ HTTP/1.1" 200 57291
+INFO 2025-12-22 14:30:37,317 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:30:46,227 basehttp "GET /admin/chat/messageattachment/ HTTP/1.1" 200 48666
+INFO 2025-12-22 14:30:46,279 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:30:49,195 basehttp "GET /admin/chat/ HTTP/1.1" 200 56334
+INFO 2025-12-22 14:30:50,929 basehttp "GET /admin/chat/message/ HTTP/1.1" 200 58846
+INFO 2025-12-22 14:30:50,980 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:31:10,777 basehttp "GET /admin/drivers/driverrating/ HTTP/1.1" 200 49671
+INFO 2025-12-22 14:31:10,835 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:31:47,924 basehttp "GET /admin/rides/mutualrating/ HTTP/1.1" 200 53060
+INFO 2025-12-22 14:31:47,982 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:31:55,348 basehttp "GET /admin/rides/ HTTP/1.1" 200 58215
+INFO 2025-12-22 14:31:59,435 basehttp "GET /admin/rides/promotion/ HTTP/1.1" 200 47829
+INFO 2025-12-22 14:31:59,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:32:01,327 basehttp "GET /admin/rides/ HTTP/1.1" 200 58215
+INFO 2025-12-22 14:32:03,302 basehttp "GET /admin/rides/driverrideresponse/ HTTP/1.1" 200 53487
+INFO 2025-12-22 14:32:03,348 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-22 14:32:09,867 basehttp "GET /admin/rides/ HTTP/1.1" 200 58215

@@ -68,6 +68,11 @@ class RideSerializer(serializers.ModelSerializer):
 class RideCreateSerializer(serializers.ModelSerializer):
     """Serializer for creating a new ride with fare verification"""
     fare_hash = serializers.CharField(required=True, write_only=True)
+    payment_method = serializers.ChoiceField(
+        choices=['cash', 'wallet'],
+        default='cash',
+        required=False
+    )  # ✅ ADD THIS
     
     class Meta:
         model = Ride
@@ -75,7 +80,7 @@ class RideCreateSerializer(serializers.ModelSerializer):
             'pickup_location', 'pickup_latitude', 'pickup_longitude',
             'destination_location', 'destination_latitude', 'destination_longitude',
             'ride_type', 'scheduled_time', 'fare_amount',
-            'fare_hash',
+            'fare_hash', 'payment_method',  # ✅ ADD payment_method HERE
         ]
         read_only_fields = ['fare_amount']  # Set from fare_hash validation
     

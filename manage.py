@@ -2,8 +2,14 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
-sys.stderr.reconfigure(encoding='utf-8')
+
+# ✅ Fix Windows console encoding for emojis
+if sys.platform == 'win32':
+    import locale
+    if sys.stdout.encoding != 'utf-8':
+        sys.stdout.reconfigure(encoding='utf-8')
+    if sys.stderr.encoding != 'utf-8':
+        sys.stderr.reconfigure(encoding='utf-8')
 
 
 def main():
